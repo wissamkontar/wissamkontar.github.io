@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Wissam Kontar - Homepage"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Wissam Kontar"
 description              : &description "personal description"
