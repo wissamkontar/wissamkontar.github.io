@@ -10,9 +10,9 @@ redirect_from:
 
 I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. 
 
-Research interests: Transportation analytics & simulation; traffic flow theory; microscopic driving behavior modeling; bayesian methods; federated analytics; enviornmental modeling
+Research interests: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
-Applications: Connected and automated vehicle design; Internet of Federated Things (IoFT); intelligent transportation systems; energy & emission profiling
+Applications: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
 
 A data-driven personal website
 ======
