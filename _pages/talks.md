@@ -5,6 +5,13 @@ permalink: /talks/
 author_profile: true
 ---
 
+## The New Traffic Environment with Multi-class Automated Vehicles 
+
+Presented at the 24th International Symposium for Transportation and Traffic Theory (ISTTT 24)
+
+- Presentation slides [[here](..\files\ISTTT24_Presentation/pdf)]
+
+
 ## The Promise of Sustainable Transportation: An Environmental Investigation of Emerging Transportation Technology
 
 Presented at the Soceity of Environmental Toxicology and Chemistry SETAC, April 2022
