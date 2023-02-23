@@ -17,7 +17,15 @@ For most recent updates on my publications please visit my [Google Scholar](http
 
 2. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2022). Electric Bicycles Sharing: Oppurtinities and Environmental Impacts. Environmental Research: Infrastructure and Sustainability. [[paper](https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta)].
 
-3. Raed Kontar, Naichen Shi, Xubo Yue, Seokhyun Chung, Eunshin Byon, Mosharaf Chowdhury, Jionghua Jin, **Wissam Kontar**, Neda Masoud, Maher Nouiehed, Chinedum E Okwudire, Garvesh Raskutti, Romesh Saigal, Karandeep Singh, Zhi-Sheng Ye. The Internet of Federated Things (IoFT) (2022). IEEE Access. [[paper](https://ieeexplore.ieee.org/abstract/document/9611259)], [[Youtube Video](https://www.youtube.com/watch?v=RrubcIWCihk)], [[IoFT Data](https://ioft-data.engin.umich.edu/)]
+3. Raed Kontar, Naichen Shi, Xubo Yue, Seokhyun Chung, Eunshin Byon, Mosharaf Chowdhury, Jionghua Jin, **Wissam Kontar**, Neda Masoud, Maher Nouiehed, Chinedum E Okwudire, Garvesh Raskutti, Romesh Saigal, Karandeep Singh, Zhi-Sheng Ye. The Internet of Federated Things (IoFT) (2022). IEEE Access. [[paper](https://ieeexplore.ieee.org/abstract/document/9611259)], [[Youtube Video](https://www.youtube.com/watch?v=RrubcIWCihk)], [[IoFT Data](https://ioft-data.engin.umich.edu/)]. 
+
+4. Nachuan Li, Austen Z Fan, Riley Fischer, **Wissam Kontar**, Bin Ran* (2021). A Prioritized Trajectory Planning Algorithm for Connected and Automated Vehicle Mandatory Lane Changes. IEEE International Intelligent Transportation Systems Conference (ITSC). [[paper](https://ieeexplore.ieee.org/abstract/document/9564913)]. 
+
+5. **Wissam Kontar**, Tienan Li, Anupam Srivastava, Yang Zhou, Danjue Chen, Soyoung Ahn* (2021). On Mult-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics. Transportation Research Part C: Emerging Technologies. Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT). [[paper](https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1)].
+
+6. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2021). Autonomous Vehicle Adoption: Use Phase Environmental Implications. Environmental Research Letters. [[paper](https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta)]
+
+7. Andrea Hicks, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris (2021). Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling. [[paper](https://www.sciencedirect.com/science/article/pii/S0921344920305772)]
 
 ## Conference Papers 
 
