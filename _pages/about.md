@@ -9,6 +9,7 @@ redirect_from:
 ---
 
 I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. 
+
 Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. 
 
 <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
