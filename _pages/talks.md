@@ -24,9 +24,6 @@ Our analysis shows that autonomous vehicles and electric bicycles enjoy a great 
 This work serves as a step forward in analyzing the environmental impacts of our transportation system. Ultimately, we aim to steer the development and deployment of new modes of transportation in ways that match users' adoption needs and are environmentally beneficial.
 </details>
 
-
-
-
 ## On Multi-class Automated Vehicles
 
 Presented for the Traffic Flow Committee, May 2021
