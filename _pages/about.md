@@ -36,6 +36,11 @@ Research Spotlight
 
 ## The New Transportation and Traffic Environment: How to Design Automated Vehicles
 
+<center>
+  <img src="../images/r1.jpg" width="100%" />
+</center>
+
+
 ## Federated Analytics for Intelligent Transportation Systems
 
 
