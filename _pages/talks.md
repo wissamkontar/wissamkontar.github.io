@@ -1,6 +1,6 @@
 ---
 layout: archive
-#title: "Talks and Media Coverage"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
