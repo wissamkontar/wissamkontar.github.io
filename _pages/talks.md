@@ -5,8 +5,6 @@ permalink: /talks/
 author_profile: true
 ---
 
-Talks
-=====
 ## The Promise of Sustainable Transportation: An Environmental Investigation of Emerging Transportation Technology
 
 Presented at the Soceity of Environmental Toxicology and Chemistry SETAC, April 2022
@@ -34,6 +32,15 @@ Presented for the Traffic Flow Committee, May 2021
 This work develops a unifying framework to unveil the physical car-following (CF) behaviors of automated vehicles (AVs) under different control paradigms and parameter settings. The proposed framework adopts the flexible asymmetric behavior (AB) model to reveal the control mechanisms and their manifestation in the physical CF behavior, particularly their response to traffic disturbances. A mapping relationship between the AB model parameters and control parameters is then obtained to understand the range of CF behavior possible. Finally, a predictive modeling approach based on a logistic classifier coupled with a convoluted Multivariate Gaussian Process MGP is designed to predict the CF behavior of an AV. Analysis of two well-known controllers, linear state-feedback and Model Predictive Control (MPC), show how the proposed framework can uncover the CF mechanisms and provide insights into traffic-level disturbance evolution. The proposed analysis framework remains scalable and can be applied to a variety of controllers. Ultimately, this work can guide AV control design that is not myopic, but considers traffic-level performance. 
 </details>
 
+<br/>
 
 Media Coverage
 =====
+
+1. "Affordable Driverless Cars Could Curb Public Transport", by Popular Sceince. [[News Article](https://www.popsci.com/technology/driverless-cars-sustainable/?taid=60aa35b701ef8e00017b4bec&utm_campaign=trueanthem_trending-content&utm_medium=social&utm_source=twitter)]
+
+2. "How Driverless Cars Could Lead to More Pollution", by Gizmodo. [[News Article](https://gizmodo.com/how-driverless-cars-could-lead-to-more-pollution-1846955880?utm_content=gizmodo&utm_source=twitter&utm_medium=SocialMarketing&utm_campaign=dlvrit)]
+
+3. "The Environmental Trade-offs of Autonomous Vehicles", by Phys Org. [[News Article](https://phys.org/news/2021-05-environmental-trade-offs-autonomous-vehicles.html)]
+
+4. "Self-Driving EVs Could Raise Emissions", by Politico. [[News Article](https://subscriber.politicopro.com/article/eenews/1063733277)]
