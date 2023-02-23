@@ -14,13 +14,16 @@ Research interests: Transportation analytics & simulation; Traffic flow theory; 
 
 Applications: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
 
-Most recent news
+Recent News
 ======
-Here is a snippet of the most recent news in our lab
+* <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
 
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+* <span style="color:darkred"> Recent </span> 13/2022: You can now checkout the pre-print of our paper ["Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making"](https://arxiv.org/abs/2210.13683)
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+* <span style="color:darkred"> Recent </span> 13/2022: My Ph.D. dissertation ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"]()
+
+<button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
+<p>&nbsp;</p>
 
 Getting started
 ======
