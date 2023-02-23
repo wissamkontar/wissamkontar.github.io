@@ -34,13 +34,14 @@ Recent News
 Research Spotlight
 ======
 
-## The New Transportation and Traffic Environment: How to Design Automated Vehicles
+<details>
+<summary><b>[The New Transportation and Traffic Environment: How to Design Automated Vehicles]</b></summary>
 
 <center>
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-
+</details>
 ## Federated Analytics for Intelligent Transportation Systems
 
 
