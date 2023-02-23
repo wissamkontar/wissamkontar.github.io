@@ -12,7 +12,7 @@ I am researcher working on developing emerging transportation technologies. My g
 
 Research interests: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
-Applications: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
+Technology: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
 
 Recent News
 ======
