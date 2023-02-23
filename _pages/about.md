@@ -35,7 +35,7 @@ Research Spotlight
 ======
 
 <details>
-<summary><b>[The New Transportation and Traffic Environment: How to Design Automated Vehicles]</b></summary>
+<summary><b><span style="color:darkblue">The New Transportation and Traffic Environment: How to Design Automated Vehicles </span></b></summary>
 
 <center>
   <img src="../images/r1.jpg" width="100%" />
