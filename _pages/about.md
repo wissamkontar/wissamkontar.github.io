@@ -41,13 +41,13 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-</details>
+</details> <br>
 
 
 <details>
 <summary><b><span style="color:darkblue">2. Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
 
-</details>
+</details> <br>
 
 
 <details>
