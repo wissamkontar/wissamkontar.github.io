@@ -13,6 +13,8 @@ I am researcher working on developing emerging transportation technologies. My g
 <span style="color:darkred"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 <span style="color:darkred"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
 
+Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. 
+
 Recent News
 ======
 * <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
