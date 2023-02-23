@@ -34,4 +34,8 @@ Recent News
 Research Spotlight
 ======
 
-## 
+## Federated Analytics for Intelligent Transportation Systems
+
+## The New Transportation and Traffic Environment: How to Design Automated Vehicles
+
+## Emerging Modes of Transportation: Adoption Patterns and Environmental Implications

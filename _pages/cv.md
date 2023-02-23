@@ -11,5 +11,5 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Civil and Environmental Engineering, University of Wisconsin Madison, 2019-2022
-* B.S. in Civil and Environmental Engineering, American University of Beirut, 2014-2018
+* Ph.D. in Civil and Environmental Engineering, University of Wisconsin Madison, USA, 2019-2022
+* B.Eng. in Civil and Environmental Engineering, American University of Beirut, Lebanon, 2014-2018
