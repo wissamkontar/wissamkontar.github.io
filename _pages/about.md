@@ -25,7 +25,7 @@ Recent News
 
 * <span style="color:darkred"> Recent </span> 11/2022: My Ph.D. dissertation in available online ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"](https://www.proquest.com/pqdtglobal/docview/2737490814/AA10F2DD3BAC463DPQ/1?accountid=465)
 
-* <span style="color:darkred"> Recent </span> 07/2022: I was named a Rising Star in Cyber-Physical Systems. Read more about the [story](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/).
+* <span style="color:darkred"> Recent </span> 07/2022: I was named a [Rising Star in Cyber-Physical Systems](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/).
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
 <p>&nbsp;</p>
