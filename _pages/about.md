@@ -42,7 +42,15 @@ Research Spotlight
 </center>
 
 </details>
-## Federated Analytics for Intelligent Transportation Systems
 
 
-## Emerging Modes of Transportation: Adoption Patterns and Environmental Implications
+<details>
+<summary><b><span style="color:darkblue">2. Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
+
+</details>
+
+
+<details>
+<summary><b><span style="color:darkblue">3. Federated Anlytics for Intelligent Transportation Systems </span></b></summary>
+
+</details>
