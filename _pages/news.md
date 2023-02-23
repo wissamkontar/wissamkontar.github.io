@@ -10,7 +10,7 @@ author_profile: true
 
 * March (2022): Our work on autonomous vehicles and emerging modes of transportation received two new grants
 
-* January (2022): Our paper on the "Internet of Federated Things (IoFT)" has been featured in IEEE Access. \
+* January (2022): Our paper on the "Internet of Federated Things (IoFT)" has been featured in IEEE Access
 
 * January (2022): Student spotlight by UW-Madison department of Civil and Environmental Engineering. [[post](https://twitter.com/UWMadisonCEE/status/1481690026018803713)]
 
