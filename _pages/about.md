@@ -20,7 +20,7 @@ Recent News
 
 * <span style="color:darkred"> Recent </span> 13/2022: You can now checkout the pre-print of our paper ["Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making"](https://arxiv.org/abs/2210.13683)
 
-* <span style="color:darkred"> Recent </span> 13/2022: My Ph.D. dissertation ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"]()
+* <span style="color:darkred"> Recent </span> 13/2022: My Ph.D. dissertation in available online ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"](https://www.proquest.com/pqdtglobal/docview/2737490814/AA10F2DD3BAC463DPQ/1?accountid=465)
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
 <p>&nbsp;</p>
