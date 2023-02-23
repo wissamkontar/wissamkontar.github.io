@@ -5,9 +5,15 @@ permalink: /talks/
 author_profile: true
 ---
 
+## Bayesian Methods for Uncertainty Quantification in Autonomus Vehicles Car-following Control 
+
+Presented at the Transportation Research Annual Meeting, Dec 2022
+
+- Presentation [[here]]
+
 ## The New Traffic Environment with Multi-class Automated Vehicles 
 
-Presented at the 24th International Symposium for Transportation and Traffic Theory (ISTTT 24)
+Presented at the 24th International Symposium for Transportation and Traffic Theory (ISTTT 24), June 2022
 
 - Presentation slides [[here](..\files\ISTTT24_Presentation/pdf)]
 
