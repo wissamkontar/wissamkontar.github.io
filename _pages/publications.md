@@ -23,10 +23,19 @@ For most recent updates on my publications please visit my [Google Scholar](http
 
 5. **Wissam Kontar**, Tienan Li, Anupam Srivastava, Yang Zhou, Danjue Chen, Soyoung Ahn* (2021). On Mult-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics. Transportation Research Part C: Emerging Technologies. Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT). [[paper](https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1)].
 
-6. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2021). Autonomous Vehicle Adoption: Use Phase Environmental Implications. Environmental Research Letters. [[paper](https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta)]
+6. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2021). Autonomous Vehicle Adoption: Use Phase Environmental Implications. Environmental Research Letters. [[paper](https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta)].
 
-7. Andrea Hicks, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris (2021). Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling. [[paper](https://www.sciencedirect.com/science/article/pii/S0921344920305772)]
+7. Andrea Hicks, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris (2021). Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling. [[paper](https://www.sciencedirect.com/science/article/pii/S0921344920305772)].
+
 
 ## Conference Papers 
 
+1. **Wissam Kontar**, Soyoung Ahn* (2022). Estimation of Autonomous Vehicles Vehicular Dynamics Uncertainties: A Real-time Approach. Transportation Research Annual Meeting. 
+
+2. **Wissam Kontar**, Soyoung Ahn (2021). Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework. Transportation Research Annual Meeting. [[paper](https://arxiv.org/abs/2102.00375)].
+
 ## Technical Reports
+
+1. **Wissam Kontar**, Ernest Perry, Soyoung Ahn, Glen Vorhes, Youngjun Han (2019). Freight Data Inventory and Training. Mid-America Freight Coalition (MAFC). [[report](https://midamericafreight.org/index.php/resources/mafc-research/)]
+
+2. Youngjun Han, **Wissam Kontar**, Glen Vorhes, Ernest Perry, Soyoung Ahn (2019). Assessment of Multimodal (Marine and Highway) Bottlenecks in the MAASTO Region. Mid-America Freight Coalition (MAFC). [[report](https://midamericafreight.org/index.php/resources/mafc-research/)]
