@@ -9,9 +9,13 @@ For most recent updates on my publications please visit my [Google Scholar](http
 
 ## Pre-prints
 
-1. **Wissam Kontar**, Soyoung Ahn* (2022). Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making[[arxiv](https://arxiv.org/abs/2210.13683)]. 
+1. **Wissam Kontar**, Soyoung Ahn* (2022). Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making [[arxiv](https://arxiv.org/abs/2210.13683)]. 
 
 ## Journal Papers 
+
+1. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2022). Transportation Emissions during Pandemic: Duality of Impacts. Environmental Research: Infrastructure and Sustainability. [[paper](https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta)]. 
+
+2. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2022). Electric Bicycles Sharing: Oppurtinities and Environmental Impacts. Environmental Research: Infrastructure and Sustainability. [[paper](https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta)]
 
 ## Conference Papers 
 
