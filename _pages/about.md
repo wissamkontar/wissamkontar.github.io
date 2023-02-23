@@ -35,7 +35,7 @@ Research Spotlight
 ======
 
 <details>
-<summary><b><span style="color:darkblue">1. The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
+<summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
 
 <center>
   <img src="../images/r1.jpg" width="100%" />
@@ -45,12 +45,12 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:darkblue">2. Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
+<summary><b><span style="color:darkblue">Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
 
 </details> <br>
 
 
 <details>
-<summary><b><span style="color:darkblue">3. Federated Anlytics for Intelligent Transportation Systems </span></b></summary>
+<summary><b><span style="color:darkblue">Federated Anlytics for Intelligent Transportation Systems </span></b></summary>
 
 </details>
