@@ -6,8 +6,8 @@ main:
   - title: "Talks and Media Coverage"
     url: /talks/    
     
-  - title: "CV"
-    url: /cv/
+  #- title: "CV"
+  #  url: /cv/
     
   - title: "News"
     url: /news/   
