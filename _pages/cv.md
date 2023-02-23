@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<button onclick="window.location.href='../files/CV.pdf';"> Download my CV</button>
 
 Education
 ======
