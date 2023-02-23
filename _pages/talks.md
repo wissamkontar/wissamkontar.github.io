@@ -40,5 +40,3 @@ This work develops a unifying framework to unveil the physical car-following (CF
 
 Media Coverage
 =====
-
-1. 
