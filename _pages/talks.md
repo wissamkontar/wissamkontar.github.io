@@ -23,4 +23,17 @@ This work serves as a step forward in analyzing the environmental impacts of our
 - Presentation slides [[here](..\files\SETAC_Presentation.pdf)] 
 
 2. ## On Multi-class Automated Vehicles
-Presented a
+Presented for the Traffic Flow Committee, May 2021
+
+<details>
+<summary><b>[Abstract]</b></summarty>
+This work develops a unifying framework to unveil the physical car-following (CF) behaviors of automated vehicles (AVs) under different control paradigms and parameter settings. The proposed framework adopts the flexible asymmetric behavior (AB) model to reveal the control mechanisms and their manifestation in the physical CF behavior, particularly their response to traffic disturbances. A mapping relationship between the AB model parameters and control parameters is then obtained to understand the range of CF behavior possible. Finally, a predictive modeling approach based on a logistic classifier coupled with a convoluted Multivariate Gaussian Process MGP is designed to predict the CF behavior of an AV. Analysis of two well-known controllers, linear state-feedback and Model Predictive Control (MPC), show how the proposed framework can uncover the CF mechanisms and provide insights into traffic-level disturbance evolution. The proposed analysis framework remains scalable and can be applied to a variety of controllers. Ultimately, this work can guide AV control design that is not myopic, but considers traffic-level performance. 
+<details>
+
+- Presentation recording via [[Youtube](https://www.youtube.com/watch?v=okmAiD5KeiE)]
+
+
+Media Coverage
+=====
+
+1. 
