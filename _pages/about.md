@@ -51,6 +51,6 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:darkblue">Federated Anlytics for Intelligent Transportation Systems </span></b></summary>
+<summary><b><span style="color:darkblue">Federated Analytics for Intelligent Transportation Systems </span></b></summary>
 
 </details>
