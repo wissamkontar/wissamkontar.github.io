@@ -35,7 +35,7 @@ Research Spotlight
 ======
 
 <details>
-<summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary><br>
+<summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
 
 <h3> A) From Control Structure to System Impacts </h3>
 <center>
