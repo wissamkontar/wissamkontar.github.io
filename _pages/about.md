@@ -37,7 +37,7 @@ Research Spotlight
 <details>
 <summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
 
-## A) From Control Structure to System Impacts
+<title> A) From Control Structure to System Impacts </title>
 <center>
   <img src="../images/r1.jpg" width="100%" />
 </center>
