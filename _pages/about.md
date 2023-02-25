@@ -42,7 +42,7 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-## B) Real-world Performance and 
+<title> B) Real-world Performance and </title>
 
 </details> <br>
 
