@@ -16,11 +16,11 @@ Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strol
 <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
 <span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
-
 </p>
 
 Recent News
 ======
+<p>
 * <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
 
 * <span style="color:darkred"> Recent </span> 12/2022: You can now checkout the pre-print of our paper ["Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making"](https://arxiv.org/abs/2210.13683)
@@ -31,6 +31,8 @@ Recent News
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
 <p>&nbsp;</p>
+
+</p>
 
 Research Spotlight
 ======
@@ -43,7 +45,7 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-The introduction of different control paradigms and different parameter settings within each, will add a new dimension of heterogeneity; one that comes from automated vehicles (AVs) themselves. Different AV controllers will respond differently to traffic disturbances (e.g., deceleration followed by acceleration), and that can translate into a major impact on traffic dynamics. Thus, exploring a range of behavior of multi-class AVs (due to different control paradigms and settings) will pave the way towards understanding their traffic impacts and developing control strategies to realize desired traffic performance. We formulate an intuitive physics-based response function that is capable of translating AV control paradigm into traffic-level dynamics. Allowing us to specify the design on an AV in ways that are not myopic but consider system-level performance.  
+<p>The introduction of different control paradigms and different parameter settings within each, will add a new dimension of heterogeneity; one that comes from automated vehicles (AVs) themselves. Different AV controllers will respond differently to traffic disturbances (e.g., deceleration followed by acceleration), and that can translate into a major impact on traffic dynamics. Thus, exploring a range of behavior of multi-class AVs (due to different control paradigms and settings) will pave the way towards understanding their traffic impacts and developing control strategies to realize desired traffic performance. We formulate an intuitive physics-based response function that is capable of translating AV control paradigm into traffic-level dynamics. Allowing us to specify the design on an AV in ways that are not myopic but consider system-level performance.</p>
 
 <h3> B) Expected Performance vs. Real-world Performance </h3>
 
