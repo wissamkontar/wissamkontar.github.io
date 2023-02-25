@@ -8,19 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-<p>
-I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. 
 
-Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. 
+<p>I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. </p>
+
+<p>Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture.</p>
 
 <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
 <span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
-</p>
+
 
 Recent News
 ======
-<p>
+
 * <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
 
 * <span style="color:darkred"> Recent </span> 12/2022: You can now checkout the pre-print of our paper ["Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making"](https://arxiv.org/abs/2210.13683)
@@ -32,7 +32,6 @@ Recent News
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
 <p>&nbsp;</p>
 
-</p>
 
 Research Spotlight
 ======
