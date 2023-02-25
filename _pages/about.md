@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+<p>
 I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. 
 
 Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. 
@@ -16,7 +17,7 @@ Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strol
 
 <span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
 
-
+</p>
 
 Recent News
 ======
@@ -45,6 +46,8 @@ Research Spotlight
 The introduction of different control paradigms and different parameter settings within each, will add a new dimension of heterogeneity; one that comes from automated vehicles (AVs) themselves. Different AV controllers will respond differently to traffic disturbances (e.g., deceleration followed by acceleration), and that can translate into a major impact on traffic dynamics. Thus, exploring a range of behavior of multi-class AVs (due to different control paradigms and settings) will pave the way towards understanding their traffic impacts and developing control strategies to realize desired traffic performance. We formulate an intuitive physics-based response function that is capable of translating AV control paradigm into traffic-level dynamics. Allowing us to specify the design on an AV in ways that are not myopic but consider system-level performance.  
 
 <h3> B) Expected Performance vs. Real-world Performance </h3>
+
+
 
 </details> <br>
 
