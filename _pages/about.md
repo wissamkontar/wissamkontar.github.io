@@ -48,7 +48,7 @@ Research Spotlight
 
 <h3> B) Expected Performance vs. Real-world Performance </h3>
 
-In the real-world 
+
 
 
 </details> <br>
