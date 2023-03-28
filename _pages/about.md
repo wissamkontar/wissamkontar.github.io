@@ -23,6 +23,7 @@ What I am Currently Working On?
 1. Human-AV interaction during driving, and how does that scale up to impact the traffic system.
 2. Using federated analytics to impose system-level constraints on Automated Vehicle design while maintaining their selfish needs. 
 3. Designing high-fidelity micro-simulation softwares for Automated Vehicles. 
+4. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
 
 Recent News
