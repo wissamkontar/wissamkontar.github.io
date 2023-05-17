@@ -5,6 +5,16 @@ permalink: /talks/
 author_profile: true
 ---
 
+## The Promise of an Efficient and Sustainable Transport System: An Investigation into Automated Vehicles
+
+Presented at [Next Generation Transport System Conference NGTS-3](https://www.ngts2023.nextrans.org/), Purdue University, May 2023. 
+
+- Presentation slides [[here](..\files\NGTS_3_Talk.pdf)]
+
+## An Investigation of Emerging Modes of Transportation
+
+Presented at California State University - Long Beach, April 2023
+
 ## Bayesian Methods for Uncertainty Quantification in Autonomus Vehicles Car-following Control 
 
 Presented at the Transportation Research Annual Meeting, Dec 2022
