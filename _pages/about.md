@@ -29,7 +29,7 @@ What I am Currently Working On?
 Recent News
 ======
 
-* <span style="color:darkred"> Recent </span> 05/2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue.
+* <span style="color:darkred"> Recent </span> 05/2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue. [[Slides](..\files\NGTS_3_Talk.pdf)]
 
 * <span style="color:darkred"> Recent </span> 03/2023: We have launched our choice-experiment survey to analyze the environmental rebound effect of Automated Vehicle ridesharing. 
 
