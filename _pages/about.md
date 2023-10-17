@@ -8,8 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+<p> <span style="color:darkred"> I am on the academic market this year. </span>
+<p>Currently I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. Before that I 
 
-<p>Currently I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. My research is on the foundations of learning, control, and analysis of emerging transportation technologies. I have study the impacts of automated vehicles, micro-mobility, and intelligent transportation systems on transportation operations, climate change, travel behavior, and safety. My goal is to steer the development and deployment of transportation technologies to serve the need for efficient, safe, sustainable, and accessible mobility. </p>
+My research is on the foundations of learning, control, and analysis of emerging transportation technologies. I have study the impacts of automated vehicles, micro-mobility, and intelligent transportation systems on transportation operations, climate change, travel behavior, and safety. My goal is to steer the development and deployment of transportation technologies to serve the need for efficient, safe, sustainable, and accessible mobility. </p>
 
 <p>Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture.</p>
 
