@@ -34,7 +34,7 @@ Research Spotlight
 
 <summary><b><span style="color:darkblue"> Domain and Physics Guided Control for Autonomous Vehicles (AVs) </span></b></summary>
 
-<h3> A) From Control Algorithm to Traffic Dynamics </h3>
+<h3> A) From Control Algorithm to Traffic Dynamics <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> [Paper Link] </a>]</h3>
 <center>
   <img src="../images/r1.jpg" width="100%" />
 </center>
