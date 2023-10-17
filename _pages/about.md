@@ -16,9 +16,9 @@ redirect_from:
 
 <p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
-What I work on:
+What I Have Worked On: 
 ======
-1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> open world reliability </a>; 
+1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> open world reliability </a>; <a href=""> knowledge sharing and personalization </a>;
 <a href="">  </a>;
 <a href=""> </a>;
 2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
