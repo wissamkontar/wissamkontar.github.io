@@ -25,6 +25,36 @@ What I am Currently Working On?
 1. Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
 2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
+Research Spotlight
+======
+
+<details>
+<summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
+
+<h3> A) From Control Structure to System Impacts </h3>
+<center>
+  <img src="../images/r1.jpg" width="100%" />
+</center>
+
+<p>The introduction of different control paradigms and different parameter settings within each, will add a new dimension of heterogeneity; one that comes from automated vehicles (AVs) themselves. Different AV controllers will respond differently to traffic disturbances (e.g., deceleration followed by acceleration), and that can translate into a major impact on traffic dynamics. Thus, exploring a range of behavior of multi-class AVs (due to different control paradigms and settings) will pave the way towards understanding their traffic impacts and developing control strategies to realize desired traffic performance. We formulate an intuitive physics-based response function that is capable of translating AV control paradigm into traffic-level dynamics. Allowing us to specify the design on an AV in ways that are not myopic but consider system-level performance.</p>
+
+<h3> B) Expected Performance vs. Real-world Performance </h3>
+
+
+</details> <br>
+
+
+<details>
+<summary><b><span style="color:darkblue">Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
+
+</details> <br>
+
+
+<details>
+<summary><b><span style="color:darkblue">Federated Analytics for Intelligent Transportation Systems </span></b></summary>
+
+</details>
+
 
 Recent News
 ======
@@ -43,36 +73,3 @@ Recent News
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
 <p>&nbsp;</p>
-
-
-Research Spotlight
-======
-
-<details>
-<summary><b><span style="color:darkblue">The New Transportation and Traffic Systems: How to Design Automated Vehicles </span></b></summary>
-
-<h3> A) From Control Structure to System Impacts </h3>
-<center>
-  <img src="../images/r1.jpg" width="100%" />
-</center>
-
-<p>The introduction of different control paradigms and different parameter settings within each, will add a new dimension of heterogeneity; one that comes from automated vehicles (AVs) themselves. Different AV controllers will respond differently to traffic disturbances (e.g., deceleration followed by acceleration), and that can translate into a major impact on traffic dynamics. Thus, exploring a range of behavior of multi-class AVs (due to different control paradigms and settings) will pave the way towards understanding their traffic impacts and developing control strategies to realize desired traffic performance. We formulate an intuitive physics-based response function that is capable of translating AV control paradigm into traffic-level dynamics. Allowing us to specify the design on an AV in ways that are not myopic but consider system-level performance.</p>
-
-<h3> B) Expected Performance vs. Real-world Performance </h3>
-
-
-
-
-</details> <br>
-
-
-<details>
-<summary><b><span style="color:darkblue">Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
-
-</details> <br>
-
-
-<details>
-<summary><b><span style="color:darkblue">Federated Analytics for Intelligent Transportation Systems </span></b></summary>
-
-</details>
