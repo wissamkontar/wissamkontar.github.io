@@ -9,18 +9,17 @@ redirect_from:
 ---
 
 
-<p>I am researcher working on developing emerging transportation technologies. My goal is to steer the development and deployment of transportation technologies to serve the need for safe, sustainable, multicephalous, and accessible mobility. </p>
+<p>Currently I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. My research is on the foundations of learning, control, and analysis of emerging transportation technologies. I have study the impacts of automated vehicles, micro-mobility, and intelligent transportation systems on transportation operations, climate change, travel behavior, and safety. My goal is to steer the development and deployment of transportation technologies to serve the need for efficient, safe, sustainable, and accessible mobility. </p>
 
 <p>Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture.</p>
 
-<span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
+<!-- <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
-<span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling
-
+<span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling -->
 
 What I am Currently Working On? 
 ======
-1. Human-AV interaction during driving, and how does that scale up to impact the traffic system.
+1. Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
 2. Using federated analytics to impose system-level constraints on Automated Vehicle design while maintaining their selfish needs. 
 3. Designing high-fidelity micro-simulation softwares for Automated Vehicles. 
 4. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
