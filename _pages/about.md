@@ -18,7 +18,9 @@ redirect_from:
 
 What I work on:
 ======
-1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> domain-guided control </a>; 
+1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> open world reliability </a>; 
+<a href="">  </a>;
+<a href=""> </a>;
 2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
 Research Spotlight
