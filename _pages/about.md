@@ -52,13 +52,13 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:darkblue">Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
+<summary><b><span style="color:darkblue"> AV Driver Model Personalization and Collaborative Learning </span></b></summary>
 
 </details> <br>
 
 
 <details>
-<summary><b><span style="color:darkblue">Federated Analytics for Intelligent Transportation Systems </span></b></summary>
+<summary><b><span style="color:darkblue"> Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
 
 </details>
 
