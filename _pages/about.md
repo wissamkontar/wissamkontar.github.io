@@ -23,7 +23,8 @@ Some of What I Have Worked On:
 
 Current Areas of Interest: 
 ======
-1. Human-AI collabration: 
+1. Explainable and Reliable AI for Transportation: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is ``how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
+2. 
 
 Research Spotlight
 ======
