@@ -16,13 +16,10 @@ redirect_from:
 
 <p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
-<!-- <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
-
-<span style="color:darkblue"> Technology </span>: Connected and automated vehicle design; Internet of Federated Things (IoFT); Intelligent transportation systems; Energy & emission profiling -->
-
-What I am Currently Working On? 
+What I work on:
 ======
-1. Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
+1. Automated Vehicles: 
+Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
 2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
 Research Spotlight
@@ -54,6 +51,9 @@ Research Spotlight
 <summary><b><span style="color:darkblue">Federated Analytics for Intelligent Transportation Systems </span></b></summary>
 
 </details>
+
+
+
 
 
 Recent News
