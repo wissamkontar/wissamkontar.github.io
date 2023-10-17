@@ -18,8 +18,7 @@ redirect_from:
 
 What I work on:
 ======
-1. Automated Vehicles: 
-Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
+1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> domain-guided control </a>; 
 2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
 Research Spotlight
