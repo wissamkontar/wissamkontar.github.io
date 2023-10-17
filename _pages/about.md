@@ -18,13 +18,14 @@ redirect_from:
 
 Some of What I Have Worked On: 
 ======
-1. Automated Vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> Domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> Open world reliability </a>; <a href="https://arxiv.org/abs/2308.16870"> Knowledge sharing and personalization </a>; <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> Federated analytics for smart transportation </a>.
-2. Transportation Sustainability: <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous Vehicles adoption patterns </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> E-bikes sharing programs</a>; <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Emissions during pandemic </a>.
+1. Autonomous vehicles: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> Domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> Open world reliability </a>; <a href="https://arxiv.org/abs/2308.16870"> Knowledge sharing and personalization </a>; <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> Federated analytics for smart transportation </a>.
+2. Transportation sustainability: <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous vehicles adoption patterns </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> E-bikes sharing programs</a>; <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Emissions during pandemic </a>.
 
 Current Areas of Interest: 
 ======
-1. Explainable and Reliable AI for Transportation: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is ``how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
-2. 
+1. Explainable and reliable AI for transportation: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is "how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
+2. Collaborative and distributed real-time learning for Autonomous vehicles: I am developing distirbuted algorithms that enable communication pathways between vehicles, infrastructure, and intelligent transportation systems. Data exchanged through these channels are used to learn individual-level operations and optimize global objectives. See our recent preprint on this: <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for AVs via Knowledge Sharing and Personalization </a>. 
+3.  
 
 Research Spotlight
 ======
