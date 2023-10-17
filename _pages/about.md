@@ -20,9 +20,7 @@ redirect_from:
 What I am Currently Working On? 
 ======
 1. Domain and physics guided control for Autonomous Vehicles (AVs): AVs are typically designed with a focus on individual vehicle performane, and little attention to traffic behavior in terms of stability and efficiency. I am working on applying transportation domain knowledge to bridge the gap between AV control algorithms and traffic-level dynamics. 
-2. Using federated analytics to impose system-level constraints on Automated Vehicle design while maintaining their selfish needs. 
-3. Designing high-fidelity micro-simulation softwares for Automated Vehicles. 
-4. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
+2. What are the non-linear hidden environmental effects from adopting autonmous and electric vehicles? 
 
 
 Recent News
