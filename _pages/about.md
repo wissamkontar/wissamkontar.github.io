@@ -14,7 +14,7 @@ redirect_from:
 
 <p> My research is on the foundations of learning, control, and analysis of emerging transportation technologies. The goal of my research is to solve challanges arising from the complexity of the new transportation ecosystem, characterized by: (i) emergence of new modes of travel, (ii) complex operations and system management, (iii) increased ability for data collection, processing, and sharing, and (iv) unique travel behaviors. To solve these challange my research draws from control theory, machine learning, cognitive engineering, and life cycle assessment. </p>
 
-<!-- <p>Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture.</p> -->
+<p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
 <!-- <span style="color:darkblue"> Research interests </span>: Transportation analytics & simulation; Traffic flow theory; Microscopic driving behavior modeling; Bayesian methods; Federated analytics; Enviornmental modeling
 
