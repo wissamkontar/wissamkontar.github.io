@@ -43,8 +43,12 @@ Research Spotlight
 
 <h3> B) Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a></h3>
 <center>
-  <img src="../images/r2.jpg" width="100%" />
+  <img src="../images/r2.png" width="100%" />
 </center>
+
+
+
+
 
 </details> <br>
 
