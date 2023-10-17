@@ -42,7 +42,9 @@ Research Spotlight
 <p> AVs are typically designed with a focus on individual vehicle performance, and little attention to traffic behavior in terms of stability and efficiency. In this work, we formulate an intuitive physics-based response function that is capable of translating AV control algorithm and parameters into traffic-level dynamics. Allowing us to specify the control design of an AV in wats that consider traffic-level performance. </p>
 
 <h3> B) Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a></h3>
-
+<center>
+  <img src="../images/r2.jpg" width="100%" />
+</center>
 
 </details> <br>
 
