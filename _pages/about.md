@@ -48,7 +48,7 @@ Research Spotlight
 
 <p> In the real-world AVs operate under complex environments where they are expected to be exposed to exogenous and endogenous uncertainties. A major challange lies in the complexity of integrating these uncertainties into the control system and the design of the AV as it is often hard to formulate an analytical representation of them. Tn this work, we propose a methodology to estimate uncertainties in AV's driver model - specifically those related to vehicular dynamics - and preserve a desired performance from the AV against real-world uncertainties that are unaccounted for. Our methodology uses three sequential components: (i) Stochastic Gradient Langevin Dynamics (SGLD) is used to estimate parameter uncertainty in real-time relying only on AV onboard sensor data, (ii) dynamic monitoring of the driver model performance (stability, safety, and traffic implications), and (iii) strategic actions for adjustments in driver model if anomaly is detected. </p>
 
-</details> <br>
+</details>
 
 
 <details>
@@ -62,7 +62,7 @@ Research Spotlight
 <p> This approach allows to train safer and more reliable AVs, while retaining a desired personalized behavior for each unique vehicle. Read more about out work here <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </p>
 
 
-</details> <br>
+</details>
 
 
 <details>
