@@ -32,7 +32,7 @@ Research Spotlight
 
 <details>
 
-<summary><b><span style="color:MidnightBlue"> Domain and Physics Guided Control for Autonomous Vehicles (AVs) </span></b></summary>
+<summary><b><span style="color:MidnightBlue"> Domain and Physics Guided Control for Autonomous Vehicles </span></b></summary>
 
 <h3> I. From Control Algorithm to Traffic Dynamics <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> [Paper Link] </a></h3>
 <center>
@@ -52,7 +52,7 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:MidnightBlue"> AV Driver Model Personalization and Collaborative Learning </span></b> </summary>
+<summary><b><span style="color:MidnightBlue"> Autonomous Vehicles Personalization and Collaborative Learning </span></b> </summary>
 <center>
   <img src="../images/r3.png" width="80%" />
 </center>
