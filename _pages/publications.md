@@ -35,17 +35,17 @@ IEEE Intelligent Transportation Systems Conference (ITSC), 2021
 Transportation Research Part C: Emerging Technologies, 2021 <br>
 Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT)
 
+* <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous Vehicle Adoption: Use Phase Environmental Implications </a><br>
+**Wissam Kontar**, Soyoung Ahn, Andrea Hicks* <br>
+Environmental Research Letters, 2021
+ 
+* <a href="https://www.sciencedirect.com/science/article/pii/S0921344920305772"> Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling </a><br>
+Andrea Hicks*, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris <br>
+Resources, Conservation and Recycling, 2021
+
 * <a href=""> </a><br>
 **Wissam Kontar**, <br>
 Environmental Research: Infrastructure and Sustainability, 2022
- 
-
-
-5. **Wissam Kontar**, Tienan Li, Anupam Srivastava, Yang Zhou, Danjue Chen, Soyoung Ahn* (2021). On Mult-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics. Transportation Research Part C: Emerging Technologies. Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT). [[paper](https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1)].
-
-6. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2021). Autonomous Vehicle Adoption: Use Phase Environmental Implications. Environmental Research Letters. [[paper](https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta)].
-
-7. Andrea Hicks, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris (2021). Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling. [[paper](https://www.sciencedirect.com/science/article/pii/S0921344920305772)].
 
 
 ## Conference Papers 
