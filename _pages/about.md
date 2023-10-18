@@ -41,7 +41,7 @@ Research Spotlight
 
 <p> AVs are typically designed with a focus on individual vehicle performance, and little attention to traffic behavior in terms of stability and efficiency. In this work, we formulate an intuitive physics-based response function that is capable of translating AV control algorithm and parameters into traffic-level dynamics. Allowing us to specify the control design of an AV in wats that consider traffic-level performance. </p>
 
-<h3> B) Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a></h3>
+<h3> B) Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties ></h3>
 <center>
   <img src="../images/r2.png" width="80%" />
 </center>
@@ -57,7 +57,9 @@ Research Spotlight
   <img src="../images/r3.png" width="80%" />
 </center>
 
-<p> </p>
+<p> In this work, we present a training framework for learning AVs driver models via knowledge sharing between different vehicles and personalization. In our collaborative scheme, vehicles borrow strength from each others while retaining a personalized model tailored to the vehicle's unique properties and conditions. We adopt a federated learning algorithm that circumvents the need to share raw data between vehicle. </p>
+
+<p> This approach allows to train safer and more reliable AVs, while retaining a desired personalized behavior for each unique vehicle. Read more about out work here <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </p>
 
 
 </details> <br>
