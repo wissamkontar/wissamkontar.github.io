@@ -11,7 +11,6 @@ author_profile: true
 * September, 2023: My paper on <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a> was accepted for presentation at TRB 2024
 * June, 2023: Invited for an oral presentation at the 11th International Conference on Industrial Ecology in Leiden, Netherlands
 * May, 2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue University
-* May, 2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue University
 * April, 2023: We have launched our choice-experiment survey to analyze the environmental rebound effect of Automated Vehicle ridesharing 
 * January, 2023: Our [Transportation Mode Emissions Calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live
 * November, 2022: My Ph.D. dissertation in available online ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"](https://www.proquest.com/pqdtglobal/docview/2737490814/AA10F2DD3BAC463DPQ/1?accountid=465)
