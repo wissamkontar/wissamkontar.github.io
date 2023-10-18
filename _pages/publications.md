@@ -43,16 +43,20 @@ Environmental Research Letters, 2021
 Andrea Hicks*, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris <br>
 Resources, Conservation and Recycling, 2021
 
-* <a href=""> </a><br>
-**Wissam Kontar**, <br>
-Environmental Research: Infrastructure and Sustainability, 2022
-
 
 ## Conference Papers 
+
+* <a href="https://arxiv.org/abs/2210.13683"> Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making</a><br>
+**Wissam Kontar**, Soyoung Ahn* <br>
+Presented at the Transportation Research Board Annual Meeting, 2022
 
 1. **Wissam Kontar**, Soyoung Ahn* (2022). Estimation of Autonomous Vehicles Vehicular Dynamics Uncertainties: A Real-time Approach. Transportation Research Annual Meeting. 
 
 2. **Wissam Kontar**, Soyoung Ahn (2021). Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework. Transportation Research Annual Meeting. [[paper](https://arxiv.org/abs/2102.00375)].
+
+* <a href=""> </a><br>
+**Wissam Kontar**, <br>
+Environmental Research: Infrastructure and Sustainability, 2022
 
 ## Technical Reports
 
