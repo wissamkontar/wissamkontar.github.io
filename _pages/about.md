@@ -70,12 +70,12 @@ Research Spotlight
 
 <h3> I. Autonomous Vehicle Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> [Paper Link] </a></h3>
 <center>
-  <img src="../images/r1.jpg" width="100%" />
+  <img src="../images/r4.jpg" width="100%" />
 </center>
 
 <h3> II. E-bikes Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> [Paper Link] </a></h3>
 <center>
-  <img src="../images/r1.jpg" width="100%" />
+  <img src="../images/r5.jpg" width="100%" />
 </center>
 
 </details>&nbsp;
