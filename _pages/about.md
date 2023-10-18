@@ -34,14 +34,14 @@ Research Spotlight
 
 <summary><b><span style="color:MidnightBlue"> Domain and Physics Guided Control for Autonomous Vehicles (AVs) </span></b></summary>
 
-<h3> A) From Control Algorithm to Traffic Dynamics <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> [Paper Link] </a></h3>
+<h3> I. From Control Algorithm to Traffic Dynamics <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> [Paper Link] </a></h3>
 <center>
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
 <p> AVs are typically designed with a focus on individual vehicle performance, and little attention to traffic behavior in terms of stability and efficiency. In this work, we formulate an intuitive physics-based response function that is capable of translating AV control algorithm and parameters into traffic-level dynamics. Allowing us to specify the control design of an AV in wats that consider traffic-level performance. </p>
 
-<h3> B) Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties ></h3>
+<h3> II. Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </h3>
 <center>
   <img src="../images/r2.png" width="80%" />
 </center>
@@ -52,7 +52,7 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:MidnightBlue"> AV Driver Model Personalization and Collaborative Learning </span></b> <a href="https://arxiv.org/abs/2308.16870"> [Paper Link] </a> </summary>
+<summary><b><span style="color:MidnightBlue"> AV Driver Model Personalization and Collaborative Learning </span></b> </summary>
 <center>
   <img src="../images/r3.png" width="80%" />
 </center>
@@ -67,6 +67,13 @@ Research Spotlight
 
 <details>
 <summary><b><span style="color:MidnightBlue"> Emerging Modes of Transportation: Adoption Patterns and Environmental Implications </span></b></summary>
+
+<h3> I. Autonomous Vehicle Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> [Paper Link] </a></h3>
+<center>
+  <img src="../images/r1.jpg" width="100%" />
+</center>
+
+
 
 </details>
 
