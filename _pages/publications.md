@@ -8,10 +8,6 @@ author_profile: true
 For most recent updates on my publications please visit my [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=1&hl=en&user=BXr6rWQAAAAJ&sortby=pubdate&authuser=1). 
 
 
-* <a href="">  </a><br>
-**Wissam Kontar** <br>
-
-
 ## Pre-prints
 
 * <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a><br>
@@ -39,9 +35,6 @@ Under Review at the Journal of Civil Engineering Education
 * **Use, Reuse, and Waste Management of Single-use Products Associated with the COVID-19 Pandemic in the United States**<br>
 Monica I Rodriguez, **Wissam Kontar**, Andrea Hicks*<br>
 Under Review at the Journal of Integrated Environmental Assessment and Management, 2023
-
-* <a href="">  </a><br>
-**Wissam Kontar** <br>
 
 
 ## Journal Papers 
