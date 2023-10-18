@@ -7,14 +7,16 @@ author_profile: true
 
 * **The Road to Efficient and Sustainable Transportation** [[Slides](..\files\Wissam Kontar - Lightning Talk.pdf)] <br>
 Presented at the 2nd Sustainability Symposium at the University of Wisconsin-Madison, Madison, Wisconsin, 2023
-* **Transportation Innovation for Societal Benefits: Complexities and Oppurtinities** <br>
-Presented at the Future Faculty Symposium at the Soceity of Engineering Science Annual Meeting, University of Minnesota, Minnesota, 2023 <br>
-Presented at the Annual Postdoctoral Research Symposium at the University of Wisconsin-Madison 
+* **Transportation Innovation for Societal Benefits: Complexities and Opportunities** <br>
+Presented at the Future Faculty Symposium at the Society of Engineering Science Annual Meeting, University of Minnesota, Minnesota, 2023 <br>
+Presented at the Annual Postdoctoral Research Symposium at the University of Wisconsin-Madison, Madison, Wisconsin, 2023
 * **The Promise of an Efficient and Sustainable Transport System: An Investigation into Automated Vehicles** [[Slides](..\files\NGTS_3_Talk.pdf)] <br> 
-Presented at [Next Generation Transport System Conference NGTS-3](https://www.ngts2023.nextrans.org/), Purdue University, May 2023. 
+Presented at [Next Generation Transport System Conference NGTS-3](https://www.ngts2023.nextrans.org/), Purdue University, May, 2023 
 * **An Investigation of Emerging Modes of Transportation** <br>
 Presented at California State University - Long Beach, April 2023
-* **Bayesian Methods for Uncertainty Quantification in Autonomus Vehicles Car-following Control** [[Slides](..\files\Bayesian Poster.pdf)] <br> 
+* **Enabling System-level Functionality for Autonomous Vehicles** <br>
+Presented at the Cyber-Physical Systems (CPS) Rising Stars, University of Virginia, 2022
+* **Bayesian Methods for Uncertainty Quantification in Autonomous Vehicles Car-following Control** [[Slides](..\files\Bayesian Poster.pdf)] <br> 
 Presented at the Transportation Research Annual Meeting, Dec 2022
 * **The New Traffic Environment with Multi-class Automated Vehicles** [[Slides](..\files\ISTTT24_Presentation/pdf)] <br> 
 Presented at the 24th International Symposium for Transportation and Traffic Theory (ISTTT 24), June 2022
