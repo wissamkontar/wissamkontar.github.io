@@ -50,16 +50,20 @@ Resources, Conservation and Recycling, 2021
 **Wissam Kontar**, Soyoung Ahn* <br>
 Presented at the Transportation Research Board Annual Meeting, 2022
 
-1. **Wissam Kontar**, Soyoung Ahn* (2022). Estimation of Autonomous Vehicles Vehicular Dynamics Uncertainties: A Real-time Approach. Transportation Research Annual Meeting. 
+* <a href="https://arxiv.org/abs/2108.10397"> Predicting Vehicles' Longitudinal Trajectories and Lane Changes on Highway On-Ramps </a><br>
+Nachuan Li, Riley Fischer, **Wissam Kontar**, Soyoung Ahn* <br>
+Presented at the Transportation Research Board Annual Meeting, 2021
 
-2. **Wissam Kontar**, Soyoung Ahn (2021). Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework. Transportation Research Annual Meeting. [[paper](https://arxiv.org/abs/2102.00375)].
-
-* <a href=""> </a><br>
-**Wissam Kontar**, <br>
-Environmental Research: Infrastructure and Sustainability, 2022
+* <a href="https://arxiv.org/abs/2102.00375"> Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework </a><br>
+**Wissam Kontar**, Soyoung Ahn* <br>
+Presented at the Transportation Research Board Annual Meeting, 2020
 
 ## Technical Reports
 
-1. **Wissam Kontar**, Ernest Perry, Soyoung Ahn, Glen Vorhes, Youngjun Han (2019). Freight Data Inventory and Training. Mid-America Freight Coalition (MAFC). [[report](https://midamericafreight.org/index.php/resources/mafc-research/)]
+* <a href="https://midamericafreight.org/index.php/resources/mafc-research/"> Freight Data Inventory and Training</a><br>
+**Wissam Kontar**, Ernest Perry, Soyoung Ahn*, Glen Vorhes, Youngjun Han <br>
+Mid-American Freight Coalition (MAFC), 2019
 
-2. Youngjun Han, **Wissam Kontar**, Glen Vorhes, Ernest Perry, Soyoung Ahn (2019). Assessment of Multimodal (Marine and Highway) Bottlenecks in the MAASTO Region. Mid-America Freight Coalition (MAFC). [[report](https://midamericafreight.org/index.php/resources/mafc-research/)]
+* <a href="https://midamericafreight.org/index.php/resources/mafc-research/"> Assessment of Multimodal (Marine and Highway) Bottlenecks in the MAASTO Region </a><br>
+Youngjun Han, **Wissam Kontar**, Glen Vorhes, Ernest Perry, Soyoung Ahn* <br>
+Mid-American Freight Coalition (MAFC), 2019
