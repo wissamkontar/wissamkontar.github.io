@@ -85,9 +85,9 @@ Research Spotlight
 
 </details>
 
-Recent News
+<p>Recent News</p>
 ======
-<p></p>
+
 * <span style="color:darkred"> Recent </span> 05/2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue. [[Slides](..\files\NGTS_3_Talk.pdf)]
 * <span style="color:darkred"> Recent </span> 03/2023: We have launched our choice-experiment survey to analyze the environmental rebound effect of Automated Vehicle ridesharing. 
 * <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
