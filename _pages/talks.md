@@ -10,7 +10,10 @@ Presented at the 2nd Sustainability Symposium, University of Wisconsin-Madison, 
 * **Transportation Innovation for Societal Benefits: Complexities and Opportunities** <br>
 Presented at the Future Faculty Symposium at the Society of Engineering Science Annual Meeting, University of Minnesota, 2023 <br>
 Presented at the Annual Postdoctoral Research Symposium, University of Wisconsin-Madison, 2023
-* **
+* **The Role of Disasters and Infrastructure Failures in Engineering Education with Analysis through Machine Learning** [[Slides](..\files\Student Reflections - ISIE 2023 Poster.pdf)]<br>
+Presented at the 11th International Conference on Industrial Ecology, Leiden, Netherlands, 2023
+* **Would You Change Your Travel Mode if You Know its Carbon Footprint** [[Slides](..\files\ISIE 2023_poster_Erin and Wissam.pdf)] <br>
+Presented at the 11th International Conference on Industrial Ecology, Leiden, Netherlands, 2023
 * **The Promise of an Efficient and Sustainable Transport System: An Investigation into Automated Vehicles** [[Slides](..\files\NGTS_3_Talk.pdf)] <br> 
 Presented at [Next Generation Transport System Conference NGTS-3](https://www.ngts2023.nextrans.org/), Purdue University, May, 2023 
 * **An Investigation of Emerging Modes of Transportation** <br>
