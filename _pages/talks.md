@@ -27,9 +27,6 @@ Media Coverage
 =====
 
 1. "Affordable Driverless Cars Could Curb Public Transport", by Popular Sceince. [[News Article](https://www.popsci.com/technology/driverless-cars-sustainable/?taid=60aa35b701ef8e00017b4bec&utm_campaign=trueanthem_trending-content&utm_medium=social&utm_source=twitter)]
-
 2. "How Driverless Cars Could Lead to More Pollution", by Gizmodo. [[News Article](https://gizmodo.com/how-driverless-cars-could-lead-to-more-pollution-1846955880?utm_content=gizmodo&utm_source=twitter&utm_medium=SocialMarketing&utm_campaign=dlvrit)]
-
 3. "The Environmental Trade-offs of Autonomous Vehicles", by Phys Org. [[News Article](https://phys.org/news/2021-05-environmental-trade-offs-autonomous-vehicles.html)]
-
 4. "Self-Driving EVs Could Raise Emissions", by Politico. [[News Article](https://subscriber.politicopro.com/article/eenews/1063733277)]
