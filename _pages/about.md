@@ -16,12 +16,12 @@ redirect_from:
 
 <p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
-Some of What I Have Worked On: 
+Some of What I Have Worked On 
 ======
 1. <b> Autonomous vehicles </b>: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> Domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> Open world reliability </a>; <a href="https://arxiv.org/abs/2308.16870"> Knowledge sharing and personalization </a>; <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> Federated analytics for smart transportation </a>.
 2. <b> Transportation sustainability </b>: <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous vehicles adoption patterns </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> E-bikes sharing programs</a>; <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Emissions during pandemic </a>.
 
-Problems I am Currently Working On:  
+Problems I am Currently Working On  
 ======
 1. <b> Explainable and reliable AI for transportation </b>: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is "how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
 2. <b> Collaborative and distributed real-time learning for Autonomous vehicles </b>: I am developing distirbuted algorithms that enable communication pathways between vehicles, infrastructure, and intelligent transportation systems. Data exchanged through these channels are used to learn individual-level operations and optimize global objectives. See our recent preprint on this: <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for AVs via Knowledge Sharing and Personalization </a>. 
