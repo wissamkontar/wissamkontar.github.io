@@ -69,14 +69,16 @@ Research Spotlight
 
 <h3> I. Autonomous Vehicle Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> [Paper Link] </a></h3>
 <center>
-  <img src="../images/r4.png" width="100%" />
+  <img src="../images/r4.png" width="70%" />
 </center>
 
-<p> </p>
+<p> The adoption of Autonomous Vehicles as a viable mode of transportation comes with an complex web of modal shifts and travel behavior. We find that this technology enjoys a level of attractiveness by different users that can induce a modal shift away from traditional modes of transportation as transit, or personal vehicles. This translates to an increase in environmental impacts across different categories: energy consumption, greenhouse gas emissions, particulate matter, sulfur and nitrogen oxides. </p>
+
+<p> Adoptiing electric autonomous vehicles can offsett the increase in emissions however it is dependent on two main factors: (i) adoption rate, and (ii) electricity generation mix. </p>
 
 <h3> II. E-bikes Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> [Paper Link] </a></h3>
 <center>
-  <img src="../images/r5.png" width="100%" />
+  <img src="../images/r5.png" width="70%" />
 </center>
 
 </details>&nbsp;
