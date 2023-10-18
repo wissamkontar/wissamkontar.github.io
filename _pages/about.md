@@ -14,18 +14,18 @@ redirect_from:
 
 <p> My research is on the foundations of learning, control, and analysis of emerging transportation technologies. The goal of my research is to solve challanges arising from the complexity of the new transportation ecosystem, characterized by: (i) emergence of new modes of travel, (ii) complex operations and system management, (iii) increased ability for data collection, processing, and sharing, and (iv) unique travel behaviors. To solve these challange my research draws from control theory, machine learning, cognitive engineering, life cycle assessment, and transportation science. </p>
 
-<p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
+<p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p> &nbsp;
 
 Some of What I Have Worked On: 
 ======
 1. <b> Autonomous vehicles </b>: <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844"> Domain-guided control </a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> Open world reliability </a>; <a href="https://arxiv.org/abs/2308.16870"> Knowledge sharing and personalization </a>; <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> Federated analytics for smart transportation </a>.
-2. <b> Transportation sustainability </b>: <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous vehicles adoption patterns </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> E-bikes sharing programs</a>; <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Emissions during pandemic </a>.
+2. <b> Transportation sustainability </b>: <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous vehicles adoption patterns </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> E-bikes sharing programs</a>; <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>; <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Emissions during pandemic </a>.&nbsp;
 
 Problems I am Currently Working On:  
 ======
 1. <b> Explainable and reliable AI for transportation </b>: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is "how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
 2. <b> Collaborative and distributed real-time learning for Autonomous vehicles </b>: I am developing distirbuted algorithms that enable communication pathways between vehicles, infrastructure, and intelligent transportation systems. Data exchanged through these channels are used to learn individual-level operations and optimize global objectives. See our recent preprint on this: <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for AVs via Knowledge Sharing and Personalization </a>. 
-3. <b> Competition between modes of transportation and resultant environmental impacts </b>: I am working on modeling the compeition between traiditonal modes of transportation, micro-mobility, and transit systems. I use a life cycle assessment approach to link modal competition to underlying environmental implications. See our recent <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>. 
+3. <b> Competition between modes of transportation and resultant environmental impacts </b>: I am working on modeling the compeition between traiditonal modes of transportation, micro-mobility, and transit systems. I use a life cycle assessment approach to link modal competition to underlying environmental implications. See our recent <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>.&nbsp; 
 
 Research Spotlight
 ======
