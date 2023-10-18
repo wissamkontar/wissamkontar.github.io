@@ -73,14 +73,17 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-
+<h3> II. E-bikes Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> [Paper Link] </a></h3>
+<center>
+  <img src="../images/r1.jpg" width="100%" />
+</center>
 
 </details>
 
 
 
 
-
+<p>&nbsp;</p>
 Recent News
 ======
 
@@ -97,4 +100,3 @@ Recent News
 * <span style="color:darkred"> Recent </span> 07/2022: I was named a [Rising Star in Cyber-Physical Systems](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/) for my work on "Enabling System Level Functionality for Autonomous Vehicles". 
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
-<p>&nbsp;</p>
