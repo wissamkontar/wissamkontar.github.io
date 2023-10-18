@@ -7,9 +7,39 @@ author_profile: true
 
 For most recent updates on my publications please visit my [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=1&hl=en&user=BXr6rWQAAAAJ&sortby=pubdate&authuser=1). 
 
+
+* <a href="">  </a><br>
+**Wissam Kontar** <br>
+
+
 ## Pre-prints
 
-1. **Wissam Kontar**, Soyoung Ahn* (2022). Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making [[arxiv](https://arxiv.org/abs/2210.13683)]. 
+* <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a><br>
+**Wissam Kontar**, Xinzhi Zhong, Soyoung Ahn* <br>
+Accepted for Presentation at the Transportation Research Board Annual Meeting, 2024 <br>
+Under Review at Transprotation Research Record
+
+* <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior </a><br>
+**Wissam Kontar**, Soyoung Ahn*<br>
+Under Review at Transportation Research Part C: Emerging Technologies, 2023
+
+* Human-Machine Interaction in Automated Vehicles: Reducing Voluntary Driver Intervention <br>
+Xinzhi Zhong, Yang Zhou, Varshini Kamaraj, Zhenhao Zhou, **Wissam Kontar**, Dan Negrut, John D. Lee, Soyoung Ahn*<br>
+Accepted for Presentation at Transportation Research Board Annual Meeting, 2024
+
+
+* <a href="">  </a><br>
+**Wissam Kontar** <br>
+
+* <a href="">  </a><br>
+**Wissam Kontar** <br>
+
+* <a href="">  </a><br>
+**Wissam Kontar** <br>
+
+* <a href="">  </a><br>
+**Wissam Kontar** <br>
+
 
 ## Journal Papers 
 
