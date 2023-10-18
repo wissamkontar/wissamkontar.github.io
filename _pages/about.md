@@ -12,7 +12,7 @@ redirect_from:
 
 <p> Currently, I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. Before that I earned my Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison, co-advised by <a href="https://directory.engr.wisc.edu/cee/Faculty/Ahn_Soyoung/" target=_blank> Prof. Soyoung Ahn </a> and <a href="https://directory.engr.wisc.edu/cee/Faculty/Hicks_Andrea/" target=_blank> Prof. Andrea Hicks </a>. Previously, I received my B.E. from the American University of Beirut, in my home country of Lebanon. </p>
 
-<p> My research is on the foundations of learning, control, and analysis of emerging transportation technologies. The goal of my research is to solve challanges arising from the complexity of the new transportation ecosystem, characterized by: (i) emergence of new modes of travel, (ii) complex operations and system management, (iii) increased ability for data collection, processing, and sharing, and (iv) unique travel behaviors. To solve these challange my research draws from control theory, machine learning, cognitive engineering, life cycle assessment, and transportation science. </p>
+<p> My research is on the foundations of learning, control, and analysis of emerging transportation technologies. The goal of my research is to solve challenges arising from the complexity of the new transportation ecosystem, characterized by: (i) emergence of new modes of travel, (ii) complex operations and system management, (iii) increased ability for data collection, processing, and sharing, and (iv) unique travel behaviors. To solve these challenge my research draws from control theory, machine learning, cognitive engineering, life cycle assessment, and transportation science. </p>
 
 <p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
@@ -24,8 +24,8 @@ Some of What I Have Worked On
 Problems I am Currently Working On  
 ======
 1. <b> Explainable and reliable AI for transportation </b>: End-to-end learning has shown promise in many applications across the transportation domain. I am currently exploring the intersection between physics-based models and AI end-to-end learning. The central question is "how, when, where, and to what extent" AI or physics should be employed for specific transportation operations. 
-2. <b> Collaborative and distributed real-time learning for Autonomous vehicles </b>: I am developing distirbuted algorithms that enable communication pathways between vehicles, infrastructure, and intelligent transportation systems. Data exchanged through these channels are used to learn individual-level operations and optimize global objectives. See our recent preprint on this: <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for AVs via Knowledge Sharing and Personalization </a>. 
-3. <b> Competition between modes of transportation and resultant environmental impacts </b>: I am working on modeling the compeition between traiditonal modes of transportation, micro-mobility, and transit systems. I use a life cycle assessment approach to link modal competition to underlying environmental implications. See our recent <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>.
+2. <b> Collaborative and distributed real-time learning for Autonomous vehicles </b>: I am developing distributed algorithms that enable communication pathways between vehicles, infrastructure, and intelligent transportation systems. Data exchanged through these channels are used to learn individual-level operations and optimize global objectives. See our recent preprint on this: <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for AVs via Knowledge Sharing and Personalization </a>. 
+3. <b> Competition between modes of transportation and resultant environmental impacts </b>: I am working on modeling the competition between traditional modes of transportation, micro-mobility, and transit systems. I use a life cycle assessment approach to link modal competition to underlying environmental implications. See our recent <a href="https://sites.google.com/view/cheeseburgercalculator/home"> Transportation emissions calculator software </a>.
 
 Research Spotlight
 ======
@@ -46,7 +46,7 @@ Research Spotlight
   <img src="../images/r2.png" width="80%" />
 </center>
 
-<p> In the real-world AVs operate under complex environments where they are expected to be exposed to exogenous and endogenous uncertainties. A major challange lies in the complexity of integrating these uncertainties into the control system and the design of the AV as it is often hard to formulate an analytical representation of them. Tn this work, we propose a methodology to estimate uncertainties in AV's driver model - specifically those related to vehicular dynamics - and preserve a desired performance from the AV against real-world uncertainties that are unaccounted for. Our methodology uses three sequential components: (i) Stochastic Gradient Langevin Dynamics (SGLD) is used to estimate parameter uncertainty in real-time relying only on AV onboard sensor data, (ii) dynamic monitoring of the driver model performance (stability, safety, and traffic implications), and (iii) strategic actions for adjustments in driver model if anomaly is detected. </p>
+<p> In the real-world AVs operate under complex environments where they are expected to be exposed to exogenous and endogenous uncertainties. A major challenge lies in the complexity of integrating these uncertainties into the control system and the design of the AV as it is often hard to formulate an analytical representation of them. Tn this work, we propose a methodology to estimate uncertainties in AV's driver model - specifically those related to vehicular dynamics - and preserve a desired performance from the AV against real-world uncertainties that are unaccounted for. Our methodology uses three sequential components: (i) Stochastic Gradient Langevin Dynamics (SGLD) is used to estimate parameter uncertainty in real-time relying only on AV onboard sensor data, (ii) dynamic monitoring of the driver model performance (stability, safety, and traffic implications), and (iii) strategic actions for adjustments in driver model if anomaly is detected. </p>
 
 </details>
 
@@ -74,7 +74,7 @@ Research Spotlight
 
 <p> The adoption of Autonomous Vehicles as a viable mode of transportation comes with an complex web of modal shifts and travel behavior. We find that this technology enjoys a level of attractiveness by different users that can induce a modal shift away from traditional modes of transportation as transit, or personal vehicles. This translates to an increase in environmental impacts across different categories: energy consumption, greenhouse gas emissions, particulate matter, sulfur and nitrogen oxides. </p>
 
-<p> Adoptiing electric autonomous vehicles can offsett the increase in emissions however it is dependent on two main factors: (i) adoption rate, and (ii) electricity generation mix. </p>
+<p> Adopting electric autonomous vehicles can offset the increase in emissions however it is dependent on two main factors: (i) adoption rate, and (ii) electricity generation mix. </p>
 
 <h3> II. E-bikes Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> [Paper Link] </a></h3>
 <center>
@@ -87,12 +87,17 @@ Research Spotlight
 
 Recent News
 ======
-
-* <span style="color:darkred"> Recent </span> 05/2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue. [[Slides](..\files\NGTS_3_Talk.pdf)]
-* <span style="color:darkred"> Recent </span> 03/2023: We have launched our choice-experiment survey to analyze the environmental rebound effect of Automated Vehicle ridesharing. 
-* <span style="color:darkred"> Recent </span> 01/2023: Our [Transportation Mode Emissions calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live. This is part of an ongoing research on the environmental footprint of travel. 
-* <span style="color:darkred"> Recent </span> 12/2022: You can now checkout the pre-print of our paper ["Bayesian Methods in Automated Vehicle's Car-following Uncertainties: Enabling Strategic Decision Making"](https://arxiv.org/abs/2210.13683)
-* <span style="color:darkred"> Recent </span> 11/2022: My Ph.D. dissertation in available online ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"](https://www.proquest.com/pqdtglobal/docview/2737490814/AA10F2DD3BAC463DPQ/1?accountid=465)
-* <span style="color:darkred"> Recent </span> 07/2022: I was named a [Rising Star in Cyber-Physical Systems](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/) for my work on "Enabling System Level Functionality for Autonomous Vehicles". 
+* <span style="color:darkred"> Recent </span> May, 2023:
+* <span style="color:darkred"> Recent </span> May, 2023:
+* <span style="color:darkred"> Recent </span> May, 2023:
+* <span style="color:darkred"> Recent </span> May, 2023:
+* <span style="color:darkred"> Recent </span> May, 2023:
+* <span style="color:darkred"> Recent </span> June, 2023: Invited for 
+* <span style="color:darkred"> Recent </span> May, 2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue University
+* <span style="color:darkred"> Recent </span> May, 2023: Presented at the [Next-Generation Transport Systems Conference](https://www.ngts2023.nextrans.org/) at Purdue University
+* <span style="color:darkred"> Recent </span> April, 2023: We have launched our choice-experiment survey to analyze the environmental rebound effect of Automated Vehicle ridesharing 
+* <span style="color:darkred"> Recent </span> January, 2023: Our [Transportation Mode Emissions Calculator](https://www.calconic.com/calculator-widgets/transportation-mode-emissions-calculator-c02e/63c48b9a20c258001f9bfe22?layouts=true) is now live
+* <span style="color:darkred"> Recent </span> November, 2022: My Ph.D. dissertation in available online ["Multi-Class Automated Vehicles: Connecting Control Dynamics to Traffic Level Understanding and Enabling Strategic Decision-Making"](https://www.proquest.com/pqdtglobal/docview/2737490814/AA10F2DD3BAC463DPQ/1?accountid=465)
+* <span style="color:darkred"> Recent </span> May, 2022: I was named a [Rising Star in Cyber-Physical Systems](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/) for my work on "Enabling System Level Functionality for Autonomous Vehicles"
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>

@@ -43,7 +43,7 @@ Under Review at the Journal of Integrated Environmental Assessment and Managemen
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Environmental Research: Infrastructure and Sustainability, 2022
 
-* <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> Electric Bicycles Sharing: Oppurtinities and Environmental Impacts</a><br>
+* <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> Electric Bicycles Sharing: Opportunities and Environmental Impacts</a><br>
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Environmental Research: Infrastructure and Sustainability, 2022
 
@@ -56,7 +56,7 @@ IEEE Access, 2022 <br>
 Nachuan Li, Austen Z Fan, Riley Fischer, **Wissam Kontar**, Bin Ran* <br>
 IEEE Intelligent Transportation Systems Conference (ITSC), 2021
 
-* <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1"> On Mult-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics </a><br>
+* <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1"> On Multi-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics </a><br>
 **Wissam Kontar**, Tienan Li, Anupam Srivastava, Yang Zhou, Danjue Chen, Soyoung Ahn* <br>
 Transportation Research Part C: Emerging Technologies, 2021 <br>
 Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT)
