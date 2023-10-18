@@ -17,14 +17,19 @@ For most recent updates on my publications please visit my [Google Scholar](http
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Environmental Research: Infrastructure and Sustainability, 2022
 
+* <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> Electric Bicycles Sharing: Oppurtinities and Environmental Impacts</a><br>
+**Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
+Environmental Research: Infrastructure and Sustainability, 2022
 
+* <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> The Internet of Federated Things (IoFT)</a><br>
+Raed Kontar, Naichen Shi, Xubo Yue, Seokhyun Chung, Eunshin Byon, Mosharaf Chowdhury, Jionghua Jin, **Wissam Kontar**, Neda Masoud, Maher Nouiehed, Chinedum E Okwudire, Garvesh Raskutti, Romesh Saigal, Karandeep Singh, Zhi-Sheng Ye<br>
+IEEE Access, 2022
+[[Youtube Video](https://www.youtube.com/watch?v=RrubcIWCihk)] [[IoFT Data](https://ioft-data.engin.umich.edu/)]
 
+* <a href=""> </a><br>
+**Wissam Kontar**, <br>
+Environmental Research: Infrastructure and Sustainability, 2022
 
-<a href=""> </a>
-
-1. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2022). Transportation Emissions during Pandemic: Duality of Impacts. Environmental Research: Infrastructure and Sustainability. [[paper](https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta)]. 
-
-2. **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* (2022). Electric Bicycles Sharing: Oppurtinities and Environmental Impacts. Environmental Research: Infrastructure and Sustainability. [[paper](https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta)].
 
 3. Raed Kontar, Naichen Shi, Xubo Yue, Seokhyun Chung, Eunshin Byon, Mosharaf Chowdhury, Jionghua Jin, **Wissam Kontar**, Neda Masoud, Maher Nouiehed, Chinedum E Okwudire, Garvesh Raskutti, Romesh Saigal, Karandeep Singh, Zhi-Sheng Ye. The Internet of Federated Things (IoFT) (2022). IEEE Access. [[paper](https://ieeexplore.ieee.org/abstract/document/9611259)], [[Youtube Video](https://www.youtube.com/watch?v=RrubcIWCihk)], [[IoFT Data](https://ioft-data.engin.umich.edu/)]. 
 
