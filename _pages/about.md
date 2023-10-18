@@ -52,11 +52,11 @@ Research Spotlight
 
 
 <details>
-<summary><b><span style="color:darkred"> AV Driver Model Personalization and Collaborative Learning </span></b></summary>
+<summary><b><span style="color:darkred"> AV Driver Model Personalization and Collaborative Learning </span></b> <a href="https://arxiv.org/abs/2308.16870"> [Paper Link] </a> </summary>
 <center>
   <img src="../images/r3.png" width="80%" />
 </center>
-<a href="https://arxiv.org/abs/2308.16870"> [Paper Link] </a>
+
 <p> </p>
 
 
