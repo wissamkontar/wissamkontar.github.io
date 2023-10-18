@@ -81,6 +81,8 @@ Research Spotlight
   <img src="../images/r5.png" width="70%" />
 </center>
 
+<p> We analyze the ability of an E-bike sharing program in reducing environmental emissions of the transportation system. Based on a mode choice model informed from revealed and stated preference survey, we show that E-bikes are able to compete for ridership. Specifically, E-bikes can attract users away from personal vehicles in trip distances between 1-2.5 miles, resulting in a reduction in overall emissions. </p>
+
 </details>&nbsp;
 
 Recent News
