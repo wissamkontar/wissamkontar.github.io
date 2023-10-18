@@ -78,12 +78,9 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-</details>
+</details>&nbsp;
 
 
-
-
-<p>&nbsp;</p>
 Recent News
 ======
 
