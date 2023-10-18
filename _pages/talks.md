@@ -5,6 +5,9 @@ permalink: /talks/
 author_profile: true
 ---
 
+* **The Road to Efficient and Sustainable Transportation** [[Slides](..\files\Wissam Kontar - Lightning Talk.pdf)]
+
+
 * **The Promise of an Efficient and Sustainable Transport System: An Investigation into Automated Vehicles** [[Slides](..\files\NGTS_3_Talk.pdf)] <br> 
 Presented at [Next Generation Transport System Conference NGTS-3](https://www.ngts2023.nextrans.org/), Purdue University, May 2023. 
 * **An Investigation of Emerging Modes of Transportation** <br>
