@@ -56,7 +56,7 @@ Research Spotlight
 <center>
   <img src="../images/r3.png" width="80%" />
 </center>
-
+<a href="https://arxiv.org/abs/2308.16870"> [Paper Link] </a>
 <p> </p>
 
 
