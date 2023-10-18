@@ -13,9 +13,11 @@ For most recent updates on my publications please visit my [Google Scholar](http
 
 ## Journal Papers 
 
-* <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Transportation Emissions During Pandemic: Duality of Impacts</a>
-**Wissam Kontar**, Soyoung Ahn, Andrea Hicks*
-Environmental Research: Infrastructure and Sustainability, 2022. 
+* <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Transportation Emissions During Pandemic: Duality of Impacts</a><br>
+**Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
+Environmental Research: Infrastructure and Sustainability, 2022
+
+
 
 
 <a href=""> </a>
