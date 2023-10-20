@@ -13,7 +13,7 @@ For most recent updates on my publications please visit my [Google Scholar](http
 1. <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a><br>
 **Wissam Kontar**, Xinzhi Zhong, Soyoung Ahn* <br>
 Accepted for Presentation at the Transportation Research Board Annual Meeting, 2024 <br>
-Under Review at Transprotation Research Record
+Under Review at Transportation Research Record
 
 2. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior </a><br>
 **Wissam Kontar**, Soyoung Ahn*<br>
