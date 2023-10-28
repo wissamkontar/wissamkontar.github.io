@@ -12,7 +12,10 @@ redirect_from:
 
 <p> Currently, I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. In August 2022 I earned my Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison, co-advised by <a href="https://directory.engr.wisc.edu/cee/Faculty/Ahn_Soyoung/" target=_blank> Prof. Soyoung Ahn </a> and <a href="https://directory.engr.wisc.edu/cee/Faculty/Hicks_Andrea/" target=_blank> Prof. Andrea Hicks </a>. Previously, I received my B.E. from the American University of Beirut, in my home country of Lebanon. </p>
 
-<p> My research is on the foundations of learning, control, and analysis of emerging transportation technologies. The goal of my research is to solve challenges arising from the complexity of the new transportation ecosystem, characterized by: (i) emergence of new modes of travel, (ii) complex operations and system management, (iii) increased ability for data collection, processing, and sharing, and (iv) unique travel behaviors. To solve these challenges my research draws from control theory, machine learning, cognitive engineering, life cycle assessment, and transportation science. </p>
+<p> My research is on the foundations of learning, control, and analysis of emerging technologies. I work on challenges posed by the introduction of emerging technologies into various engineering domains - with a specific focus on transportation - in the era of smart and connected systems. To solve these challenges my research draws from <b> engineering knowledge</b> that brings domain expertise and challenges; <b> machine learning </b> which relies on data to understand complexities and take actions in the real world; <b> control theory </b> which allows for the formulation and optimization of dynamics systems; <b>industrial ecology</b> to model different paradigms of sustainability; and <b> cognitive engineering</b> which consolidates human-users at the center of innovation.</p>
+
+
+<p> My goal is to develop methods for developing and deploying emerging technologies that yield operational benefits and achieve sustainability in its various paradigms: environment, economy, and society.<p>
 
 <p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
 
