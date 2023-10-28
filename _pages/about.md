@@ -17,7 +17,7 @@ redirect_from:
 
 <p> My goal is to develop methods for developing and deploying emerging technologies that yield operational benefits and achieve sustainability in its various paradigms: environment, economy, and society.<p>
 
-<p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, flaneuring mountain woods, and preserving Mediterranean architecture. </p>
+<p> Originally I am from the mountainous village "Aabey" in Lebanon. I grew up strolling narrow streets, climbing mountain woods, and preserving Mediterranean architecture. </p>
 
 Some of What I Have Worked On 
 ======
