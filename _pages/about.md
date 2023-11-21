@@ -92,7 +92,7 @@ Recent News
 ======
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I will be giving a lectern presentation in the upcoming 103rd Transportation Research Board Annual Meeting in Washington, DC </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I am on the academic job market </p>
-* <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I gave a lightning talk during the Sustainability Symposium at the University of Wisconsin-Madison titled "The Road to Efficient and Sustainable Transportation" </p>
+* <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I gave a lightning talk during the Sustainability Symposium at the University of Wisconsin-Madison titled "The Road to Efficient and Sustainable Transportation" 
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I presented at the Future Faculty Symposium during the Society of Engineering Science Annual Meeting </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> September, 2023: I gave a talk on "Transportation Innovation for Societal Benefits: Complexities and Opportunities" at the Annual Postdoctoral Research Symposium at University of Wisconsin-Madison </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> September, 2023: My paper on <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a> was accepted for presentation at TRB 2024 </p>
