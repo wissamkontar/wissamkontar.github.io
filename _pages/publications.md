@@ -22,7 +22,7 @@ Under Review at Transportation Research Part C: Emerging Technologies, 2023
 
 3. **Human-Machine Interaction in Automated Vehicles: Reducing Voluntary Driver Intervention** <br>
 Xinzhi Zhong, Yang Zhou, Varshini Kamaraj, Zhenhao Zhou, **Wissam Kontar**, Dan Negrut, John D. Lee, Soyoung Ahn*<br>
-Under Review Transportation Research Part C. <br>
+Under Review Transportation Research Part C <br>
 Accepted for Presentation at Transportation Research Board Annual Meeting, 2024
 
 4. **Would you Change your Travel Mode if you Know its Carbon Footprint?**<br>
