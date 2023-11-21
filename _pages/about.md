@@ -42,14 +42,14 @@ Research Spotlight
   <img src="../images/r1.jpg" width="100%" />
 </center>
 
-<p> AVs are typically designed with a focus on individual vehicle performance, and little attention to traffic behavior in terms of stability and efficiency. In this work, we formulate an intuitive physics-based response function that is capable of translating AV control algorithm and parameters into traffic-level dynamics. Allowing us to specify the control design of an AV in wats that consider traffic-level performance. </p>
+<p align="justify"> AVs are typically designed with a focus on individual vehicle performance, and little attention to traffic behavior in terms of stability and efficiency. In this work, we formulate an intuitive physics-based response function that is capable of translating AV control algorithm and parameters into traffic-level dynamics. Allowing us to specify the control design of an AV in wats that consider traffic-level performance. </p>
 
 <h3> II. Expected Performance vs. Real-world Performance: Addressing Real-world Uncertainties <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </h3>
 <center>
   <img src="../images/r2.png" width="80%" />
 </center>
 
-<p> In the real-world AVs operate under complex environments where they are expected to be exposed to exogenous and endogenous uncertainties. A major challenge lies in the complexity of integrating these uncertainties into the control system and the design of the AV as it is often hard to formulate an analytical representation of them. Tn this work, we propose a methodology to estimate uncertainties in AV's driver model - specifically those related to vehicular dynamics - and preserve a desired performance from the AV against real-world uncertainties that are unaccounted for. Our methodology uses three sequential components: (i) Stochastic Gradient Langevin Dynamics (SGLD) is used to estimate parameter uncertainty in real-time relying only on AV onboard sensor data, (ii) dynamic monitoring of the driver model performance (stability, safety, and traffic implications), and (iii) strategic actions for adjustments in driver model if anomaly is detected. </p>
+<p align="justify"> In the real-world AVs operate under complex environments where they are expected to be exposed to exogenous and endogenous uncertainties. A major challenge lies in the complexity of integrating these uncertainties into the control system and the design of the AV as it is often hard to formulate an analytical representation of them. Tn this work, we propose a methodology to estimate uncertainties in AV's driver model - specifically those related to vehicular dynamics - and preserve a desired performance from the AV against real-world uncertainties that are unaccounted for. Our methodology uses three sequential components: (i) Stochastic Gradient Langevin Dynamics (SGLD) is used to estimate parameter uncertainty in real-time relying only on AV onboard sensor data, (ii) dynamic monitoring of the driver model performance (stability, safety, and traffic implications), and (iii) strategic actions for adjustments in driver model if anomaly is detected. </p>
 
 </details>
 
@@ -60,9 +60,9 @@ Research Spotlight
   <img src="../images/r3.png" width="80%" />
 </center>
 
-<p> In this work, we present a training framework for learning AVs driver models via knowledge sharing between different vehicles and personalization. In our collaborative scheme, vehicles borrow strength from each others while retaining a personalized model tailored to the vehicle's unique properties and conditions. We adopt a federated learning algorithm that circumvents the need to share raw data between vehicle. </p>
+<p align="justify"> In this work, we present a training framework for learning AVs driver models via knowledge sharing between different vehicles and personalization. In our collaborative scheme, vehicles borrow strength from each others while retaining a personalized model tailored to the vehicle's unique properties and conditions. We adopt a federated learning algorithm that circumvents the need to share raw data between vehicle. </p>
 
-<p> This approach allows to train safer and more reliable AVs, while retaining a desired personalized behavior for each unique vehicle. Read more about out work here <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </p>
+<p align="justify"> This approach allows to train safer and more reliable AVs, while retaining a desired personalized behavior for each unique vehicle. Read more about out work here <a href="https://arxiv.org/abs/2210.13683"> [Paper Link] </a> </p>
 
 </details>
 
@@ -75,16 +75,16 @@ Research Spotlight
   <img src="../images/r4.png" width="70%" />
 </center>
 
-<p> The adoption of Autonomous Vehicles as a viable mode of transportation comes with an complex web of modal shifts and travel behavior. We find that this technology enjoys a level of attractiveness by different users that can induce a modal shift away from traditional modes of transportation as transit, or personal vehicles. This translates to an increase in environmental impacts across different categories: energy consumption, greenhouse gas emissions, particulate matter, sulfur and nitrogen oxides. </p>
+<p align="justify"> The adoption of Autonomous Vehicles as a viable mode of transportation comes with an complex web of modal shifts and travel behavior. We find that this technology enjoys a level of attractiveness by different users that can induce a modal shift away from traditional modes of transportation as transit, or personal vehicles. This translates to an increase in environmental impacts across different categories: energy consumption, greenhouse gas emissions, particulate matter, sulfur and nitrogen oxides. </p>
 
-<p> Adopting electric autonomous vehicles can offset the increase in emissions however it is dependent on two main factors: (i) adoption rate, and (ii) electricity generation mix. </p>
+<p align="justify"> Adopting electric autonomous vehicles can offset the increase in emissions however it is dependent on two main factors: (i) adoption rate, and (ii) electricity generation mix. </p>
 
 <h3> II. E-bikes Adoption and Environmental Implications <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> [Paper Link] </a></h3>
 <center>
   <img src="../images/r5.png" width="70%" />
 </center>
 
-<p> We analyze the ability of an E-bike sharing program in reducing environmental emissions of the transportation system. Based on a mode choice model informed from revealed and stated preference survey, we show that E-bikes are able to compete for ridership. Specifically, E-bikes can attract users away from personal vehicles in trip distances between 1-2.5 miles, resulting in a reduction in overall emissions. </p>
+<p align="justify"> We analyze the ability of an E-bike sharing program in reducing environmental emissions of the transportation system. Based on a mode choice model informed from revealed and stated preference survey, we show that E-bikes are able to compete for ridership. Specifically, E-bikes can attract users away from personal vehicles in trip distances between 1-2.5 miles, resulting in a reduction in overall emissions. </p>
 
 </details><br>
 
