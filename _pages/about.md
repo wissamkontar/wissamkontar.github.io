@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<p> <span style="color:darkred"> I am on the academic job market for 2023-2024. Looking for tenure-track positions.</span> </p>
+<p align="justify"> <span style="color:darkred"> I am on the academic job market for 2023-2024. Looking for tenure-track positions.</span> </p>
 
 <p> Currently, I am a Postdoctoral Research Associate at the University of Wisconsin-Madison. In August 2022 I earned my Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison, co-advised by <a href="https://directory.engr.wisc.edu/cee/Faculty/Ahn_Soyoung/" target=_blank> Prof. Soyoung Ahn </a> and <a href="https://directory.engr.wisc.edu/cee/Faculty/Hicks_Andrea/" target=_blank> Prof. Andrea Hicks </a>. Previously, I received my B.E. from the American University of Beirut, in my home country of Lebanon. </p>
 
