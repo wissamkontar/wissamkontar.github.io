@@ -90,6 +90,7 @@ Research Spotlight
 
 Recent News
 ======
+<p align="justify">
 * <span style="color:darkred"> Recent </span> October, 2023: I will be giving a lectern presentation in the upcoming 103rd Transportation Research Board Annual Meeting in Washington, DC. 
 * <span style="color:darkred"> Recent </span> October, 2023: I am on the academic job market
 * <span style="color:darkred"> Recent </span> October, 2023: I gave a lightning talk during the Sustainability Symposium at the University of Wisconsin-Madison titled "The Road to Efficient and Sustainable Transportation"
@@ -104,3 +105,4 @@ Recent News
 * <span style="color:darkred"> Recent </span> May, 2022: I was named a [Rising Star in Cyber-Physical Systems](https://risingstars.linklab.virginia.edu/2022/participants/wissam-kontar/) for my work on "Enabling System Level Functionality for Autonomous Vehicles"
 
 <button onclick="window.location.href='https://wissamkontar.github.io/news/';">Read more</button>
+</p>
