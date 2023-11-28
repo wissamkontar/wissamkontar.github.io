@@ -9,60 +9,63 @@ For most recent updates on my publications please visit my [Google Scholar](http
 
 
 ## Journal Papers and Pre-prints
+1. <a href="https://www.researchsquare.com/article/rs-3622953/v1"> Reduced Travel Emissions Through a Carbon Calculator with User-Friendly Environmental Data</a> <br>
+Erin E. Bulson, **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* <br>
+Under Review at npj Sustainable Mobility and Transport 
 
-1. <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a><br>
+2. <a href="https://arxiv.org/abs/2308.16870"> Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization </a><br>
 **Wissam Kontar**, Xinzhi Zhong, Soyoung Ahn* <br>
-Under Review at Transportation Research Record. <br>
+Under Review at Transportation Research Record <br>
 Accepted for Lectern Presentation at the Transportation Research Board Annual Meeting, 2024
 
 
-2. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior </a><br>
+3. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4370172"> A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior </a><br>
 **Wissam Kontar**, Soyoung Ahn*<br>
 Under Review at Transportation Research Part C: Emerging Technologies, 2023
 
-3. **Human-Machine Interaction in Automated Vehicles: Reducing Voluntary Driver Intervention** <br>
+4. **Human-Machine Interaction in Automated Vehicles: Reducing Voluntary Driver Intervention** <br>
 Xinzhi Zhong, Yang Zhou, Varshini Kamaraj, Zhenhao Zhou, **Wissam Kontar**, Dan Negrut, John D. Lee, Soyoung Ahn*<br>
 Under Review Transportation Research Part C <br>
 Accepted for Presentation at Transportation Research Board Annual Meeting, 2024
 
-4. **Would you Change your Travel Mode if you Know its Carbon Footprint?**<br>
+5. **Would you Change your Travel Mode if you Know its Carbon Footprint?**<br>
 Erin E. Bulson, **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Under Review at Nature Communications <br>
 Presented at the Industrial Symposium on Industrial Ecology (ISIE), Leiden, Netherlands, 2023
 
-5. **The Role of Disasters and Infrastructure Failures in Engineering Education**<br>
+6. **The Role of Disasters and Infrastructure Failures in Engineering Education**<br>
 Andrea Hicks*, **Wissam Kontar** <br>
 Under Review at the Journal of Civil Engineering Education <br>
 Presented at the Industrial Symposium on Industrial Ecology (ISIE), Leiden, Netherlands, 2023
 
 
-6. **Use, Reuse, and Waste Management of Single-use Products Associated with the COVID-19 Pandemic in the United States**<br>
+7. **Use, Reuse, and Waste Management of Single-use Products Associated with the COVID-19 Pandemic in the United States**<br>
 Monica I Rodriguez, **Wissam Kontar**, Andrea Hicks*<br>
 Under Review at the Journal of Integrated Environmental Assessment and Management, 2023
 
-7. <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Transportation Emissions During Pandemic: Duality of Impacts</a><br>
+8. <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta"> Transportation Emissions During Pandemic: Duality of Impacts</a><br>
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Environmental Research: Infrastructure and Sustainability, 2022
 
-8. <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> Electric Bicycles Sharing: Opportunities and Environmental Impacts</a><br>
+9. <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta"> Electric Bicycles Sharing: Opportunities and Environmental Impacts</a><br>
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks*<br>
 Environmental Research: Infrastructure and Sustainability, 2022
 
-9. <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> The Internet of Federated Things (IoFT)</a><br>
+10. <a href="https://ieeexplore.ieee.org/abstract/document/9611259"> The Internet of Federated Things (IoFT)</a><br>
 Raed Kontar*, Naichen Shi, Xubo Yue, Seokhyun Chung, Eunshin Byon, Mosharaf Chowdhury, Jionghua Jin, **Wissam Kontar**, Neda Masoud, Maher Nouiehed, Chinedum E Okwudire, Garvesh Raskutti, Romesh Saigal, Karandeep Singh, Zhi-Sheng Ye<br>
 IEEE Access, 2022 <br>
 [[Youtube Video](https://www.youtube.com/watch?v=RrubcIWCihk)] [[IoFT Data](https://ioft-data.engin.umich.edu/)]
 
-10. <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1"> On Multi-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics </a><br>
+11. <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844#aep-article-footnote-id1"> On Multi-class Automated Vehicles: Car-following Behavior and its Implications for Traffic Dynamics </a><br>
 **Wissam Kontar**, Tienan Li, Anupam Srivastava, Yang Zhou, Danjue Chen, Soyoung Ahn* <br>
 Transportation Research Part C: Emerging Technologies, 2021 <br>
 Presented at the 24th International Symposium on Transportation and Traffic Theory (ISTTT)
 
-11. <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous Vehicle Adoption: Use Phase Environmental Implications </a><br>
+12. <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"> Autonomous Vehicle Adoption: Use Phase Environmental Implications </a><br>
 **Wissam Kontar**, Soyoung Ahn, Andrea Hicks* <br>
 Environmental Research Letters, 2021
  
-12. <a href="https://www.sciencedirect.com/science/article/pii/S0921344920305772"> Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling </a><br>
+13. <a href="https://www.sciencedirect.com/science/article/pii/S0921344920305772"> Personal Respiratory Protection and Resiliency in a Pandemic, the Evolving Disposable versus Reusable Debate and its Effect on Waste Generation. Resources, Conservation and Recycling </a><br>
 Andrea Hicks*, Sila Temizel Sekeryan, **Wissam Kontar**, Ramin Ghamkhar, Monica Rodriquez Morris <br>
 Resources, Conservation and Recycling, 2021
 
