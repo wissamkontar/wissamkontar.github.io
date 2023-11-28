@@ -90,6 +90,7 @@ Research Spotlight
 
 Recent News
 ======
+* <p align="justify"> <span style="color:darkred"> Recent </span> November, 2023: Check out our recent pre-print <a href="https://www.researchsquare.com/article/rs-3622953/v1"> Reduced Travel Emissions Through a Carbon Calculator with User-Friendly Environmental Data</a></p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I will be giving a lectern presentation in the upcoming 103rd Transportation Research Board Annual Meeting in Washington, DC </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I am on the academic job market </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I gave a lightning talk during the Sustainability Symposium at the University of Wisconsin-Madison titled "The Road to Efficient and Sustainable Transportation" </p>
