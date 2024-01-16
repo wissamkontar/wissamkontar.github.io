@@ -90,6 +90,7 @@ Research Spotlight
 
 Recent News
 ======
+* <p> Our paper "Use, Reuse and Waste Management of Single-use Products Associated with COVID-19 pandemic in the United States" was accepted for publication at Integrated Environmental Assessment and Management (IEAM) </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> November, 2023: Check out our recent pre-print <a href="https://www.researchsquare.com/article/rs-3622953/v1"> Reduced Travel Emissions Through a Carbon Calculator with User-Friendly Environmental Data</a></p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I will be giving a lectern presentation in the upcoming 103rd Transportation Research Board Annual Meeting in Washington, DC </p>
 * <p align="justify"> <span style="color:darkred"> Recent </span> October, 2023: I am on the academic job market </p>
