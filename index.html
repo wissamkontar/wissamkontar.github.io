@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportation and Autonomy Laboratory for Intelligence (TALI)</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+/* ─────────────────────────────────────────
+   TOKENS
+───────────────────────────────────────── */
+:root {
+  --white:   #ffffff;
+  --off:     #f7f7f5;
+  --border:  #e8e8e4;
+  --subtle:  #f0f0ec;
+  --ink:     #111111;
+  --mid:     #555550;
+  --light:   #999990;
+  --accent:  #c1392b;   /* one strong red accent — clean, academic */
+  --accent2: #1a3a5c;   /* deep blue for secondary highlights */
+  --radius:  4px;
+  --max:     1120px;
+}
+
+/* ─────────────────────────────────────────
+   RESET & BASE
+───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ─────────────────────────────────────────
+   UTILITIES
+───────────────────────────────────────── */
+.container { max-width: var(--max); margin: 0 auto; padding: 0 2.5rem; }
+.mono {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.label {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.label::before {
+  content: '';
+  display: block;
+  width: 18px; height: 2px;
+  background: var(--accent);
+}
+.section-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-top: 0.6rem;
+}
+.divider { width: 100%; height: 1px; background: var(--border); }
+
+/* ─────────────────────────────────────────
+   NAV
+───────────────────────────────────────── */
+nav {
+  position: sticky; top: 0; z-index: 200;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  height: 60px;
+}
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  height: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.nav-dot {
+  width: 8px; height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.nav-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+.nav-links {
+  display: flex; align-items: center; gap: 2.5rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--mid);
+  transition: color 0.15s;
+  letter-spacing: 0.01em;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-cta {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: var(--accent) !important;
+  border: 1.5px solid var(--accent);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius);
+  transition: background 0.15s, color 0.15s !important;
+}
+.nav-cta:hover { background: var(--accent) !important; color: #fff !important; }
+
+/* ─────────────────────────────────────────
+   HERO
+───────────────────────────────────────── */
+.hero {
+  padding: 6rem 0 5rem;
+  background: var(--white);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+}
+.hero-left {}
+.hero-eyebrow { margin-bottom: 1.25rem; }
+.hero-h1 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+.hero-h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--mid);
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+.hero-actions {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+}
+.hero-profiles {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+.profile-link {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 0.8rem; font-weight: 500;
+  color: var(--mid);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
+  border-radius: 999px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  text-decoration: none;
+}
+.profile-link svg {
+  width: 15px; height: 15px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+.profile-link:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+  background: var(--off);
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius);
+  transition: all 0.15s;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary { background: var(--ink); color: #fff; }
+.btn-primary:hover { background: #333; }
+.btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--border); }
+.btn-ghost:hover { border-color: var(--ink); }
+
+.hero-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero-stat {
+  background: var(--white);
+  padding: 1.75rem;
+}
+.hero-stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.4rem;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+.hero-stat-num span { color: var(--accent); }
+.hero-stat-label {
+  font-size: 0.78rem;
+  color: var(--light);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.hero-stat-sub {
+  font-size: 0.72rem;
+  color: var(--border);
+  margin-top: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-stat.accent-bg {
+  background: var(--accent);
+}
+.hero-stat.accent-bg .hero-stat-num { color: #fff; }
+.hero-stat.accent-bg .hero-stat-num span { color: rgba(255,255,255,0.6); }
+.hero-stat.accent-bg .hero-stat-label { color: rgba(255,255,255,0.7); }
+.hero-stat.dark-bg {
+  background: var(--ink);
+}
+.hero-stat.dark-bg .hero-stat-num { color: #fff; }
+.hero-stat.dark-bg .hero-stat-label { color: rgba(255,255,255,0.5); }
+
+/* ─────────────────────────────────────────
+   RESEARCH THEMES BAR
+───────────────────────────────────────── */
+.themes-bar {
+  background: var(--off);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+  overflow: hidden;
+}
+.themes-inner {
+  display: flex; align-items: center; gap: 0;
+}
+.theme-pill {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0 2.5rem;
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--mid);
+}
+.theme-pill:first-child { padding-left: 0; }
+.theme-icon { font-size: 1rem; }
+
+/* ─────────────────────────────────────────
+   SECTION WRAPPER
+───────────────────────────────────────── */
+.section {
+  padding: 5.5rem 0;
+}
+.section-header {
+  margin-bottom: 3rem;
+}
+.section-header-row {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  margin-top: 0.6rem;
+  flex-wrap: wrap; gap: 1rem;
+}
+.see-all {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: flex; align-items: center; gap: 0.35rem;
+  transition: gap 0.15s;
+}
+.see-all:hover { gap: 0.6rem; }
+.see-all::after { content: '→'; }
+
+/* ─────────────────────────────────────────
+   RESEARCH CARDS (visual, image-led)
+───────────────────────────────────────── */
+#research { background: var(--white); }
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Featured large card spans 2 cols */
+.research-grid .card:first-child {
+  grid-column: span 2;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+  display: flex; flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--subtle);
+}
+.card:first-child .card-image { height: 260px; }
+.card .card-image { height: 180px; }
+
+/* SVG illustration placeholders — easy to swap with real images */
+.card-image svg {
+  width: 100%; height: 100%;
+  position: absolute; inset: 0;
+}
+.card-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover .card-image img { transform: scale(1.04); }
+
+.card-badge {
+  position: absolute; top: 0.85rem; left: 0.85rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--white);
+  color: var(--ink);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex; flex-direction: column;
+}
+.card-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+}
+.card:first-child .card-title { font-size: 1.35rem; }
+.card-desc {
+  font-size: 0.88rem;
+  color: var(--mid);
+  line-height: 1.6;
+  font-weight: 300;
+  flex: 1;
+}
+.card-footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.card-funding {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+.card-arrow {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem;
+  color: var(--mid);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.card:hover .card-arrow {
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+/* Illustration canvases for research cards */
+.illu { width: 100%; height: 100%; }
+
+/* AV illustration */
+.illu-av { background: linear-gradient(135deg, #e8f0f8 0%, #dce8f5 100%); }
+/* Equity illustration */
+.illu-equity { background: linear-gradient(135deg, #f5ede8 0%, #f0e0d5 100%); }
+/* Traffic illustration */
+.illu-traffic { background: linear-gradient(135deg, #e8f0e8 0%, #d5e8d5 100%); }
+/* Transit illustration */
+.illu-transit { background: linear-gradient(135deg, #f0e8f5 0%, #e5d5f0 100%); }
+/* Climate illustration */
+.illu-climate { background: linear-gradient(135deg, #e8f5f0 0%, #d5f0e5 100%); }
+/* Behavior illustration */
+.illu-behavior { background: linear-gradient(135deg, #f5f0e8 0%, #f0e5d5 100%); }
+
+/* ─────────────────────────────────────────
+   PUBLICATIONS
+───────────────────────────────────────── */
+#publications { background: var(--off); }
+
+.pub-table { width: 100%; }
+.pub-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+.pub-row:first-child { border-top: 1px solid var(--border); }
+.pub-row:hover { background: var(--white); margin: 0 -1.5rem; padding: 1.5rem; border-radius: var(--radius); }
+
+.pub-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--light);
+  letter-spacing: 0.06em;
+  padding-top: 0.2rem;
+}
+.pub-info {}
+.pub-title {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.45;
+  margin-bottom: 0.3rem;
+}
+.pub-authors {
+  font-size: 0.83rem;
+  color: var(--mid);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+.pub-venue {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--light);
+  text-transform: uppercase;
+}
+.pub-links {
+  display: flex; gap: 0.5rem; flex-shrink: 0; padding-top: 0.15rem;
+}
+.pub-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  color: var(--mid);
+  transition: border-color 0.15s, color 0.15s;
+  cursor: pointer;
+}
+.pub-tag:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ─────────────────────────────────────────
+   TEAM
+───────────────────────────────────────── */
+#team { background: var(--white); }
+
+.pi-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+.pi-photo {
+  aspect-ratio: 1;
+  background: var(--subtle);
+  border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+  color: var(--light);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.pi-info {}
+.pi-role {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.pi-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.pi-affil {
+  font-size: 0.88rem;
+  color: var(--mid);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.pi-bio {
+  font-size: 0.93rem;
+  color: var(--mid);
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 600px;
+  margin-bottom: 1.25rem;
+}
+.pi-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.pi-link {
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius);
+  color: var(--mid);
+  transition: border-color 0.15s, color 0.15s;
+}
+.pi-link:hover { border-color: var(--ink); color: var(--ink); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.member-card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s;
+}
+.member-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.member-avatar {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--subtle);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  color: var(--mid);
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+}
+.member-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+.member-role {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.member-focus {
+  font-size: 0.8rem;
+  color: var(--light);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────
+   NEWS
+───────────────────────────────────────── */
+#news { background: var(--off); }
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.news-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex; flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.news-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.07); }
+.news-meta {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.news-type {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  background: var(--off);
+  color: var(--mid);
+  border: 1px solid var(--border);
+}
+.news-type.award { background: #fff8e1; color: #b07d00; border-color: #f0d060; }
+.news-type.grant { background: #e8f5e9; color: #2e7d32; border-color: #a5d6a7; }
+.news-type.pub   { background: #e3f2fd; color: #1565c0; border-color: #90caf9; }
+.news-type.grad  { background: #f3e5f5; color: #6a1b9a; border-color: #ce93d8; }
+.news-type.conf  { background: #fce4ec; color: #880e4f; border-color: #f48fb1; }
+
+.news-date-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--light);
+}
+.news-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+  flex: 1;
+}
+.news-excerpt {
+  font-size: 0.82rem;
+  color: var(--mid);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ─────────────────────────────────────────
+   JOIN / CTA STRIP
+───────────────────────────────────────── */
+.cta-strip {
+  background: var(--ink);
+  padding: 4rem 0;
+}
+.cta-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-text h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+.cta-text p {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+}
+.cta-actions { display: flex; gap: 1rem; }
+.btn-white { background: var(--white); color: var(--ink); }
+.btn-white:hover { background: #eee; }
+.btn-outline-white {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+.btn-outline-white:hover { border-color: var(--white); }
+
+/* ─────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────── */
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 3rem 0;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.footer-brand .nav-name { font-size: 0.95rem; margin-bottom: 0.5rem; }
+.footer-brand p {
+  font-size: 0.82rem;
+  color: var(--light);
+  line-height: 1.6;
+  font-weight: 300;
+  margin-top: 0.4rem;
+}
+.footer-col h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 0.9rem;
+  font-family: 'DM Mono', monospace;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.footer-col ul a {
+  font-size: 0.83rem;
+  color: var(--light);
+  transition: color 0.15s;
+}
+.footer-col ul a:hover { color: var(--ink); }
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.75rem;
+  color: var(--light);
+  flex-wrap: wrap; gap: 0.5rem;
+}
+
+/* ─────────────────────────────────────────
+   MODAL
+───────────────────────────────────────── */
+.modal-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 500;
+  background: rgba(10,10,10,0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: center; justify-content: center;
+  padding: 1.5rem;
+}
+.modal-overlay.open { display: flex; }
+
+.modal {
+  background: var(--white);
+  border-radius: 6px;
+  max-width: 740px; width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.2);
+  animation: modalIn 0.25s ease;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+
+.modal-image {
+  width: 100%; height: 220px;
+  background: var(--subtle);
+  position: relative; overflow: hidden;
+}
+.modal-image svg, .modal-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.modal-close {
+  position: absolute; top: 1rem; right: 1rem;
+  width: 36px; height: 36px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 1.1rem; line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--mid);
+  transition: background 0.15s, color 0.15s;
+  z-index: 10;
+}
+.modal-close:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+
+.modal-body { padding: 2rem 2.25rem 2.25rem; }
+
+.modal-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+.modal-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.55rem; font-weight: 400;
+  color: var(--ink); line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+.modal-funding-row {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+.modal-meta-item {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--light);
+}
+.modal-meta-item span { color: var(--mid); font-weight: 500; }
+
+.modal-section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--light);
+  margin-bottom: 0.5rem; margin-top: 1.25rem;
+}
+.modal-desc {
+  font-size: 0.95rem; color: var(--mid);
+  line-height: 1.75; font-weight: 300;
+}
+.modal-highlights {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.modal-highlights li {
+  font-size: 0.88rem; color: var(--mid);
+  font-weight: 300; line-height: 1.6;
+  padding-left: 1rem; position: relative;
+}
+.modal-highlights li::before {
+  content: '→';
+  position: absolute; left: 0;
+  color: var(--accent); font-size: 0.8rem;
+}
+
+.modal-pubs { display: flex; flex-direction: column; gap: 0.6rem; }
+.modal-pub-item {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.85rem; color: var(--mid);
+  line-height: 1.5;
+}
+.modal-pub-item strong { color: var(--ink); font-weight: 500; display: block; margin-bottom: 0.2rem; }
+.modal-pub-venue {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--light);
+  margin-top: 0.2rem;
+}
+
+.modal-actions {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  margin-top: 1.75rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.modal-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.82rem; font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius);
+  transition: all 0.15s; cursor: pointer;
+  text-decoration: none;
+}
+.modal-btn-primary { background: var(--ink); color: #fff; border: 1.5px solid var(--ink); }
+.modal-btn-primary:hover { background: #333; border-color: #333; }
+.modal-btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--border); }
+.modal-btn-ghost:hover { border-color: var(--ink); }
+.modal-btn-ext { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.modal-btn-ext:hover { background: var(--accent); color: #fff; }
+
+.card { cursor: pointer; }
+
+/* ─────────────────────────────────────────
+   FADE-IN ANIMATION
+───────────────────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .research-grid { grid-template-columns: 1fr 1fr; }
+  .research-grid .card:first-child { grid-column: span 2; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .news-grid { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .pi-row { grid-template-columns: 140px 1fr; }
+}
+@media (max-width: 600px) {
+  .container { padding: 0 1.25rem; }
+  .nav-links { display: none; }
+  .research-grid { grid-template-columns: 1fr; }
+  .research-grid .card:first-child { grid-column: span 1; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .pi-row { grid-template-columns: 1fr; }
+  .cta-inner { flex-direction: column; }
+  .themes-inner { flex-wrap: wrap; gap: 0.5rem; }
+  .theme-pill { border: 1px solid var(--border); border-radius: 999px; padding: 0.3rem 0.9rem; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-dot"></div>
+      <span class="nav-name">TALI · Transportation and Autonomy Laboratory for Intelligence</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="mailto:wkontar2@unl.edu" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left fade-in">
+        <div class="hero-eyebrow label">Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
+        <h1 class="hero-h1">Transportation &amp;<br><em>Autonomy</em><br>Laboratory for Intelligence</h1>
+        <p class="hero-desc">We specialize in operational analysis and AI applications for emerging transportation technologies — addressing challenges in automation, connectivity, and the complex behaviors of adoption ecosystems.</p>
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">Explore Research →</a>
+          <a href="#publications" class="btn btn-ghost">View Publications</a>
+        </div>
+
+        <div class="hero-profiles">
+          <a href="https://github.com/wissamkontar" target="_blank" class="profile-link" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" class="profile-link" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://engineering.unl.edu/cee/" target="_blank" class="profile-link" title="University Page">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            UNL Engineering
+          </a>
+          <a href="mailto:wkontar2@unl.edu" class="profile-link" title="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- research themes bar -->
+<div class="themes-bar">
+  <div class="container">
+    <div class="themes-inner">
+      <div class="theme-pill"><span class="theme-icon">🤖</span> Autonomous Vehicles</div>
+      <div class="theme-pill"><span class="theme-icon">🚦</span> Traffic Flow Theory</div>
+      <div class="theme-pill"><span class="theme-icon">🧠</span> Explainable AI</div>
+      <div class="theme-pill"><span class="theme-icon">🔗</span> Federated Learning</div>
+      <div class="theme-pill"><span class="theme-icon">🌱</span> Sustainable Mobility</div>
+      <div class="theme-pill"><span class="theme-icon">👤</span> Human-Machine Interaction</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     RESEARCH
+════════════════════════════════════════ -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">Current Projects</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Research</h2>
+        <a href="#" class="see-all">All Projects</a>
+      </div>
+    </div>
+
+    <div class="research-grid">
+
+      <!-- FEATURED card -->
+      <div class="card fade-in" data-modal="av">
+        <div class="card-image">
+          <!-- Replace the div below with <img src="your-image.jpg" alt="..."> -->
+          <div class="illu illu-av" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- Road -->
+              <rect x="0" y="140" width="560" height="120" fill="#d0dce8" opacity="0.5"/>
+              <line x1="0" y1="200" x2="560" y2="200" stroke="#aac" stroke-width="1.5" stroke-dasharray="30 20"/>
+              <!-- Car body -->
+              <rect x="200" y="110" width="160" height="60" rx="12" fill="#1a3a5c" opacity="0.85"/>
+              <rect x="220" y="96" width="120" height="36" rx="8" fill="#1a3a5c" opacity="0.6"/>
+              <!-- Windows -->
+              <rect x="228" y="100" width="44" height="26" rx="4" fill="#6ca0c8" opacity="0.8"/>
+              <rect x="280" y="100" width="44" height="26" rx="4" fill="#6ca0c8" opacity="0.8"/>
+              <!-- Wheels -->
+              <circle cx="230" cy="172" r="16" fill="#2c3e50"/>
+              <circle cx="230" cy="172" r="8" fill="#e8eef5"/>
+              <circle cx="330" cy="172" r="16" fill="#2c3e50"/>
+              <circle cx="330" cy="172" r="8" fill="#e8eef5"/>
+              <!-- Lidar sweep -->
+              <line x1="280" y1="80" x2="170" y2="40" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <line x1="280" y1="80" x2="200" y2="30" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <line x1="280" y1="80" x2="240" y2="25" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <line x1="280" y1="80" x2="280" y2="22" stroke="#c1392b" stroke-width="1.5" opacity="0.7"/>
+              <line x1="280" y1="80" x2="320" y2="25" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <line x1="280" y1="80" x2="360" y2="30" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <line x1="280" y1="80" x2="390" y2="40" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="280" cy="80" r="5" fill="#c1392b"/>
+              <!-- Sensor dots -->
+              <circle cx="170" cy="40" r="3" fill="#c1392b" opacity="0.7"/>
+              <circle cx="200" cy="30" r="3" fill="#c1392b" opacity="0.7"/>
+              <circle cx="240" cy="25" r="3" fill="#c1392b" opacity="0.7"/>
+              <circle cx="280" cy="22" r="4" fill="#c1392b"/>
+              <circle cx="320" cy="25" r="3" fill="#c1392b" opacity="0.7"/>
+              <circle cx="360" cy="30" r="3" fill="#c1392b" opacity="0.7"/>
+              <circle cx="390" cy="40" r="3" fill="#c1392b" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="card-badge">Featured · Autonomous Vehicles</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Domain & Physics-Guided Control for Autonomous Vehicles</h3>
+          <p class="card-desc">Bridging AV control algorithms with traffic flow theory using physics-based response functions — enabling system-wide stability and safety optimization, not just individual vehicle performance.</p>
+          <div class="card-footer">
+            <span class="card-funding">TRC Part C · ISTTT24</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card fade-in" data-modal="equity">
+        <div class="card-image">
+          <div class="illu illu-equity" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- City grid -->
+              <rect x="20" y="80" width="220" height="80" fill="#e8d5c8" opacity="0.4"/>
+              <!-- Blocks -->
+              <rect x="30" y="90" width="40" height="60" rx="2" fill="#c8856a" opacity="0.5"/>
+              <rect x="80" y="100" width="30" height="50" rx="2" fill="#c8856a" opacity="0.4"/>
+              <rect x="120" y="85" width="50" height="65" rx="2" fill="#c8856a" opacity="0.6"/>
+              <rect x="180" y="95" width="45" height="55" rx="2" fill="#c8856a" opacity="0.45"/>
+              <!-- Routes -->
+              <path d="M50 70 Q130 30 210 70" stroke="#c1392b" stroke-width="2" fill="none" opacity="0.7"/>
+              <path d="M50 70 Q80 55 130 60" stroke="#1a3a5c" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+              <!-- Dots on routes -->
+              <circle cx="50" cy="70" r="5" fill="#c1392b"/>
+              <circle cx="130" cy="38" r="5" fill="#c1392b"/>
+              <circle cx="210" cy="70" r="5" fill="#c1392b"/>
+              <circle cx="130" cy="60" r="4" fill="#1a3a5c" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="card-badge">Human-Machine Interaction</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Voluntary Driver Intervention in Human-AV Car-Following</h3>
+          <p class="card-desc">Understanding when and why humans intervene in automated car-following, and modeling the behavioral dynamics for safer human-AV coexistence.</p>
+          <div class="card-footer">
+            <span class="card-funding">TRC Part C · 2024</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card fade-in" data-modal="traffic">
+        <div class="card-image">
+          <div class="illu illu-traffic" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- Graph axes -->
+              <line x1="40" y1="140" x2="220" y2="140" stroke="#aac" stroke-width="1.5"/>
+              <line x1="40" y1="20" x2="40" y2="140" stroke="#aac" stroke-width="1.5"/>
+              <!-- Wave line — traffic estimation -->
+              <polyline points="40,120 60,115 80,100 100,80 120,60 140,55 160,70 180,90 200,100 220,95"
+                stroke="#2e7d3c" stroke-width="2.5" fill="none"/>
+              <!-- Actual data dots -->
+              <circle cx="60" cy="118" r="3" fill="#2e7d3c"/>
+              <circle cx="100" cy="75" r="3" fill="#2e7d3c"/>
+              <circle cx="140" cy="58" r="3" fill="#2e7d3c"/>
+              <circle cx="180" cy="92" r="3" fill="#2e7d3c"/>
+              <circle cx="220" cy="97" r="3" fill="#2e7d3c"/>
+              <!-- Confidence band -->
+              <polyline points="40,115 60,108 80,92 100,72 120,52 140,47 160,62 180,82 200,92 220,87"
+                stroke="#2e7d3c" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.4"/>
+              <polyline points="40,125 60,122 80,108 100,88 120,68 140,63 160,78 180,98 200,108 220,103"
+                stroke="#2e7d3c" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="card-badge">Explainable AI</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Traffic Wave Properties for AVs During Traffic Oscillations</h3>
+          <p class="card-desc">Analytical approximations connecting AV control parameters to traffic-level wave behavior, enabling physics-grounded AI model design.</p>
+          <div class="card-footer">
+            <span class="card-funding">Under Review · TRC Part B</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card fade-in" data-modal="transit">
+        <div class="card-image">
+          <div class="illu illu-transit" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- Transit network nodes -->
+              <circle cx="50" cy="90" r="8" fill="#7b4fa0" opacity="0.7"/>
+              <circle cx="130" cy="50" r="8" fill="#7b4fa0" opacity="0.7"/>
+              <circle cx="210" cy="90" r="8" fill="#7b4fa0" opacity="0.7"/>
+              <circle cx="130" cy="140" r="8" fill="#7b4fa0" opacity="0.7"/>
+              <circle cx="90" cy="115" r="6" fill="#7b4fa0" opacity="0.4"/>
+              <circle cx="170" cy="115" r="6" fill="#7b4fa0" opacity="0.4"/>
+              <!-- Edges -->
+              <line x1="50" y1="90" x2="130" y2="50" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
+              <line x1="130" y1="50" x2="210" y2="90" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
+              <line x1="50" y1="90" x2="130" y2="140" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
+              <line x1="130" y1="140" x2="210" y2="90" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
+              <line x1="50" y1="90" x2="90" y2="115" stroke="#7b4fa0" stroke-width="1.5" opacity="0.3" stroke-dasharray="5 3"/>
+              <line x1="90" y1="115" x2="130" y2="140" stroke="#7b4fa0" stroke-width="1.5" opacity="0.3" stroke-dasharray="5 3"/>
+              <!-- Highlight path -->
+              <line x1="50" y1="90" x2="130" y2="50" stroke="#c1392b" stroke-width="2.5" opacity="0.8"/>
+              <line x1="130" y1="50" x2="210" y2="90" stroke="#c1392b" stroke-width="2.5" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="card-badge">Federated Learning</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Collaborative Learning for AVs via Knowledge Sharing & Personalization</h3>
+          <p class="card-desc">Federated learning framework enabling AVs to share knowledge while retaining personalized models — ensuring safety and reliability without raw data exchange.</p>
+          <div class="card-footer">
+            <span class="card-funding">TRB · 🏆 D. Grant Mickle Award 2025</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card fade-in" data-modal="climate">
+        <div class="card-image">
+          <div class="illu illu-climate" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- Network graph resilience -->
+              <circle cx="60" cy="70" r="7" fill="#2e7d5c" opacity="0.7"/>
+              <circle cx="140" cy="40" r="7" fill="#2e7d5c" opacity="0.7"/>
+              <circle cx="200" cy="80" r="7" fill="#2e7d5c" opacity="0.7"/>
+              <circle cx="100" cy="130" r="7" fill="#2e7d5c" opacity="0.7"/>
+              <circle cx="180" cy="140" r="7" fill="#2e7d5c" opacity="0.7"/>
+              <!-- Normal edges -->
+              <line x1="60" y1="70" x2="140" y2="40" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
+              <line x1="140" y1="40" x2="200" y2="80" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
+              <line x1="60" y1="70" x2="100" y2="130" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
+              <line x1="200" y1="80" x2="180" y2="140" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
+              <line x1="100" y1="130" x2="180" y2="140" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
+              <!-- Failed node X -->
+              <circle cx="140" cy="40" r="10" fill="none" stroke="#c1392b" stroke-width="2" opacity="0.8"/>
+              <line x1="134" y1="34" x2="146" y2="46" stroke="#c1392b" stroke-width="2"/>
+              <line x1="146" y1="34" x2="134" y2="46" stroke="#c1392b" stroke-width="2"/>
+              <!-- Reroute dashed -->
+              <line x1="60" y1="70" x2="200" y2="80" stroke="#c1392b" stroke-width="2" stroke-dasharray="6 3" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="card-badge">Sustainable Mobility</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">AV Adoption & Environmental Implications</h3>
+          <p class="card-desc">Modeling how autonomous vehicle and e-bike adoption shifts travel behavior, emissions, and energy use — with opportunities for electrification to reduce environmental impact.</p>
+          <div class="card-footer">
+            <span class="card-funding">Environmental Research Letters · 2021</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card fade-in" data-modal="behavior">
+        <div class="card-image">
+          <div class="illu illu-behavior" style="display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- Scatter / behavioral clusters -->
+              <circle cx="80" cy="60" r="4" fill="#b07010" opacity="0.6"/>
+              <circle cx="95" cy="75" r="4" fill="#b07010" opacity="0.6"/>
+              <circle cx="70" cy="80" r="4" fill="#b07010" opacity="0.6"/>
+              <circle cx="88" cy="90" r="4" fill="#b07010" opacity="0.6"/>
+              <!-- cluster ellipse -->
+              <ellipse cx="82" cy="76" rx="26" ry="22" fill="none" stroke="#b07010" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
+
+              <circle cx="170" cy="100" r="4" fill="#1a3a5c" opacity="0.6"/>
+              <circle cx="185" cy="115" r="4" fill="#1a3a5c" opacity="0.6"/>
+              <circle cx="160" cy="118" r="4" fill="#1a3a5c" opacity="0.6"/>
+              <circle cx="178" cy="130" r="4" fill="#1a3a5c" opacity="0.6"/>
+              <ellipse cx="173" cy="116" rx="26" ry="22" fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
+
+              <circle cx="130" cy="50" r="4" fill="#c1392b" opacity="0.6"/>
+              <circle cx="145" cy="62" r="4" fill="#c1392b" opacity="0.6"/>
+              <circle cx="120" cy="68" r="4" fill="#c1392b" opacity="0.6"/>
+              <ellipse cx="132" cy="60" rx="22" ry="16" fill="none" stroke="#c1392b" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="card-badge">Cyber-Physical Systems</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Transportation Emissions Calculator</h3>
+          <p class="card-desc">An accessible, open tool for computing transportation mode emissions, enabling individuals and planners to make data-driven decisions for reducing travel-related carbon footprint.</p>
+          <div class="card-footer">
+            <span class="card-funding">Nature npj · 2024</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════
+     PUBLICATIONS
+════════════════════════════════════════ -->
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">Recent Work</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Publications</h2>
+        <a href="#" class="see-all">Full List</a>
+      </div>
+    </div>
+
+    <div class="pub-table fade-in">
+      <div class="pub-row">
+        <div class="pub-year">2024</div>
+        <div class="pub-info">
+          <div class="pub-title">Human-automated vehicle interactions: Voluntary driver intervention in car-following</div>
+          <div class="pub-authors">Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.</div>
+          <div class="pub-venue">Transportation Research Part C: Emerging Technologies</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2024</div>
+        <div class="pub-info">
+          <div class="pub-title">Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization</div>
+          <div class="pub-authors">Kontar, W., Zhong, X., Ahn, S.</div>
+          <div class="pub-venue">Transportation Research Records &nbsp;·&nbsp; <span style="color:#c1392b;font-weight:600;">🏆 D. Grant Mickle Award, TRB 2025</span></div>
+        </div>
+        <div class="pub-links">
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/03611981241298583" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2024</div>
+        <div class="pub-info">
+          <div class="pub-title">Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data: a case study in Madison, Wisconsin</div>
+          <div class="pub-authors">Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.</div>
+          <div class="pub-venue">Nature npj Sustainable Mobility and Transport</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.nature.com/articles/s44333-024-00003-7" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2024</div>
+        <div class="pub-info">
+          <div class="pub-title">A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior</div>
+          <div class="pub-authors">Kontar, W., Ahn, S.</div>
+          <div class="pub-venue">Transportation Research Part C: Emerging Technologies</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X24000202" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2022</div>
+        <div class="pub-info">
+          <div class="pub-title">The Internet of Federated Things (IoFT)</div>
+          <div class="pub-authors">Kontar, R., Shi, N., Yue, X., Chung, S., Byon, E., Chowdhury, M., … Kontar, W., et al.</div>
+          <div class="pub-venue">IEEE Access</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9611259" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2022</div>
+        <div class="pub-info">
+          <div class="pub-title">Transportation emissions during pandemic: duality of impacts</div>
+          <div class="pub-authors">Kontar, W., Ahn, S., Hicks, A.</div>
+          <div class="pub-venue">Environmental Research: Infrastructure and Sustainability</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2021</div>
+        <div class="pub-info">
+          <div class="pub-title">On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics</div>
+          <div class="pub-authors">Kontar, W., Li, T., Srivastava, A., Zhou, Y., Chen, D., Ahn, S.</div>
+          <div class="pub-venue">Transportation Research Part C: Emerging Technologies &nbsp;·&nbsp; Presented at ISTTT24</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21001844" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+      <div class="pub-row">
+        <div class="pub-year">2021</div>
+        <div class="pub-info">
+          <div class="pub-title">Autonomous vehicle adoption: use phase environmental implications</div>
+          <div class="pub-authors">Kontar, W., Ahn, S., Hicks, A.</div>
+          <div class="pub-venue">Environmental Research Letters &nbsp;·&nbsp; Top 5% by attention score</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════
+     TEAM
+════════════════════════════════════════ -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">People</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Our Team</h2>
+      </div>
+    </div>
+
+    <!-- PI -->
+    <div class="pi-row fade-in">
+      <div class="pi-photo">WK</div>
+      <div class="pi-info">
+        <div class="pi-role">Principal Investigator</div>
+        <div class="pi-name">Prof. Wissam Kontar</div>
+        <div class="pi-affil">Assistant Professor · Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
+        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks. He earned his B.E. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of adoption ecosystems. The ultimate goal is to design and deploy technologies that improve operational performance and align with societal needs.</p>
+        <div class="pi-links">
+          <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" class="pi-link">Google Scholar</a>
+          <a href="https://orcid.org/0000-0001-9260-0254" target="_blank" class="pi-link">ORCID</a>
+          <a href="https://github.com/wissamkontar" target="_blank" class="pi-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/wissamkontar" target="_blank" class="pi-link">LinkedIn</a>
+          <a href="mailto:wkontar2@unl.edu" class="pi-link">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Students -->
+    <div class="team-grid fade-in">
+      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
+        <div class="member-name" style="color:var(--mid);">PhD Students</div>
+        <div class="member-role" style="color:var(--accent);">Recruiting · Fall 2025</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Autonomous vehicles, AI, sustainable mobility</div>
+      </div>
+      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
+        <div class="member-name" style="color:var(--mid);">MS Students</div>
+        <div class="member-role" style="color:var(--accent);">Recruiting · Fall 2025</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Traffic flow, federated learning, HMI</div>
+      </div>
+      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
+        <div class="member-name" style="color:var(--mid);">Undergrad Researchers</div>
+        <div class="member-role" style="color:var(--accent);">Open Positions</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Data analysis, software, experiments</div>
+      </div>
+      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div class="member-avatar" style="background:transparent;border-color:var(--border);">✉</div>
+        <div class="member-name" style="color:var(--mid);">Interested?</div>
+        <div class="member-role" style="color:var(--accent);">Get in touch</div>
+        <div class="member-focus" style="margin-top:0.4rem;"><a href="mailto:wkontar2@unl.edu" style="color:var(--accent);">wkontar2@unl.edu</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════
+     NEWS
+════════════════════════════════════════ -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">Updates</div>
+      <div class="section-header-row">
+        <h2 class="section-title">News</h2>
+        <a href="#" class="see-all">All News</a>
+      </div>
+    </div>
+    <div class="news-grid fade-in">
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type award">Award</span>
+          <span class="news-date-label">Jan 2025</span>
+        </div>
+        <div class="news-title">Paper wins D. Grant Mickle Award at Transportation Research Board 2025</div>
+        <p class="news-excerpt">"Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization" recognized at TRB Annual Meeting.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type award">Award</span>
+          <span class="news-date-label">Jan 2025</span>
+        </div>
+        <div class="news-title">Paper wins Nathan Gatner Award by ACP50 committee at TRB 2025</div>
+        <p class="news-excerpt">"Optimal Measurement of Traffic Hysteresis under Traffic Oscillations" recognized by the ACP50 committee.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type grant">New Position</span>
+          <span class="news-date-label">Jan 2025</span>
+        </div>
+        <div class="news-title">Joined University of Nebraska-Lincoln as Assistant Professor</div>
+        <p class="news-excerpt">Actively recruiting students at all levels — undergraduate, master's, and Ph.D. — to join the TALI research team.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type pub">Publication</span>
+          <span class="news-date-label">May 2024</span>
+        </div>
+        <div class="news-title">Carbon calculator paper published in Nature: Sustainable Mobility and Transport</div>
+        <p class="news-excerpt">"Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data" published in Nature npj.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type conf">Recognition</span>
+          <span class="news-date-label">May 2022</span>
+        </div>
+        <div class="news-title">Named a Rising Star in Cyber-Physical Systems</div>
+        <p class="news-excerpt">Selected as a Rising Star in Cyber-Physical Systems by the Link Lab at the University of Virginia.</p>
+      </div>
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type pub">Media</span>
+          <span class="news-date-label">May 2021</span>
+        </div>
+        <div class="news-title">AV research featured in Popular Science, Gizmodo, and Politico</div>
+        <p class="news-excerpt">Work on autonomous vehicle adoption and environmental implications attracted wide media coverage and ranked top 5% by attention score in Environmental Research Letters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CTA STRIP
+════════════════════════════════════════ -->
+<div class="cta-strip">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <div class="cta-text">
+        <h2>Interested in Joining or Collaborating?</h2>
+        <p>We welcome PhD applicants, postdoc inquiries, and research partnerships.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="mailto:wkontar2@unl.edu" class="btn btn-white">Get in Touch →</a>
+        <a href="#team" class="btn btn-outline-white">Open Positions</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-name">TALI · Transportation and Autonomy Laboratory for Intelligence</div>
+        <p>Department of Civil &amp; Environmental Engineering<br>University of Nebraska-Lincoln · Lincoln, NE</p>
+      </div>
+      <div class="footer-col">
+        <h4>Research</h4>
+        <ul>
+          <li><a href="#">Autonomous Agents</a></li>
+          <li><a href="#">Traffic Intelligence</a></li>
+          <li><a href="#">Operations</a></li>
+          <li><a href="#">Urban Mobility</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Lab</h4>
+        <ul>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Open Positions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Transportation and Autonomy Laboratory for Intelligence (TALI) · Prof. Wissam Kontar</span>
+      <span>Built with HTML · Easy to maintain</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════
+     MODAL OVERLAY
+════════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-image" id="modalImage"></div>
+    <div class="modal-body">
+      <div class="modal-badge" id="modalBadge"></div>
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="modal-funding-row" id="modalMeta"></div>
+      <div class="modal-section-label">Overview</div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-section-label">Key Research Directions</div>
+      <ul class="modal-highlights" id="modalHighlights"></ul>
+      <div class="modal-section-label">Related Publications</div>
+      <div class="modal-pubs" id="modalPubs"></div>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SCROLL FADE-IN
+════════════════════════════════════════ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ── Scroll fade-in ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* ── Modal data ──
+   HOW TO EDIT:
+   Each key matches the data-modal="..." on the card.
+   - badge:       the small category label
+   - title:       full project title
+   - funder/period/pi: meta info row
+   - desc:        longer paragraph description
+   - highlights:  array of bullet strings (key findings / directions)
+   - pubs:        array of { title, authors, venue, url } objects
+   - projectUrl:  link for "View Project Page" button (use "#" if none yet)
+   - paperUrl:    link for "Read Paper" button (use "#" or remove key if none)
+─────────────────────────────────────────────────── */
+const MODALS = {
+
+  av: {
+    badge: "Featured · Autonomous Vehicles",
+    title: "Domain & Physics-Guided Control for Autonomous Vehicles",
+    funder: "Internal / CTEDD", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "Autonomous vehicles often prioritize individual performance, overlooking traffic-level stability and efficiency. This research introduces a physics-based response function to bridge AV control algorithms with traffic dynamics, enabling control designs that optimize system-wide performance. We connect control algorithm parameters to traffic-level behavior for a more holistic design of AV systems.",
+    highlights: [
+      "Physics-based response function linking AV parameters to traffic-level behavior",
+      "Real-world monitoring using Stochastic Gradient Langevin Dynamics (SGLD)",
+      "Continuous performance monitoring for AV stability, safety, and traffic impacts",
+      "Strategic dynamic adjustments to handle real-world uncertainties"
+    ],
+    pubs: [
+      { title: "On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics", authors: "Kontar, W., Li, T., Srivastava, A., Zhou, Y., Chen, D., Ahn, S.", venue: "Transportation Research Part C · ISTTT24", url: "https://www.sciencedirect.com/science/article/pii/S0968090X21001844" },
+      { title: "A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior", authors: "Kontar, W., Ahn, S.", venue: "Transportation Research Part C · 2024", url: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X24000202" }
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://www.sciencedirect.com/science/article/pii/S0968090X21001844"
+  },
+
+  equity: {
+    badge: "Human-Machine Interaction",
+    title: "Voluntary Driver Intervention in Human-AV Car-Following",
+    funder: "TRC Part C", period: "2024", pi: "Prof. Wissam Kontar",
+    desc: "This study investigates the complex dynamics of human-automated vehicle interaction, specifically focusing on when and why human drivers voluntarily intervene in car-following situations managed by automation. Understanding these interactions is critical for designing AVs that are safe and trusted by users.",
+    highlights: [
+      "Empirical analysis of voluntary human takeover events in car-following",
+      "Behavioral modeling of driver intervention thresholds",
+      "Implications for AV trust calibration and interface design",
+      "Insights for mixed-autonomy fleet management"
+    ],
+    pubs: [
+      { title: "Human-automated vehicle interactions: Voluntary driver intervention in car-following", authors: "Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.", venue: "Transportation Research Part C · 2024", url: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X" }
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X"
+  },
+
+  traffic: {
+    badge: "Explainable AI",
+    title: "Traffic Wave Properties for AVs During Traffic Oscillations",
+    funder: "Under Review", period: "2024–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "This research develops analytical approximations for traffic wave properties in mixed-autonomy settings. By connecting AV control parameters to measurable traffic-level wave behavior, we provide a physics-grounded foundation for designing AI models that are both high-performing and interpretable.",
+    highlights: [
+      "Analytical approximations for traffic oscillation properties under AV penetration",
+      "Connection between AV control gain parameters and macroscopic wave speed",
+      "Framework for evaluating AI model reliability in traffic dynamics",
+      "Open-world reliability assessment methodology"
+    ],
+    pubs: [
+      { title: "Traffic Wave Properties for Automated Vehicles During Traffic Oscillations via Analytical Approximations", authors: "Zhou, Y., Li, S., Kontar, W., Pu, F., Srivastava, A., Ahn, S.", venue: "Under Review · Transportation Research Part B", url: "https://arxiv.org/abs/2411.16937" }
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://arxiv.org/abs/2411.16937"
+  },
+
+  transit: {
+    badge: "Federated Learning",
+    title: "Collaborative Learning for AVs via Knowledge Sharing & Personalization",
+    funder: "TRB", period: "2023–2024", pi: "Prof. Wissam Kontar",
+    desc: "This study proposes a collaborative learning framework where autonomous vehicles share knowledge while retaining personalized models tailored to their unique operational conditions. Using federated learning principles, this approach ensures safety and reliability without sharing raw data — earning the D. Grant Mickle Award at TRB 2025.",
+    highlights: [
+      "Federated learning framework for distributed AV driver model training",
+      "Personalization layer retaining local operational characteristics",
+      "Privacy-preserving knowledge transfer without raw data sharing",
+      "Scalable to large heterogeneous AV fleets"
+    ],
+    pubs: [
+      { title: "Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization", authors: "Kontar, W., Zhong, X., Ahn, S.", venue: "Transportation Research Records · 🏆 D. Grant Mickle Award, TRB 2025", url: "https://journals.sagepub.com/doi/abs/10.1177/03611981241298583" },
+      { title: "The Internet of Federated Things (IoFT)", authors: "Kontar, R., Shi, N., … Kontar, W., et al.", venue: "IEEE Access · 2022", url: "https://ieeexplore.ieee.org/abstract/document/9611259" }
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://journals.sagepub.com/doi/abs/10.1177/03611981241298583"
+  },
+
+  climate: {
+    badge: "Sustainable Mobility",
+    title: "AV Adoption & Environmental Implications",
+    funder: "CTEDD", period: "2021–2022", pi: "Prof. Wissam Kontar",
+    desc: "This research examines how emerging modes of transportation — including autonomous vehicles and e-bikes — influence travel behavior and environmental outcomes. AV adoption causes shifts in travel behavior resulting in changes to emissions and energy use, with electrification offering key opportunities for impact reduction.",
+    highlights: [
+      "Life-cycle environmental assessment of AV adoption scenarios",
+      "E-bike sharing shown to significantly reduce emissions for 1–2.5 mile trips",
+      "Rebound effect analysis: AVs may increase vehicle miles traveled",
+      "Featured in Popular Science, Gizmodo, and Politico"
+    ],
+    pubs: [
+      { title: "Autonomous vehicle adoption: use phase environmental implications", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Letters · 2021 · Top 5% by attention score", url: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" },
+      { title: "Electric bicycles sharing: opportunities and environmental impacts", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research: Infrastructure and Sustainability · 2022", url: "https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta" }
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"
+  },
+
+  behavior: {
+    badge: "Cyber-Physical Systems",
+    title: "Transportation Emissions Calculator",
+    funder: "Self-funded / UW-Madison", period: "2022–2024", pi: "Prof. Wissam Kontar",
+    desc: "An accessible, open tool for computing transportation mode emissions, enabling individuals, planners, and policymakers to make data-driven decisions. The calculator was developed as part of a broader effort to reduce travel-related carbon footprints equitably, with a case study in Madison, Wisconsin published in Nature npj.",
+    highlights: [
+      "Open-access emissions calculator covering all major transportation modes",
+      "Case study in Madison, WI quantifying city-wide emissions reduction potential",
+      "Published in Nature npj Sustainable Mobility and Transport (2024)",
+      "Designed for accessibility by non-expert users and policymakers"
+    ],
+    pubs: [
+      { title: "Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data", authors: "Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.", venue: "Nature npj Sustainable Mobility and Transport · 2024", url: "https://www.nature.com/articles/s44333-024-00003-7" }
+    ],
+    projectUrl: "https://sites.google.com/view/cheeseburgercalculator/home",
+    paperUrl: "https://www.nature.com/articles/s44333-024-00003-7"
+  }
+
+};
+
+/* ── Modal logic (no need to edit below) ── */
+const overlay  = document.getElementById('modalOverlay');
+const modalBox = document.getElementById('modalBox');
+
+function openModal(id) {
+  const d = MODALS[id]; if (!d) return;
+
+  // image — clone from card
+  const card = document.querySelector(`[data-modal="${id}"]`);
+  const imgSrc = card.querySelector('.card-image').innerHTML;
+  document.getElementById('modalImage').innerHTML = imgSrc;
+
+  document.getElementById('modalBadge').textContent = d.badge;
+  document.getElementById('modalTitle').textContent  = d.title;
+
+  // meta row
+  document.getElementById('modalMeta').innerHTML = `
+    <div class="modal-meta-item">Funder &nbsp;<span>${d.funder}</span></div>
+    <div class="modal-meta-item">Period &nbsp;<span>${d.period}</span></div>
+    <div class="modal-meta-item">PI &nbsp;<span>${d.pi}</span></div>`;
+
+  document.getElementById('modalDesc').textContent = d.desc;
+
+  // highlights
+  document.getElementById('modalHighlights').innerHTML =
+    d.highlights.map(h => `<li>${h}</li>`).join('');
+
+  // publications
+  document.getElementById('modalPubs').innerHTML =
+    d.pubs.map(p => `
+      <div class="modal-pub-item">
+        <strong><a href="${p.url}" target="_blank" style="color:inherit">${p.title}</a></strong>
+        ${p.authors}
+        <div class="modal-pub-venue">${p.venue}</div>
+      </div>`).join('');
+
+  // action buttons
+  let btns = `<a href="${d.projectUrl}" target="_blank" class="modal-btn modal-btn-primary">Project Page ↗</a>`;
+  if (d.paperUrl) btns += `<a href="${d.paperUrl}" target="_blank" class="modal-btn modal-btn-ext">Read Paper ↗</a>`;
+  btns += `<button onclick="closeModal()" class="modal-btn modal-btn-ghost">Close</button>`;
+  document.getElementById('modalActions').innerHTML = btns;
+
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// open on card click
+document.querySelectorAll('[data-modal]').forEach(card => {
+  card.addEventListener('click', () => openModal(card.dataset.modal));
+});
+
+// close on overlay click or X button
+document.getElementById('modalClose').addEventListener('click', closeModal);
+overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+
+// close on Escape
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+</script>
+</body>
+</html>
