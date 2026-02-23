@@ -137,7 +137,7 @@ nav {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 700px;
+  max-width: 110%;
 }
 .hero-left {}
 .hero-eyebrow { margin-bottom: 1.25rem; }
@@ -150,7 +150,7 @@ nav {
   margin-bottom: 1.5rem;
 }
 .hero-h1 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--accent);
 }
 .hero-desc {
@@ -306,7 +306,7 @@ nav {
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -958,8 +958,8 @@ footer {
     <div class="hero-grid">
       <div class="hero-left fade-in">
         <div class="hero-eyebrow label">Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
-        <h1 class="hero-h1">Transportation &amp;<br><em>Autonomy</em><br>Laboratory for Intelligence</h1>
-        <p class="hero-desc">We specialize in operational analysis and AI applications for emerging transportation technologies — addressing challenges in automation, connectivity, and the complex behaviors of adoption ecosystems.</p>
+        <h1 class="hero-h1">Transportation &amp;<br>Autonomy<br>Laboratory for Intelligence </h1>
+        <p class="hero-desc"><em>We advance intelligence in transportation systems, specializing in operations analysis and applied artificial intelligence to solve core challenges in autonomy, complex agent behaviors, and real-world integration.</em> </p>
         <div class="hero-actions">
           <a href="#research" class="btn btn-primary">Explore Research →</a>
           <a href="#publications" class="btn btn-ghost">View Publications</a>
@@ -993,12 +993,11 @@ footer {
 <div class="themes-bar">
   <div class="container">
     <div class="themes-inner">
-      <div class="theme-pill"><span class="theme-icon">🤖</span> Autonomous Vehicles</div>
-      <div class="theme-pill"><span class="theme-icon">🚦</span> Traffic Flow Theory</div>
-      <div class="theme-pill"><span class="theme-icon">🧠</span> Explainable AI</div>
-      <div class="theme-pill"><span class="theme-icon">🔗</span> Federated Learning</div>
-      <div class="theme-pill"><span class="theme-icon">🌱</span> Sustainable Mobility</div>
-      <div class="theme-pill"><span class="theme-icon">👤</span> Human-Machine Interaction</div>
+      <div class="theme-pill"><span class="theme-icon">🚦</span> Transportation Science</div>
+      <div class="theme-pill"><span class="theme-icon">🤖</span> Autonomous Agents</div>
+      <div class="theme-pill"><span class="theme-icon">🧠</span> Artificial Intelligence</div>
+      <div class="theme-pill"><span class="theme-icon">⚙️</span> Transportation Engineering</div>
+      <div class="theme-pill"><span class="theme-icon">🏙️</span> Urban Mobility</div>
     </div>
   </div>
 </div>
@@ -1057,193 +1056,299 @@ footer {
               <circle cx="390" cy="40" r="3" fill="#c1392b" opacity="0.7"/>
             </svg>
           </div>
-          <div class="card-badge">Featured · Autonomous Vehicles</div>
+          <div class="card-badge">Featured · Autonomous Vehicle Design</div>
         </div>
         <div class="card-body">
           <h3 class="card-title">Domain & Physics-Guided Control for Autonomous Vehicles</h3>
-          <p class="card-desc">Bridging AV control algorithms with traffic flow theory using physics-based response functions — enabling system-wide stability and safety optimization, not just individual vehicle performance.</p>
+          <p class="card-desc">Bridging AV control algorithms with traffic flow theory using physics-based response functions, enabling systemwide stability and safety optimization, not just individual vehicle performance.</p>
           <div class="card-footer">
-            <span class="card-funding">TRC Part C · ISTTT24</span>
+            <span class="card-funding">Autonomous Agents</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="card fade-in" data-modal="equity">
+<!-- Card 2 -->
+      <div class="card fade-in" data-modal="consensus">
         <div class="card-image">
-          <div class="illu illu-equity" style="display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- City grid -->
-              <rect x="20" y="80" width="220" height="80" fill="#e8d5c8" opacity="0.4"/>
-              <!-- Blocks -->
-              <rect x="30" y="90" width="40" height="60" rx="2" fill="#c8856a" opacity="0.5"/>
-              <rect x="80" y="100" width="30" height="50" rx="2" fill="#c8856a" opacity="0.4"/>
-              <rect x="120" y="85" width="50" height="65" rx="2" fill="#c8856a" opacity="0.6"/>
-              <rect x="180" y="95" width="45" height="55" rx="2" fill="#c8856a" opacity="0.45"/>
-              <!-- Routes -->
-              <path d="M50 70 Q130 30 210 70" stroke="#c1392b" stroke-width="2" fill="none" opacity="0.7"/>
-              <path d="M50 70 Q80 55 130 60" stroke="#1a3a5c" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
-              <!-- Dots on routes -->
-              <circle cx="50" cy="70" r="5" fill="#c1392b"/>
-              <circle cx="130" cy="38" r="5" fill="#c1392b"/>
-              <circle cx="210" cy="70" r="5" fill="#c1392b"/>
-              <circle cx="130" cy="60" r="4" fill="#1a3a5c" opacity="0.6"/>
+          <div class="illu illu-equity" style="display:flex;align-items:center;justify-content:center;background:#f2f3fa;">
+            <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <defs>
+                <marker id="a2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#7a8fa8"/></marker>
+                <marker id="g2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#c1392b" opacity="0.7"/></marker>
+              </defs>
+              <line x1="30" y1="190" x2="315" y2="190" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a2)"/>
+              <line x1="30" y1="190" x2="30" y2="22" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a2)"/>
+              <text x="316" y="194" font-family="DM Mono,monospace" font-size="9" fill="#7a8fa8" font-style="italic">f₁</text>
+              <text x="16" y="20" font-family="DM Mono,monospace" font-size="9" fill="#7a8fa8" font-style="italic">f₂</text>
+              <path d="M50,190 Q115,182 172,158 Q222,132 268,88 Q290,62 308,40 L308,190 Z" fill="#1a3a5c" fill-opacity="0.04"/>
+              <path d="M50,188 Q108,178 165,155 Q218,130 265,88 Q286,62 305,40" stroke="#1a3a5c" stroke-width="2.2" fill="none" opacity="0.85"/>
+              <circle cx="78" cy="185" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+              <circle cx="120" cy="170" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+              <circle cx="170" cy="150" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+              <circle cx="222" cy="122" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+              <circle cx="268" cy="88" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+              <circle cx="195" cy="138" r="7.5" fill="white" stroke="#c1392b" stroke-width="2"/>
+              <circle cx="195" cy="138" r="3" fill="#c1392b"/>
+              <circle cx="195" cy="138" r="16" fill="none" stroke="#c1392b" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+              <text x="213" y="134" font-family="DM Mono,monospace" font-size="8" fill="#c1392b">x*</text>
+              <path d="M80,60 Q120,90 188,133" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+              <path d="M295,160 Q258,155 202,140" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+              <path d="M310,90 Q275,105 205,135" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+              <circle cx="80" cy="60" r="5" fill="#7a8fa8" opacity="0.7"/>
+              <circle cx="295" cy="160" r="5" fill="#7a8fa8" opacity="0.7"/>
+              <circle cx="310" cy="90" r="5" fill="#7a8fa8" opacity="0.7"/>
+              <text x="62" y="57" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₁</text>
+              <text x="298" y="157" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₂</text>
+              <text x="313" y="88" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₃</text>
+              <text x="32" y="206" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">min∑fᵢ(x)  s.t.  x∈X</text>
             </svg>
           </div>
-          <div class="card-badge">Human-Machine Interaction</div>
+          <div class="card-badge">AI Agents</div>
         </div>
         <div class="card-body">
-          <h3 class="card-title">Voluntary Driver Intervention in Human-AV Car-Following</h3>
-          <p class="card-desc">Understanding when and why humans intervene in automated car-following, and modeling the behavioral dynamics for safer human-AV coexistence.</p>
+          <h3 class="card-title">Consensus-driven AI Agents for Mixed Autonomy Traffic</h3>
+          <p class="card-desc">Modern traffic systems are shaped by dynamic interactions between diverse agents. Agents are expected to uphold safety, maintain quality interactions, and contribute to efficient system. 
+            These goals are often at odds. Navigating this tradeoff between goals is not just a matter of design, but rahter a broader challenge of acheiving consensus.</p>
           <div class="card-footer">
-            <span class="card-funding">TRC Part C · 2024</span>
+            <span class="card-funding">Artificial Intelligence · Autonomous Agents</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="card fade-in" data-modal="traffic">
+      <div class="card fade-in" data-modal="personalization">
         <div class="card-image">
-          <div class="illu illu-traffic" style="display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- Graph axes -->
-              <line x1="40" y1="140" x2="220" y2="140" stroke="#aac" stroke-width="1.5"/>
-              <line x1="40" y1="20" x2="40" y2="140" stroke="#aac" stroke-width="1.5"/>
-              <!-- Wave line — traffic estimation -->
-              <polyline points="40,120 60,115 80,100 100,80 120,60 140,55 160,70 180,90 200,100 220,95"
-                stroke="#2e7d3c" stroke-width="2.5" fill="none"/>
-              <!-- Actual data dots -->
-              <circle cx="60" cy="118" r="3" fill="#2e7d3c"/>
-              <circle cx="100" cy="75" r="3" fill="#2e7d3c"/>
-              <circle cx="140" cy="58" r="3" fill="#2e7d3c"/>
-              <circle cx="180" cy="92" r="3" fill="#2e7d3c"/>
-              <circle cx="220" cy="97" r="3" fill="#2e7d3c"/>
-              <!-- Confidence band -->
-              <polyline points="40,115 60,108 80,92 100,72 120,52 140,47 160,62 180,82 200,92 220,87"
-                stroke="#2e7d3c" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.4"/>
-              <polyline points="40,125 60,122 80,108 100,88 120,68 140,63 160,78 180,98 200,108 220,103"
-                stroke="#2e7d3c" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.4"/>
+          <div class="illu illu-traffic" style="display:flex;align-items:center;justify-content:center;background:#f8f5ff;">
+            <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+            <defs>
+            <marker id="up3" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#7b4fa0" opacity="0.8"/></marker>
+            <marker id="dn3" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#c1392b" opacity="0.7"/></marker>
+            </defs>
+            <rect x="118" y="16" width="104" height="34" rx="5" fill="#7b4fa0" fill-opacity="0.1" stroke="#7b4fa0" stroke-width="1.4"/>
+            <text x="134" y="30" font-family="DM Mono,monospace" font-size="7.5" fill="#7b4fa0">Server  θ_G</text>
+            <text x="128" y="42" font-family="DM Mono,monospace" font-size="7" fill="#7b4fa0" opacity="0.7">aggregate ∇θ_k</text>
+            <rect x="14" y="120" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+            <text x="22" y="136" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₁ = θ_G + δ₁</text>
+            <text x="22" y="149" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₁</text>
+            <rect x="100" y="158" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+            <text x="108" y="174" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₂ = θ_G + δ₂</text>
+            <text x="108" y="187" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₂</text>
+            <rect x="196" y="120" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+            <text x="204" y="136" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₃ = θ_G + δ₃</text>
+            <text x="204" y="149" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₃</text>
+            <rect x="270" y="158" width="58" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+            <text x="276" y="174" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₄ = θ_G+δ₄</text>
+            <text x="276" y="187" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">data D₄</text>
+            <line x1="55" y1="120" x2="130" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+            <line x1="140" y1="158" x2="162" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+            <line x1="232" y1="120" x2="196" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+            <line x1="295" y1="158" x2="215" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+            <line x1="126" y1="50" x2="52" y2="120" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+            <line x1="158" y1="50" x2="138" y2="158" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+            <line x1="196" y1="50" x2="228" y2="120" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+            <line x1="212" y1="50" x2="290" y2="158" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+            <line x1="16" y1="208" x2="34" y2="208" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3"/>
+            <text x="38" y="212" font-family="DM Mono,monospace" font-size="6.5" fill="#7b4fa0">upload ∇θ_k</text>
+            <line x1="130" y1="208" x2="148" y2="208" stroke="#c1392b" stroke-width="1.1"/>
+            <text x="152" y="212" font-family="DM Mono,monospace" font-size="6.5" fill="#c1392b">broadcast θ_G</text>
             </svg>
           </div>
-          <div class="card-badge">Explainable AI</div>
+          <div class="card-badge">Knowledge Sharing</div>
         </div>
         <div class="card-body">
-          <h3 class="card-title">Traffic Wave Properties for AVs During Traffic Oscillations</h3>
-          <p class="card-desc">Analytical approximations connecting AV control parameters to traffic-level wave behavior, enabling physics-grounded AI model design.</p>
+          <h3 class="card-title">Knowledge Sharing and Personalization Across Agents</h3>
+          <p class="card-desc">The curse of variability stands as a critical barrier in the development and deployment of Automated Vehicles (AVs) in the open world. 
+            Variability in the open world stems from the innate dynamic, stochastic, and unpredictable nature of the transportation system. 
+            Human drivers adapt and respond to these variations instinctively, but replicating such situational knowledge for an AV to maneuver safely in any given scenario, is challenging in light of limited data availability and the difficulty of real world experimentation.</p>
           <div class="card-footer">
-            <span class="card-funding">Under Review · TRC Part B</span>
+            <span class="card-funding">Artificial Intelligence</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="card fade-in" data-modal="transit">
+      <div class="card fade-in" data-modal="heterogeneity">
         <div class="card-image">
-          <div class="illu illu-transit" style="display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- Transit network nodes -->
-              <circle cx="50" cy="90" r="8" fill="#7b4fa0" opacity="0.7"/>
-              <circle cx="130" cy="50" r="8" fill="#7b4fa0" opacity="0.7"/>
-              <circle cx="210" cy="90" r="8" fill="#7b4fa0" opacity="0.7"/>
-              <circle cx="130" cy="140" r="8" fill="#7b4fa0" opacity="0.7"/>
-              <circle cx="90" cy="115" r="6" fill="#7b4fa0" opacity="0.4"/>
-              <circle cx="170" cy="115" r="6" fill="#7b4fa0" opacity="0.4"/>
-              <!-- Edges -->
-              <line x1="50" y1="90" x2="130" y2="50" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
-              <line x1="130" y1="50" x2="210" y2="90" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
-              <line x1="50" y1="90" x2="130" y2="140" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
-              <line x1="130" y1="140" x2="210" y2="90" stroke="#7b4fa0" stroke-width="2" opacity="0.5"/>
-              <line x1="50" y1="90" x2="90" y2="115" stroke="#7b4fa0" stroke-width="1.5" opacity="0.3" stroke-dasharray="5 3"/>
-              <line x1="90" y1="115" x2="130" y2="140" stroke="#7b4fa0" stroke-width="1.5" opacity="0.3" stroke-dasharray="5 3"/>
-              <!-- Highlight path -->
-              <line x1="50" y1="90" x2="130" y2="50" stroke="#c1392b" stroke-width="2.5" opacity="0.8"/>
-              <line x1="130" y1="50" x2="210" y2="90" stroke="#c1392b" stroke-width="2.5" opacity="0.8"/>
-            </svg>
-          </div>
-          <div class="card-badge">Federated Learning</div>
+            <div class="illu illu-transit" style="display:flex;align-items:center;justify-content:center;background:#f2fbf4;">
+              <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+                <defs>
+                  <marker id="m4" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#555" opacity="0.7"/></marker>
+                </defs>
+                <line x1="28" y1="178" x2="318" y2="178" stroke="#ddd" stroke-width="0.8"/>
+                <path d="M38,178 Q48,177 58,165 Q66,138 72,108 Q78,80 84,68 Q90,80 96,108 Q102,138 108,165 Q114,177 124,178" stroke="#2e7d3c" stroke-width="1.8" fill="#2e7d3c" fill-opacity="0.07" opacity="0.95"/>
+                <text x="62" y="58" font-family="DM Mono,monospace" font-size="7.5" fill="#2e7d3c">P₁(x)</text>
+                <line x1="84" y1="68" x2="84" y2="178" stroke="#2e7d3c" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.4"/>
+                <text x="78" y="190" font-family="DM Mono,monospace" font-size="6.5" fill="#2e7d3c">μ₁</text>
+                <path d="M118,178 Q132,177 148,170 Q162,158 172,142 Q182,130 188,124 Q194,130 202,142 Q212,158 228,170 Q242,177 258,178" stroke="#c1392b" stroke-width="1.8" fill="#c1392b" fill-opacity="0.07" opacity="0.95"/>
+                <text x="172" y="112" font-family="DM Mono,monospace" font-size="7.5" fill="#c1392b">P₂(x)</text>
+                <line x1="188" y1="124" x2="188" y2="178" stroke="#c1392b" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.4"/>
+                <text x="182" y="190" font-family="DM Mono,monospace" font-size="6.5" fill="#c1392b">μ₂</text>
+                <path d="M262,178 Q268,178 272,170 Q278,148 282,128 Q286,112 290,108 Q294,112 298,128 Q302,148 307,170 Q310,177 314,178" stroke="#1a3a5c" stroke-width="1.8" fill="#1a3a5c" fill-opacity="0.06" opacity="0.8"/>
+                <text x="278" y="100" font-family="DM Mono,monospace" font-size="7.5" fill="#1a3a5c">P₃(x)</text>
+                <line x1="84" y1="68" x2="155" y2="36" stroke="#555" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.45" marker-end="url(#m4)"/>
+                <line x1="188" y1="124" x2="178" y2="36" stroke="#555" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.45" marker-end="url(#m4)"/>
+                <line x1="290" y1="108" x2="202" y2="36" stroke="#555" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.45" marker-end="url(#m4)"/>
+                <rect x="130" y="14" width="118" height="24" rx="4" fill="#444" fill-opacity="0.07" stroke="#666" stroke-width="1"/>
+                <text x="140" y="24" font-family="DM Mono,monospace" font-size="7" fill="#444">θ* = argmin</text>
+                <text x="140" y="34" font-family="DM Mono,monospace" font-size="7" fill="#444">∑ₖ wₖ·L(θ; Dₖ)</text>
+                <text x="28" y="210" font-family="DM Mono,monospace" font-size="6.5" fill="#888">non-iid · domain shift · distribution mismatch</text>
+              </svg>
+            </div>
+          <div class="card-badge">Heterogeneity</div>
         </div>
         <div class="card-body">
-          <h3 class="card-title">Collaborative Learning for AVs via Knowledge Sharing & Personalization</h3>
-          <p class="card-desc">Federated learning framework enabling AVs to share knowledge while retaining personalized models — ensuring safety and reliability without raw data exchange.</p>
+          <h3 class="card-title">Learning under Agent Heterogeneity</h3>
+          <p class="card-desc">Traffic flow heterogeneity, stemming from diverse behaviors of its agents, presents a fundamental challenge in developing accurate predictive and prescriptive models that are at the heart of understanding traffic. 
+            This work adopts a data decomposition framework to address the limitations of global data aggregation methods that often obscure individual agent behaviors in traffic systems..</p>
           <div class="card-footer">
-            <span class="card-funding">TRB · 🏆 D. Grant Mickle Award 2025</span>
+            <span class="card-funding">Artificial Intelligence</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="card fade-in" data-modal="climate">
+      <div class="card fade-in" data-modal="theory">
         <div class="card-image">
-          <div class="illu illu-climate" style="display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- Network graph resilience -->
-              <circle cx="60" cy="70" r="7" fill="#2e7d5c" opacity="0.7"/>
-              <circle cx="140" cy="40" r="7" fill="#2e7d5c" opacity="0.7"/>
-              <circle cx="200" cy="80" r="7" fill="#2e7d5c" opacity="0.7"/>
-              <circle cx="100" cy="130" r="7" fill="#2e7d5c" opacity="0.7"/>
-              <circle cx="180" cy="140" r="7" fill="#2e7d5c" opacity="0.7"/>
-              <!-- Normal edges -->
-              <line x1="60" y1="70" x2="140" y2="40" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
-              <line x1="140" y1="40" x2="200" y2="80" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
-              <line x1="60" y1="70" x2="100" y2="130" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
-              <line x1="200" y1="80" x2="180" y2="140" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
-              <line x1="100" y1="130" x2="180" y2="140" stroke="#2e7d5c" stroke-width="1.5" opacity="0.5"/>
-              <!-- Failed node X -->
-              <circle cx="140" cy="40" r="10" fill="none" stroke="#c1392b" stroke-width="2" opacity="0.8"/>
-              <line x1="134" y1="34" x2="146" y2="46" stroke="#c1392b" stroke-width="2"/>
-              <line x1="146" y1="34" x2="134" y2="46" stroke="#c1392b" stroke-width="2"/>
-              <!-- Reroute dashed -->
-              <line x1="60" y1="70" x2="200" y2="80" stroke="#c1392b" stroke-width="2" stroke-dasharray="6 3" opacity="0.6"/>
+            <div class="illu illu-climate" style="display:flex;align-items:center;justify-content:center;background:#fdfaf2;">
+            <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <defs>
+                <marker id="a5" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#7a8fa8"/></marker>
+              </defs>
+              <line x1="32" y1="192" x2="316" y2="192" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a5)"/>
+              <line x1="32" y1="192" x2="32" y2="18" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a5)"/>
+              <text x="318" y="196" font-family="DM Mono,monospace" font-size="8.5" fill="#7a8fa8" font-style="italic">x</text>
+              <text x="19" y="17" font-family="DM Mono,monospace" font-size="8.5" fill="#7a8fa8" font-style="italic">t</text>
+              <line x1="48" y1="192" x2="108" y2="28" stroke="#1a3a5c" stroke-width="1.3" opacity="0.5"/>
+              <line x1="70" y1="192" x2="130" y2="28" stroke="#1a3a5c" stroke-width="1.3" opacity="0.5"/>
+              <line x1="92" y1="192" x2="152" y2="28" stroke="#1a3a5c" stroke-width="1.3" opacity="0.5"/>
+              <line x1="114" y1="192" x2="174" y2="28" stroke="#1a3a5c" stroke-width="1.3" opacity="0.5"/>
+              <path d="M148,192 L172,148 L158,110 L180,28" stroke="#c1392b" stroke-width="1.7" fill="none" opacity="0.9"/>
+              <path d="M170,192 L192,150 L178,112 L200,28" stroke="#c1392b" stroke-width="1.7" fill="none" opacity="0.9"/>
+              <path d="M192,192 L212,152 L198,114 L220,28" stroke="#c1392b" stroke-width="1.7" fill="none" opacity="0.9"/>
+              <line x1="238" y1="192" x2="282" y2="28" stroke="#1a3a5c" stroke-width="1.1" opacity="0.35"/>
+              <line x1="262" y1="192" x2="306" y2="28" stroke="#1a3a5c" stroke-width="1.1" opacity="0.35"/>
+              <line x1="192" y1="192" x2="140" y2="28" stroke="#b07010" stroke-width="2" stroke-dasharray="8 4" opacity="0.85"/>
+              <polygon points="148,192 192,192 220,28 180,28" fill="#c1392b" fill-opacity="0.05"/>
+              <text x="95" y="20" font-family="DM Mono,monospace" font-size="7" fill="#b07010">ω = (q₂−q₁)/(ρ₂−ρ₁)</text>
+              <text x="200" y="145" font-family="DM Mono,monospace" font-size="7" fill="#c1392b" opacity="0.8">congested</text>
+              <text x="44" y="90" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c" opacity="0.6">v_f</text>
             </svg>
           </div>
-          <div class="card-badge">Sustainable Mobility</div>
+          <div class="card-badge">Traffic Flow Theory</div>
         </div>
         <div class="card-body">
-          <h3 class="card-title">AV Adoption & Environmental Implications</h3>
-          <p class="card-desc">Modeling how autonomous vehicle and e-bike adoption shifts travel behavior, emissions, and energy use — with opportunities for electrification to reduce environmental impact.</p>
+          <h3 class="card-title">Modern Traffic Flow Theory</h3>
+          <p class="card-desc">Traffic flow systems are increasingly complex, dynamic, and changing. With the integration of various elements of automation and driving assistance systems, traffic flow theory must evolve to account for new phenomena and behaviors.
+            We develop modern traffic flow theory that accounts of complex interactions and dynamics between agents, and provide theoretical foundations for how they shape traffic performance and stability. 
+          </p>
           <div class="card-footer">
-            <span class="card-funding">Environmental Research Letters · 2021</span>
+            <span class="card-funding">Transportation Science · Transportation Engineering</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="card fade-in" data-modal="behavior">
+      <div class="card fade-in" data-modal="urban">
         <div class="card-image">
-          <div class="illu illu-behavior" style="display:flex;align-items:center;justify-content:center;">
-            <svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- Scatter / behavioral clusters -->
-              <circle cx="80" cy="60" r="4" fill="#b07010" opacity="0.6"/>
-              <circle cx="95" cy="75" r="4" fill="#b07010" opacity="0.6"/>
-              <circle cx="70" cy="80" r="4" fill="#b07010" opacity="0.6"/>
-              <circle cx="88" cy="90" r="4" fill="#b07010" opacity="0.6"/>
-              <!-- cluster ellipse -->
-              <ellipse cx="82" cy="76" rx="26" ry="22" fill="none" stroke="#b07010" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
-
-              <circle cx="170" cy="100" r="4" fill="#1a3a5c" opacity="0.6"/>
-              <circle cx="185" cy="115" r="4" fill="#1a3a5c" opacity="0.6"/>
-              <circle cx="160" cy="118" r="4" fill="#1a3a5c" opacity="0.6"/>
-              <circle cx="178" cy="130" r="4" fill="#1a3a5c" opacity="0.6"/>
-              <ellipse cx="173" cy="116" rx="26" ry="22" fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
-
-              <circle cx="130" cy="50" r="4" fill="#c1392b" opacity="0.6"/>
-              <circle cx="145" cy="62" r="4" fill="#c1392b" opacity="0.6"/>
-              <circle cx="120" cy="68" r="4" fill="#c1392b" opacity="0.6"/>
-              <ellipse cx="132" cy="60" rx="22" ry="16" fill="none" stroke="#c1392b" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.5"/>
-            </svg>
-          </div>
-          <div class="card-badge">Cyber-Physical Systems</div>
+            <div class="illu illu-behavior" style="display:flex;align-items:center;justify-content:center;background:#fff8f8;">
+              <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+                <defs>
+                  <marker id="nf" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#1a3a5c" opacity="0.7"/></marker>
+                  <marker id="re" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#c1392b"/></marker>
+                </defs>
+                <line x1="18" y1="72" x2="322" y2="72" stroke="#e0e0dc" stroke-width="8" stroke-linecap="round"/>
+                <line x1="18" y1="144" x2="322" y2="144" stroke="#e0e0dc" stroke-width="8" stroke-linecap="round"/>
+                <line x1="88" y1="18" x2="88" y2="202" stroke="#e0e0dc" stroke-width="8" stroke-linecap="round"/>
+                <line x1="180" y1="18" x2="180" y2="202" stroke="#e0e0dc" stroke-width="8" stroke-linecap="round"/>
+                <line x1="272" y1="18" x2="272" y2="202" stroke="#e0e0dc" stroke-width="8" stroke-linecap="round"/>
+                <line x1="18" y1="72" x2="322" y2="72" stroke="#fff" stroke-width="1" stroke-dasharray="9 7"/>
+                <line x1="18" y1="144" x2="322" y2="144" stroke="#fff" stroke-width="1" stroke-dasharray="9 7"/>
+                <line x1="88" y1="18" x2="88" y2="202" stroke="#fff" stroke-width="1" stroke-dasharray="9 7"/>
+                <line x1="180" y1="18" x2="180" y2="202" stroke="#fff" stroke-width="1" stroke-dasharray="9 7"/>
+                <line x1="272" y1="18" x2="272" y2="202" stroke="#fff" stroke-width="1" stroke-dasharray="9 7"/>
+                <circle cx="88" cy="72" r="5" fill="white" stroke="#bbb" stroke-width="1.2"/>
+                <circle cx="272" cy="72" r="5" fill="white" stroke="#bbb" stroke-width="1.2"/>
+                <circle cx="88" cy="144" r="5" fill="white" stroke="#bbb" stroke-width="1.2"/>
+                <circle cx="272" cy="144" r="5" fill="white" stroke="#bbb" stroke-width="1.2"/>
+                <circle cx="180" cy="144" r="10" fill="#c1392b" opacity="0.95"/>
+                <line x1="174" y1="138" x2="186" y2="150" stroke="white" stroke-width="2.2"/>
+                <line x1="186" y1="138" x2="174" y2="150" stroke="white" stroke-width="2.2"/>
+                <circle cx="180" cy="144" r="20" fill="none" stroke="#c1392b" stroke-width="1" opacity="0.3"/>
+                <circle cx="180" cy="144" r="34" fill="none" stroke="#c1392b" stroke-width="0.7" opacity="0.15"/>
+                <rect x="112" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.7"/>
+                <rect x="126" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.55"/>
+                <rect x="140" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.38"/>
+                <rect x="154" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.22"/>
+                <path d="M88,144 Q88,108 132,90 Q158,80 180,72" stroke="#c1392b" stroke-width="1.8" fill="none" stroke-dasharray="6 3" opacity="0.85" marker-end="url(#re)"/>
+                <path d="M180,144 Q180,168 226,178 Q252,184 272,168" stroke="#c1392b" stroke-width="1.8" fill="none" stroke-dasharray="6 3" opacity="0.75" marker-end="url(#re)"/>
+                <line x1="28" y1="72" x2="72" y2="72" stroke="#1a3a5c" stroke-width="1.5" opacity="0.5" marker-end="url(#nf)"/>
+                <line x1="88" y1="28" x2="88" y2="58" stroke="#1a3a5c" stroke-width="1.5" opacity="0.5" marker-end="url(#nf)"/>
+                <text x="100" y="140" font-family="DM Mono,monospace" font-size="6.5" fill="#b07010" opacity="0.8">queue</text>
+              </svg>
+            </div>
+          <div class="card-badge">Urban Mobility</div>
         </div>
         <div class="card-body">
-          <h3 class="card-title">Transportation Emissions Calculator</h3>
-          <p class="card-desc">An accessible, open tool for computing transportation mode emissions, enabling individuals and planners to make data-driven decisions for reducing travel-related carbon footprint.</p>
+          <h3 class="card-title">Urban Mobility Patterns Under Crisis</h3>
+          <p class="card-desc">The growing frequency and severity of natural disasters present profound challenges for societies worldwide, threatening lives, disrupting economies, and straining infrastructure. 
+            Economic losses have risen sharply in recent decades, driven by both intensifying hazards and increasing exposure of human settlements. 
+            This trend underscores the urgent need for more effective preparedness and response strategies.</p>
           <div class="card-footer">
-            <span class="card-funding">Nature npj · 2024</span>
+            <span class="card-funding">Urban Mobility · Artificial Intelligence</span>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </div>
+        <!-- Card 7 -->
+      <div class="card fade-in" data-modal="adoption">
+        <div class="card-image">
+            <div class="illu illu-behavior" style="display:flex;align-items:center;justify-content:center;background:#f2f8ff;">
+              <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+                <defs>
+                  <marker id="a7" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#7a8fa8"/></marker>
+                </defs>
+                <line x1="48" y1="48" x2="305" y2="48" stroke="#ddeeff" stroke-width="0.8"/>
+                <line x1="48" y1="98" x2="305" y2="98" stroke="#ddeeff" stroke-width="0.8"/>
+                <line x1="48" y1="148" x2="305" y2="148" stroke="#ddeeff" stroke-width="0.8"/>
+                <line x1="48" y1="178" x2="312" y2="178" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a7)"/>
+                <line x1="48" y1="178" x2="48" y2="22" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a7)"/>
+                <text x="314" y="182" font-family="DM Mono,monospace" font-size="8.5" fill="#7a8fa8" font-style="italic">t</text>
+                <text x="28" y="20" font-family="DM Mono,monospace" font-size="8" fill="#7a8fa8">A(t)</text>
+                <text x="32" y="180" font-family="DM Mono,monospace" font-size="7" fill="#aaa">0</text>
+                <text x="26" y="150" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.25</text>
+                <text x="26" y="100" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.50</text>
+                <text x="26" y="50" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.75</text>
+                <line x1="48" y1="98" x2="305" y2="98" stroke="#aaa" stroke-width="0.8" stroke-dasharray="5 4" opacity="0.4"/>
+                <path d="M58,177 Q90,176 118,168 Q150,154 178,132 Q206,108 232,82 Q258,58 295,42" stroke="#1a3a5c" stroke-width="2.2" fill="none" opacity="0.92"/>
+                <path d="M58,177 Q82,174 106,160 Q136,138 160,114 Q186,90 215,66 Q248,46 295,38" stroke="#2e7d3c" stroke-width="2" fill="none" opacity="0.82" stroke-dasharray="9 4"/>
+                <path d="M58,177 Q110,175 162,170 Q210,163 248,155 Q278,148 295,142" stroke="#c1392b" stroke-width="2" fill="none" opacity="0.82" stroke-dasharray="4 4"/>
+                <circle cx="178" cy="132" r="4.5" fill="white" stroke="#1a3a5c" stroke-width="1.8"/>
+                <line x1="178" y1="132" x2="178" y2="178" stroke="#1a3a5c" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.35"/>
+                <circle cx="158" cy="114" r="4.5" fill="white" stroke="#2e7d3c" stroke-width="1.8"/>
+                <line x1="158" y1="114" x2="158" y2="178" stroke="#2e7d3c" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.35"/>
+                <text x="52" y="36" font-family="DM Mono,monospace" font-size="7" fill="#555" opacity="0.7">A(t) = 1/(1+e^{−k(t−t₀)})</text>
+                <line x1="52" y1="196" x2="72" y2="196" stroke="#1a3a5c" stroke-width="2"/>
+                <text x="75" y="200" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">AV</text>
+                <line x1="104" y1="196" x2="124" y2="196" stroke="#2e7d3c" stroke-width="2" stroke-dasharray="7 3"/>
+                <text x="127" y="200" font-family="DM Mono,monospace" font-size="7" fill="#2e7d3c">e-bike</text>
+                <line x1="168" y1="196" x2="188" y2="196" stroke="#c1392b" stroke-width="2" stroke-dasharray="4 3"/>
+                <text x="191" y="200" font-family="DM Mono,monospace" font-size="7" fill="#c1392b">transit</text>
+              </svg>
+            </div>
+          <div class="card-badge">Adoption Patterns</div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Adoption Patterns of Emerging Modes of Transportation</h3>
+          <p class="card-desc">The emergence of different modes of transportaiton promises to transform urban mobility, reshaping not only traffic efficiency and safety but also the environmental and behavioral dynamics of cities worldwide. 
+            As these technologies begin to integrate into transportation networks, their influence extends into societal and ecological domains, raising fundamental questions about how these technologies interact with existing travel behaviors and infrastructure systems.
+            This is particularly critical in densely populated urban regions, where modes are likely to substitute or compete with other transportation modes.</p>
+          <div class="card-footer">
+            <span class="card-funding"> Urban Mobility · Artificial Intelligence</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
@@ -1251,6 +1356,7 @@ footer {
 
     </div>
   </div>
+
 </section>
 
 <div class="divider"></div>
@@ -1263,12 +1369,49 @@ footer {
     <div class="section-header fade-in">
       <div class="label">Recent Work</div>
       <div class="section-header-row">
-        <h2 class="section-title">Publications</h2>
-        <a href="#" class="see-all">Full List</a>
+        <h2 class="section-title">Selected Publications</h2>
+        <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" class="see-all">Full List on Google Scholar</a>
       </div>
+      <p style="font-family:'DM Mono',monospace; font-size:0.75rem; color:var(--light); margin-top:0.5rem;">
+        For a full list of publications, visit our 
+        <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" style="color:var(--accent); text-decoration:none;">Google Scholar →</a>
+      </p>
     </div>
 
     <div class="pub-table fade-in">
+       <div class="pub-row">
+        <div class="pub-year">2026</div>
+        <div class="pub-info">
+          <div class="pub-title">Learning the pareto space of multi-objective autonomous driving: a modular, data driven approach</div>
+          <div class="pub-authors">Elayan, M., and Kontar, W.</div>
+          <div class="pub-venue">Arxiv</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2601.18913" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+       <div class="pub-row">
+        <div class="pub-year">2025</div>
+        <div class="pub-info">
+          <div class="pub-title">Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city</div>
+          <div class="pub-authors">Armantalab, O., and Kontar, W.</div>
+          <div class="pub-venue">Arxiv</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2510.00469" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>
+       <div class="pub-row">
+        <div class="pub-year">2025</div>
+        <div class="pub-info">
+          <div class="pub-title">Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic</div>
+          <div class="pub-authors">Elayan, M., and Kontar, W. </div>
+          <div class="pub-venue">Arxiv</div>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2505.04379" target="_blank" class="pub-tag">DOI</a>
+        </div>
+      </div>               
       <div class="pub-row">
         <div class="pub-year">2024</div>
         <div class="pub-info">
@@ -1378,12 +1521,16 @@ footer {
 
     <!-- PI -->
     <div class="pi-row fade-in">
-      <div class="pi-photo">WK</div>
+      <div class="pi-photo">
+        <img src="images/wissam.jpeg" alt="Prof. Wissam Kontar" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+      </div>
       <div class="pi-info">
         <div class="pi-role">Principal Investigator</div>
         <div class="pi-name">Prof. Wissam Kontar</div>
         <div class="pi-affil">Assistant Professor · Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
-        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks. He earned his B.E. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of adoption ecosystems. The ultimate goal is to design and deploy technologies that improve operational performance and align with societal needs.</p>
+        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks. 
+          He earned his B.Eng. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of transportation ecosystems. 
+          His ultimate goal is to design and deploy transportation technologies that improve operational performance and align with societal needs.</p>
         <div class="pi-links">
           <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" class="pi-link">Google Scholar</a>
           <a href="https://orcid.org/0000-0001-9260-0254" target="_blank" class="pi-link">ORCID</a>
@@ -1394,32 +1541,51 @@ footer {
       </div>
     </div>
 
-    <!-- Students -->
+<!-- Students -->
     <div class="team-grid fade-in">
-      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
-        <div class="member-name" style="color:var(--mid);">PhD Students</div>
-        <div class="member-role" style="color:var(--accent);">Recruiting · Fall 2025</div>
-        <div class="member-focus" style="margin-top:0.4rem;">Autonomous vehicles, AI, sustainable mobility</div>
+
+      <!-- PhD Student 1 -->
+      <div class="member-card">
+        <div class="member-avatar" style="width:52px;height:52px;overflow:hidden;border-radius:50%;border:1px solid var(--border);">
+          <img src="images/mohamad.png" alt="PhD Student" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="member-name">Mohammad Elayan</div>
+        <div class="member-role">PhD Student</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Artificial Intelligence · Autonomous Driving · Transportation Operations</div>
+        <a href="https://mselayan.github.io" target="_blank" style="display:inline-block;margin-top:0.6rem;font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);padding:0.2rem 0.55rem;border-radius:2px;transition:border-color 0.15s,color 0.15s;">Website →</a>
       </div>
-      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
-        <div class="member-name" style="color:var(--mid);">MS Students</div>
-        <div class="member-role" style="color:var(--accent);">Recruiting · Fall 2025</div>
-        <div class="member-focus" style="margin-top:0.4rem;">Traffic flow, federated learning, HMI</div>
+
+      <!-- PhD Student 2 -->
+      <div class="member-card">
+        <div class="member-avatar" style="width:52px;height:52px;overflow:hidden;border-radius:50%;border:1px solid var(--border);">
+          <img src="images/omid.jpg" alt="PhD Student" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="member-name">Omid Armantalab</div>
+        <div class="member-role">PhD Student</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Urban Mobility · Travel Behavior · Artificial Intelligence</div>
+        <a href="https://scholar.google.com/citations?user=WrGMhSIAAAAJ&hl=en" target="_blank" style="display:inline-block;margin-top:0.6rem;font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);padding:0.2rem 0.55rem;border-radius:2px;transition:border-color 0.15s,color 0.15s;">Website →</a>
       </div>
-      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-        <div class="member-avatar" style="background:transparent;border-color:var(--border);">+</div>
-        <div class="member-name" style="color:var(--mid);">Undergrad Researchers</div>
-        <div class="member-role" style="color:var(--accent);">Open Positions</div>
-        <div class="member-focus" style="margin-top:0.4rem;">Data analysis, software, experiments</div>
+
+      <!-- Undergraduate Researcher -->
+      <div class="member-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+        <div class="member-avatar" style="background:var(--subtle);border-color:var(--border);">+</div>
+        <div class="member-name">Tu Tran</div>
+        <div class="member-role" style="color:var(--accent);">Undergraduate Researcher</div>
+        <div class="member-focus" style="margin-top:0.4rem;">Aerial and Ground Autonomous Systems · Agriculture</div>
+        <!-- Add website link below when available -->
+        <!-- <a href="" target="_blank" style="display:inline-block;margin-top:0.6rem;font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);padding:0.2rem 0.55rem;border-radius:2px;">Website →</a> -->
       </div>
-      <div class="member-card" style="border-style:dashed; display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+
+      <!-- Contact card -->
+      <div class="member-card" style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
         <div class="member-avatar" style="background:transparent;border-color:var(--border);">✉</div>
         <div class="member-name" style="color:var(--mid);">Interested?</div>
         <div class="member-role" style="color:var(--accent);">Get in touch</div>
-        <div class="member-focus" style="margin-top:0.4rem;"><a href="mailto:wkontar2@unl.edu" style="color:var(--accent);">wkontar2@unl.edu</a></div>
+        <div class="member-focus" style="margin-top:0.4rem;">
+          <a href="mailto:wkontar2@unl.edu" style="color:var(--accent);">wkontar2@unl.edu</a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -1441,8 +1607,25 @@ footer {
     <div class="news-grid fade-in">
       <div class="news-card">
         <div class="news-meta">
+          <span class="news-type conf">Funding</span>
+          <span class="news-date-label">September 2025</span>
+        </div>
+        <div class="news-title">New Award from NSF NAIRR</div>
+        <p class="news-excerpt">Consensus-Seeking Autonomous Agents in Complex Cyber-Physical
+        Transportation Systems</p>
+      </div>  
+      <div class="news-card">
+        <div class="news-meta">
+          <span class="news-type conf">Funding</span>
+          <span class="news-date-label">December2025</span>
+        </div>
+        <div class="news-title">New Award from DOT Mid-America Transportation Center </div>
+        <p class="news-excerpt">Safety and Mobility Risk Index for Region VII Transportation Networks</p>
+      </div>     
+      <div class="news-card">
+        <div class="news-meta">
           <span class="news-type award">Award</span>
-          <span class="news-date-label">Jan 2025</span>
+          <span class="news-date-label">January 2025</span>
         </div>
         <div class="news-title">Paper wins D. Grant Mickle Award at Transportation Research Board 2025</div>
         <p class="news-excerpt">"Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization" recognized at TRB Annual Meeting.</p>
@@ -1450,7 +1633,7 @@ footer {
       <div class="news-card">
         <div class="news-meta">
           <span class="news-type award">Award</span>
-          <span class="news-date-label">Jan 2025</span>
+          <span class="news-date-label">January 2025</span>
         </div>
         <div class="news-title">Paper wins Nathan Gatner Award by ACP50 committee at TRB 2025</div>
         <p class="news-excerpt">"Optimal Measurement of Traffic Hysteresis under Traffic Oscillations" recognized by the ACP50 committee.</p>
@@ -1458,7 +1641,7 @@ footer {
       <div class="news-card">
         <div class="news-meta">
           <span class="news-type grant">New Position</span>
-          <span class="news-date-label">Jan 2025</span>
+          <span class="news-date-label">January 2025</span>
         </div>
         <div class="news-title">Joined University of Nebraska-Lincoln as Assistant Professor</div>
         <p class="news-excerpt">Actively recruiting students at all levels — undergraduate, master's, and Ph.D. — to join the TALI research team.</p>
@@ -1476,8 +1659,8 @@ footer {
           <span class="news-type conf">Recognition</span>
           <span class="news-date-label">May 2022</span>
         </div>
-        <div class="news-title">Named a Rising Star in Cyber-Physical Systems</div>
-        <p class="news-excerpt">Selected as a Rising Star in Cyber-Physical Systems by the Link Lab at the University of Virginia.</p>
+        <div class="news-title">Named a Rising Star in NSF Cyber-Physical Systems</div>
+        <p class="news-excerpt">Selected as a Rising Star in NSF Cyber-Physical Systems by the Link Lab at the University of Virginia.</p>
       </div>
       <div class="news-card">
         <div class="news-meta">
@@ -1523,8 +1706,8 @@ footer {
         <h4>Research</h4>
         <ul>
           <li><a href="#">Autonomous Agents</a></li>
-          <li><a href="#">Traffic Intelligence</a></li>
-          <li><a href="#">Operations</a></li>
+          <li><a href="#">Artificial Intelligence</a></li>
+          <li><a href="#">Transportation Intelligence</a></li>
           <li><a href="#">Urban Mobility</a></li>
         </ul>
       </div>
@@ -1548,8 +1731,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Transportation and Autonomy Laboratory for Intelligence (TALI) · Prof. Wissam Kontar</span>
-      <span>Built with HTML · Easy to maintain</span>
+      <span>© 2025 Transportation and Autonomy Laboratory for Intelligence (TALI) · Wissam Kontar</span>
     </div>
   </div>
 </footer>
@@ -1605,7 +1787,7 @@ const MODALS = {
   av: {
     badge: "Featured · Autonomous Vehicles",
     title: "Domain & Physics-Guided Control for Autonomous Vehicles",
-    funder: "Internal / CTEDD", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
+    funder: "National Science Foundation (NSF)", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
     desc: "Autonomous vehicles often prioritize individual performance, overlooking traffic-level stability and efficiency. This research introduces a physics-based response function to bridge AV control algorithms with traffic dynamics, enabling control designs that optimize system-wide performance. We connect control algorithm parameters to traffic-level behavior for a more holistic design of AV systems.",
     highlights: [
       "Physics-based response function linking AV parameters to traffic-level behavior",
@@ -1621,51 +1803,34 @@ const MODALS = {
     paperUrl: "https://www.sciencedirect.com/science/article/pii/S0968090X21001844"
   },
 
-  equity: {
-    badge: "Human-Machine Interaction",
-    title: "Voluntary Driver Intervention in Human-AV Car-Following",
-    funder: "TRC Part C", period: "2024", pi: "Prof. Wissam Kontar",
-    desc: "This study investigates the complex dynamics of human-automated vehicle interaction, specifically focusing on when and why human drivers voluntarily intervene in car-following situations managed by automation. Understanding these interactions is critical for designing AVs that are safe and trusted by users.",
+  consensus: {
+    badge: "AI Agents",
+    title: "Consensus-Driven AI Agents for Mixed-Autonomy Traffic",
+    funder: "NSF NAIRR", period: "2025", pi: "Prof. Wissam Kontar",
+    desc: "Balancing safety, efficiency, and interaction is fundamental to designing autonomous driving agents and to understanding autonomous vehicle (AV) behavior in real-world operation. This study introduces an empirical learning framework that derives these trade-offs directly from naturalistic trajectory data. A unified objective space represents each AV timestep through composite scores of safety, efficiency, and interaction. Pareto dominance is applied to identify non-dominated states, forming an empirical frontier that defines the attainable region of balanced performance.",
     highlights: [
-      "Empirical analysis of voluntary human takeover events in car-following",
-      "Behavioral modeling of driver intervention thresholds",
-      "Implications for AV trust calibration and interface design",
-      "Insights for mixed-autonomy fleet management"
+      "Emperical analysis of consensus in AVs across safety, interaction quality with other agents, and traffic efficiency",
+      "Pareto-optimality reward function modeling",
+      "Implications for designing and training AV driving agents",
+      "Reinforcement learning framework for optimizing AV behavior in mixed traffic settings"
     ],
     pubs: [
-      { title: "Human-automated vehicle interactions: Voluntary driver intervention in car-following", authors: "Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.", venue: "Transportation Research Part C · 2024", url: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X" }
+      { title: "Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic", authors: "Elayan, M. and Kontar, W.", venue: "Under Review · 2025", url: "https://arxiv.org/abs/2505.04379" },
+      { title: "Learning the pareto space of multi-objective autonomous driving: a modular, data-driven approach", authors: "Elayan, M. and Kontar, W.", venue: "Under Review · 2025", url: "https://arxiv.org/abs/2601.18913" }
     ],
-    projectUrl: "https://wissamkontar.github.io",
-    paperUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X"
+    projectUrl: "https://github.com/wissamkontar/Learning-the-Pareto-Space-of-Multi-Objective-Autonomous-Driving",
+    paperUrl: "https://arxiv.org/abs/2505.04379"
   },
 
-  traffic: {
-    badge: "Explainable AI",
-    title: "Traffic Wave Properties for AVs During Traffic Oscillations",
-    funder: "Under Review", period: "2024–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "This research develops analytical approximations for traffic wave properties in mixed-autonomy settings. By connecting AV control parameters to measurable traffic-level wave behavior, we provide a physics-grounded foundation for designing AI models that are both high-performing and interpretable.",
-    highlights: [
-      "Analytical approximations for traffic oscillation properties under AV penetration",
-      "Connection between AV control gain parameters and macroscopic wave speed",
-      "Framework for evaluating AI model reliability in traffic dynamics",
-      "Open-world reliability assessment methodology"
-    ],
-    pubs: [
-      { title: "Traffic Wave Properties for Automated Vehicles During Traffic Oscillations via Analytical Approximations", authors: "Zhou, Y., Li, S., Kontar, W., Pu, F., Srivastava, A., Ahn, S.", venue: "Under Review · Transportation Research Part B", url: "https://arxiv.org/abs/2411.16937" }
-    ],
-    projectUrl: "https://wissamkontar.github.io",
-    paperUrl: "https://arxiv.org/abs/2411.16937"
-  },
-
-  transit: {
-    badge: "Federated Learning",
-    title: "Collaborative Learning for AVs via Knowledge Sharing & Personalization",
-    funder: "TRB", period: "2023–2024", pi: "Prof. Wissam Kontar",
-    desc: "This study proposes a collaborative learning framework where autonomous vehicles share knowledge while retaining personalized models tailored to their unique operational conditions. Using federated learning principles, this approach ensures safety and reliability without sharing raw data — earning the D. Grant Mickle Award at TRB 2025.",
+  personalization: {
+    badge: "Knowledge Sharing",
+    title: "Knowledge Sharing and Personalization Across Agents",
+    funder: "NSF", period: "2024–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "This work describes a learning framework for driver models of AVs via knowledge sharing and personalization. Due to the inherent variability in the transportation system, exposing AVs to all potential driving scenarios through empirical testing is challenging. This limitation can render AVs unaware of certain critical situations, impacting their safe and efficient operation. To address this challenge, this paper proposes a collaborative training approach that enables the sharing of knowledge among AVs while maintaining personalized models tailored to each vehicle's unique conditions.",
     highlights: [
       "Federated learning framework for distributed AV driver model training",
       "Personalization layer retaining local operational characteristics",
-      "Privacy-preserving knowledge transfer without raw data sharing",
+      "Large scale knowledge transfer without sharing raw data",
       "Scalable to large heterogeneous AV fleets"
     ],
     pubs: [
@@ -1676,41 +1841,58 @@ const MODALS = {
     paperUrl: "https://journals.sagepub.com/doi/abs/10.1177/03611981241298583"
   },
 
-  climate: {
-    badge: "Sustainable Mobility",
-    title: "AV Adoption & Environmental Implications",
-    funder: "CTEDD", period: "2021–2022", pi: "Prof. Wissam Kontar",
-    desc: "This research examines how emerging modes of transportation — including autonomous vehicles and e-bikes — influence travel behavior and environmental outcomes. AV adoption causes shifts in travel behavior resulting in changes to emissions and energy use, with electrification offering key opportunities for impact reduction.",
+  theory: {
+    badge: "Traffic Flow Theory",
+    title: "Complex Traffic Flow Theory",
+    funder: "NSF", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "Traffic wave propagation and hysteresis are fundamental phenomena in traffic flow, yet their measurement and modeling remain challenging, espcially under complex vehicle automation and interactions. This research develops novel methods to understand and compute such phenomena.",
     highlights: [
-      "Life-cycle environmental assessment of AV adoption scenarios",
-      "E-bike sharing shown to significantly reduce emissions for 1–2.5 mile trips",
-      "Rebound effect analysis: AVs may increase vehicle miles traveled",
-      "Featured in Popular Science, Gizmodo, and Politico"
+      "Analyticla approximations for traffic wave properties under mixed autonomy",
+      "Mathematical properties of traffic waves",
+      "Connection between control theory and traffic flow theory",
     ],
     pubs: [
-      { title: "Autonomous vehicle adoption: use phase environmental implications", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Letters · 2021 · Top 5% by attention score", url: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" },
-      { title: "Electric bicycles sharing: opportunities and environmental impacts", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research: Infrastructure and Sustainability · 2022", url: "https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta" }
-    ],
+      { title: "Traffic wave properties for automated vehicles during traffic oscillations via analytical approximations", authors: "Zhou, Y., Li, S., Pu. ., Kontar, W., Srivastava, A.,Ahn, S.", venue: "Under review · 2025", url: "upcoming" },
+     ],
     projectUrl: "https://wissamkontar.github.io",
-    paperUrl: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"
+    paperUrl: "https://arxiv.org/abs/2411.16937"
   },
 
-  behavior: {
-    badge: "Cyber-Physical Systems",
-    title: "Transportation Emissions Calculator",
-    funder: "Self-funded / UW-Madison", period: "2022–2024", pi: "Prof. Wissam Kontar",
-    desc: "An accessible, open tool for computing transportation mode emissions, enabling individuals, planners, and policymakers to make data-driven decisions. The calculator was developed as part of a broader effort to reduce travel-related carbon footprints equitably, with a case study in Madison, Wisconsin published in Nature npj.",
+  urban: {
+    badge: "Urban Mobility",
+    title: "Mobility Patterns Under Crisis",
+    funder: "USDOT", period: "2025–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "Understanding human mobility during emergencies is critical for strengthening urban resilience and guiding emergency management. This study examines transitions between returners, who repeatedly visit a limited set of locations, and explorers, who travel across broader destinations, over a 15-day emergency period in a densely populated metropolitan region. High-resolution spatial data reveal intra-urban behavioral dynamics often masked at coarser scales. Beyond static comparisons, we analyze how mobility evolves over time, with varying emergency durations, across weekdays and weekends, and relative to neighborhood boundaries, linking the analysis to the 15-minute city framework.",
     highlights: [
-      "Open-access emissions calculator covering all major transportation modes",
-      "Case study in Madison, WI quantifying city-wide emissions reduction potential",
-      "Published in Nature npj Sustainable Mobility and Transport (2024)",
-      "Designed for accessibility by non-expert users and policymakers"
+      "Large scale mobility clustering based on explores versus returners dichotomy",
+      "Resilience to crisis is a factor of human mobility patterns and their transitions",
+      "Urban mobility under crisis embodies complex dynamics and exponential patterns",
     ],
     pubs: [
-      { title: "Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data", authors: "Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.", venue: "Nature npj Sustainable Mobility and Transport · 2024", url: "https://www.nature.com/articles/s44333-024-00003-7" }
+      { title: "Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city", authors: "Armantalab, O., Kontar, W.", venue: "Under review · 2025 ", url: "https://arxiv.org/abs/2510.00469" },
+    ],
+    projectUrl: "https://wissamkontar.github.io",
+    paperUrl: "https://arxiv.org/abs/2510.00469"
+  },
+
+  adoption: {
+    badge: "Adoption Modeling",
+    title: "Emerging Modes of Transportation",
+    funder: "DOT", period: "2023–ongoing", pi: "Prof. Wissam Kontar",
+    desc: "This study investigates the presence of an energy and environmental rebound effect from the adoption of emerging modes of transportation. We take an adoption pattern and market share competition framework to show how environmental gains from increased fuel efficiency and favorable travel attributes of different modes may be offset by unintended modal shifts. The analysis is informed by a revealed and stated preference (RP/SP) travel survey data collected.",
+    highlights: [
+      "Mode choice modeling with revealed and stated preference data",
+      "Life cycle assessment of use-phase emissions",
+      "Micromobility, transit systems, emerging modes, and traditional modes of transportation",
+    ],
+    pubs: [
+      { title: "One mile forward, six miles back: a rebound effect in autonomous vehicle adoption", authors: "Kontar, W., Armantalab, O., Ahn, S., Hicks, A.", venue: "Resource, Conservation, and Recycling · 2026", url: "upcoming" },
+      { title: "Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data", authors: "Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.", venue: "Nature npj Sustainable Mobility and Transport · 2024", url: "https://www.nature.com/articles/s44333-024-00003-7" },
+      { title: "Autonomous vehicle adoption: use phase environmental implcations", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Letters · 2022", url: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" },
+      { title: "Electric bicycles sharing: oppurtunities and environmental impacts", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Infrastructure and Sustainability · 2022", url: "https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta" },
     ],
     projectUrl: "https://sites.google.com/view/cheeseburgercalculator/home",
-    paperUrl: "https://www.nature.com/articles/s44333-024-00003-7"
+    paperUrl: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"
   }
 
 };
