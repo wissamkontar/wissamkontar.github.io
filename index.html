@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Transportation and Autonomy Laboratory for Intelligence (TALI) at the University of Nebraska-Lincoln, led by Prof. Wissam Kontar. We advance intelligence in transportation systems and autonomous agents.">
+<meta name="description" content="Transportation and Autonomy Laboratory for Intelligence (TALI) at the University of Nebraska-Lincoln, led by Wissam Kontar. We advance intelligence in transportation systems and autonomous agents.">
 <title>Transportation and Autonomy Laboratory for Intelligence (TALI)</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -19,8 +19,8 @@
   --ink:     #111111;
   --mid:     #555550;
   --light:   #999990;
-  --accent:  #c1392b;   /* one strong red accent — clean, academic */
-  --accent2: #1a3a5c;   /* deep blue for secondary highlights */
+  --accent:  #c1392b;
+  --accent2: #1a3a5c;
   --radius:  4px;
   --max:     1120px;
 }
@@ -311,7 +311,6 @@ nav {
   gap: 1.5rem;
 }
 
-/* Featured large card spans 2 cols */
 .research-grid .card:first-child {
   grid-column: span 2;
 }
@@ -338,7 +337,6 @@ nav {
 .card:first-child .card-image { height: 260px; }
 .card .card-image { height: 180px; }
 
-/* SVG illustration placeholders — easy to swap with real images */
 .card-image svg {
   width: 100%; height: 100%;
   position: absolute; inset: 0;
@@ -412,20 +410,12 @@ nav {
   border-color: var(--ink);
 }
 
-/* Illustration canvases for research cards */
 .illu { width: 100%; height: 100%; }
-
-/* AV illustration */
 .illu-av { background: linear-gradient(135deg, #e8f0f8 0%, #dce8f5 100%); }
-/* Equity illustration */
 .illu-equity { background: linear-gradient(135deg, #f5ede8 0%, #f0e0d5 100%); }
-/* Traffic illustration */
 .illu-traffic { background: linear-gradient(135deg, #e8f0e8 0%, #d5e8d5 100%); }
-/* Transit illustration */
 .illu-transit { background: linear-gradient(135deg, #f0e8f5 0%, #e5d5f0 100%); }
-/* Climate illustration */
 .illu-climate { background: linear-gradient(135deg, #e8f5f0 0%, #d5f0e5 100%); }
-/* Behavior illustration */
 .illu-behavior { background: linear-gradient(135deg, #f5f0e8 0%, #f0e5d5 100%); }
 
 /* ─────────────────────────────────────────
@@ -490,6 +480,145 @@ nav {
   cursor: pointer;
 }
 .pub-tag:hover { border-color: var(--ink); color: var(--ink); }
+
+/* ─────────────────────────────────────────
+   TALKS & CONFERENCES
+───────────────────────────────────────── */
+#talks { background: var(--white); }
+
+.talks-layout {
+  display: block;
+}
+
+/* Timeline */
+.talks-timeline { position: relative; padding-left: 1.5rem; }
+.talks-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 1px;
+  height: calc(100% - 16px);
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 60%, transparent 100%);
+}
+
+.talk-item {
+  position: relative;
+  padding: 1.4rem 0 1.4rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  transition: all 0.15s;
+}
+.talk-item:first-child { border-top: 1px solid var(--border); }
+.talk-item:hover {
+  background: var(--off);
+  margin: 0 -1.5rem 0 -1.5rem;
+  padding: 1.4rem 1.5rem 1.4rem 3rem;
+  border-radius: var(--radius);
+}
+
+/* Timeline dot */
+.talk-item::before {
+  content: '';
+  position: absolute;
+  left: -5px; top: 1.9rem;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--border);
+  transition: all 0.2s;
+  z-index: 1;
+}
+.talk-item.upcoming::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(193,57,43,0.12);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(193,57,43,0.12); }
+  50%       { box-shadow: 0 0 0 8px rgba(193,57,43,0.06); }
+}
+.talk-item:hover::before { border-color: var(--ink); }
+.talk-item.upcoming:hover::before { background: var(--accent); border-color: var(--accent); }
+
+.talk-inner {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.talk-date-col { padding-top: 0.1rem; }
+.talk-month {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  display: block;
+  line-height: 1.3;
+}
+.talk-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  color: var(--light);
+  display: block;
+  line-height: 1.3;
+}
+
+.talk-info {}
+.talk-status-row {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.talk-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 2px;
+  border: 1px solid;
+  line-height: 1.5;
+}
+.talk-badge.upcoming { background: #fff3f2; color: var(--accent); border-color: rgba(193,57,43,0.3); }
+.talk-badge.confirmed { background: #e8f5e9; color: #2e7d32; border-color: #a5d6a7; }
+.talk-badge.past { background: var(--off); color: var(--light); border-color: var(--border); }
+.talk-badge.keynote { background: #fff8e1; color: #b07d00; border-color: #f0d060; }
+.talk-badge.invited { background: #e3f2fd; color: #1565c0; border-color: #90caf9; }
+.talk-badge.workshop { background: #f3e5f5; color: #6a1b9a; border-color: #ce93d8; }
+.talk-badge.conference { background: #fef3e8; color: #e65100; border-color: #ffcc80; }
+
+.talk-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.45;
+  margin-bottom: 0.28rem;
+}
+.talk-event {
+  font-size: 0.84rem;
+  color: var(--mid);
+  font-weight: 400;
+  margin-bottom: 0.22rem;
+  font-style: italic;
+}
+.talk-location {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.07em;
+  color: var(--light);
+  text-transform: uppercase;
+  display: flex; align-items: center; gap: 0.3rem;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .talk-inner { grid-template-columns: 48px 1fr; gap: 0.9rem; }
+}
 
 /* ─────────────────────────────────────────
    TEAM
@@ -913,6 +1042,9 @@ footer {
   .news-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .pi-row { grid-template-columns: 140px 1fr; }
+  .talks-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .talks-sidebar { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .sidebar-card { margin-bottom: 0; }
 }
 @media (max-width: 600px) {
   .container { padding: 0 1.25rem; }
@@ -926,6 +1058,8 @@ footer {
   .cta-inner { flex-direction: column; }
   .themes-inner { flex-wrap: wrap; gap: 0.5rem; }
   .theme-pill { border: 1px solid var(--border); border-radius: 999px; padding: 0.3rem 0.9rem; }
+  .talks-sidebar { grid-template-columns: 1fr; }
+  .talk-inner { grid-template-columns: 48px 1fr; gap: 0.9rem; }
 }
 
 </style>
@@ -942,6 +1076,7 @@ footer {
     <ul class="nav-links">
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="mailto:wkontar2@unl.edu" class="nav-cta">Contact</a></li>
@@ -980,7 +1115,6 @@ footer {
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1051,7 +1185,7 @@ footer {
         </div>
       </div>
 
-<div class="card fade-in" data-modal="consensus">
+      <div class="card fade-in" data-modal="consensus">
         <div class="card-image">
           <div class="illu illu-equity" style="display:flex;align-items:center;justify-content:center;background:#f2f3fa;">
             <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Tradeoffs Graph" style="position:absolute;inset:0;width:100%;height:100%">
@@ -1090,8 +1224,7 @@ footer {
         </div>
         <div class="card-body">
           <h3 class="card-title">Consensus-driven AI Agents for Mixed Autonomy Traffic</h3>
-          <p class="card-desc">Modern traffic systems are shaped by dynamic interactions between diverse agents. Agents are expected to uphold safety, maintain quality interactions, and contribute to an efficient system. 
-            These goals are often at odds. Navigating this tradeoff between goals is not just a matter of design, but rather a broader challenge of achieving consensus.</p>
+          <p class="card-desc">Modern traffic systems are shaped by dynamic interactions between diverse agents. Agents are expected to uphold safety, maintain quality interactions, and contribute to an efficient system. These goals are often at odds. Navigating this tradeoff between goals is not just a matter of design, but rather a broader challenge of achieving consensus.</p>
           <div class="card-footer">
             <span class="card-funding">Artificial Intelligence · Autonomous Agents</span>
             <div class="card-arrow">→</div>
@@ -1140,9 +1273,7 @@ footer {
         </div>
         <div class="card-body">
           <h3 class="card-title">Knowledge Sharing and Personalization Across Agents</h3>
-          <p class="card-desc">The curse of variability stands as a critical barrier in the development and deployment of Automated Vehicles (AVs) in the open world. 
-            Variability in the open world stems from the innate dynamic, stochastic, and unpredictable nature of the transportation system. 
-            Human drivers adapt and respond to these variations instinctively, but replicating such situational knowledge for an AV to maneuver safely in any given scenario is challenging in light of limited data availability and the difficulty of real-world experimentation.</p>
+          <p class="card-desc">The curse of variability stands as a critical barrier in the development and deployment of Automated Vehicles (AVs) in the open world. Variability in the open world stems from the innate dynamic, stochastic, and unpredictable nature of the transportation system.</p>
           <div class="card-footer">
             <span class="card-funding">Artificial Intelligence</span>
             <div class="card-arrow">→</div>
@@ -1181,8 +1312,7 @@ footer {
         </div>
         <div class="card-body">
           <h3 class="card-title">Learning under Agent Heterogeneity</h3>
-          <p class="card-desc">Traffic flow heterogeneity, stemming from diverse behaviors of its agents, presents a fundamental challenge in developing accurate predictive and prescriptive models that are at the heart of understanding traffic. 
-            This work adopts a data decomposition framework to address the limitations of global data aggregation methods that often obscure individual agent behaviors in traffic systems.</p>
+          <p class="card-desc">Traffic flow heterogeneity, stemming from diverse behaviors of its agents, presents a fundamental challenge in developing accurate predictive and prescriptive models that are at the heart of understanding traffic.</p>
           <div class="card-footer">
             <span class="card-funding">Artificial Intelligence</span>
             <div class="card-arrow">→</div>
@@ -1221,9 +1351,7 @@ footer {
         </div>
         <div class="card-body">
           <h3 class="card-title">Modern Traffic Flow Theory</h3>
-          <p class="card-desc">Traffic flow systems are increasingly complex, dynamic, and changing. With the integration of various elements of automation and driving assistance systems, traffic flow theory must evolve to account for new phenomena and behaviors.
-            We develop modern traffic flow theory that accounts for complex interactions and dynamics between agents, and provide theoretical foundations for how they shape traffic performance and stability. 
-          </p>
+          <p class="card-desc">Traffic flow systems are increasingly complex, dynamic, and changing. We develop modern traffic flow theory that accounts for complex interactions and dynamics between agents, and provide theoretical foundations for how they shape traffic performance and stability.</p>
           <div class="card-footer">
             <span class="card-funding">Transportation Science · Transportation Engineering</span>
             <div class="card-arrow">→</div>
@@ -1258,56 +1386,36 @@ footer {
                 <line x1="186" y1="138" x2="174" y2="150" stroke="white" stroke-width="2.2"/>
                 <circle cx="180" cy="144" r="20" fill="none" stroke="#c1392b" stroke-width="1" opacity="0.3"/>
                 <circle cx="180" cy="144" r="34" fill="none" stroke="#c1392b" stroke-width="0.7" opacity="0.15"/>
-                <rect x="112" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.7"/>
-                <rect x="126" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.55"/>
-                <rect x="140" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.38"/>
-                <rect x="154" y="137" width="10" height="14" rx="1.5" fill="#b07010" opacity="0.22"/>
                 <path d="M88,144 Q88,108 132,90 Q158,80 180,72" stroke="#c1392b" stroke-width="1.8" fill="none" stroke-dasharray="6 3" opacity="0.85" marker-end="url(#re)"/>
                 <path d="M180,144 Q180,168 226,178 Q252,184 272,168" stroke="#c1392b" stroke-width="1.8" fill="none" stroke-dasharray="6 3" opacity="0.75" marker-end="url(#re)"/>
                 <line x1="28" y1="72" x2="72" y2="72" stroke="#1a3a5c" stroke-width="1.5" opacity="0.5" marker-end="url(#nf)"/>
                 <line x1="88" y1="28" x2="88" y2="58" stroke="#1a3a5c" stroke-width="1.5" opacity="0.5" marker-end="url(#nf)"/>
-                <text x="100" y="140" font-family="DM Mono,monospace" font-size="6.5" fill="#b07010" opacity="0.8">queue</text>
               </svg>
             </div>
           <div class="card-badge">Urban Mobility</div>
         </div>
         <div class="card-body">
           <h3 class="card-title">Urban Mobility Patterns Under Crisis</h3>
-          <p class="card-desc">The growing frequency and severity of natural disasters present profound challenges for societies worldwide, threatening lives, disrupting economies, and straining infrastructure. 
-            Economic losses have risen sharply in recent decades, driven by both intensifying hazards and increasing exposure of human settlements. 
-            This trend underscores the urgent need for more effective preparedness and response strategies.</p>
+          <p class="card-desc">The growing frequency and severity of natural disasters present profound challenges for societies worldwide, threatening lives, disrupting economies, and straining infrastructure.</p>
           <div class="card-footer">
             <span class="card-funding">Urban Mobility · Artificial Intelligence</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
       </div>
-        <div class="card fade-in" data-modal="adoption">
+
+      <div class="card fade-in" data-modal="adoption">
         <div class="card-image">
             <div class="illu illu-behavior" style="display:flex;align-items:center;justify-content:center;background:#f2f8ff;">
               <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adoption Curves Diagram" style="position:absolute;inset:0;width:100%;height:100%">
                 <defs>
                   <marker id="a7" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#7a8fa8"/></marker>
                 </defs>
-                <line x1="48" y1="48" x2="305" y2="48" stroke="#ddeeff" stroke-width="0.8"/>
-                <line x1="48" y1="98" x2="305" y2="98" stroke="#ddeeff" stroke-width="0.8"/>
-                <line x1="48" y1="148" x2="305" y2="148" stroke="#ddeeff" stroke-width="0.8"/>
                 <line x1="48" y1="178" x2="312" y2="178" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a7)"/>
                 <line x1="48" y1="178" x2="48" y2="22" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a7)"/>
-                <text x="314" y="182" font-family="DM Mono,monospace" font-size="8.5" fill="#7a8fa8" font-style="italic">t</text>
-                <text x="28" y="20" font-family="DM Mono,monospace" font-size="8" fill="#7a8fa8">A(t)</text>
-                <text x="32" y="180" font-family="DM Mono,monospace" font-size="7" fill="#aaa">0</text>
-                <text x="26" y="150" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.25</text>
-                <text x="26" y="100" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.50</text>
-                <text x="26" y="50" font-family="DM Mono,monospace" font-size="7" fill="#aaa">.75</text>
-                <line x1="48" y1="98" x2="305" y2="98" stroke="#aaa" stroke-width="0.8" stroke-dasharray="5 4" opacity="0.4"/>
                 <path d="M58,177 Q90,176 118,168 Q150,154 178,132 Q206,108 232,82 Q258,58 295,42" stroke="#1a3a5c" stroke-width="2.2" fill="none" opacity="0.92"/>
                 <path d="M58,177 Q82,174 106,160 Q136,138 160,114 Q186,90 215,66 Q248,46 295,38" stroke="#2e7d3c" stroke-width="2" fill="none" opacity="0.82" stroke-dasharray="9 4"/>
                 <path d="M58,177 Q110,175 162,170 Q210,163 248,155 Q278,148 295,142" stroke="#c1392b" stroke-width="2" fill="none" opacity="0.82" stroke-dasharray="4 4"/>
-                <circle cx="178" cy="132" r="4.5" fill="white" stroke="#1a3a5c" stroke-width="1.8"/>
-                <line x1="178" y1="132" x2="178" y2="178" stroke="#1a3a5c" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.35"/>
-                <circle cx="158" cy="114" r="4.5" fill="white" stroke="#2e7d3c" stroke-width="1.8"/>
-                <line x1="158" y1="114" x2="158" y2="178" stroke="#2e7d3c" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.35"/>
                 <text x="52" y="36" font-family="DM Mono,monospace" font-size="7" fill="#555" opacity="0.7">A(t) = 1/(1+e^{−k(t−t₀)})</text>
                 <line x1="52" y1="196" x2="72" y2="196" stroke="#1a3a5c" stroke-width="2"/>
                 <text x="75" y="200" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">AV</text>
@@ -1321,11 +1429,9 @@ footer {
         </div>
         <div class="card-body">
           <h3 class="card-title">Adoption Patterns of Emerging Modes of Transportation</h3>
-          <p class="card-desc">The emergence of different modes of transportation promises to transform urban mobility, reshaping not only traffic efficiency and safety but also the environmental and behavioral dynamics of cities worldwide. 
-            As these technologies begin to integrate into transportation networks, their influence extends into societal and ecological domains, raising fundamental questions about how these technologies interact with existing travel behaviors and infrastructure systems.
-            This is particularly critical in densely populated urban regions, where modes are likely to substitute or compete with other transportation modes.</p>
+          <p class="card-desc">The emergence of different modes of transportation promises to transform urban mobility, reshaping not only traffic efficiency and safety but also the environmental and behavioral dynamics of cities worldwide.</p>
           <div class="card-footer">
-            <span class="card-funding"> Urban Mobility · Artificial Intelligence</span>
+            <span class="card-funding">Urban Mobility · Artificial Intelligence</span>
             <div class="card-arrow">→</div>
           </div>
         </div>
@@ -1333,7 +1439,6 @@ footer {
 
     </div>
   </div>
-
 </section>
 
 <div class="divider"></div>
@@ -1347,7 +1452,7 @@ footer {
         <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" class="see-all">Full List on Google Scholar</a>
       </div>
       <p style="font-family:'DM Mono',monospace; font-size:0.75rem; color:var(--light); margin-top:0.5rem;">
-        For a full list of publications, visit our 
+        For a full list of publications, visit our
         <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:none;">Google Scholar →</a>
       </p>
     </div>
@@ -1385,7 +1490,7 @@ footer {
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2505.04379" target="_blank" rel="noopener noreferrer" class="pub-tag">DOI</a>
         </div>
-      </div>              
+      </div>
       <div class="pub-row">
         <div class="pub-year">2024</div>
         <div class="pub-info">
@@ -1475,7 +1580,123 @@ footer {
         </div>
       </div>
     </div>
+  </div>
+</section>
 
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════════
+     TALKS & CONFERENCES SECTION
+════════════════════════════════════════════ -->
+<section class="section" id="talks" style="background:var(--off);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">On the Road</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Talks &amp; Conferences</h2>
+      </div>
+      <p style="font-size:0.88rem; color:var(--mid); margin-top:0.4rem; font-weight:300; max-width:560px;">
+        A record of where we have presented our work and where we will be next; conferences, invited lectures, and workshops.
+      </p>
+    </div>
+
+    <div class="talks-layout">
+
+      <!-- ── Timeline ── -->
+      <div class="talks-timeline fade-in">
+
+        <!-- UPCOMING -->
+        <div class="talk-item upcoming">
+          <div class="talk-inner">
+            <div class="talk-date-col">
+              <span class="talk-month">June<br>2026</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-status-row">
+                <span class="talk-badge upcoming">Upcoming</span>
+                <span class="talk-badge conference">Conference</span>
+              </div>
+              <div class="talk-title">Learning the Pareto Space of Multi-Objective Autonomous Driving: A Modular, Data-Driven Approach</div>
+              <div class="talk-event">IEEE IV</div>
+              <div class="talk-location">Detroit, MI, USA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item upcoming">
+          <div class="talk-inner">
+            <div class="talk-date-col">
+              <span class="talk-month">March<br>2026</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-status-row">
+                <span class="talk-badge upcoming">Upcoming</span>
+                <span class="talk-badge invited">Invited Talk</span>
+              </div>
+              <div class="talk-title">Consensus-Seeking Autonomous Agents in Complex Transportation Systems</div>
+              <div class="talk-event">NSF NAIRR Meeting</div>
+              <div class="talk-location">Washington, D.C., USA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item upcoming">
+          <div class="talk-inner">
+            <div class="talk-date-col">
+              <span class="talk-month">March<br>2026</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-status-row">
+                <span class="talk-badge upcoming">Upcoming</span>
+                <span class="talk-badge invited">Invited Talk</span>
+              </div>
+              <div class="talk-title">Learning Consensus under Complexity for Driving Agents</div>
+              <div class="talk-event">University of South Florida</div>
+              <div class="talk-location">Tampa, FL, USA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAST -->
+        <div class="talk-item">
+          <div class="talk-inner">
+            <div class="talk-date-col">
+              <span class="talk-month">Jan<br>2026</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-status-row">
+                <span class="talk-badge past">Past</span>
+                <span class="talk-badge conference">Conference</span>
+              </div>
+              <div class="talk-title">Multi-agent Consensus | Mobility under Crisis | Aerial and Ground Autonomou Mobility in Agriculture</div>
+              <div class="talk-event">Transportation Research Board Annual Meeting (TRB 2026)</div>
+              <div class="talk-location">Washington, D.C., USA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item">
+          <div class="talk-inner">
+            <div class="talk-date-col">
+              <span class="talk-month">Oct<br>2025</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-status-row">
+                <span class="talk-badge past">Past</span>
+                <span class="talk-badge conference">Conference</span>
+              </div>
+              <div class="talk-title">Anomaly Detection in Autonomous Driving Systems</div>
+              <div class="talk-event">ICCV</div>
+              <div class="talk-location">Honolulu, HI, USA</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.talks-timeline -->
+
+
+
+    </div><!-- /.talks-layout -->
   </div>
 </section>
 
@@ -1492,14 +1713,14 @@ footer {
 
     <div class="pi-row fade-in">
       <div class="pi-photo">
-        <img src="images/wissam.jpeg" alt="Prof. Wissam Kontar" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
+        <img src="images/wissam.jpeg" alt="Wissam Kontar" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius);">
       </div>
       <div class="pi-info">
         <div class="pi-role">Principal Investigator</div>
-        <div class="pi-name">Prof. Wissam Kontar</div>
+        <div class="pi-name">Wissam Kontar</div>
         <div class="pi-affil">Assistant Professor · Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
-        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks. 
-          He earned his B.Eng. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of transportation ecosystems. 
+        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks.
+          He earned his B.Eng. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of transportation ecosystems.
           His ultimate goal is to design and deploy transportation technologies that improve operational performance and align with societal needs.</p>
         <div class="pi-links">
           <a href="https://scholar.google.com/citations?user=BXr6rWQAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" class="pi-link">Google Scholar</a>
@@ -1511,8 +1732,7 @@ footer {
       </div>
     </div>
 
-<div class="team-grid fade-in">
-
+    <div class="team-grid fade-in">
       <div class="member-card">
         <div class="member-avatar" style="width:52px;height:52px;overflow:hidden;border-radius:50%;border:1px solid var(--border);">
           <img src="images/mohamad.png" alt="Mohammad Elayan - PhD Student" style="width:100%;height:100%;object-fit:cover;">
@@ -1538,7 +1758,7 @@ footer {
         <div class="member-name">Tu Tran</div>
         <div class="member-role" style="color:var(--accent);">Undergraduate Researcher</div>
         <div class="member-focus" style="margin-top:0.4rem;">Aerial and Ground Autonomous Systems · Agriculture</div>
-        </div>
+      </div>
 
       <div class="member-card" style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
         <div class="member-avatar" style="background:transparent;border-color:var(--border);">✉</div>
@@ -1548,7 +1768,6 @@ footer {
           <a href="mailto:wkontar2@unl.edu" style="color:var(--accent);">wkontar2@unl.edu</a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1572,15 +1791,15 @@ footer {
         </div>
         <div class="news-title">New Award from NSF NAIRR</div>
         <p class="news-excerpt">Consensus-Seeking Autonomous Agents in Complex Cyber-Physical Transportation Systems</p>
-      </div>  
+      </div>
       <div class="news-card">
         <div class="news-meta">
           <span class="news-type conf">Funding</span>
           <span class="news-date-label">December 2025</span>
         </div>
-        <div class="news-title">New Award from DOT Mid-America Transportation Center </div>
+        <div class="news-title">New Award from DOT Mid-America Transportation Center</div>
         <p class="news-excerpt">Safety and Mobility Risk Index for Region VII Transportation Networks</p>
-      </div>    
+      </div>
       <div class="news-card">
         <div class="news-meta">
           <span class="news-type award">Award</span>
@@ -1670,9 +1889,9 @@ footer {
         <h4>Lab</h4>
         <ul>
           <li><a href="#">Publications</a></li>
+          <li><a href="#talks">Talks</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">News</a></li>
-          <li><a href="#">Open Positions</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1691,6 +1910,7 @@ footer {
   </div>
 </footer>
 
+<!-- Modal overlay (unchanged) -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal" id="modalBox">
     <button class="modal-close" id="modalClose">✕</button>
@@ -1710,7 +1930,7 @@ footer {
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ── Scroll fade-in ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1721,12 +1941,11 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 /* ── Modal data ── */
 const MODALS = {
-
   av: {
     badge: "Featured · Autonomous Vehicles",
     title: "Domain & Physics-Guided Control for Autonomous Vehicles",
     funder: "National Science Foundation (NSF)", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "Autonomous vehicles often prioritize individual performance, overlooking traffic-level stability and efficiency. This research introduces a physics-based response function to bridge AV control algorithms with traffic dynamics, enabling control designs that optimize system-wide performance. We connect control algorithm parameters to traffic-level behavior for a more holistic design of AV systems.",
+    desc: "Autonomous vehicles often prioritize individual performance, overlooking traffic-level stability and efficiency. This research introduces a physics-based response function to bridge AV control algorithms with traffic dynamics, enabling control designs that optimize system-wide performance.",
     highlights: [
       "Physics-based response function linking AV parameters to traffic-level behavior",
       "Real-world monitoring using Stochastic Gradient Langevin Dynamics (SGLD)",
@@ -1740,17 +1959,16 @@ const MODALS = {
     projectUrl: "https://wissamkontar.github.io",
     paperUrl: "https://www.sciencedirect.com/science/article/pii/S0968090X21001844"
   },
-
   consensus: {
     badge: "AI Agents",
     title: "Consensus-Driven AI Agents for Mixed-Autonomy Traffic",
     funder: "NSF NAIRR", period: "2025", pi: "Prof. Wissam Kontar",
-    desc: "Balancing safety, efficiency, and interaction is fundamental to designing autonomous driving agents and to understanding autonomous vehicle (AV) behavior in real-world operation. This study introduces an empirical learning framework that derives these trade-offs directly from naturalistic trajectory data. A unified objective space represents each AV timestep through composite scores of safety, efficiency, and interaction. Pareto dominance is applied to identify non-dominated states, forming an empirical frontier that defines the attainable region of balanced performance.",
+    desc: "Balancing safety, efficiency, and interaction is fundamental to designing autonomous driving agents. This study introduces an empirical learning framework that derives these trade-offs directly from naturalistic trajectory data.",
     highlights: [
-      "Empirical analysis of consensus in AVs across safety, interaction quality with other agents, and traffic efficiency",
+      "Empirical analysis of consensus in AVs across safety, interaction quality, and traffic efficiency",
       "Pareto-optimality reward function modeling",
       "Implications for designing and training AV driving agents",
-      "Reinforcement learning framework for optimizing AV behavior in mixed traffic settings"
+      "Reinforcement learning framework for optimizing AV behavior"
     ],
     pubs: [
       { title: "Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic", authors: "Elayan, M. and Kontar, W.", venue: "Under Review · 2025", url: "https://arxiv.org/abs/2505.04379" },
@@ -1759,12 +1977,11 @@ const MODALS = {
     projectUrl: "https://github.com/wissamkontar/Learning-the-Pareto-Space-of-Multi-Objective-Autonomous-Driving",
     paperUrl: "https://arxiv.org/abs/2505.04379"
   },
-
   personalization: {
     badge: "Knowledge Sharing",
     title: "Knowledge Sharing and Personalization Across Agents",
     funder: "NSF", period: "2024–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "This work describes a learning framework for driver models of AVs via knowledge sharing and personalization. Due to the inherent variability in the transportation system, exposing AVs to all potential driving scenarios through empirical testing is challenging. This limitation can render AVs unaware of certain critical situations, impacting their safe and efficient operation. To address this challenge, this paper proposes a collaborative training approach that enables the sharing of knowledge among AVs while maintaining personalized models tailored to each vehicle's unique conditions.",
+    desc: "This work describes a learning framework for driver models of AVs via knowledge sharing and personalization, enabling collaborative training while maintaining personalized models tailored to each vehicle's unique conditions.",
     highlights: [
       "Federated learning framework for distributed AV driver model training",
       "Personalization layer retaining local operational characteristics",
@@ -1778,12 +1995,11 @@ const MODALS = {
     projectUrl: "https://wissamkontar.github.io",
     paperUrl: "https://journals.sagepub.com/doi/abs/10.1177/03611981241298583"
   },
-
-    heterogeneity: {
+  heterogeneity: {
     badge: "Heterogeneity",
     title: "Learning under Heterogeneous Agents",
     funder: "NSF", period: "2025–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "A commonality within the current modeling techniques is treating heterogeneity as an ancillary input, rather than as a fundamental property of the traffic agents. Physics-based models with stochastic parameters often fail to capture complex driver behavior and are limited in their ability to generalize across complex agent interactions. Data-driven models informed through large empirical data are optimized with a strategy of one-model-fits-all and tend to reflect aggregate behavior, missing the nuances of agent-level variations in driving. As such, we aim in this work to shift the focus towards understanding the nature of heterogeneity through a bottom-up approach: treating driving heterogeneity as a mechanism of traffic-level dynamics",
+    desc: "This work shifts the focus towards understanding the nature of heterogeneity through a bottom-up approach, treating driving heterogeneity as a mechanism of traffic-level dynamics.",
     highlights: [
       "Decomposing heterogeneity into shared and personalized components",
       "Pitfalls of one-model-fits-all approaches in transportation systems",
@@ -1791,96 +2007,79 @@ const MODALS = {
       "Scalable to large datasets"
     ],
     pubs: [
-      { title: "Capturing behavioral heterogneity for traffic flow: a scalable and personalized decomposition approach", authors: "Kontar, W., Kim, Y., Zhong, X., Ahn, S.", venue: "Transportation Research Part B: Methodological · ISTTT26 ", url: "upcoming" },
-     ],
+      { title: "Capturing behavioral heterogeneity for traffic flow: a scalable and personalized decomposition approach", authors: "Kontar, W., Kim, Y., Zhong, X., Ahn, S.", venue: "Transportation Research Part B: Methodological · ISTTT26", url: "upcoming" }
+    ],
     projectUrl: "https://wissamkontar.github.io",
     paperUrl: "upcoming"
   },
-
   theory: {
     badge: "Traffic Flow Theory",
     title: "Complex Traffic Flow Theory",
     funder: "NSF", period: "2021–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "Traffic wave propagation and hysteresis are fundamental phenomena in traffic flow, yet their measurement and modeling remain challenging, especially under complex vehicle automation and interactions. This research develops novel methods to understand and compute such phenomena.",
+    desc: "Traffic wave propagation and hysteresis are fundamental phenomena in traffic flow. This research develops novel methods to understand and compute such phenomena under complex vehicle automation.",
     highlights: [
       "Analytical approximations for traffic wave properties under mixed autonomy",
       "Mathematical properties of traffic waves",
-      "Connection between control theory and traffic flow theory",
+      "Connection between control theory and traffic flow theory"
     ],
     pubs: [
-      { title: "Traffic wave properties for automated vehicles during traffic oscillations via analytical approximations", authors: "Zhou, Y., Li, S., Pu, C., Kontar, W., Srivastava, A., Ahn, S.", venue: "Under review · 2025", url: "upcoming" },
-     ],
+      { title: "Traffic wave properties for automated vehicles during traffic oscillations via analytical approximations", authors: "Zhou, Y., Li, S., Pu, C., Kontar, W., Srivastava, A., Ahn, S.", venue: "Under review · 2025", url: "upcoming" }
+    ],
     projectUrl: "https://wissamkontar.github.io",
     paperUrl: "https://arxiv.org/abs/2411.16937"
   },
-
   urban: {
     badge: "Urban Mobility",
     title: "Mobility Patterns Under Crisis",
     funder: "USDOT", period: "2025–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "Understanding human mobility during emergencies is critical for strengthening urban resilience and guiding emergency management. This study examines transitions between returners, who repeatedly visit a limited set of locations, and explorers, who travel across broader destinations, over a 15-day emergency period in a densely populated metropolitan region. High-resolution spatial data reveal intra-urban behavioral dynamics often masked at coarser scales. Beyond static comparisons, we analyze how mobility evolves over time, with varying emergency durations, across weekdays and weekends, and relative to neighborhood boundaries, linking the analysis to the 15-minute city framework.",
+    desc: "Understanding human mobility during emergencies is critical for strengthening urban resilience. This study examines transitions between returners and explorers over emergency periods, revealing intra-urban behavioral dynamics.",
     highlights: [
       "Large-scale mobility clustering based on explorers versus returners dichotomy",
       "Resilience to crisis is a factor of human mobility patterns and their transitions",
-      "Urban mobility under crisis embodies complex dynamics and exponential patterns",
+      "Urban mobility under crisis embodies complex dynamics and exponential patterns"
     ],
     pubs: [
-      { title: "Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city", authors: "Armantalab, O., Kontar, W.", venue: "Under review · 2025 ", url: "https://arxiv.org/abs/2510.00469" },
+      { title: "Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city", authors: "Armantalab, O., Kontar, W.", venue: "Under review · 2025", url: "https://arxiv.org/abs/2510.00469" }
     ],
     projectUrl: "https://wissamkontar.github.io",
     paperUrl: "https://arxiv.org/abs/2510.00469"
   },
-
   adoption: {
     badge: "Adoption Modeling",
     title: "Emerging Modes of Transportation",
     funder: "DOT", period: "2023–ongoing", pi: "Prof. Wissam Kontar",
-    desc: "This study investigates the presence of an energy and environmental rebound effect from the adoption of emerging modes of transportation. We take an adoption pattern and market share competition framework to show how environmental gains from increased fuel efficiency and favorable travel attributes of different modes may be offset by unintended modal shifts. The analysis is informed by revealed and stated preference (RP/SP) travel survey data.",
+    desc: "This study investigates the presence of an energy and environmental rebound effect from the adoption of emerging modes of transportation, using mode choice and life cycle assessment frameworks.",
     highlights: [
       "Mode choice modeling with revealed and stated preference data",
       "Life cycle assessment of use-phase emissions",
-      "Micromobility, transit systems, emerging modes, and traditional modes of transportation",
+      "Micromobility, transit systems, emerging modes, and traditional modes of transportation"
     ],
     pubs: [
-      { title: "One mile forward, six miles back: a rebound effect in autonomous vehicle adoption", authors: "Kontar, W., Armantalab, O., Ahn, S., Hicks, A.", venue: "Resource, Conservation, and Recycling · 2026", url: "upcoming" },
       { title: "Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data", authors: "Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.", venue: "Nature npj Sustainable Mobility and Transport · 2024", url: "https://www.nature.com/articles/s44333-024-00003-7" },
-      { title: "Autonomous vehicle adoption: use phase environmental implications", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Letters · 2022", url: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" },
-      { title: "Electric bicycles sharing: opportunities and environmental impacts", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Infrastructure and Sustainability · 2022", url: "https://iopscience.iop.org/article/10.1088/2634-4505/ac7c8b/meta" },
+      { title: "Autonomous vehicle adoption: use phase environmental implications", authors: "Kontar, W., Ahn, S., Hicks, A.", venue: "Environmental Research Letters · 2022", url: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta" }
     ],
     projectUrl: "https://sites.google.com/view/cheeseburgercalculator/home",
     paperUrl: "https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta"
   }
-
 };
 
 /* ── Modal logic ── */
 const overlay  = document.getElementById('modalOverlay');
-const modalBox = document.getElementById('modalBox');
 
 function openModal(id) {
   const d = MODALS[id]; if (!d) return;
-
-  // image — clone from card
   const card = document.querySelector(`[data-modal="${id}"]`);
   const imgSrc = card.querySelector('.card-image').innerHTML;
   document.getElementById('modalImage').innerHTML = imgSrc;
-
   document.getElementById('modalBadge').textContent = d.badge;
   document.getElementById('modalTitle').textContent  = d.title;
-
-  // meta row
   document.getElementById('modalMeta').innerHTML = `
     <div class="modal-meta-item">Funder &nbsp;<span>${d.funder}</span></div>
     <div class="modal-meta-item">Period &nbsp;<span>${d.period}</span></div>
     <div class="modal-meta-item">PI &nbsp;<span>${d.pi}</span></div>`;
-
   document.getElementById('modalDesc').textContent = d.desc;
-
-  // highlights
   document.getElementById('modalHighlights').innerHTML =
     d.highlights.map(h => `<li>${h}</li>`).join('');
-
-  // publications
   document.getElementById('modalPubs').innerHTML =
     d.pubs.map(p => `
       <div class="modal-pub-item">
@@ -1888,13 +2087,10 @@ function openModal(id) {
         ${p.authors}
         <div class="modal-pub-venue">${p.venue}</div>
       </div>`).join('');
-
-  // action buttons
   let btns = `<a href="${d.projectUrl}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-primary">Project Page ↗</a>`;
   if (d.paperUrl) btns += `<a href="${d.paperUrl}" target="_blank" rel="noopener noreferrer" class="modal-btn modal-btn-ext">Read Paper ↗</a>`;
   btns += `<button onclick="closeModal()" class="modal-btn modal-btn-ghost">Close</button>`;
   document.getElementById('modalActions').innerHTML = btns;
-
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1904,18 +2100,12 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-// open on card click
 document.querySelectorAll('[data-modal]').forEach(card => {
   card.addEventListener('click', () => openModal(card.dataset.modal));
 });
-
-// close on overlay click or X button
 document.getElementById('modalClose').addEventListener('click', closeModal);
 overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-
-// close on Escape
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
 </script>
 </body>
 </html>
