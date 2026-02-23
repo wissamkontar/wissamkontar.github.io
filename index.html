@@ -1050,16 +1050,9 @@ footer {
    RESPONSIVE
 ───────────────────────────────────────── */
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-logo-wrap { 
-  display: flex;
-  justify-content: center;
-  order: -1;
-}
-.hero-logo-wrap img {
-  width: 180px;
-  height: 180px;
-}
+  .hero-grid { grid-template-columns: 1fr auto; gap: 1.5rem; }
+  .hero-logo-wrap { display: flex; }
+  .hero-logo-wrap img { width: 140px; height: 140px; }
   .research-grid { grid-template-columns: 1fr 1fr; }
   .research-grid .card:first-child { grid-column: span 2; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
