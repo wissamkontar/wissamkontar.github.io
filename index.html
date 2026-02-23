@@ -137,7 +137,9 @@ nav {
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3rem;
   max-width: 110%;
 }
 .hero-left {}
@@ -204,6 +206,21 @@ nav {
 .btn-primary:hover { background: #333; }
 .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--border); }
 .btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero logo */
+.hero-logo-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-logo-wrap img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  display: block;
+}
 
 .hero-right {
   display: grid;
@@ -612,8 +629,6 @@ nav {
   text-transform: uppercase;
   display: flex; align-items: center; gap: 0.3rem;
 }
-
-
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -1036,15 +1051,13 @@ footer {
 ───────────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-logo-wrap { display: none; }
   .research-grid { grid-template-columns: 1fr 1fr; }
   .research-grid .card:first-child { grid-column: span 2; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .news-grid { grid-template-columns: 1fr 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .pi-row { grid-template-columns: 140px 1fr; }
-  .talks-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  .talks-sidebar { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .sidebar-card { margin-bottom: 0; }
 }
 @media (max-width: 600px) {
   .container { padding: 0 1.25rem; }
@@ -1058,7 +1071,6 @@ footer {
   .cta-inner { flex-direction: column; }
   .themes-inner { flex-wrap: wrap; gap: 0.5rem; }
   .theme-pill { border: 1px solid var(--border); border-radius: 999px; padding: 0.3rem 0.9rem; }
-  .talks-sidebar { grid-template-columns: 1fr; }
   .talk-inner { grid-template-columns: 48px 1fr; gap: 0.9rem; }
 }
 
@@ -1115,6 +1127,12 @@ footer {
           </a>
         </div>
       </div>
+
+      <!-- ── Lab Logo ── -->
+      <div class="hero-logo-wrap fade-in">
+        <img src="images/Logo.png" alt="TALI Lab Logo" style="width:280px;height:280px;object-fit:contain;mix-blend-mode:multiply;">
+      </div>
+
     </div>
   </div>
 </section>
@@ -1601,11 +1619,8 @@ footer {
     </div>
 
     <div class="talks-layout">
-
-      <!-- ── Timeline ── -->
       <div class="talks-timeline fade-in">
 
-        <!-- UPCOMING -->
         <div class="talk-item upcoming">
           <div class="talk-inner">
             <div class="talk-date-col">
@@ -1657,7 +1672,6 @@ footer {
           </div>
         </div>
 
-        <!-- PAST -->
         <div class="talk-item">
           <div class="talk-inner">
             <div class="talk-date-col">
@@ -1668,7 +1682,7 @@ footer {
                 <span class="talk-badge past">Past</span>
                 <span class="talk-badge conference">Conference</span>
               </div>
-              <div class="talk-title">Multi-agent Consensus | Mobility under Crisis | Aerial and Ground Autonomou Mobility in Agriculture</div>
+              <div class="talk-title">Multi-agent Consensus | Mobility under Crisis | Aerial and Ground Autonomous Mobility in Agriculture</div>
               <div class="talk-event">Transportation Research Board Annual Meeting (TRB 2026)</div>
               <div class="talk-location">Washington, D.C., USA</div>
             </div>
@@ -1692,11 +1706,8 @@ footer {
           </div>
         </div>
 
-      </div><!-- /.talks-timeline -->
-
-
-
-    </div><!-- /.talks-layout -->
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1910,7 +1921,7 @@ footer {
   </div>
 </footer>
 
-<!-- Modal overlay (unchanged) -->
+<!-- Modal overlay -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal" id="modalBox">
     <button class="modal-close" id="modalClose">✕</button>
@@ -2064,7 +2075,7 @@ const MODALS = {
 };
 
 /* ── Modal logic ── */
-const overlay  = document.getElementById('modalOverlay');
+const overlay = document.getElementById('modalOverlay');
 
 function openModal(id) {
   const d = MODALS[id]; if (!d) return;
