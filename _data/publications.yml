@@ -1,83 +1,207 @@
-# Selected publications, newest first. Add new ones at the top.
+# All publications, newest first. Add new ones at the top.
+# selected: true puts a paper on the home page as well; every paper appears on the full list at /publications/.
 # Optional fields: note (extra text after the venue), award (shown in red with a trophy).
+
+- year: 2026
+  title: Detecting falsified lane-changing behavior in connected automated vehicles using physics-guided neural networks
+  authors: Kim, Y., Zhong, X., Shi, L., Kontar, W., Chen, S., Ahn, S.
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  url: https://doi.org/10.1016/j.trc.2026.106045
+  selected: true
+
+- year: 2026
+  title: Quantum-Inspired Modeling of Driving Behavior
+  authors: Elayan, M., Armantalab, O., Kontar, W.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2608.25907
+  selected: true
+
+- year: 2026
+  title: 'Integrating Generative AI into Environmental Engineering Sustainability Education: The Lorax as a Classroom Case Study'
+  authors: Hicks, A., Kontar, W.
+  venue: Environmental Engineering Science
+  url: https://doi.org/10.1177/15579018261465718
+
+- year: 2026
+  title: 'Optimal measurement of traffic hysteresis under traffic oscillations: A binary integer programming approach'
+  authors: Pu, F., Zhou, Y., Ahn, S., Li, S., Kontar, W., Wang, X.
+  venue: 'Transportation Research Part B: Methodological'
+  award: Nathan Gartner Award, TRB 2025
+  url: https://doi.org/10.1016/j.trb.2026.103521
+  selected: true
+
+- year: 2026
+  title: 'Learning the Pareto space of multi-objective autonomous driving: A modular, data-driven approach'
+  authors: Elayan, M., Kontar, W.
+  venue: IEEE Intelligent Vehicles Symposium (IV 2026)
+  url: https://doi.org/10.1109/IV66570.2026.11624067
+  selected: true
+
+- year: 2026
+  title: Can automated vehicles have it all? A consensus framework for diagnosing behavioral trade-offs in mixed traffic
+  authors: Elayan, M., Kontar, W.
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  url: https://doi.org/10.1016/j.trc.2026.105782
+  selected: true
 
 - year: 2026
   title: 'Capturing behavioral heterogeneity for traffic flow: A scalable and personalized decomposition approach'
   authors: Kontar, W., Kim, Y., Zhong, X., Ahn, S.
   venue: 'Transportation Research Part B: Methodological - ISTTT26 Special Issue'
-  url: https://www.sciencedirect.com/science/article/pii/S0191261526000792?dgcid=author
+  url: https://doi.org/10.1016/j.trb.2026.103467
+  selected: true
+
+- year: 2026
+  title: Behavioral Heterogeneity as Quantum-Inspired Representation
+  authors: Elayan, M., Kontar, W.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2603.22729
+  selected: true
 
 - year: 2026
   title: 'One mile forward, six miles back: A rebound effect in autonomous vehicle adoption'
   authors: Kontar, W., Armantalab, O., Ahn, S., Hicks, A.
   venue: Resources, Conservation and Recycling
-  url: https://www.sciencedirect.com/science/article/pii/S0921344926000947?dgcid=author
+  url: https://doi.org/10.1016/j.resconrec.2026.108870
 
 - year: 2026
-  title: 'Learning the pareto space of multi-objective autonomous driving: a modular, data-driven approach'
-  authors: Elayan, M., and Kontar, W.
-  venue: Arxiv
-  url: https://arxiv.org/abs/2601.18913
+  title: A Quantum-Inspired Representation of Dynamic Travel Behavior
+  authors: Armantalab, O., Elayan, M., Zhao, L., Huynh, N.N., Kontar, W.
+  venue: SSRN preprint
+  url: https://doi.org/10.2139/ssrn.7533331
+  selected: true
+
+- year: 2025
+  title: 'Consensus-aware AV behavior: Trade-offs between safety, interaction, and performance in mixed urban traffic'
+  authors: Elayan, M., Kontar, W.
+  venue: IEEE International Conference on Intelligent Transportation Systems (ITSC 2025)
+  url: https://doi.org/10.1109/ITSC60802.2025.11423532
+  selected: true
+
+- year: 2025
+  title: 'Fair and Safe: A Real-Time Hierarchical Control Framework for Intersections'
+  authors: Shi, L., Kim, Y., Zhong, X., Kontar, W., Liu, Q., Ahn, S.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2511.05886
+
+- year: 2025
+  title: Instructor perspectives on an embedded coding course in the civil engineering curriculum
+  authors: Kontar, W., Lane, K.
+  venue: ASEE Midwest Section Conference
+  url: https://doi.org/10.18260/1-2-115-57821
 
 - year: 2025
   title: 'Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city'
-  authors: Armantalab, O., and Kontar, W.
-  venue: Arxiv
+  authors: Armantalab, O., Hawkins, J., Kontar, W.
+  venue: arXiv preprint
   url: https://arxiv.org/abs/2510.00469
 
 - year: 2025
-  title: 'Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic'
-  authors: Elayan, M., and Kontar, W.
-  venue: Arxiv
-  url: https://arxiv.org/abs/2505.04379
+  title: 'Redefining sustainable commuting: emerging trends and pandemic-induced changes at the University of Wisconsin-Madison'
+  authors: Stanton, A.P., Kontar, W., Ramey-Lariviere, J.Y.F., Hicks, A.
+  venue: Integrated Environmental Assessment and Management
+  url: https://doi.org/10.1093/inteam/vjaf075
 
 - year: 2024
   title: 'Human-automated vehicle interactions: Voluntary driver intervention in car-following'
   authors: Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
-  url: https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X
+  url: https://doi.org/10.1016/j.trc.2024.104969
+  selected: true
 
 - year: 2024
   title: Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization
   authors: Kontar, W., Zhong, X., Ahn, S.
-  venue: Transportation Research Records
+  venue: Transportation Research Record
   award: D. Grant Mickle Award, TRB 2025
-  url: https://journals.sagepub.com/doi/abs/10.1177/03611981241298583
+  url: https://doi.org/10.1177/03611981241298583
+  selected: true
+
+- year: 2024
+  title: Traffic wave properties for automated vehicles during traffic oscillations via analytical approximations
+  authors: Zhou, Y., Li, S., Kontar, W., Pu, F., Srivastava, A., Ahn, S.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2411.16937
+
+- year: 2024
+  title: Use, reuse, and waste management of single-use products associated with the COVID-19 pandemic in the United States
+  authors: Rodriguez Morris, M.I., Kontar, W., Hicks, A.
+  venue: Integrated Environmental Assessment and Management
+  url: https://doi.org/10.1002/ieam.4895
+
+- year: 2024
+  title: The Role of Disasters and Infrastructure Failures in Engineering Education with Analysis through Machine Learning
+  authors: Hicks, A., Kontar, W.
+  venue: Journal of Civil Engineering Education
+  url: https://doi.org/10.1061/JCEECD.EIENG-2021
 
 - year: 2024
   title: 'Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data: A case study in Madison, Wisconsin'
   authors: Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.
   venue: Nature npj Sustainable Mobility and Transport
-  url: https://www.nature.com/articles/s44333-024-00003-7
+  url: https://doi.org/10.1038/s44333-024-00003-7
 
 - year: 2024
   title: A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior
   authors: Kontar, W., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
-  url: https://www.sciencedirect.com/science/article/abs/pii/S0968090X24000202
+  url: https://doi.org/10.1016/j.trc.2024.104499
+  selected: true
 
 - year: 2022
   title: The Internet of Federated Things (IoFT)
   authors: Kontar, R., Shi, N., Yue, X., Chung, S., Byon, E., Chowdhury, M., … Kontar, W., et al.
   venue: IEEE Access
-  url: https://ieeexplore.ieee.org/abstract/document/9611259
+  url: https://doi.org/10.1109/ACCESS.2021.3127448
+  selected: true
 
 - year: 2022
   title: 'Transportation emissions during pandemic: duality of impacts'
   authors: Kontar, W., Ahn, S., Hicks, A.
   venue: 'Environmental Research: Infrastructure and Sustainability'
-  url: https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta
+  url: https://doi.org/10.1088/2634-4505/ac9a68
+
+- year: 2022
+  title: 'Electric bicycles sharing: opportunities and environmental impacts'
+  authors: Kontar, W., Ahn, S., Hicks, A.
+  venue: 'Environmental Research: Infrastructure and Sustainability'
+  url: https://doi.org/10.1088/2634-4505/ac7c8b
+
+- year: 2021
+  title: A Prioritized Trajectory Planning Algorithm for Connected and Automated Vehicle Mandatory Lane Changes
+  authors: Li, N., Fan, A.Z., Fischer, R., Kontar, W., Ran, B.
+  venue: IEEE International Conference on Intelligent Transportation Systems (ITSC 2021)
+  url: https://doi.org/10.1109/ITSC48978.2021.9564913
+
+- year: 2021
+  title: Predicting Vehicles' Longitudinal Trajectories and Lane Changes on Highway On-Ramps
+  authors: Li, N., Fischer, R., Kontar, W., Ahn, S.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2108.10397
 
 - year: 2021
   title: 'On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics'
   authors: Kontar, W., Li, T., Srivastava, A., Zhou, Y., Chen, D., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
   note: Presented at ISTTT24
-  url: https://www.sciencedirect.com/science/article/pii/S0968090X21001844
+  url: https://doi.org/10.1016/j.trc.2021.103166
+  selected: true
 
 - year: 2021
   title: 'Autonomous vehicle adoption: use phase environmental implications'
   authors: Kontar, W., Ahn, S., Hicks, A.
   venue: Environmental Research Letters
   note: Top 5% by attention score
-  url: https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta
+  url: https://doi.org/10.1088/1748-9326/abf6f4
+
+- year: 2021
+  title: "Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework"
+  authors: Kontar, W., Ahn, S.
+  venue: arXiv preprint
+  url: https://arxiv.org/abs/2102.00375
+
+- year: 2020
+  title: Personal respiratory protection and resiliency in a pandemic, the evolving disposable versus reusable debate and its effect on waste generation
+  authors: Hicks, A., Temizel-Sekeryan, S., Kontar, W., Ghamkhar, R., Rodriguez Morris, M.I.
+  venue: Resources, Conservation and Recycling
+  url: https://doi.org/10.1016/j.resconrec.2020.105262

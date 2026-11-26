@@ -35,54 +35,59 @@ document.querySelectorAll('.talk-item').forEach((item) => {
   badge.textContent = 'Upcoming';
 });
 
-/* ── Project pop-up (content comes from _data/projects.yml) ── */
-const projects = JSON.parse($('projectsData').textContent);
+/* ── Project pop-up, home page only (content comes from _data/projects.yml) ── */
 const overlay = $('modalOverlay');
+if (overlay) initProjectPopup();
 
-function openModal(card) {
-  const p = projects.find((project) => project.id === card.dataset.project);
-  if (!p) return;
+function initProjectPopup() {
+  const projects = JSON.parse($('projectsData').textContent);
+  const gap = ' ' + String.fromCharCode(160);
 
-  $('modalImage').innerHTML = card.querySelector('.card-image').innerHTML;
-  $('modalBadge').textContent = p.badge;
-  $('modalTitle').textContent = p.title;
-  $('modalDesc').textContent = p.overview;
+  function openModal(card) {
+    const p = projects.find((project) => project.id === card.dataset.project);
+    if (!p) return;
 
-  $('modalMeta').replaceChildren(...[['Funder', p.funder], ['Period', p.period], ['PI', p.pi]].map(([label, value]) => {
-    const item = el('div', 'modal-meta-item', label + '  ');
-    item.append(el('span', '', value));
-    return item;
-  }));
+    $('modalImage').innerHTML = card.querySelector('.card-image').innerHTML;
+    $('modalBadge').textContent = p.badge;
+    $('modalTitle').textContent = p.title;
+    $('modalDesc').textContent = p.overview;
 
-  $('modalHighlights').replaceChildren(...p.highlights.map((text) => el('li', '', text)));
+    $('modalMeta').replaceChildren(...[['Funder', p.funder], ['Period', p.period], ['PI', p.pi]].map(([label, value]) => {
+      const item = el('div', 'modal-meta-item', label + gap);
+      item.append(el('span', '', value));
+      return item;
+    }));
 
-  $('modalPubs').replaceChildren(...p.publications.map((pub) => {
-    const item = el('div', 'modal-pub-item');
-    const title = el('strong');
-    title.append(pub.url ? link(pub.url, '', pub.title) : pub.title);
-    item.append(title, pub.authors, el('div', 'modal-pub-venue', pub.venue));
-    return item;
-  }));
+    $('modalHighlights').replaceChildren(...p.highlights.map((text) => el('li', '', text)));
 
-  const close = el('button', 'modal-btn modal-btn-ghost', 'Close');
-  close.addEventListener('click', closeModal);
-  const actions = [];
-  if (p.project_url) actions.push(link(p.project_url, 'modal-btn modal-btn-primary', 'Project Page ↗'));
-  if (p.paper_url) actions.push(link(p.paper_url, 'modal-btn modal-btn-ext', 'Read Paper ↗'));
-  $('modalActions').replaceChildren(...actions, close);
+    $('modalPubs').replaceChildren(...p.publications.map((pub) => {
+      const item = el('div', 'modal-pub-item');
+      const title = el('strong');
+      title.append(pub.url ? link(pub.url, '', pub.title) : pub.title);
+      item.append(title, pub.authors, el('div', 'modal-pub-venue', pub.venue));
+      return item;
+    }));
 
-  overlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
+    const close = el('button', 'modal-btn modal-btn-ghost', 'Close');
+    close.addEventListener('click', closeModal);
+    const actions = [];
+    if (p.project_url) actions.push(link(p.project_url, 'modal-btn modal-btn-primary', 'Project Page ↗'));
+    if (p.paper_url) actions.push(link(p.paper_url, 'modal-btn modal-btn-ext', 'Read Paper ↗'));
+    $('modalActions').replaceChildren(...actions, close);
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-project]').forEach((card) => {
+    card.addEventListener('click', () => openModal(card));
+  });
+  $('modalClose').addEventListener('click', closeModal);
+  overlay.addEventListener('click', (event) => { if (event.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
 }
-
-function closeModal() {
-  overlay.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-document.querySelectorAll('[data-project]').forEach((card) => {
-  card.addEventListener('click', () => openModal(card));
-});
-$('modalClose').addEventListener('click', closeModal);
-overlay.addEventListener('click', (event) => { if (event.target === overlay) closeModal(); });
-document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModal(); });
