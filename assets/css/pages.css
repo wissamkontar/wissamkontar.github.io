@@ -9,14 +9,36 @@
 .nav-name { white-space: nowrap; }
 .nav-links { gap: 1.6rem; }
 .nav-links a { white-space: nowrap; }
+/* The Menu button is only used on phones. It is a label for a hidden checkbox, so it works without a script. */
+.nav-check { position: absolute; opacity: 0; pointer-events: none; }
+.nav-toggle { display: none; }
+/* Narrow windows and tablets: the links move to a second row under the lab name. */
 @media (max-width: 1240px) {
   nav { height: auto; }
-  .nav-inner {
-    flex-direction: column; align-items: flex-start;
-    gap: 0.6rem; padding-top: 0.8rem; padding-bottom: 0.7rem;
-  }
+  .nav-inner { flex-wrap: wrap; gap: 0.6rem 1rem; padding-top: 0.8rem; padding-bottom: 0.7rem; }
+  .nav-brand { flex: 1 1 100%; }
   .nav-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
   .nav-name { white-space: normal; }
+}
+/* Phones: one compact bar with a Menu button; the links open underneath it. */
+@media (max-width: 700px) {
+  .nav-inner { padding: 0.65rem 1.25rem; align-items: center; }
+  .nav-brand { flex: 1 1 0; min-width: 0; }
+  .nav-name { font-size: 0.8rem; line-height: 1.3; }
+  .nav-toggle {
+    display: inline-flex; align-items: center;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.8rem; font-weight: 600;
+    color: var(--ink);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+  }
+  .nav-check:focus-visible + .nav-toggle { outline: 2px solid var(--accent); }
+  .nav-links { display: none; flex: 1 1 100%; flex-direction: column; align-items: flex-start; gap: 0.95rem; padding: 0.7rem 0 0.6rem; }
+  .nav-links a { font-size: 0.95rem; }
+  .nav-check:checked ~ .nav-links { display: flex; }
 }
 
 /* ----- HERO: "Led by" badge under the description, large logo on the right ----- */
@@ -186,7 +208,21 @@
 .project-foot .record-link { margin-top: 0; }
 a.project-theme { background: var(--tag-bg); color: var(--tag-ink); border-color: var(--tag-line); }
 
+/* ----- PHONES AND SMALL TABLETS ----- */
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
 @media (max-width: 600px) {
+  .hero { padding: 3rem 0; }
+  .section { padding: 3.5rem 0; }
+  .section-header { margin-bottom: 2rem; }
+  .cta-strip { padding: 3rem 0; }
+  .cta-actions { flex-wrap: wrap; }
+  /* Publications: year, then the paper, then its link, stacked. */
+  .pub-row { grid-template-columns: 1fr; gap: 0.35rem; }
+  .pub-row:hover { margin: 0; padding: 1.5rem 0; }
+  .talk-item:hover { margin: 0; padding: 1.4rem 0 1.4rem 1.5rem; }
+  .pi-photo { max-width: 170px; }
   .record { grid-template-columns: 1fr; gap: 0.4rem; }
   .record-when:empty { display: none; }
   .project-card { padding: 1.5rem 1.25rem; }

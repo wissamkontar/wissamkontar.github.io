@@ -46,14 +46,6 @@ nav, .btn, .label, .profile-link, .see-all, .pub-year, .pub-venue, .pub-tag, .ta
 /* A small lozenge, as in carved stone ornament, instead of a dash. */
 .label::before { width: 7px; height: 7px; transform: rotate(45deg); }
 
-/* ----- ABLAQ: alternating dark and light stone, as a thin course above the page and the footer ----- */
-body::before, footer::before {
-  content: ''; display: block; height: 6px;
-  background: repeating-linear-gradient(90deg, var(--ink) 0 34px, #e3d3ae 34px 68px);
-}
-footer { padding-top: 0; }
-footer > .container { padding-top: 3rem; }
-
 /* ----- SURFACES ----- */
 nav { background: var(--white); }
 .hero { background: var(--white) var(--lattice); background-size: 56px 56px; position: relative; }
