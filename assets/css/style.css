@@ -491,45 +491,45 @@ nav {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 .member-card {
-  padding: 1.25rem;
+  padding: 1.9rem 1.75rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: box-shadow 0.2s;
 }
 .member-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
 .member-avatar {
-  width: 52px; height: 52px;
+  width: 92px; height: 92px;
   border-radius: 50%;
   background: var(--subtle);
   display: flex; align-items: center; justify-content: center;
   font-family: 'DM Serif Display', serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: var(--mid);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   border: 1px solid var(--border);
   overflow: hidden;
 }
 .member-avatar img { height: 100%; object-fit: cover; }
 .member-name {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 .member-role {
   font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 0.5rem;
 }
 .member-focus {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--light);
   line-height: 1.5;
   font-style: italic;
@@ -538,14 +538,14 @@ nav {
 .member-focus a { color: var(--accent); }
 .member-link {
   display: inline-block;
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
   font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
   border: 1px solid var(--border);
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 2px;
 }
 .member-card.centered {
@@ -716,7 +716,7 @@ footer {
 @media (max-width: 600px) {
   .container { padding: 0 1.25rem; }
   .nav-links { display: none; }
-  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
   .news-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .pi-row { grid-template-columns: 1fr; }
