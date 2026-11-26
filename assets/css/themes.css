@@ -34,38 +34,45 @@
 
 .theme-panel {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr 300px;
+  column-gap: 2.5rem;
+  align-items: start;
+  padding: 1.9rem 2rem 2rem;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--tag-ink);
   border-radius: var(--radius);
-  overflow: hidden;
   background: var(--white);
   scroll-margin-top: 80px;
 }
+/* The text block is laid out directly on the panel's grid, next to the drawing. */
+.theme-body { display: contents; }
+.theme-body > * { grid-column: 1; }
 .theme-visual {
+  grid-column: 2; grid-row: 1 / span 4;
   position: relative;
-  min-height: 260px;
+  height: 210px;
   background: var(--tag-bg);
-  border-right: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .theme-visual svg {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  padding: 2.5rem 1.25rem 1.25rem;
+  padding: 1.6rem 0.75rem 0.5rem;
 }
 .theme-number {
-  position: absolute; top: 0.85rem; left: 0.85rem;
+  position: absolute; top: 0.7rem; left: 0.7rem;
   font-family: 'DM Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--tag-ink);
   background: var(--white);
   border: 1px solid var(--tag-line);
-  padding: 0.2rem 0.6rem;
+  padding: 0.15rem 0.55rem;
   border-radius: 2px;
 }
 
-.theme-body { padding: 1.75rem 2rem 1.9rem; }
 .theme-name {
   font-family: 'DM Serif Display', serif;
   font-size: 1.6rem;
@@ -85,7 +92,6 @@
   color: var(--mid);
   font-weight: 300;
   line-height: 1.7;
-  max-width: 680px;
 }
 .theme-topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .topic-chip {
@@ -100,10 +106,11 @@
 }
 
 .theme-cols {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 1.4rem;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
   padding-top: 1.3rem;
   border-top: 1px solid var(--border);
 }
@@ -160,11 +167,10 @@
 .theme-more:hover { text-decoration: underline; }
 
 @media (max-width: 900px) {
-  .theme-panel { grid-template-columns: 1fr; }
-  .theme-visual { min-height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
+  .theme-panel { grid-template-columns: 1fr; padding: 1.4rem 1.25rem 1.5rem; }
+  .theme-visual { grid-column: 1; grid-row: auto; order: -1; height: 190px; margin-bottom: 1.25rem; }
 }
 @media (max-width: 600px) {
-  .theme-body { padding: 1.4rem 1.25rem 1.5rem; }
   .theme-cols { grid-template-columns: 1fr; gap: 1.4rem; }
 }
 
