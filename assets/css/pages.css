@@ -46,22 +46,8 @@
 }
 .hero-pi-role { font-size: 0.76rem; color: var(--mid); }
 
-/* The logo sits on a soft disc with two thin rings around it. */
-.hero-logo-wrap {
-  position: relative;
-  width: 100%; aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--off);
-}
-.hero-logo-wrap::before, .hero-logo-wrap::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-.hero-logo-wrap::before { inset: 0; border: 1px solid var(--border); }
-.hero-logo-wrap::after { inset: -7%; border: 1px dashed var(--border); }
-/* The artwork fills only the middle 70% of Logo.png, so the image is drawn larger than the disc. */
+.hero-logo-wrap { position: relative; width: 100%; aspect-ratio: 1; }
+/* The artwork fills only the middle 70% of Logo.png, so the image is drawn larger than its box. */
 .hero-logo-wrap img {
   position: absolute; top: 50%; left: 50%;
   width: 112%; height: auto;
