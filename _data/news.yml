@@ -1,50 +1,20 @@
-# News cards, in the order shown. Add new ones at the top.
-# color: award (yellow), grant (green), pub (blue), grad (purple), conf (pink)
+# Lab news that is not funding, an award or a talk. Add new ones at the top.
+# Funding (projects.yml), awards (awards.yml) and past talks (talks.yml) appear on the News page automatically,
+# so do not repeat them here.
+# date: "YEAR-MONTH". Keep the quotes.
+# label: a short word shown on the entry, for example Publication, Media, New Position.
 
-- label: Funding
-  color: conf
-  date: September 2025
-  title: New Award from NSF NAIRR
-  text: Consensus-Seeking Autonomous Agents in Complex Cyber-Physical Transportation Systems
-
-- label: Funding
-  color: conf
-  date: December 2025
-  title: New Award from DOT Mid-America Transportation Center
-  text: Safety and Mobility Risk Index for Region VII Transportation Networks
-
-- label: Award
-  color: award
-  date: January 2025
-  title: Paper wins D. Grant Mickle Award at Transportation Research Board 2025
-  text: '"Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization" recognized at TRB Annual Meeting.'
-
-- label: Award
-  color: award
-  date: January 2025
-  title: Paper wins Nathan Gartner Award by ACP50 committee at TRB 2025
-  text: '"Optimal Measurement of Traffic Hysteresis under Traffic Oscillations" recognized by the ACP50 committee.'
-
-- label: New Position
-  color: grant
-  date: January 2025
+- date: "2025-01"
+  label: New Position
   title: Joined University of Nebraska-Lincoln as Assistant Professor
-  text: Actively recruiting students at all levels — undergraduate, master's, and Ph.D. — to join the TALI research team.
+  text: Wissam Kontar joined the Department of Civil and Environmental Engineering and started the TALI lab.
 
-- label: Publication
-  color: pub
-  date: May 2024
+- date: "2024-05"
+  label: Publication
   title: 'Carbon calculator paper published in Nature: Sustainable Mobility and Transport'
   text: '"Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data" published in Nature npj.'
 
-- label: Recognition
-  color: conf
-  date: May 2022
-  title: Named a Rising Star in NSF Cyber-Physical Systems
-  text: Selected as a Rising Star in NSF Cyber-Physical Systems by the Link Lab at the University of Virginia.
-
-- label: Media
-  color: pub
-  date: May 2021
+- date: "2021-05"
+  label: Media
   title: AV research featured in Popular Science, Gizmodo, and Politico
   text: Work on autonomous vehicle adoption and environmental implications attracted wide media coverage and ranked top 5% by attention score in Environmental Research Letters.

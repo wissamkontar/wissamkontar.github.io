@@ -16,8 +16,6 @@
       {% assign number = 0 %}
       {% for theme in site.data.themes %}{% unless theme.label_only %}
       {% assign number = number | plus: 1 %}
-      {% assign total = 0 %}
-      {% for pub in site.data.publications %}{% if pub.themes contains theme.id %}{% assign total = total | plus: 1 %}{% endif %}{% endfor %}
       <article class="theme-panel theme-{{ theme.id }} fade-in" id="theme-{{ theme.id }}">
         {% comment %} Show the theme's figure if its file is in images/, otherwise its drawing. {% endcomment %}
         {% assign figure = nil %}
@@ -56,7 +54,7 @@
                 <li><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title | escape }}</a><span>{{ pub.venue | escape }} · {{ pub.year }}</span></li>
                 {% endif %}{% endfor %}
               </ul>
-              <a class="theme-more" href="/publications/?theme={{ theme.id }}">All {{ total }} papers in this theme →</a>
+              <a class="theme-more" href="/publications/?theme={{ theme.id }}">All papers in this theme →</a>
             </div>
           </div>
         </div>

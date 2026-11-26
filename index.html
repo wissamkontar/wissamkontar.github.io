@@ -3,7 +3,7 @@ layout: default
 ---
 <main>
 
-<!-- ───────── Hero ───────── -->
+<!-- Hero -->
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
@@ -13,7 +13,7 @@ layout: default
         <p class="hero-desc"><em>We advance intelligence in transportation systems, specializing in operations analysis and applied artificial intelligence to solve core challenges in autonomy, complex agent behaviors, and real-world integration.</em></p>
         <div class="hero-actions">
           <a href="#research" class="btn btn-primary">Explore Research →</a>
-          <a href="#publications" class="btn btn-ghost">View Publications</a>
+          <a href="/publications/" class="btn btn-ghost">View Publications</a>
         </div>
         <div class="hero-profiles">
           <a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer" class="profile-link" title="GitHub">
@@ -34,8 +34,18 @@ layout: default
           </a>
         </div>
       </div>
-      <div class="hero-logo-wrap fade-in">
-        <img src="/images/Logo.png" alt="TALI Lab Logo" width="280" height="280">
+      <div class="hero-side fade-in">
+        <a href="/team/" class="hero-pi">
+          <img src="/images/wissam.jpeg" alt="Wissam Kontar" width="60" height="60">
+          <span>
+            <span class="hero-pi-label">Led by</span>
+            <span class="hero-pi-name">Wissam Kontar</span>
+            <span class="hero-pi-role">Assistant Professor · Principal Investigator</span>
+          </span>
+        </a>
+        <div class="hero-logo-wrap">
+          <img src="/images/Logo.png" alt="TALI Lab Logo" width="280" height="280">
+        </div>
       </div>
     </div>
   </div>
@@ -52,12 +62,12 @@ layout: default
   </div>
 </div>
 
-<!-- ───────── Research: one panel per theme (layout: _includes/research.html, content: _data/themes.yml) ───────── -->
+<!-- Research: one panel per theme (layout: _includes/research.html, content: _data/themes.yml) -->
 {% include research.html %}
 
 <div class="divider"></div>
 
-<!-- ───────── Selected publications (entries marked selected in _data/publications.yml) ───────── -->
+<!-- Selected publications (entries marked selected in _data/publications.yml) -->
 <section class="section" id="publications">
   <div class="container">
     <div class="section-header fade-in">
@@ -82,26 +92,27 @@ layout: default
 
 <div class="divider"></div>
 
-<!-- ───────── Talks (content: _data/talks.yml) ───────── -->
+<!-- Upcoming talks (content: _data/talks.yml). Talks whose month has passed are removed here and shown on the News page. -->
 <section class="section" id="talks">
   <div class="container">
     <div class="section-header fade-in">
       <div class="label">On the Road</div>
       <div class="section-header-row">
-        <h2 class="section-title">Talks &amp; Conferences</h2>
+        <h2 class="section-title">Upcoming Talks &amp; Conferences</h2>
+        <a href="/news/?show=talk" class="see-all">Past Talks</a>
       </div>
-      <p class="section-intro">A record of where we have presented our work and where we will be next; conferences, invited lectures, and workshops.</p>
+      <p class="section-intro">Where we will be presenting our work next.</p>
     </div>
-    <div class="talks-timeline fade-in">
+    <div class="talks-timeline" id="talksTimeline">
       {% for talk in site.data.talks %}
-      <div class="talk-item" data-date="{{ talk.date }}">
+      <div class="talk-item upcoming" data-date="{{ talk.date }}">
         <div class="talk-inner">
           <div class="talk-date-col">
             <span class="talk-month">{% assign day = talk.date | append: "-01" %}{{ day | date: "%b" }}<br>{{ day | date: "%Y" }}</span>
           </div>
           <div>
             <div class="talk-status-row">
-              <span class="talk-badge past" data-status>Past</span>
+              <span class="talk-badge upcoming">Upcoming</span>
               <span class="talk-badge {{ talk.type | slugify }}">{{ talk.type }}</span>
             </div>
             <div class="talk-title">{{ talk.title | escape }}</div>
@@ -112,32 +123,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ───────── News (content: _data/news.yml) ───────── -->
-<section class="section" id="news">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="label">Updates</div>
-      <div class="section-header-row">
-        <h2 class="section-title">News</h2>
-      </div>
-    </div>
-    <div class="news-grid fade-in">
-      {% for n in site.data.news %}
-      <div class="news-card">
-        <div class="news-meta">
-          <span class="news-type {{ n.color }}">{{ n.label }}</span>
-          <span class="news-date-label">{{ n.date }}</span>
-        </div>
-        <div class="news-title">{{ n.title | escape }}</div>
-        <p class="news-excerpt">{{ n.text | escape }}</p>
-      </div>
-      {% endfor %}
-    </div>
+    <p class="talks-empty" id="talksEmpty" hidden>No upcoming talks are scheduled right now. See our <a href="/news/?show=talk">past talks in News →</a></p>
   </div>
 </section>
 

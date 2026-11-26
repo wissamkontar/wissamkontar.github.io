@@ -1,0 +1,23 @@
+# Research projects, in the order shown on the Research Projects page. Add new ones at the top.
+# id: a short name with no spaces, used in links.
+# themes: ids from themes.yml.
+# A project with a sponsor and an awarded date (YEAR-MONTH) is also listed under Funding and in News.
+# Optional fields: period, role, team, links (each with label and url).
+
+- id: risk-index
+  title: Safety and Mobility Risk Index for Region VII Transportation Networks
+  sponsor: U.S. DOT Mid-America Transportation Center (MATC)
+  awarded: 2025-12
+  themes: [mobility]
+  summary: >-
+    We are building an index that shows where the road networks of Region VII (Iowa, Kansas, Missouri
+    and Nebraska) carry the most safety and mobility risk, so that agencies can see where action matters most.
+
+- id: consensus-agents
+  title: Consensus-Seeking Autonomous Agents in Complex Cyber-Physical Transportation Systems
+  sponsor: NSF National Artificial Intelligence Research Resource (NAIRR)
+  awarded: 2025-09
+  themes: [super-intelligence]
+  summary: >-
+    Autonomous agents rarely want the same thing. We study how many agents with different goals can come
+    to agree on how to behave, and what that agreement means for the system they share.
