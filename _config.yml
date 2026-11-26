@@ -1,0 +1,15 @@
+# Site-wide settings. Content lives in _data/, the page layout in index.html.
+title: Transportation and Autonomy Laboratory for Intelligence (TALI)
+short_title: TALI · Transportation and Autonomy Laboratory for Intelligence
+description: >-
+  Transportation and Autonomy Laboratory for Intelligence (TALI) at the University of Nebraska-Lincoln,
+  led by Wissam Kontar. We advance intelligence in transportation systems and autonomous agents.
+email: wkontar2@unl.edu
+links:
+  scholar: https://scholar.google.com/citations?user=BXr6rWQAAAAJ
+  github: https://github.com/wissamkontar
+  orcid: https://orcid.org/0000-0001-9260-0254
+  linkedin: https://www.linkedin.com/in/wissamkontar
+  university: https://engineering.unl.edu/cee/
+
+exclude: [README.md]

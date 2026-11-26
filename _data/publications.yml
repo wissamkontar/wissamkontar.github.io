@@ -1,0 +1,83 @@
+# Selected publications, newest first. Add new ones at the top.
+# Optional fields: note (extra text after the venue), award (shown in red with a trophy).
+
+- year: 2026
+  title: 'Capturing behavioral heterogeneity for traffic flow: A scalable and personalized decomposition approach'
+  authors: Kontar, W., Kim, Y., Zhong, X., Ahn, S.
+  venue: 'Transportation Research Part B: Methodological - ISTTT26 Special Issue'
+  url: https://www.sciencedirect.com/science/article/pii/S0191261526000792?dgcid=author
+
+- year: 2026
+  title: 'One mile forward, six miles back: A rebound effect in autonomous vehicle adoption'
+  authors: Kontar, W., Armantalab, O., Ahn, S., Hicks, A.
+  venue: Resources, Conservation and Recycling
+  url: https://www.sciencedirect.com/science/article/pii/S0921344926000947?dgcid=author
+
+- year: 2026
+  title: 'Learning the pareto space of multi-objective autonomous driving: a modular, data-driven approach'
+  authors: Elayan, M., and Kontar, W.
+  venue: Arxiv
+  url: https://arxiv.org/abs/2601.18913
+
+- year: 2025
+  title: 'Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city'
+  authors: Armantalab, O., and Kontar, W.
+  venue: Arxiv
+  url: https://arxiv.org/abs/2510.00469
+
+- year: 2025
+  title: 'Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic'
+  authors: Elayan, M., and Kontar, W.
+  venue: Arxiv
+  url: https://arxiv.org/abs/2505.04379
+
+- year: 2024
+  title: 'Human-automated vehicle interactions: Voluntary driver intervention in car-following'
+  authors: Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0968090X2400490X
+
+- year: 2024
+  title: Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization
+  authors: Kontar, W., Zhong, X., Ahn, S.
+  venue: Transportation Research Records
+  award: D. Grant Mickle Award, TRB 2025
+  url: https://journals.sagepub.com/doi/abs/10.1177/03611981241298583
+
+- year: 2024
+  title: 'Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data: A case study in Madison, Wisconsin'
+  authors: Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.
+  venue: Nature npj Sustainable Mobility and Transport
+  url: https://www.nature.com/articles/s44333-024-00003-7
+
+- year: 2024
+  title: A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior
+  authors: Kontar, W., Ahn, S.
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0968090X24000202
+
+- year: 2022
+  title: The Internet of Federated Things (IoFT)
+  authors: Kontar, R., Shi, N., Yue, X., Chung, S., Byon, E., Chowdhury, M., … Kontar, W., et al.
+  venue: IEEE Access
+  url: https://ieeexplore.ieee.org/abstract/document/9611259
+
+- year: 2022
+  title: 'Transportation emissions during pandemic: duality of impacts'
+  authors: Kontar, W., Ahn, S., Hicks, A.
+  venue: 'Environmental Research: Infrastructure and Sustainability'
+  url: https://iopscience.iop.org/article/10.1088/2634-4505/ac9a68/meta
+
+- year: 2021
+  title: 'On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics'
+  authors: Kontar, W., Li, T., Srivastava, A., Zhou, Y., Chen, D., Ahn, S.
+  venue: 'Transportation Research Part C: Emerging Technologies'
+  note: Presented at ISTTT24
+  url: https://www.sciencedirect.com/science/article/pii/S0968090X21001844
+
+- year: 2021
+  title: 'Autonomous vehicle adoption: use phase environmental implications'
+  authors: Kontar, W., Ahn, S., Hicks, A.
+  venue: Environmental Research Letters
+  note: Top 5% by attention score
+  url: https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta

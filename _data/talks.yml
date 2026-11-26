@@ -1,0 +1,39 @@
+# Talks, newest first. Add new ones at the top.
+# date is YEAR-MONTH. The Upcoming/Past label is worked out automatically from it.
+# type: Conference, Invited Talk, Keynote, or Workshop
+
+- date: 2026-07
+  type: Conference
+  title: 'Capturing Behavioral Heterogeneity for Traffic Flow: A Scalable and Personalized Decomposition Approach'
+  event: International Symposium on Transportation and Traffic Theory (ISTTT26) - Lectern
+  location: Munich, Germany
+
+- date: 2026-06
+  type: Conference
+  title: 'Learning the Pareto Space of Multi-Objective Autonomous Driving: A Modular, Data-Driven Approach'
+  event: IEEE IV
+  location: Detroit, MI, USA
+
+- date: 2026-03
+  type: Invited Talk
+  title: Consensus-Seeking Autonomous Agents in Complex Transportation Systems
+  event: NSF NAIRR Meeting
+  location: Washington, D.C., USA
+
+- date: 2026-03
+  type: Invited Talk
+  title: 'Heterogeneous Agents, Competing Goals: Two Defining Features of Interactive Traffic Systems'
+  event: University of South Florida
+  location: Tampa, FL, USA
+
+- date: 2026-01
+  type: Conference
+  title: Multi-agent Consensus | Mobility under Crisis | Aerial and Ground Autonomous Mobility in Agriculture
+  event: Transportation Research Board Annual Meeting (TRB 2026)
+  location: Washington, D.C., USA
+
+- date: 2025-10
+  type: Conference
+  title: Anomaly Detection in Autonomous Driving Systems
+  event: ICCV
+  location: Honolulu, HI, USA

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 560 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Autonomous Vehicle Illustration">
+  <rect x="0" y="140" width="560" height="120" fill="#d0dce8" opacity="0.5"/>
+  <line x1="0" y1="200" x2="560" y2="200" stroke="#aac" stroke-width="1.5" stroke-dasharray="30 20"/>
+  <rect x="200" y="110" width="160" height="60" rx="12" fill="#1a3a5c" opacity="0.85"/>
+  <rect x="220" y="96" width="120" height="36" rx="8" fill="#1a3a5c" opacity="0.6"/>
+  <rect x="228" y="100" width="44" height="26" rx="4" fill="#6ca0c8" opacity="0.8"/>
+  <rect x="280" y="100" width="44" height="26" rx="4" fill="#6ca0c8" opacity="0.8"/>
+  <circle cx="230" cy="172" r="16" fill="#2c3e50"/>
+  <circle cx="230" cy="172" r="8" fill="#e8eef5"/>
+  <circle cx="330" cy="172" r="16" fill="#2c3e50"/>
+  <circle cx="330" cy="172" r="8" fill="#e8eef5"/>
+  <line x1="280" y1="80" x2="170" y2="40" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="80" x2="200" y2="30" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="80" x2="240" y2="25" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="80" x2="280" y2="22" stroke="#c1392b" stroke-width="1.5" opacity="0.7"/>
+  <line x1="280" y1="80" x2="320" y2="25" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="80" x2="360" y2="30" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="80" x2="390" y2="40" stroke="#c1392b" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="280" cy="80" r="5" fill="#c1392b"/>
+  <circle cx="170" cy="40" r="3" fill="#c1392b" opacity="0.7"/>
+  <circle cx="200" cy="30" r="3" fill="#c1392b" opacity="0.7"/>
+  <circle cx="240" cy="25" r="3" fill="#c1392b" opacity="0.7"/>
+  <circle cx="280" cy="22" r="4" fill="#c1392b"/>
+  <circle cx="320" cy="25" r="3" fill="#c1392b" opacity="0.7"/>
+  <circle cx="360" cy="30" r="3" fill="#c1392b" opacity="0.7"/>
+  <circle cx="390" cy="40" r="3" fill="#c1392b" opacity="0.7"/>
+</svg>

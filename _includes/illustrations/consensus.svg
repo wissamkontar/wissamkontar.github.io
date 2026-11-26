@@ -1,0 +1,31 @@
+<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Tradeoffs Graph">
+  <defs>
+  <marker id="a2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#7a8fa8"/></marker>
+  <marker id="g2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#c1392b" opacity="0.7"/></marker>
+  </defs>
+  <line x1="30" y1="190" x2="315" y2="190" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a2)"/>
+  <line x1="30" y1="190" x2="30" y2="22" stroke="#7a8fa8" stroke-width="1.2" marker-end="url(#a2)"/>
+  <text x="316" y="194" font-family="DM Mono,monospace" font-size="9" fill="#7a8fa8" font-style="italic">f₁</text>
+  <text x="16" y="20" font-family="DM Mono,monospace" font-size="9" fill="#7a8fa8" font-style="italic">f₂</text>
+  <path d="M50,190 Q115,182 172,158 Q222,132 268,88 Q290,62 308,40 L308,190 Z" fill="#1a3a5c" fill-opacity="0.04"/>
+  <path d="M50,188 Q108,178 165,155 Q218,130 265,88 Q286,62 305,40" stroke="#1a3a5c" stroke-width="2.2" fill="none" opacity="0.85"/>
+  <circle cx="78" cy="185" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+  <circle cx="120" cy="170" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+  <circle cx="170" cy="150" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+  <circle cx="222" cy="122" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+  <circle cx="268" cy="88" r="3.5" fill="#1a3a5c" opacity="0.4"/>
+  <circle cx="195" cy="138" r="7.5" fill="white" stroke="#c1392b" stroke-width="2"/>
+  <circle cx="195" cy="138" r="3" fill="#c1392b"/>
+  <circle cx="195" cy="138" r="16" fill="none" stroke="#c1392b" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <text x="213" y="134" font-family="DM Mono,monospace" font-size="8" fill="#c1392b">x*</text>
+  <path d="M80,60 Q120,90 188,133" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+  <path d="M295,160 Q258,155 202,140" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+  <path d="M310,90 Q275,105 205,135" stroke="#c1392b" stroke-width="1.3" fill="none" stroke-dasharray="5 3" opacity="0.5" marker-end="url(#g2)"/>
+  <circle cx="80" cy="60" r="5" fill="#7a8fa8" opacity="0.7"/>
+  <circle cx="295" cy="160" r="5" fill="#7a8fa8" opacity="0.7"/>
+  <circle cx="310" cy="90" r="5" fill="#7a8fa8" opacity="0.7"/>
+  <text x="62" y="57" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₁</text>
+  <text x="298" y="157" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₂</text>
+  <text x="313" y="88" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">a₃</text>
+  <text x="32" y="206" font-family="DM Mono,monospace" font-size="7" fill="#7a8fa8">min∑fᵢ(x)  s.t.  x∈X</text>
+</svg>

@@ -1,0 +1,174 @@
+# Research projects (cards + pop-up details). The first one is shown large.
+# Each project needs a drawing at _includes/illustrations/<id>.svg
+
+- id: av
+  badge: Featured · Autonomous Vehicle Design
+  title: Domain & Physics-Guided Control for Autonomous Vehicles
+  summary: Bridging AV control algorithms with traffic flow theory using physics-based response functions, enabling systemwide stability and safety optimization, not just individual vehicle performance.
+  themes: Autonomous Agents
+  background: 'linear-gradient(135deg, #e8f0f8 0%, #dce8f5 100%)'
+  funder: National Science Foundation (NSF)
+  period: 2021–ongoing
+  pi: Prof. Wissam Kontar
+  overview: Autonomous vehicles often prioritize individual performance, overlooking traffic-level stability and efficiency. This research introduces a physics-based response function to bridge AV control algorithms with traffic dynamics, enabling control designs that optimize system-wide performance.
+  highlights:
+    - Physics-based response function linking AV parameters to traffic-level behavior
+    - Real-world monitoring using Stochastic Gradient Langevin Dynamics (SGLD)
+    - Continuous performance monitoring for AV stability, safety, and traffic impacts
+    - Strategic dynamic adjustments to handle real-world uncertainties
+  publications:
+    - title: 'On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics'
+      authors: Kontar, W., Li, T., Srivastava, A., Zhou, Y., Chen, D., Ahn, S.
+      venue: Transportation Research Part C · ISTTT24
+      url: https://www.sciencedirect.com/science/article/pii/S0968090X21001844
+    - title: A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior
+      authors: Kontar, W., Ahn, S.
+      venue: Transportation Research Part C · 2024
+      url: https://www.sciencedirect.com/science/article/abs/pii/S0968090X24000202
+  paper_url: https://www.sciencedirect.com/science/article/pii/S0968090X21001844
+
+- id: consensus
+  badge: AI Agents
+  title: Consensus-driven AI Agents for Mixed Autonomy Traffic
+  summary: Modern traffic systems are shaped by dynamic interactions between diverse agents. Agents are expected to uphold safety, maintain quality interactions, and contribute to an efficient system. These goals are often at odds. Navigating this tradeoff between goals is not just a matter of design, but rather a broader challenge of achieving consensus.
+  themes: Artificial Intelligence · Autonomous Agents
+  background: '#f2f3fa'
+  funder: NSF NAIRR
+  period: '2025'
+  pi: Prof. Wissam Kontar
+  overview: Balancing safety, efficiency, and interaction is fundamental to designing autonomous driving agents. This study introduces an empirical learning framework that derives these trade-offs directly from naturalistic trajectory data.
+  highlights:
+    - Empirical analysis of consensus in AVs across safety, interaction quality, and traffic efficiency
+    - Pareto-optimality reward function modeling
+    - Implications for designing and training AV driving agents
+    - Reinforcement learning framework for optimizing AV behavior
+  publications:
+    - title: 'Consensus-aware AV behavior: trade-offs between safety, interaction, and performance in mixed urban traffic'
+      authors: Elayan, M. and Kontar, W.
+      venue: Under Review · 2025
+      url: https://arxiv.org/abs/2505.04379
+    - title: 'Learning the Pareto space of multi-objective autonomous driving: a modular, data-driven approach'
+      authors: Elayan, M. and Kontar, W.
+      venue: Under Review · 2025
+      url: https://arxiv.org/abs/2601.18913
+  project_url: https://github.com/wissamkontar/Learning-the-Pareto-Space-of-Multi-Objective-Autonomous-Driving
+  paper_url: https://arxiv.org/abs/2505.04379
+
+- id: personalization
+  badge: Knowledge Sharing
+  title: Knowledge Sharing and Personalization Across Agents
+  summary: The curse of variability stands as a critical barrier in the development and deployment of Automated Vehicles (AVs) in the open world. Variability in the open world stems from the innate dynamic, stochastic, and unpredictable nature of the transportation system.
+  themes: Artificial Intelligence
+  background: '#f8f5ff'
+  funder: NSF
+  period: 2024–ongoing
+  pi: Prof. Wissam Kontar
+  overview: This work describes a learning framework for driver models of AVs via knowledge sharing and personalization, enabling collaborative training while maintaining personalized models tailored to each vehicle's unique conditions.
+  highlights:
+    - Federated learning framework for distributed AV driver model training
+    - Personalization layer retaining local operational characteristics
+    - Large-scale knowledge transfer without sharing raw data
+    - Scalable to large heterogeneous AV fleets
+  publications:
+    - title: Learning Driver Models for Automated Vehicles via Knowledge Sharing and Personalization
+      authors: Kontar, W., Zhong, X., Ahn, S.
+      venue: Transportation Research Records · 🏆 D. Grant Mickle Award, TRB 2025
+      url: https://journals.sagepub.com/doi/abs/10.1177/03611981241298583
+    - title: The Internet of Federated Things (IoFT)
+      authors: Kontar, R., Shi, N., … Kontar, W., et al.
+      venue: IEEE Access · 2022
+      url: https://ieeexplore.ieee.org/abstract/document/9611259
+  paper_url: https://journals.sagepub.com/doi/abs/10.1177/03611981241298583
+
+- id: heterogeneity
+  badge: Heterogeneity
+  title: Learning under Agent Heterogeneity
+  summary: Traffic flow heterogeneity, stemming from diverse behaviors of its agents, presents a fundamental challenge in developing accurate predictive and prescriptive models that are at the heart of understanding traffic.
+  themes: Artificial Intelligence
+  background: '#f2fbf4'
+  funder: NSF
+  period: 2025–ongoing
+  pi: Prof. Wissam Kontar
+  overview: This work shifts the focus towards understanding the nature of heterogeneity through a bottom-up approach, treating driving heterogeneity as a mechanism of traffic-level dynamics.
+  highlights:
+    - Decomposing heterogeneity into shared and personalized components
+    - Pitfalls of one-model-fits-all approaches in transportation systems
+    - Applications to transportation analysis, prediction, clustering, and behavioral transfer
+    - Scalable to large datasets
+  publications:
+    - title: 'Capturing behavioral heterogeneity for traffic flow: a scalable and personalized decomposition approach'
+      authors: Kontar, W., Kim, Y., Zhong, X., Ahn, S.
+      venue: 'Transportation Research Part B: Methodological · ISTTT26'
+      url: https://www.sciencedirect.com/science/article/pii/S0191261526000792
+  paper_url: https://www.sciencedirect.com/science/article/pii/S0191261526000792
+
+- id: theory
+  badge: Traffic Flow Theory
+  title: Modern Traffic Flow Theory
+  summary: Traffic flow systems are increasingly complex, dynamic, and changing. We develop modern traffic flow theory that accounts for complex interactions and dynamics between agents, and provide theoretical foundations for how they shape traffic performance and stability.
+  themes: Transportation Science · Transportation Engineering
+  background: '#fdfaf2'
+  funder: NSF
+  period: 2021–ongoing
+  pi: Prof. Wissam Kontar
+  overview: Traffic wave propagation and hysteresis are fundamental phenomena in traffic flow. This research develops novel methods to understand and compute such phenomena under complex vehicle automation.
+  highlights:
+    - Analytical approximations for traffic wave properties under mixed autonomy
+    - Mathematical properties of traffic waves
+    - Connection between control theory and traffic flow theory
+  publications:
+    - title: Traffic wave properties for automated vehicles during traffic oscillations via analytical approximations
+      authors: Zhou, Y., Li, S., Pu, C., Kontar, W., Srivastava, A., Ahn, S.
+      venue: Under review · 2025
+  paper_url: https://arxiv.org/abs/2411.16937
+
+- id: urban
+  badge: Urban Mobility
+  title: Urban Mobility Patterns Under Crisis
+  summary: The growing frequency and severity of natural disasters present profound challenges for societies worldwide, threatening lives, disrupting economies, and straining infrastructure.
+  themes: Urban Mobility · Artificial Intelligence
+  background: '#fff8f8'
+  funder: USDOT
+  period: 2025–ongoing
+  pi: Prof. Wissam Kontar
+  overview: Understanding human mobility during emergencies is critical for strengthening urban resilience. This study examines transitions between returners and explorers over emergency periods, revealing intra-urban behavioral dynamics.
+  highlights:
+    - Large-scale mobility clustering based on explorers versus returners dichotomy
+    - Resilience to crisis is a factor of human mobility patterns and their transitions
+    - Urban mobility under crisis embodies complex dynamics and exponential patterns
+  publications:
+    - title: 'Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city'
+      authors: Armantalab, O., Kontar, W.
+      venue: Under review · 2025
+      url: https://arxiv.org/abs/2510.00469
+  paper_url: https://arxiv.org/abs/2510.00469
+
+- id: adoption
+  badge: Adoption Patterns
+  title: Adoption Patterns of Emerging Modes of Transportation
+  summary: The emergence of different modes of transportation promises to transform urban mobility, reshaping not only traffic efficiency and safety but also the environmental and behavioral dynamics of cities worldwide.
+  themes: Urban Mobility · Artificial Intelligence
+  background: '#f2f8ff'
+  funder: DOT
+  period: 2023–ongoing
+  pi: Prof. Wissam Kontar
+  overview: This study investigates the presence of an energy and environmental rebound effect from the adoption of emerging modes of transportation, using mode choice and life cycle assessment frameworks.
+  highlights:
+    - Mode choice modeling with revealed and stated preference data
+    - Life cycle assessment of use-phase emissions
+    - Micromobility, transit systems, emerging modes, and traditional modes of transportation
+  publications:
+    - title: 'One mile forward, six miles back: A rebound effect in autonomous vehicle adoption'
+      authors: Kontar, W., Armantalab, O., Ahn, S., Hicks, A.
+      venue: Resources, Conservation and Recycling · 2026
+      url: https://www.sciencedirect.com/science/article/pii/S0921344926000947?dgcid=author
+    - title: Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data
+      authors: Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.
+      venue: Nature npj Sustainable Mobility and Transport · 2024
+      url: https://www.nature.com/articles/s44333-024-00003-7
+    - title: 'Autonomous vehicle adoption: use phase environmental implications'
+      authors: Kontar, W., Ahn, S., Hicks, A.
+      venue: Environmental Research Letters · 2022
+      url: https://iopscience.iop.org/article/10.1088/1748-9326/abf6f4/meta
+  project_url: https://sites.google.com/view/cheeseburgercalculator/home
+  paper_url: https://www.sciencedirect.com/science/article/pii/S0921344926000947?dgcid=author

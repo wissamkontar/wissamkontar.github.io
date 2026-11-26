@@ -1,0 +1,33 @@
+<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Federated Learning Diagram">
+  <defs>
+  <marker id="up3" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#7b4fa0" opacity="0.8"/></marker>
+  <marker id="dn3" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#c1392b" opacity="0.7"/></marker>
+  </defs>
+  <rect x="118" y="16" width="104" height="34" rx="5" fill="#7b4fa0" fill-opacity="0.1" stroke="#7b4fa0" stroke-width="1.4"/>
+  <text x="134" y="30" font-family="DM Mono,monospace" font-size="7.5" fill="#7b4fa0">Server  θ_G</text>
+  <text x="128" y="42" font-family="DM Mono,monospace" font-size="7" fill="#7b4fa0" opacity="0.7">aggregate ∇θ_k</text>
+  <rect x="14" y="120" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+  <text x="22" y="136" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₁ = θ_G + δ₁</text>
+  <text x="22" y="149" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₁</text>
+  <rect x="100" y="158" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+  <text x="108" y="174" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₂ = θ_G + δ₂</text>
+  <text x="108" y="187" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₂</text>
+  <rect x="196" y="120" width="72" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+  <text x="204" y="136" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₃ = θ_G + δ₃</text>
+  <text x="204" y="149" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">local data D₃</text>
+  <rect x="270" y="158" width="58" height="38" rx="4" fill="#1a3a5c" fill-opacity="0.07" stroke="#1a3a5c" stroke-width="1.2"/>
+  <text x="276" y="174" font-family="DM Mono,monospace" font-size="7" fill="#1a3a5c">θ₄ = θ_G+δ₄</text>
+  <text x="276" y="187" font-family="DM Mono,monospace" font-size="6.5" fill="#1a3a5c" opacity="0.6">data D₄</text>
+  <line x1="55" y1="120" x2="130" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+  <line x1="140" y1="158" x2="162" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+  <line x1="232" y1="120" x2="196" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+  <line x1="295" y1="158" x2="215" y2="50" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3" opacity="0.65" marker-end="url(#up3)"/>
+  <line x1="126" y1="50" x2="52" y2="120" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+  <line x1="158" y1="50" x2="138" y2="158" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+  <line x1="196" y1="50" x2="228" y2="120" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+  <line x1="212" y1="50" x2="290" y2="158" stroke="#c1392b" stroke-width="1.1" opacity="0.4" marker-end="url(#dn3)"/>
+  <line x1="16" y1="208" x2="34" y2="208" stroke="#7b4fa0" stroke-width="1.3" stroke-dasharray="5 3"/>
+  <text x="38" y="212" font-family="DM Mono,monospace" font-size="6.5" fill="#7b4fa0">upload ∇θ_k</text>
+  <line x1="130" y1="208" x2="148" y2="208" stroke="#c1392b" stroke-width="1.1"/>
+  <text x="152" y="212" font-family="DM Mono,monospace" font-size="6.5" fill="#c1392b">broadcast θ_G</text>
+</svg>
