@@ -1,0 +1,85 @@
+{% comment %}
+  "Upcoming & Latest" timeline on the home page.
+  First the talks from _data/talks.yml (the script in main.js removes the ones whose month has passed),
+  then the newest funding (_data/projects.yml), awards (_data/awards.yml) and lab news (_data/news.yml).
+  Change the number after "limit:" to show more or fewer news items.
+{% endcomment %}
+{% assign keys = "" | split: "" %}
+{% for item in site.data.projects %}{% if item.sponsor and item.awarded %}{% assign key = item.awarded | append: "|funding|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endif %}{% endfor %}
+{% for item in site.data.awards %}{% assign key = item.date | append: "|award|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endfor %}
+{% for item in site.data.news %}{% assign key = item.date | append: "|news|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endfor %}
+{% assign keys = keys | sort | reverse %}
+
+<section class="section" id="talks">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">What Is Happening</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Upcoming &amp; Latest</h2>
+        <a href="/news/" class="see-all">All News</a>
+      </div>
+      <p class="section-intro">Where we will be presenting next, and the latest funding, awards and news from the lab.</p>
+    </div>
+    <div class="talks-timeline" id="talksTimeline">
+      {% for talk in site.data.talks %}
+      <div class="talk-item upcoming" data-date="{{ talk.date }}">
+        <div class="talk-inner">
+          <div class="talk-date-col">
+            <span class="talk-month">{% assign day = talk.date | append: "-01" %}{{ day | date: "%b" }}<br>{{ day | date: "%Y" }}</span>
+          </div>
+          <div>
+            <div class="talk-status-row">
+              <span class="talk-badge upcoming">Upcoming</span>
+              <span class="talk-badge {{ talk.type | slugify }}">{{ talk.type }}</span>
+            </div>
+            <div class="talk-title">{{ talk.title | escape }}</div>
+            <div class="talk-event">{{ talk.event | escape }}</div>
+            <div class="talk-location">{{ talk.location | escape }}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% for key in keys limit: 6 %}
+        {% assign parts = key | split: "|" %}
+        {% assign stamp = parts[0] %}
+        {% assign kind = parts[1] %}
+        {% assign position = parts[2] | plus: 0 %}
+        {% assign link = nil %}
+        {% case kind %}
+          {% when "funding" %}
+            {% assign item = site.data.projects[position] %}
+            {% assign badge = "Funding" %}
+            {% capture headline %}New award from {{ item.sponsor }}{% endcapture %}
+            {% assign text = item.title %}
+            {% capture link %}/projects/#{{ item.id }}{% endcapture %}
+          {% when "award" %}
+            {% assign item = site.data.awards[position] %}
+            {% assign badge = item.kind %}
+            {% assign headline = item.title %}
+            {% assign text = item.text %}
+          {% else %}
+            {% assign item = site.data.news[position] %}
+            {% assign badge = item.label %}
+            {% assign headline = item.title %}
+            {% assign text = item.text %}
+        {% endcase %}
+      <div class="talk-item">
+        <div class="talk-inner">
+          <div class="talk-date-col">
+            <span class="talk-month">{% if stamp.size > 4 %}{% assign day = stamp | append: "-01" %}{{ day | date: "%b" }}<br>{{ day | date: "%Y" }}{% else %}{{ stamp }}{% endif %}</span>
+          </div>
+          <div>
+            <div class="talk-status-row">
+              <span class="record-badge {{ kind }}">{{ badge | escape }}</span>
+            </div>
+            <div class="talk-title">{{ headline | escape }}</div>
+            {% if text %}<div class="talk-event">{{ text | escape }}</div>{% endif %}
+            {% if link %}<a class="record-link" href="{{ link }}">About the project →</a>{% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

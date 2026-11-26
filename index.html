@@ -22,24 +22,7 @@ layout: default
           <a href="#research" class="btn btn-primary">Explore Research →</a>
           <a href="/publications/" class="btn btn-ghost">View Publications</a>
         </div>
-        <div class="hero-profiles">
-          <a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer" class="profile-link" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="GitHub Logo"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer" class="profile-link" title="Google Scholar">
-            <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Google Scholar Logo"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
-            Google Scholar
-          </a>
-          <a href="{{ site.links.university }}" target="_blank" rel="noopener noreferrer" class="profile-link" title="University Page">
-            <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="University Logo"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
-            UNL Engineering
-          </a>
-          <a href="mailto:{{ site.email }}" class="profile-link" title="Email">
-            <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Email Icon"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            Email
-          </a>
-        </div>
+        {% include profile-links.html %}
       </div>
       <div class="hero-logo-wrap fade-in">
         <img src="/images/Logo.png" alt="TALI Lab Logo" width="400" height="400">
@@ -89,39 +72,7 @@ layout: default
 
 <div class="divider"></div>
 
-<!-- Upcoming talks (content: _data/talks.yml). Talks whose month has passed are removed here and shown on the News page. -->
-<section class="section" id="talks">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="label">On the Road</div>
-      <div class="section-header-row">
-        <h2 class="section-title">Upcoming Talks &amp; Conferences</h2>
-        <a href="/news/?show=talk" class="see-all">Past Talks</a>
-      </div>
-      <p class="section-intro">Where we will be presenting our work next.</p>
-    </div>
-    <div class="talks-timeline" id="talksTimeline">
-      {% for talk in site.data.talks %}
-      <div class="talk-item upcoming" data-date="{{ talk.date }}">
-        <div class="talk-inner">
-          <div class="talk-date-col">
-            <span class="talk-month">{% assign day = talk.date | append: "-01" %}{{ day | date: "%b" }}<br>{{ day | date: "%Y" }}</span>
-          </div>
-          <div>
-            <div class="talk-status-row">
-              <span class="talk-badge upcoming">Upcoming</span>
-              <span class="talk-badge {{ talk.type | slugify }}">{{ talk.type }}</span>
-            </div>
-            <div class="talk-title">{{ talk.title | escape }}</div>
-            <div class="talk-event">{{ talk.event | escape }}</div>
-            <div class="talk-location">{{ talk.location | escape }}</div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <p class="talks-empty" id="talksEmpty" hidden>No upcoming talks are scheduled right now. See our <a href="/news/?show=talk">past talks in News →</a></p>
-  </div>
-</section>
+<!-- Upcoming talks and the latest news (layout: _includes/latest.html) -->
+{% include latest.html %}
 
 </main>
