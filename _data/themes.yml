@@ -6,15 +6,16 @@
 #   summary   two or three plain sentences
 #   topics    short chips
 #   lessons   what we have learned, in everyday words (no paper titles, no numbers)
-#   image     a figure in images/ (with image_caption), or
-#   illustration  a drawing in _includes/illustrations/ (used when there is no image)
+#   image     a figure in images/ (image_alt describes it for screen readers)
+#   illustration  a drawing in _includes/illustrations/, used when there is no image or its file is missing
 # A theme with label_only: true is only a publication label: it gets no panel on the home page.
 # Each theme's colour is set in assets/css/themes.css.
 
 - id: quantum
   name: Quantum Methods
   image: research-quantum.png
-  image_caption: The density matrix that represents an agent's state
+  illustration: quantum
+  image_alt: The density matrix that represents an agent's state
   question: What if we modeled the agents in a system the way quantum theory models particles?
   summary: >-
     We redefine how the agents in a system are represented and modeled, from a quantum perspective. Two concepts
@@ -52,7 +53,8 @@
 - id: traffic-flow
   name: Traffic Flow Theory
   image: research-traffic-flow.jpg
-  image_caption: Speed along I-24 over one morning. Congestion waves travel backward through traffic
+  illustration: theory
+  image_alt: Speed along I-24 over one morning, with congestion waves travelling backward through traffic
   question: What happens to a whole system when every agent in it behaves differently?
   summary: >-
     Waves, stop-and-go oscillations and hysteresis in traffic emerge from how individual agents respond to one

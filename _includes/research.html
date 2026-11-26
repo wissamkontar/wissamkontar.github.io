@@ -19,14 +19,20 @@
       {% assign total = 0 %}
       {% for pub in site.data.publications %}{% if pub.themes contains theme.id %}{% assign total = total | plus: 1 %}{% endif %}{% endfor %}
       <article class="theme-panel theme-{{ theme.id }} fade-in" id="theme-{{ theme.id }}">
-        <div class="theme-visual{% if theme.image %} has-image{% endif %}">
-          {% if theme.image %}
-          <a href="/images/{{ theme.image }}" target="_blank" rel="noopener noreferrer"><img src="/images/{{ theme.image }}" alt="{{ theme.image_caption | escape }}" loading="lazy"></a>
-          <div class="theme-caption">{{ theme.image_caption | escape }}</div>
+        {% comment %} Show the theme's figure if its file is in images/, otherwise its drawing. {% endcomment %}
+        {% assign figure = nil %}
+        {% if theme.image %}
+          {% capture figure_path %}/images/{{ theme.image }}{% endcapture %}
+          {% assign found = site.static_files | where: "path", figure_path %}
+          {% if found.size > 0 %}{% assign figure = theme.image %}{% endif %}
+        {% endif %}
+        <div class="theme-visual">
+          {% if figure %}
+          <a href="/images/{{ figure }}" target="_blank" rel="noopener noreferrer"><img src="/images/{{ figure }}" alt="{{ theme.image_alt | escape }}" loading="lazy"></a>
           {% else %}
           {% include illustrations/{{ theme.illustration }}.svg %}
           {% endif %}
-          <div class="theme-number">Theme 0{{ number }}</div>
+          <div class="theme-number">Theme {{ number }}</div>
         </div>
         <div class="theme-body">
           <h3 class="theme-name">{{ theme.name }}</h3>

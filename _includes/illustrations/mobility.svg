@@ -1,35 +1,46 @@
-<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trips from home across a city: long trips on normal days, short trips close to home during a crisis">
+<svg viewBox="0 0 460 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A street network with a disruption at one intersection and traffic rerouting around it">
   <defs>
-  <marker id="mb1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#1a3a5c" opacity="0.8"/></marker>
+  <marker id="pm" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#c1392b"/></marker>
+  <marker id="pn" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#5b6f9e"/></marker>
   </defs>
-  <line x1="14" y1="48" x2="326" y2="48" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="14" y1="112" x2="326" y2="112" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="14" y1="170" x2="326" y2="170" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="50" y1="14" x2="50" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="118" y1="14" x2="118" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="196" y1="14" x2="196" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <line x1="274" y1="14" x2="274" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-  <circle cx="118" cy="112" r="40" fill="#c1392b" fill-opacity="0.06" stroke="#c1392b" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>
-  <path d="M118,112 Q170,60 268,44" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
-  <path d="M118,112 Q210,120 296,160" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
-  <path d="M118,112 Q150,170 222,182" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
-  <path d="M118,112 Q70,70 46,30" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
-  <circle cx="274" cy="43" r="4" fill="#1a3a5c"/>
-  <circle cx="302" cy="163" r="4" fill="#1a3a5c"/>
-  <circle cx="228" cy="183" r="4" fill="#1a3a5c"/>
-  <circle cx="43" cy="25" r="4" fill="#1a3a5c"/>
-  <path d="M118,112 Q132,96 144,90" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
-  <path d="M118,112 Q100,100 92,90" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
-  <path d="M118,112 Q126,130 138,138" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
-  <path d="M118,112 Q102,124 94,136" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
-  <circle cx="146" cy="89" r="3.2" fill="#c1392b"/>
-  <circle cx="90" cy="88" r="3.2" fill="#c1392b"/>
-  <circle cx="140" cy="139" r="3.2" fill="#c1392b"/>
-  <circle cx="92" cy="138" r="3.2" fill="#c1392b"/>
-  <circle cx="118" cy="112" r="9" fill="white" stroke="#2e7d32" stroke-width="2"/>
-  <path d="M112.5,113 L118,107.5 L123.5,113 M114,112 L114,117 L122,117 L122,112" stroke="#2e7d32" stroke-width="1.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="18" y1="206" x2="38" y2="206" stroke="#1a3a5c" stroke-width="1.6"/>
-  <text x="43" y="209" font-family="DM Mono,monospace" font-size="7.5" fill="#1a3a5c">normal days</text>
-  <line x1="120" y1="206" x2="140" y2="206" stroke="#c1392b" stroke-width="1.6" stroke-dasharray="4 3"/>
-  <text x="145" y="209" font-family="DM Mono,monospace" font-size="7.5" fill="#c1392b">during a crisis</text>
+  <line x1="14" y1="48" x2="446" y2="48" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="14" y1="115" x2="446" y2="115" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="14" y1="182" x2="446" y2="182" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="52" y1="14" x2="52" y2="216" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="141" y1="14" x2="141" y2="216" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="230" y1="14" x2="230" y2="216" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="319" y1="14" x2="319" y2="216" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="408" y1="14" x2="408" y2="216" stroke="#e4e3dc" stroke-width="13" stroke-linecap="round"/>
+  <line x1="14" y1="48" x2="446" y2="48" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="14" y1="115" x2="446" y2="115" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="14" y1="182" x2="446" y2="182" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="52" y1="14" x2="52" y2="216" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="141" y1="14" x2="141" y2="216" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="230" y1="14" x2="230" y2="216" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="319" y1="14" x2="319" y2="216" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <line x1="408" y1="14" x2="408" y2="216" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="9 7"/>
+  <circle cx="52" cy="48" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="52" cy="115" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="52" cy="182" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="141" cy="48" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="141" cy="115" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="141" cy="182" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="230" cy="48" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="230" cy="182" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="319" cy="48" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="319" cy="115" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="319" cy="182" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="408" cy="48" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="408" cy="115" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="408" cy="182" r="5" fill="#ffffff" stroke="#b9b8b0" stroke-width="1.2"/>
+  <circle cx="230" cy="115" r="40" fill="#c1392b" fill-opacity="0.05" stroke="#c1392b" stroke-width="0.8" stroke-opacity="0.35"/>
+  <circle cx="230" cy="115" r="25" fill="#c1392b" fill-opacity="0.08" stroke="#c1392b" stroke-width="0.9" stroke-opacity="0.5"/>
+  <line x1="24" y1="115" x2="118" y2="115" stroke="#5b6f9e" stroke-width="2.2" marker-end="url(#pn)"/>
+  <path d="M141,115 L141,60 Q141,48 153,48 L307,48 Q319,48 319,60 L319,96" fill="none" stroke="#c1392b" stroke-width="2.2" stroke-dasharray="7 4" marker-end="url(#pm)"/>
+  <path d="M141,115 L141,170 Q141,182 153,182 L218,182" fill="none" stroke="#c1392b" stroke-width="2.2" stroke-dasharray="7 4" stroke-opacity="0.6" marker-end="url(#pm)"/>
+  <line x1="342" y1="115" x2="436" y2="115" stroke="#5b6f9e" stroke-width="2.2" marker-end="url(#pn)"/>
+  <circle cx="141" cy="115" r="6" fill="#5b6f9e" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="319" cy="115" r="6" fill="#5b6f9e" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="230" cy="115" r="12" fill="#c1392b" stroke="#ffffff" stroke-width="2"/>
+  <path d="M224,109 L236,121 M236,109 L224,121" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
 </svg>
