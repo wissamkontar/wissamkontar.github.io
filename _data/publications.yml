@@ -1,6 +1,6 @@
 # All publications, newest first. Add new ones at the top.
 # selected: true puts a paper on the home page as well; every paper appears on the full list at /publications/.
-# themes: one or two theme ids from _data/themes.yml (quantum, super-intelligence, traffic-flow, mobility). Leave it out if none fits.
+# themes: one or two theme ids from _data/themes.yml (quantum, super-intelligence, traffic-flow, mobility, sustainability, education).
 # Optional fields: note (extra text after the venue), award (shown in red with a trophy).
 
 - year: 2026
@@ -24,6 +24,7 @@
   authors: Hicks, A., Kontar, W.
   venue: Environmental Engineering Science
   url: https://doi.org/10.1177/15579018261465718
+  themes: [education]
 
 - year: 2026
   title: 'Optimal measurement of traffic hysteresis under traffic oscillations: A binary integer programming approach'
@@ -103,6 +104,7 @@
   authors: Kontar, W., Lane, K.
   venue: ASEE Midwest Section Conference
   url: https://doi.org/10.18260/1-2-115-57821
+  themes: [education]
 
 - year: 2025
   title: 'Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city'
@@ -148,12 +150,14 @@
   authors: Rodriguez Morris, M.I., Kontar, W., Hicks, A.
   venue: Integrated Environmental Assessment and Management
   url: https://doi.org/10.1002/ieam.4895
+  themes: [sustainability]
 
 - year: 2024
   title: The Role of Disasters and Infrastructure Failures in Engineering Education with Analysis through Machine Learning
   authors: Hicks, A., Kontar, W.
   venue: Journal of Civil Engineering Education
   url: https://doi.org/10.1061/JCEECD.EIENG-2021
+  themes: [education]
 
 - year: 2024
   title: 'Reduced Travel Emissions Through a Carbon Calculator with Accessible Environmental Data: A case study in Madison, Wisconsin'
@@ -236,3 +240,4 @@
   authors: Hicks, A., Temizel-Sekeryan, S., Kontar, W., Ghamkhar, R., Rodriguez Morris, M.I.
   venue: Resources, Conservation and Recycling
   url: https://doi.org/10.1016/j.resconrec.2020.105262
+  themes: [sustainability]

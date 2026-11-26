@@ -1,14 +1,84 @@
-# Research themes, in order of importance. Publications refer to these by id (see _data/publications.yml).
+# Research themes, in order of importance. Each one becomes a panel in the Research section of the home page
+# and a label on publications (publications refer to themes by id, see _data/publications.yml).
+#
+# Fields: question (one line a newcomer can understand), summary (two or three plain sentences),
+# topics (short chips), findings (concrete results), illustration (file name in _includes/illustrations/).
+# A theme with label_only: true is only a publication label: it gets no panel on the home page.
 # Each theme's colour is set in assets/css/themes.css.
 
 - id: quantum
   name: Quantum Methods
+  illustration: quantum
+  question: Can the mathematics of quantum theory describe how people drive and travel?
+  summary: >-
+    Human behavior on the road is uncertain, depends on context, and changes over time, yet most models reduce it
+    to fixed labels or regimes. We borrow the density-matrix formalism of quantum theory to represent each driver
+    or traveler as a continuously evolving state that is learned from data and remains interpretable.
+  topics:
+    - Driver behavior representation
+    - Behavioral heterogeneity
+    - Dynamic travel behavior
+  findings:
+    - Trained without supervision on I-24 MOTION data, the representation recovers three interpretable driving profiles (free flow, transition, congestion) and the smooth transitions drivers make between them.
+    - The same representation reproduces known traffic phenomena, including the fundamental diagram and hysteresis loops.
+    - This line of work was shortlisted for the Best Paper Award at IEEE ITSC 2026 and placed second at BTR 2026.
 
 - id: super-intelligence
   name: Super Intelligence
+  illustration: consensus
+  question: How do autonomous agents learn to drive well, together, in the real world?
+  summary: >-
+    An automated vehicle has to be safe, interact well with the people around it, and keep traffic moving, and
+    these goals often conflict. We build learning methods that find the balance directly from real driving data,
+    let fleets of vehicles share what they learn while staying personalized, and remain reliable under
+    uncertainty and attack.
+  topics:
+    - Consensus and trade-offs
+    - Knowledge sharing and personalization
+    - Physics-guided learning
+    - Driving under uncertainty
+  findings:
+    - In real urban trajectory data, only 1.63% of automated-vehicle interactions with pedestrians and cyclists met safety, interaction quality and traffic performance all at once.
+    - A modular, open-source framework learns the Pareto space of multi-objective autonomous driving from data.
+    - Vehicles can train driver models collaboratively, without pooling raw data, and still keep a model personalized to each (D. Grant Mickle Award, TRB 2025).
 
 - id: traffic-flow
   name: Traffic Flow Theory
+  illustration: theory
+  question: What happens to traffic as a whole when every driver, human or automated, behaves differently?
+  summary: >-
+    Traffic waves, oscillations and hysteresis emerge from how individual vehicles follow one another. We develop
+    theory and measurement methods that connect individual behavior, including the control logic of automated
+    vehicles, to these system-level phenomena.
+  topics:
+    - Behavioral heterogeneity
+    - Oscillations and hysteresis
+    - Mixed-autonomy dynamics
+  findings:
+    - A scalable decomposition separates what drivers have in common from what is personal to each one (Transportation Research Part B, presented at ISTTT26).
+    - An optimal method for measuring traffic hysteresis in mixed human and automated traffic, formulated as a binary integer program (Nathan Gartner Award, TRB 2025).
+    - How the car-following behavior of different classes of automated vehicles shapes traffic dynamics (presented at ISTTT24).
 
 - id: mobility
   name: Mobility Systems
+  illustration: urban
+  question: How do people move through cities, and what do new mobility technologies mean for society and the environment?
+  summary: >-
+    Beyond the roadway, we study how travel behavior shifts during crises and as new modes such as automated
+    vehicles and e-bikes are adopted, and what those shifts mean for emissions and urban resilience.
+  topics:
+    - Mobility under crisis
+    - Adoption of emerging modes
+    - Transportation emissions
+  findings:
+    - During prolonged emergencies, people resume visits to non-essential places more slowly and long-distance travel drops sharply; at least two weeks of data are needed to detect the shift.
+    - We document an energy and environmental rebound effect in the adoption of automated vehicles.
+    - A carbon calculator built on accessible environmental data reduced travel emissions in a Madison, Wisconsin case study.
+
+- id: sustainability
+  name: Environmental Sustainability
+  label_only: true
+
+- id: education
+  name: Engineering Education
+  label_only: true

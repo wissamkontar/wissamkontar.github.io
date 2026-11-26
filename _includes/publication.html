@@ -9,7 +9,7 @@
     <div class="pub-title">{{ pub.title | escape }}</div>
     <div class="pub-authors">{{ authors }}</div>
     <div class="pub-venue">{{ pub.venue | escape }}{% if pub.note %} &nbsp;·&nbsp; {{ pub.note | escape }}{% endif %}{% if pub.award %} &nbsp;·&nbsp; <span class="pub-award">🏆 {{ pub.award | escape }}</span>{% endif %}</div>
-    {% if pub.themes %}<div class="pub-themes">{% for theme in site.data.themes %}{% if pub.themes contains theme.id %}<span class="theme-tag {{ theme.id }}">{{ theme.name }}</span>{% endif %}{% endfor %}</div>{% endif %}
+    {% if pub.themes %}<div class="pub-themes">{% for theme in site.data.themes %}{% if pub.themes contains theme.id %}<span class="theme-tag theme-{{ theme.id }}">{{ theme.name }}</span>{% endif %}{% endfor %}</div>{% endif %}
   </div>
   <div class="pub-links">
     <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" class="pub-tag">{% if pub.url contains 'arxiv.org' %}arXiv{% elsif pub.url contains 'ssrn' %}SSRN{% else %}DOI{% endif %}</a>
