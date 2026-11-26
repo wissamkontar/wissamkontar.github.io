@@ -1,4 +1,4 @@
-/* TALI website scripts: scroll fade-in, talk status labels, publication theme filters. */
+/* TALI website scripts: scroll fade-in, upcoming and past talks, news filter, publication theme filters. */
 
 const $ = (id) => document.getElementById(id);
 const el = (tag, className, text) => {
@@ -7,8 +7,9 @@ const el = (tag, className, text) => {
   if (text) node.textContent = text;
   return node;
 };
+const query = new URLSearchParams(location.search);
 
-/* ── Scroll fade-in ── */
+/* Scroll fade-in */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
@@ -18,20 +19,40 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach((node) => observer.observe(node));
 
-/* ── Talks: mark this month's and future talks as upcoming ── */
+/* Talks: the home page keeps this month's and future talks; the News page keeps the ones that have passed. */
 const thisMonth = new Date().toISOString().slice(0, 7);
-document.querySelectorAll('.talk-item').forEach((item) => {
-  if (item.dataset.date < thisMonth) return;
-  item.classList.add('upcoming');
-  const badge = item.querySelector('[data-status]');
-  badge.className = 'talk-badge upcoming';
-  badge.textContent = 'Upcoming';
-});
+const timeline = $('talksTimeline');
+if (timeline) {
+  timeline.querySelectorAll('.talk-item').forEach((item) => {
+    if (item.dataset.date < thisMonth) item.remove();
+  });
+  if (!timeline.querySelector('.talk-item')) {
+    timeline.hidden = true;
+    $('talksEmpty').hidden = false;
+  }
+}
 
-/* ── Publication lists: filter buttons, one per research theme (themes come from _data/themes.yml).
-      A link such as /publications/?theme=quantum opens the list with that theme already chosen. ── */
+/* News page: filter buttons. A link such as /news/?show=talk opens the page with that filter chosen. */
+const feed = $('newsFeed');
+if (feed) {
+  feed.querySelectorAll('[data-talk-date]').forEach((row) => {
+    if (row.dataset.talkDate >= thisMonth) row.remove();
+  });
+  const buttons = [...$('newsFilter').querySelectorAll('button')];
+  const show = (cat) => {
+    feed.querySelectorAll('.record').forEach((row) => { row.hidden = cat !== '' && row.dataset.cat !== cat; });
+    feed.querySelectorAll('.news-year').forEach((group) => { group.hidden = !group.querySelector('.record:not([hidden])'); });
+    buttons.forEach((button) => button.classList.toggle('active', button.dataset.cat === cat));
+  };
+  buttons.forEach((button) => button.addEventListener('click', () => show(button.dataset.cat)));
+  const asked = query.get('show') || '';
+  show(buttons.some((button) => button.dataset.cat === asked) ? asked : '');
+}
+
+/* Publication lists: filter buttons, one per research theme (themes come from _data/themes.yml).
+   A link such as /publications/?theme=quantum opens the list with that theme already chosen. */
 const themes = JSON.parse($('themesData').textContent);
-const wanted = new URLSearchParams(location.search).get('theme') || '';
+const wanted = query.get('theme') || '';
 document.querySelectorAll('.pub-table').forEach((table) => {
   const rows = [...table.querySelectorAll('.pub-row')];
   const has = (row, id) => row.dataset.themes.split(' ').includes(id);

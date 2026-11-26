@@ -1,5 +1,6 @@
 # Talks, newest first. Add new ones at the top.
-# date is YEAR-MONTH. The Upcoming/Past label is worked out automatically from it.
+# date is YEAR-MONTH. Talks in this month or later show on the home page as upcoming;
+# once the month has passed they move to the News page automatically.
 # type: Conference, Invited Talk, Keynote, or Workshop
 
 - date: 2026-07

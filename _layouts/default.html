@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ site.description }}">
-<title>{% if page.title %}{{ page.title }} · TALI{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title | escape }} · TALI{% else %}{{ site.title }}{% endif %}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/themes.css">
+<link rel="stylesheet" href="/assets/css/pages.css">
 <script id="themesData" type="application/json">{{ site.data.themes | jsonify }}</script>
 <script src="/assets/js/main.js" defer></script>
 </head>
@@ -23,10 +24,11 @@
     </a>
     <ul class="nav-links">
       <li><a href="/#research">Research</a></li>
-      <li><a href="/#publications">Publications</a></li>
-      <li><a href="/#talks">Talks</a></li>
+      <li><a href="/projects/">Research Projects</a></li>
+      <li><a href="/publications/">Publications</a></li>
+      <li><a href="/funding-awards/">Funding &amp; Awards</a></li>
       <li><a href="/team/">Team</a></li>
-      <li><a href="/#news">News</a></li>
+      <li><a href="/news/">News</a></li>
       <li><a href="mailto:{{ site.email }}" class="nav-cta">Contact</a></li>
     </ul>
   </div>
@@ -66,10 +68,11 @@
       <div class="footer-col">
         <h4>Lab</h4>
         <ul>
+          <li><a href="/projects/">Research Projects</a></li>
           <li><a href="/publications/">Publications</a></li>
-          <li><a href="/#talks">Talks</a></li>
+          <li><a href="/funding-awards/">Funding &amp; Awards</a></li>
           <li><a href="/team/">Team</a></li>
-          <li><a href="/#news">News</a></li>
+          <li><a href="/news/">News</a></li>
         </ul>
       </div>
       <div class="footer-col">

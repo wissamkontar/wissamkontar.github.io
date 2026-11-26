@@ -1,0 +1,43 @@
+---
+layout: default
+title: Research Projects
+permalink: /projects/
+---
+<main>
+
+<!-- Research projects (content: _data/projects.yml) -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Funded Work</div>
+      <div class="section-header-row">
+        <h1 class="section-title">Research Projects</h1>
+        <a href="/funding-awards/" class="see-all">Funding &amp; Awards</a>
+      </div>
+      <p class="page-lead">The projects we are working on, who supports them, and what each one sets out to do.</p>
+    </div>
+
+    {% for project in site.data.projects %}
+    {% assign first_theme = project.themes | first %}
+    <article class="project-card theme-{{ first_theme }} fade-in" id="{{ project.id }}">
+      <div class="project-meta">
+        {% if project.sponsor %}<span class="project-sponsor">{{ project.sponsor | escape }}</span>{% endif %}
+        {% if project.period %}<span>{{ project.period | escape }}</span>
+        {% elsif project.awarded %}{% assign day = project.awarded | append: "-01" %}<span>Awarded {{ day | date: "%B %Y" }}</span>{% endif %}
+        {% if project.role %}<span>{{ project.role | escape }}</span>{% endif %}
+      </div>
+      <h2 class="project-title">{{ project.title | escape }}</h2>
+      {% if project.summary %}<p class="project-summary">{{ project.summary | escape }}</p>{% endif %}
+      {% if project.team %}<p class="project-team"><strong>Team:</strong> {{ project.team | escape }}</p>{% endif %}
+      <div class="project-foot">
+        {% for id in project.themes %}{% assign theme = site.data.themes | where: "id", id | first %}
+        <a class="theme-tag theme-{{ id }} project-theme" href="/#theme-{{ id }}">{{ theme.name }}</a>
+        {% endfor %}
+        {% for link in project.links %}<a class="record-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} →</a>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+</main>

@@ -1,0 +1,92 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<main>
+
+{% comment %}
+  The News page gathers four things into one list, newest first:
+  funding (_data/projects.yml), awards (_data/awards.yml), lab news (_data/news.yml) and past talks (_data/talks.yml).
+  Each entry gets a sorting key of the form date|kind|position.
+{% endcomment %}
+{% assign keys = "" | split: "" %}
+{% for item in site.data.projects %}{% if item.sponsor and item.awarded %}{% assign key = item.awarded | append: "|funding|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endif %}{% endfor %}
+{% for item in site.data.awards %}{% assign key = item.date | append: "|award|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endfor %}
+{% for item in site.data.news %}{% assign key = item.date | append: "|news|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endfor %}
+{% for item in site.data.talks %}{% assign key = item.date | append: "|talk|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endfor %}
+{% assign keys = keys | sort | reverse %}
+
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Updates</div>
+      <div class="section-header-row">
+        <h1 class="section-title">News</h1>
+      </div>
+      <p class="page-lead">Funding, awards, talks and other news from the lab, newest first.</p>
+    </div>
+
+    <div class="news-filter" id="newsFilter">
+      <button type="button" data-cat="">All</button>
+      <button type="button" data-cat="funding">Funding</button>
+      <button type="button" data-cat="award">Awards</button>
+      <button type="button" data-cat="talk">Talks</button>
+      <button type="button" data-cat="news">Lab News</button>
+    </div>
+
+    <div id="newsFeed">
+      {% assign year = "" %}
+      {% for key in keys %}
+        {% assign parts = key | split: "|" %}
+        {% assign stamp = parts[0] %}
+        {% assign kind = parts[1] %}
+        {% assign position = parts[2] | plus: 0 %}
+        {% assign this_year = stamp | slice: 0, 4 %}
+        {% if this_year != year %}
+          {% unless forloop.first %}</div></div>{% endunless %}
+          {% assign year = this_year %}
+          <div class="news-year"><h2 class="group-title">{{ year }}</h2><div class="record-list">
+        {% endif %}
+        {% assign month = "" %}
+        {% if stamp.size > 4 %}{% assign day = stamp | append: "-01" %}{% assign month = day | date: "%B" %}{% endif %}
+        {% assign link = nil %}
+        {% case kind %}
+          {% when "funding" %}
+            {% assign item = site.data.projects[position] %}
+            {% assign badge = "Funding" %}
+            {% capture headline %}New award from {{ item.sponsor }}{% endcapture %}
+            {% assign text = item.title %}
+            {% capture link %}/projects/#{{ item.id }}{% endcapture %}
+          {% when "award" %}
+            {% assign item = site.data.awards[position] %}
+            {% assign badge = item.kind %}
+            {% assign headline = item.title %}
+            {% assign text = item.text %}
+          {% when "talk" %}
+            {% assign item = site.data.talks[position] %}
+            {% assign badge = item.type %}
+            {% assign headline = item.title %}
+            {% capture text %}{{ item.event }} · {{ item.location }}{% endcapture %}
+          {% else %}
+            {% assign item = site.data.news[position] %}
+            {% assign badge = item.label %}
+            {% assign headline = item.title %}
+            {% assign text = item.text %}
+        {% endcase %}
+        <article class="record" data-cat="{{ kind }}"{% if kind == "talk" %} data-talk-date="{{ stamp }}"{% endif %}>
+          <div class="record-when">{{ month }}</div>
+          <div>
+            <span class="record-badge {{ kind }}">{{ badge | escape }}</span>
+            <h3 class="record-title">{{ headline | escape }}</h3>
+            {% if text %}<p class="record-text">{{ text | escape }}</p>{% endif %}
+            {% if link %}<a class="record-link" href="{{ link }}">About the project →</a>{% endif %}
+          </div>
+        </article>
+        {% if forloop.last %}</div></div>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+</main>
