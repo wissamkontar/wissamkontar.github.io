@@ -1,0 +1,35 @@
+<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trips from home across a city: long trips on normal days, short trips close to home during a crisis">
+  <defs>
+  <marker id="mb1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#1a3a5c" opacity="0.8"/></marker>
+  </defs>
+  <line x1="14" y1="48" x2="326" y2="48" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="14" y1="112" x2="326" y2="112" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="14" y1="170" x2="326" y2="170" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="50" y1="14" x2="50" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="118" y1="14" x2="118" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="196" y1="14" x2="196" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <line x1="274" y1="14" x2="274" y2="190" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="118" cy="112" r="40" fill="#c1392b" fill-opacity="0.06" stroke="#c1392b" stroke-width="1" stroke-dasharray="4 3" opacity="0.7"/>
+  <path d="M118,112 Q170,60 268,44" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
+  <path d="M118,112 Q210,120 296,160" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
+  <path d="M118,112 Q150,170 222,182" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
+  <path d="M118,112 Q70,70 46,30" stroke="#1a3a5c" stroke-width="1.6" fill="none" opacity="0.7" marker-end="url(#mb1)"/>
+  <circle cx="274" cy="43" r="4" fill="#1a3a5c"/>
+  <circle cx="302" cy="163" r="4" fill="#1a3a5c"/>
+  <circle cx="228" cy="183" r="4" fill="#1a3a5c"/>
+  <circle cx="43" cy="25" r="4" fill="#1a3a5c"/>
+  <path d="M118,112 Q132,96 144,90" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <path d="M118,112 Q100,100 92,90" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <path d="M118,112 Q126,130 138,138" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <path d="M118,112 Q102,124 94,136" stroke="#c1392b" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <circle cx="146" cy="89" r="3.2" fill="#c1392b"/>
+  <circle cx="90" cy="88" r="3.2" fill="#c1392b"/>
+  <circle cx="140" cy="139" r="3.2" fill="#c1392b"/>
+  <circle cx="92" cy="138" r="3.2" fill="#c1392b"/>
+  <circle cx="118" cy="112" r="9" fill="white" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M112.5,113 L118,107.5 L123.5,113 M114,112 L114,117 L122,117 L122,112" stroke="#2e7d32" stroke-width="1.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="18" y1="206" x2="38" y2="206" stroke="#1a3a5c" stroke-width="1.6"/>
+  <text x="43" y="209" font-family="DM Mono,monospace" font-size="7.5" fill="#1a3a5c">normal days</text>
+  <line x1="120" y1="206" x2="140" y2="206" stroke="#c1392b" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="145" y="209" font-family="DM Mono,monospace" font-size="7.5" fill="#c1392b">during a crisis</text>
+</svg>

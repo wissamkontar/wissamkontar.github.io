@@ -52,59 +52,8 @@ layout: default
   </div>
 </div>
 
-<!-- ───────── Research: one panel per theme (content: _data/themes.yml) ───────── -->
-<section class="section" id="research">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="label">Research Focus</div>
-      <div class="section-header-row">
-        <h2 class="section-title">What We Work On</h2>
-      </div>
-      <p class="research-lead">We study how intelligent agents (human drivers, automated vehicles, and travelers) behave, learn, and interact, and what that means for the traffic and mobility systems they share. Our work is organized into four themes.</p>
-    </div>
-
-    <div class="theme-list">
-      {% assign number = 0 %}
-      {% for theme in site.data.themes %}{% unless theme.label_only %}
-      {% assign number = number | plus: 1 %}
-      {% assign total = 0 %}
-      {% for pub in site.data.publications %}{% if pub.themes contains theme.id %}{% assign total = total | plus: 1 %}{% endif %}{% endfor %}
-      <article class="theme-panel theme-{{ theme.id }} fade-in" id="theme-{{ theme.id }}">
-        <div class="theme-visual">
-          {% include illustrations/{{ theme.illustration }}.svg %}
-          <div class="theme-number">Theme 0{{ number }}</div>
-        </div>
-        <div class="theme-body">
-          <h3 class="theme-name">{{ theme.name }}</h3>
-          <p class="theme-question">{{ theme.question | escape }}</p>
-          <p class="theme-summary">{{ theme.summary | escape }}</p>
-          <div class="theme-topics">
-            {% for topic in theme.topics %}<span class="topic-chip">{{ topic }}</span>{% endfor %}
-          </div>
-          <div class="theme-cols">
-            <div>
-              <div class="theme-heading">What we have shown</div>
-              <ul class="theme-findings">
-                {% for finding in theme.findings %}<li>{{ finding | escape }}</li>{% endfor %}
-              </ul>
-            </div>
-            <div>
-              <div class="theme-heading">Selected papers</div>
-              <ul class="theme-papers">
-                {% assign shown = 0 %}
-                {% for pub in site.data.publications %}{% if pub.selected and pub.themes contains theme.id and shown < 3 %}{% assign shown = shown | plus: 1 %}
-                <li><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title | escape }}</a><span>{{ pub.venue | escape }} · {{ pub.year }}</span></li>
-                {% endif %}{% endfor %}
-              </ul>
-              <a class="theme-more" href="/publications/?theme={{ theme.id }}">All {{ total }} papers in this theme →</a>
-            </div>
-          </div>
-        </div>
-      </article>
-      {% endunless %}{% endfor %}
-    </div>
-  </div>
-</section>
+<!-- ───────── Research: one panel per theme (layout: _includes/research.html, content: _data/themes.yml) ───────── -->
+{% include research.html %}
 
 <div class="divider"></div>
 

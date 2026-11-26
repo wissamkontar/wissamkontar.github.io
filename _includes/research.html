@@ -1,0 +1,61 @@
+{% comment %}
+  Research section of the home page: one panel per theme.
+  All text comes from _data/themes.yml; the papers come from _data/publications.yml.
+{% endcomment %}
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">Research Focus</div>
+      <div class="section-header-row">
+        <h2 class="section-title">What We Work On</h2>
+      </div>
+      <p class="research-lead">We study how intelligent agents behave, learn, and interact, and what that means for the complex systems they form. Our work is organized into four themes.</p>
+    </div>
+
+    <div class="theme-list">
+      {% assign number = 0 %}
+      {% for theme in site.data.themes %}{% unless theme.label_only %}
+      {% assign number = number | plus: 1 %}
+      {% assign total = 0 %}
+      {% for pub in site.data.publications %}{% if pub.themes contains theme.id %}{% assign total = total | plus: 1 %}{% endif %}{% endfor %}
+      <article class="theme-panel theme-{{ theme.id }} fade-in" id="theme-{{ theme.id }}">
+        <div class="theme-visual{% if theme.image %} has-image{% endif %}">
+          {% if theme.image %}
+          <a href="/images/{{ theme.image }}" target="_blank" rel="noopener noreferrer"><img src="/images/{{ theme.image }}" alt="{{ theme.image_caption | escape }}" loading="lazy"></a>
+          <div class="theme-caption">{{ theme.image_caption | escape }}</div>
+          {% else %}
+          {% include illustrations/{{ theme.illustration }}.svg %}
+          {% endif %}
+          <div class="theme-number">Theme 0{{ number }}</div>
+        </div>
+        <div class="theme-body">
+          <h3 class="theme-name">{{ theme.name }}</h3>
+          <p class="theme-question">{{ theme.question | escape }}</p>
+          <p class="theme-summary">{{ theme.summary | escape }}</p>
+          <div class="theme-topics">
+            {% for topic in theme.topics %}<span class="topic-chip">{{ topic }}</span>{% endfor %}
+          </div>
+          <div class="theme-cols">
+            <div>
+              <div class="theme-heading">What we have learned</div>
+              <ul class="theme-findings">
+                {% for lesson in theme.lessons %}<li>{{ lesson | escape }}</li>{% endfor %}
+              </ul>
+            </div>
+            <div>
+              <div class="theme-heading">Selected papers</div>
+              <ul class="theme-papers">
+                {% assign shown = 0 %}
+                {% for pub in site.data.publications %}{% if pub.selected and pub.themes contains theme.id and shown < 3 %}{% assign shown = shown | plus: 1 %}
+                <li><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title | escape }}</a><span>{{ pub.venue | escape }} · {{ pub.year }}</span></li>
+                {% endif %}{% endfor %}
+              </ul>
+              <a class="theme-more" href="/publications/?theme={{ theme.id }}">All {{ total }} papers in this theme →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      {% endunless %}{% endfor %}
+    </div>
+  </div>
+</section>

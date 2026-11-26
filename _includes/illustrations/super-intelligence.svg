@@ -1,0 +1,37 @@
+<svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agents linked to one another, each moving toward a balance point between being safe, cooperative and efficient">
+  <defs>
+  <marker id="si1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#c1392b" opacity="0.75"/></marker>
+  </defs>
+  <polygon points="170,30 54,186 286,186" fill="#c1392b" fill-opacity="0.05" stroke="#c1392b" stroke-width="1.2" stroke-opacity="0.45"/>
+  <text x="170" y="22" text-anchor="middle" font-family="DM Mono,monospace" font-size="8.5" fill="#c1392b">safe</text>
+  <text x="54" y="203" text-anchor="middle" font-family="DM Mono,monospace" font-size="8.5" fill="#c1392b">cooperative</text>
+  <text x="286" y="203" text-anchor="middle" font-family="DM Mono,monospace" font-size="8.5" fill="#c1392b">efficient</text>
+  <line x1="150" y1="66" x2="198" y2="74" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="198" y1="74" x2="226" y2="112" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="226" y1="112" x2="248" y2="152" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="248" y1="152" x2="214" y2="174" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="150" y1="66" x2="116" y2="112" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="116" y1="112" x2="94" y2="156" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="94" y1="156" x2="130" y2="174" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="130" y1="174" x2="214" y2="174" stroke="#1a3a5c" stroke-width="1" opacity="0.25"/>
+  <line x1="150" y1="66" x2="165" y2="112" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="198" y1="74" x2="178" y2="113" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="226" y1="112" x2="189" y2="125" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="248" y1="152" x2="190" y2="136" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="214" y1="174" x2="182" y2="146" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="130" y1="174" x2="160" y2="146" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="94" y1="156" x2="152" y2="136" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <line x1="116" y1="112" x2="152" y2="125" stroke="#c1392b" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.6" marker-end="url(#si1)"/>
+  <circle cx="150" cy="66" r="5" fill="#1a3a5c"/>
+  <circle cx="198" cy="74" r="5" fill="#1a3a5c"/>
+  <circle cx="226" cy="112" r="5" fill="#1a3a5c"/>
+  <circle cx="248" cy="152" r="5" fill="#1a3a5c"/>
+  <circle cx="214" cy="174" r="5" fill="#1a3a5c"/>
+  <circle cx="130" cy="174" r="5" fill="#1a3a5c"/>
+  <circle cx="94" cy="156" r="5" fill="#1a3a5c"/>
+  <circle cx="116" cy="112" r="5" fill="#1a3a5c"/>
+  <circle cx="171" cy="130" r="17" fill="none" stroke="#c1392b" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
+  <circle cx="171" cy="130" r="8" fill="white" stroke="#c1392b" stroke-width="2"/>
+  <circle cx="171" cy="130" r="3.2" fill="#c1392b"/>
+  <text x="171" y="163" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="#c1392b">balance</text>
+</svg>
