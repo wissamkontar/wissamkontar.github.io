@@ -117,59 +117,6 @@ layout: default
 
 <div class="divider"></div>
 
-<!-- ───────── Team (members: _data/team.yml) ───────── -->
-<section class="section" id="team">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="label">People</div>
-      <div class="section-header-row">
-        <h2 class="section-title">Our Team</h2>
-      </div>
-    </div>
-
-    <div class="pi-row fade-in">
-      <div class="pi-photo">
-        <img src="/images/wissam.jpeg" alt="Wissam Kontar">
-      </div>
-      <div>
-        <div class="pi-role">Principal Investigator</div>
-        <div class="pi-name">Wissam Kontar</div>
-        <div class="pi-affil">Assistant Professor · Department of Civil &amp; Environmental Engineering · University of Nebraska-Lincoln</div>
-        <p class="pi-bio">Wissam holds a Ph.D. in Civil and Environmental Engineering from the University of Wisconsin-Madison (2022), co-advised by Prof. Soyoung Ahn and Prof. Andrea Hicks.
-          He earned his B.Eng. from the American University of Beirut. His research focuses on operational analysis and AI applications for emerging transportation technologies, addressing challenges in automation, connectivity, and the complex behaviors of transportation ecosystems.
-          His ultimate goal is to design and deploy transportation technologies that improve operational performance and align with societal needs.</p>
-        <div class="pi-links">
-          <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer" class="pi-link">Google Scholar</a>
-          <a href="{{ site.links.orcid }}" target="_blank" rel="noopener noreferrer" class="pi-link">ORCID</a>
-          <a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer" class="pi-link">GitHub</a>
-          <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer" class="pi-link">LinkedIn</a>
-          <a href="mailto:{{ site.email }}" class="pi-link">Email</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="team-grid fade-in">
-      {% for m in site.data.team %}
-      <div class="member-card{% unless m.photo %} centered{% endunless %}">
-        <div class="member-avatar">{% if m.photo %}<img src="/images/{{ m.photo }}" alt="{{ m.name }} - {{ m.role }}" loading="lazy">{% else %}+{% endif %}</div>
-        <div class="member-name">{{ m.name }}</div>
-        <div class="member-role">{{ m.role }}</div>
-        <div class="member-focus">{{ m.focus }}</div>
-        {% if m.link %}<a href="{{ m.link }}" target="_blank" rel="noopener noreferrer" class="member-link">Website →</a>{% endif %}
-      </div>
-      {% endfor %}
-      <div class="member-card centered join">
-        <div class="member-avatar">✉</div>
-        <div class="member-name">Interested?</div>
-        <div class="member-role">Get in touch</div>
-        <div class="member-focus"><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
 <!-- ───────── News (content: _data/news.yml) ───────── -->
 <section class="section" id="news">
   <div class="container">
