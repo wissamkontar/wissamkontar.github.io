@@ -1,14 +1,94 @@
-# Research themes, in order of importance. Publications refer to these by id (see _data/publications.yml).
+# Research themes, in order of importance. Each one becomes a panel in the Research section of the home page
+# and a label on publications (publications refer to themes by id, see _data/publications.yml).
+#
+# Fields:
+#   question  one line a newcomer can understand
+#   summary   two or three plain sentences
+#   topics    short chips
+#   lessons   what we have learned, in everyday words (no paper titles, no numbers)
+#   image     a figure in images/ (image_alt describes it for screen readers)
+#   illustration  a drawing in _includes/illustrations/, used when there is no image or its file is missing
+# A theme with label_only: true is only a publication label: it gets no panel on the home page.
 # Each theme's colour is set in assets/css/themes.css.
 
 - id: quantum
   name: Quantum Methods
+  image: research-quantum.png
+  illustration: quantum
+  image_alt: The density matrix that represents an agent's state
+  question: What if we modeled the agents in a system the way quantum theory models particles?
+  summary: >-
+    We redefine how the agents in a system are represented and modeled, from a quantum perspective. Two concepts
+    guide the work: superposition, where an agent holds several possible behaviors at once until its context
+    resolves them, and entanglement, where the behaviors of interacting agents are tied together and cannot be
+    described one at a time.
+  topics:
+    - Superposition
+    - Entanglement
+    - Agent representation
+  lessons:
+    - An agent is never just one type. Its behavior is a blend of possibilities that shifts with the situation.
+    - Agents cannot be understood one at a time. What each one does is tied to the others around it.
+    - Describing agents this way explains patterns that only appear in the system as a whole.
 
 - id: super-intelligence
   name: Super Intelligence
+  illustration: super-intelligence
+  question: How do intelligent agents learn to act well, together, in the real world?
+  summary: >-
+    An intelligent agent has to be safe, work well with those around it, and keep the whole system moving, and
+    these goals often pull against each other. We build learning methods that find the balance from real-world
+    data, let large groups of agents share what they learn while each stays individual, and remain reliable
+    under uncertainty and attack.
+  topics:
+    - Consensus and trade-offs
+    - Knowledge sharing and personalization
+    - Physics-guided learning
+    - Decisions under uncertainty
+  lessons:
+    - No agent can have it all. Being safe, cooperative and efficient at the same moment is rare.
+    - The right balance does not need to be set by hand. It can be learned from how the real world behaves.
+    - Agents learn more together than alone, and they can share what they learn while staying individual.
 
 - id: traffic-flow
   name: Traffic Flow Theory
+  image: research-traffic-flow.jpg
+  illustration: theory
+  image_alt: Speed along I-24 over one morning, with congestion waves travelling backward through traffic
+  question: What happens to a whole system when every agent in it behaves differently?
+  summary: >-
+    Waves, stop-and-go oscillations and hysteresis in traffic emerge from how individual agents respond to one
+    another. We develop theory and measurement methods that connect individual behavior, human or automated, to
+    these system-level phenomena.
+  topics:
+    - Behavioral heterogeneity
+    - Oscillations and hysteresis
+    - Mixed-autonomy dynamics
+  lessons:
+    - Small differences between individuals add up to large effects on the whole system.
+    - Every individual is part common behavior and part personal habit, and the two can be told apart.
+    - Congestion has memory. The way out of a traffic jam does not look like the way in.
 
 - id: mobility
   name: Mobility Systems
+  illustration: mobility
+  question: How do people move through cities, and what do new technologies mean for society and the environment?
+  summary: >-
+    Beyond the roadway, we study how movement patterns shift during crises and as new mobility technologies are
+    adopted, and what those shifts mean for emissions and urban resilience.
+  topics:
+    - Mobility under crisis
+    - Adoption of emerging modes
+    - Transportation emissions
+  lessons:
+    - In a crisis, people stay closer to home and are slow to return to their old routines.
+    - A smarter technology does not guarantee a cleaner outcome. Convenience can lead people to travel more.
+    - People make greener choices when the environmental cost is put in front of them.
+
+- id: sustainability
+  name: Environmental Sustainability
+  label_only: true
+
+- id: education
+  name: Engineering Education
+  label_only: true

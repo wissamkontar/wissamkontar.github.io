@@ -1,12 +1,188 @@
-/* Research theme tags and the filter buttons above publication lists.
-   Theme names and order live in _data/themes.yml; this file only sets their colours. */
+/* Research themes: the theme panels in the Research section, the theme labels on publications,
+   and the filter buttons above publication lists.
+   Theme names, order and text live in _data/themes.yml; this file sets how they look. */
 
-.theme-tag.quantum            { --tag-bg: #f3e5f5; --tag-ink: #6a1b9a; --tag-line: #ce93d8; }
-.theme-tag.super-intelligence { --tag-bg: #fff3f2; --tag-ink: #c1392b; --tag-line: #f0b4ad; }
-.theme-tag.traffic-flow       { --tag-bg: #e3f2fd; --tag-ink: #1565c0; --tag-line: #90caf9; }
-.theme-tag.mobility           { --tag-bg: #e8f5e9; --tag-ink: #2e7d32; --tag-line: #a5d6a7; }
-.theme-tag.all                { --tag-bg: #111111; --tag-ink: #ffffff; --tag-line: #111111; }
+/* ───── THEME COLOURS ───── */
+.theme-quantum            { --tag-bg: #f3e5f5; --tag-ink: #6a1b9a; --tag-line: #ce93d8; }
+.theme-super-intelligence { --tag-bg: #fff3f2; --tag-ink: #c1392b; --tag-line: #f0b4ad; }
+.theme-traffic-flow       { --tag-bg: #e3f2fd; --tag-ink: #1565c0; --tag-line: #90caf9; }
+.theme-mobility           { --tag-bg: #e8f5e9; --tag-ink: #2e7d32; --tag-line: #a5d6a7; }
+.theme-sustainability     { --tag-bg: #e0f2f1; --tag-ink: #00695c; --tag-line: #80cbc4; }
+.theme-education          { --tag-bg: #fff8e1; --tag-ink: #b07d00; --tag-line: #f0d060; }
+.theme-all                { --tag-bg: #111111; --tag-ink: #ffffff; --tag-line: #111111; }
 
+/* ───── THEME STRIP UNDER THE HERO ───── */
+.theme-pill { transition: color 0.15s; }
+.theme-pill:hover { color: var(--ink); }
+.theme-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--tag-ink);
+  flex-shrink: 0;
+}
+
+/* ───── RESEARCH SECTION: ONE PANEL PER THEME ───── */
+.research-lead {
+  font-size: 1.05rem;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-top: 0.9rem;
+}
+.theme-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.theme-panel {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  column-gap: 2.5rem;
+  align-items: start;
+  padding: 1.9rem 2rem 2rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--tag-ink);
+  border-radius: var(--radius);
+  background: var(--white);
+  scroll-margin-top: 80px;
+}
+/* The text block is laid out directly on the panel's grid, next to the drawing. */
+.theme-body { display: contents; }
+.theme-body > * { grid-column: 1; }
+.theme-visual {
+  grid-column: 2; grid-row: 1 / span 4;
+  position: relative;
+  height: 230px;
+  background: var(--white);
+  border: 1px solid var(--tag-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.theme-visual svg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  padding: 1.8rem 0.6rem 0.5rem;
+}
+/* A theme can show a figure (an image file) instead of a drawing. */
+.theme-visual img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 2rem 0.6rem 0.7rem;
+}
+.theme-number {
+  position: absolute; top: 0.7rem; left: 0.7rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tag-ink);
+  background: var(--white);
+  border: 1px solid var(--tag-line);
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
+}
+
+.theme-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+}
+.theme-question {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--tag-ink);
+  margin: 0.4rem 0 0.9rem;
+}
+.theme-summary {
+  font-size: 0.93rem;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.7;
+}
+.theme-topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+.topic-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+}
+
+.theme-cols {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--border);
+}
+.theme-heading {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 0.7rem;
+}
+.theme-findings, .theme-papers { list-style: none; }
+.theme-findings li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.86rem;
+  color: var(--mid);
+  font-weight: 300;
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
+}
+.theme-findings li::before {
+  content: '→';
+  position: absolute; left: 0;
+  color: var(--tag-ink);
+  font-size: 0.8rem;
+}
+.theme-papers li { margin-bottom: 0.75rem; }
+.theme-papers a {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s;
+}
+.theme-papers a:hover { color: var(--tag-ink); }
+.theme-papers span {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-top: 0.2rem;
+}
+.theme-more {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--tag-ink);
+}
+.theme-more:hover { text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .theme-panel { grid-template-columns: 1fr; padding: 1.4rem 1.25rem 1.5rem; }
+  .theme-visual { grid-column: 1; grid-row: auto; order: -1; height: 220px; margin-bottom: 1.25rem; }
+}
+@media (max-width: 600px) {
+  .theme-cols { grid-template-columns: 1fr; gap: 1.4rem; }
+}
+
+/* ───── THEME LABELS ON PUBLICATIONS AND FILTER BUTTONS ───── */
 .theme-tag {
   display: inline-block;
   font-family: 'DM Mono', monospace;
@@ -21,7 +197,7 @@
   color: var(--mid);
 }
 
-/* A tag on a paper, and the filter button that is currently selected, show the theme colour. */
+/* A label on a paper, and the filter button that is currently selected, show the theme colour. */
 span.theme-tag,
 .theme-filter .theme-tag.active {
   background: var(--tag-bg);

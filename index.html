@@ -41,48 +41,19 @@ layout: default
   </div>
 </section>
 
+<!-- Theme strip (themes: _data/themes.yml) -->
 <div class="themes-bar">
   <div class="container">
     <div class="themes-inner">
-      <div class="theme-pill"><span class="theme-icon">⚙️</span> Transportation Engineering</div>
-      <div class="theme-pill"><span class="theme-icon">🤖</span> Autonomous Agents</div>
-      <div class="theme-pill"><span class="theme-icon">🧠</span> Artificial Intelligence</div>
-      <div class="theme-pill"><span class="theme-icon">🏙️</span> Urban Mobility</div>
+      {% for theme in site.data.themes %}{% unless theme.label_only %}
+      <a class="theme-pill" href="#theme-{{ theme.id }}"><span class="theme-dot theme-{{ theme.id }}"></span> {{ theme.name }}</a>
+      {% endunless %}{% endfor %}
     </div>
   </div>
 </div>
 
-<!-- ───────── Research (content: _data/projects.yml) ───────── -->
-<section class="section" id="research">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="label">Current Projects</div>
-      <div class="section-header-row">
-        <h2 class="section-title">Research</h2>
-      </div>
-    </div>
-    <div class="research-grid">
-      {% for p in site.data.projects %}
-      <div class="card fade-in" data-project="{{ p.id }}">
-        <div class="card-image">
-          <div class="illu" style="background:{{ p.background }}">
-            {% include illustrations/{{ p.id }}.svg %}
-          </div>
-          <div class="card-badge">{{ p.badge }}</div>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">{{ p.title | escape }}</h3>
-          <p class="card-desc">{{ p.summary | escape }}</p>
-          <div class="card-footer">
-            <span class="card-funding">{{ p.themes }}</span>
-            <div class="card-arrow">→</div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+<!-- ───────── Research: one panel per theme (layout: _includes/research.html, content: _data/themes.yml) ───────── -->
+{% include research.html %}
 
 <div class="divider"></div>
 
@@ -224,24 +195,3 @@ layout: default
 </section>
 
 </main>
-
-<!-- Project pop-up, filled in by assets/js/main.js -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
-    <div class="modal-image" id="modalImage"></div>
-    <div class="modal-body">
-      <div class="modal-badge" id="modalBadge"></div>
-      <div class="modal-title" id="modalTitle"></div>
-      <div class="modal-funding-row" id="modalMeta"></div>
-      <div class="modal-section-label">Overview</div>
-      <div class="modal-desc" id="modalDesc"></div>
-      <div class="modal-section-label">Key Research Directions</div>
-      <ul class="modal-highlights" id="modalHighlights"></ul>
-      <div class="modal-section-label">Related Publications</div>
-      <div class="modal-pubs" id="modalPubs"></div>
-      <div class="modal-actions" id="modalActions"></div>
-    </div>
-  </div>
-</div>
-<script id="projectsData" type="application/json">{{ site.data.projects | jsonify }}</script>
