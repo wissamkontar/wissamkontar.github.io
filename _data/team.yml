@@ -1,16 +1,19 @@
-# Lab members (the PI is in index.html). Optional fields: photo (file in images/), link.
+# Lab members (the PI is in index.html). Optional fields: photo (file in images/), link,
+# cite_as (the name as written in author lists; it gets underlined in the publication lists).
 
 - name: Mohammad Elayan
   role: PhD Student
   focus: Artificial Intelligence · Autonomous Driving · Transportation Operations
   photo: mohamad.png
   link: https://mselayan.github.io
+  cite_as: Elayan, M.
 
 - name: Omid Armantalab
   role: PhD Student
   focus: Urban Mobility · Travel Behavior · Artificial Intelligence
   photo: omid.jpg
   link: https://scholar.google.com/citations?user=WrGMhSIAAAAJ&hl=en
+  cite_as: Armantalab, O.
 
 - name: Tu Tran
   role: Undergraduate Researcher
