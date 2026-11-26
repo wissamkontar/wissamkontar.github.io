@@ -47,7 +47,10 @@ layout: default
 
 <div class="divider"></div>
 
-<!-- Selected publications (entries marked selected in _data/publications.yml) -->
+<!-- Selected publications: entries marked selected in _data/publications.yml, from the last three years only.
+     Older selected papers stay on the full list. Change the 3 below to show more or fewer years. -->
+{% assign this_year = site.time | date: "%Y" | plus: 0 %}
+{% assign oldest_year = this_year | minus: 3 %}
 <section class="section" id="publications">
   <div class="container">
     <div class="section-header fade-in">
@@ -57,7 +60,7 @@ layout: default
         <a href="/publications/" class="see-all">Full Publication List</a>
       </div>
       <p class="section-note">
-        A selection of our work. See the
+        A selection of our work from the last three years. See the
         <a href="/publications/">full publication list →</a>
         or
         <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar →</a>
@@ -65,7 +68,7 @@ layout: default
     </div>
     <div class="pub-table fade-in">
       {% assign selected = site.data.publications | where: "selected", true %}
-      {% for pub in selected %}{% include publication.html pub=pub %}{% endfor %}
+      {% for pub in selected %}{% if pub.year >= oldest_year %}{% include publication.html pub=pub %}{% endif %}{% endfor %}
     </div>
   </div>
 </section>
