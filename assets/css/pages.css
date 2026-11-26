@@ -5,10 +5,11 @@
 [hidden] { display: none !important; }
 
 /* ----- NAVIGATION ----- */
+.nav-inner { max-width: 1320px; gap: 2rem; }
 .nav-name { white-space: nowrap; }
 .nav-links { gap: 1.6rem; }
 .nav-links a { white-space: nowrap; }
-@media (max-width: 1180px) {
+@media (max-width: 1240px) {
   nav { height: auto; }
   .nav-inner {
     flex-direction: column; align-items: flex-start;
