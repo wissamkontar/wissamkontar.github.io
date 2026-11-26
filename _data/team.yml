@@ -1,24 +1,45 @@
-# Lab members (the PI is in index.html). Optional fields: photo (file in images/), link,
+# Lab members, shown on the Team page (the PI is written in team.html).
+# Current members come first, in the order listed. Add alumni: true to move someone to the Alumni section.
+# Optional fields: photo (file in images/), link,
 # cite_as (the name as written in author lists; it gets underlined in the publication lists).
 
 - name: Mohammad Elayan
   role: PhD Student
-  focus: Artificial Intelligence · Autonomous Driving · Transportation Operations
+  detail: Artificial Intelligence · Autonomous Driving · Transportation Operations
   photo: mohamad.png
   link: https://mselayan.github.io
   cite_as: Elayan, M.
 
 - name: Omid Armantalab
   role: PhD Student
-  focus: Urban Mobility · Travel Behavior · Artificial Intelligence
+  detail: Urban Mobility · Travel Behavior · Artificial Intelligence
   photo: omid.jpg
   link: https://scholar.google.com/citations?user=WrGMhSIAAAAJ&hl=en
   cite_as: Armantalab, O.
 
-- name: Tu Tran
-  role: Undergraduate Researcher
-  focus: Aerial and Ground Autonomous Systems · Agriculture
+- name: Eduardo Rojas Perez
+  role: Master's Student
+  detail: School of Computing
 
 - name: William Brown
   role: Undergraduate Researcher
-  focus: Transportation Safety and Mobility Risk Index
+  detail: Civil Engineering · Transportation Safety and Mobility Risk Index
+
+- name: Binodini Ganeshkumar
+  role: Undergraduate Researcher
+  detail: School of Computing
+
+- name: Tu Tran
+  role: Undergraduate Researcher
+  detail: Civil Engineering · Aerial and Ground Autonomous Systems
+  alumni: true
+
+- name: Grace Gabrys
+  role: REU Student
+  detail: Physics · Carnegie Mellon University
+  alumni: true
+
+- name: Aureliane Tchamdja
+  role: REU Student
+  detail: Computer Science · UMBC
+  alumni: true
