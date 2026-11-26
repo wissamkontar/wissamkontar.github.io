@@ -1,37 +1,6 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ site.description }}">
-<title>{{ site.title }}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/main.js" defer></script>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="nav-brand">
-      <div class="nav-dot"></div>
-      <span class="nav-name">{{ site.short_title }}</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#talks">Talks</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="mailto:{{ site.email }}" class="nav-cta">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
 <main>
 
 <!-- ───────── Hero ───────── -->
@@ -66,7 +35,7 @@
         </div>
       </div>
       <div class="hero-logo-wrap fade-in">
-        <img src="images/Logo.png" alt="TALI Lab Logo" width="280" height="280">
+        <img src="/images/Logo.png" alt="TALI Lab Logo" width="280" height="280">
       </div>
     </div>
   </div>
@@ -117,34 +86,25 @@
 
 <div class="divider"></div>
 
-<!-- ───────── Publications (content: _data/publications.yml) ───────── -->
+<!-- ───────── Selected publications (entries marked selected in _data/publications.yml) ───────── -->
 <section class="section" id="publications">
   <div class="container">
     <div class="section-header fade-in">
       <div class="label">Recent Work</div>
       <div class="section-header-row">
         <h2 class="section-title">Selected Publications</h2>
-        <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer" class="see-all">Full List on Google Scholar</a>
+        <a href="/publications/" class="see-all">Full Publication List</a>
       </div>
       <p class="section-note">
-        For a full list of publications, visit our
+        A selection of our work. See the
+        <a href="/publications/">full publication list →</a>
+        or
         <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar →</a>
       </p>
     </div>
     <div class="pub-table fade-in">
-      {% for pub in site.data.publications %}
-      <div class="pub-row">
-        <div class="pub-year">{{ pub.year }}</div>
-        <div>
-          <div class="pub-title">{{ pub.title | escape }}</div>
-          <div class="pub-authors">{{ pub.authors | escape }}</div>
-          <div class="pub-venue">{{ pub.venue | escape }}{% if pub.note %} &nbsp;·&nbsp; {{ pub.note | escape }}{% endif %}{% if pub.award %} &nbsp;·&nbsp; <span class="pub-award">🏆 {{ pub.award | escape }}</span>{% endif %}</div>
-        </div>
-        <div class="pub-links">
-          <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" class="pub-tag">DOI</a>
-        </div>
-      </div>
-      {% endfor %}
+      {% assign selected = site.data.publications | where: "selected", true %}
+      {% for pub in selected %}{% include publication.html pub=pub %}{% endfor %}
     </div>
   </div>
 </section>
@@ -198,7 +158,7 @@
 
     <div class="pi-row fade-in">
       <div class="pi-photo">
-        <img src="images/wissam.jpeg" alt="Wissam Kontar">
+        <img src="/images/wissam.jpeg" alt="Wissam Kontar">
       </div>
       <div>
         <div class="pi-role">Principal Investigator</div>
@@ -220,7 +180,7 @@
     <div class="team-grid fade-in">
       {% for m in site.data.team %}
       <div class="member-card{% unless m.photo %} centered{% endunless %}">
-        <div class="member-avatar">{% if m.photo %}<img src="images/{{ m.photo }}" alt="{{ m.name }} - {{ m.role }}" loading="lazy">{% else %}+{% endif %}</div>
+        <div class="member-avatar">{% if m.photo %}<img src="/images/{{ m.photo }}" alt="{{ m.name }} - {{ m.role }}" loading="lazy">{% else %}+{% endif %}</div>
         <div class="member-name">{{ m.name }}</div>
         <div class="member-role">{{ m.role }}</div>
         <div class="member-focus">{{ m.focus }}</div>
@@ -265,62 +225,6 @@
 
 </main>
 
-<div class="cta-strip">
-  <div class="container">
-    <div class="cta-inner fade-in">
-      <div class="cta-text">
-        <h2>Interested in Joining or Collaborating?</h2>
-        <p>We welcome PhD applicants, postdoc inquiries, and research partnerships.</p>
-      </div>
-      <div class="cta-actions">
-        <a href="mailto:{{ site.email }}" class="btn btn-white">Get in Touch →</a>
-        <a href="#team" class="btn btn-outline-white">Open Positions</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="nav-name">{{ site.short_title }}</div>
-        <p>Department of Civil &amp; Environmental Engineering<br>University of Nebraska-Lincoln · Lincoln, NE</p>
-      </div>
-      <div class="footer-col">
-        <h4>Research</h4>
-        <ul>
-          <li><a href="#research">Autonomous Agents</a></li>
-          <li><a href="#research">Artificial Intelligence</a></li>
-          <li><a href="#research">Transportation Intelligence</a></li>
-          <li><a href="#research">Urban Mobility</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Lab</h4>
-        <ul>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#talks">Talks</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#news">News</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Connect</h4>
-        <ul>
-          <li><a href="mailto:{{ site.email }}">Email</a></li>
-          <li><a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-          <li><a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© {{ site.time | date: "%Y" }} Transportation and Autonomy Laboratory for Intelligence (TALI) · Wissam Kontar</span>
-    </div>
-  </div>
-</footer>
-
 <!-- Project pop-up, filled in by assets/js/main.js -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
@@ -341,6 +245,3 @@
   </div>
 </div>
 <script id="projectsData" type="application/json">{{ site.data.projects | jsonify }}</script>
-
-</body>
-</html>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<main>
+
+<!-- Full publication list (content: _data/publications.yml) -->
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">All Work</div>
+      <div class="section-header-row">
+        <h1 class="section-title">Publications</h1>
+        <a href="{{ site.links.scholar }}" target="_blank" rel="noopener noreferrer" class="see-all">Google Scholar</a>
+      </div>
+      <p class="section-note">
+        Journal articles, conference papers, and preprints.
+        <a href="/#publications">← Back to selected publications</a>
+      </p>
+    </div>
+    <div class="pub-table">
+      {% for pub in site.data.publications %}{% include publication.html pub=pub %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+</main>
