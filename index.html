@@ -48,9 +48,14 @@ layout: default
 <div class="divider"></div>
 
 <!-- Selected publications: entries marked selected in _data/publications.yml, from the last three years only.
-     Older selected papers stay on the full list. Change the 3 below to show more or fewer years. -->
+     Older selected papers stay on the full list. Change the 3 below to show more or fewer years.
+     Within each year, papers led by a lab student come first: those whose first author is a team member
+     with cite_as in _data/team.yml. -->
 {% assign this_year = site.time | date: "%Y" | plus: 0 %}
 {% assign oldest_year = this_year | minus: 3 %}
+{% assign selected = site.data.publications | where: "selected", true %}
+{% assign years = selected | map: "year" | uniq | sort | reverse %}
+{% assign passes = "student-led,other" | split: "," %}
 <section class="section" id="publications">
   <div class="container">
     <div class="section-header fade-in">
@@ -67,8 +72,19 @@ layout: default
       </p>
     </div>
     <div class="pub-table fade-in">
-      {% assign selected = site.data.publications | where: "selected", true %}
-      {% for pub in selected %}{% if pub.year >= oldest_year %}{% include publication.html pub=pub %}{% endif %}{% endfor %}
+      {% for year in years %}{% if year >= oldest_year %}
+        {% for pass in passes %}
+          {% for pub in selected %}{% if pub.year == year %}
+            {% assign kind = "other" %}
+            {% for member in site.data.team %}{% if member.cite_as %}
+              {% assign length = member.cite_as | size %}
+              {% assign first_author = pub.authors | slice: 0, length %}
+              {% if first_author == member.cite_as %}{% assign kind = "student-led" %}{% endif %}
+            {% endif %}{% endfor %}
+            {% if kind == pass %}{% include publication.html pub=pub %}{% endif %}
+          {% endif %}{% endfor %}
+        {% endfor %}
+      {% endif %}{% endfor %}
     </div>
   </div>
 </section>
