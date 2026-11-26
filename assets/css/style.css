@@ -439,7 +439,7 @@ nav {
 .pi-photo {
   aspect-ratio: 1;
   background: var(--subtle);
-  border-radius: var(--radius);
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-family: 'DM Serif Display', serif;
   font-size: 3rem;
@@ -447,7 +447,7 @@ nav {
   border: 1px solid var(--border);
   overflow: hidden;
 }
-.pi-photo img { height: 100%; object-fit: cover; border-radius: var(--radius); }
+.pi-photo img { height: 100%; object-fit: cover; border-radius: 50%; }
 .pi-role {
   font-family: 'DM Mono', monospace;
   font-size: 0.68rem;
