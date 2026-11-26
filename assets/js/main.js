@@ -1,4 +1,4 @@
-/* TALI website scripts: scroll fade-in, talk status labels, project pop-up. */
+/* TALI website scripts: scroll fade-in, talk status labels, publication theme filters, project pop-up. */
 
 const $ = (id) => document.getElementById(id);
 const el = (tag, className, text) => {
@@ -33,6 +33,29 @@ document.querySelectorAll('.talk-item').forEach((item) => {
   const badge = item.querySelector('[data-status]');
   badge.className = 'talk-badge upcoming';
   badge.textContent = 'Upcoming';
+});
+
+/* ── Publication lists: filter buttons, one per research theme (themes come from _data/themes.yml) ── */
+const themes = JSON.parse($('themesData').textContent);
+document.querySelectorAll('.pub-table').forEach((table) => {
+  const rows = [...table.querySelectorAll('.pub-row')];
+  const has = (row, id) => row.dataset.themes.split(' ').includes(id);
+  const used = themes.filter((theme) => rows.some((row) => has(row, theme.id)));
+  if (!used.length) return;
+
+  const bar = el('div', 'theme-filter');
+  const show = (id, button) => {
+    rows.forEach((row) => { row.hidden = id !== '' && !has(row, id); });
+    bar.querySelectorAll('button').forEach((other) => other.classList.toggle('active', other === button));
+  };
+  [{ id: '', name: 'All' }, ...used].forEach((theme) => {
+    const button = el('button', 'theme-tag ' + (theme.id || 'all'), theme.name);
+    button.type = 'button';
+    button.addEventListener('click', () => show(theme.id, button));
+    bar.append(button);
+  });
+  table.before(bar);
+  show('', bar.firstChild);
 });
 
 /* ── Project pop-up, home page only (content comes from _data/projects.yml) ── */

@@ -1,0 +1,52 @@
+/* Research theme tags and the filter buttons above publication lists.
+   Theme names and order live in _data/themes.yml; this file only sets their colours. */
+
+.theme-tag.quantum            { --tag-bg: #f3e5f5; --tag-ink: #6a1b9a; --tag-line: #ce93d8; }
+.theme-tag.super-intelligence { --tag-bg: #fff3f2; --tag-ink: #c1392b; --tag-line: #f0b4ad; }
+.theme-tag.traffic-flow       { --tag-bg: #e3f2fd; --tag-ink: #1565c0; --tag-line: #90caf9; }
+.theme-tag.mobility           { --tag-bg: #e8f5e9; --tag-ink: #2e7d32; --tag-line: #a5d6a7; }
+.theme-tag.all                { --tag-bg: #111111; --tag-ink: #ffffff; --tag-line: #111111; }
+
+.theme-tag {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding: 0.18rem 0.55rem;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--mid);
+}
+
+/* A tag on a paper, and the filter button that is currently selected, show the theme colour. */
+span.theme-tag,
+.theme-filter .theme-tag.active {
+  background: var(--tag-bg);
+  color: var(--tag-ink);
+  border-color: var(--tag-line);
+}
+
+.pub-themes {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin-top: 0.55rem;
+}
+
+.theme-filter {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.theme-filter .theme-tag {
+  font-size: 0.65rem;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.theme-filter .theme-tag:hover { border-color: var(--ink); }
+
+/* Rows hidden by the filter; keep the list's top line when its first row is hidden. */
+.pub-row[hidden] { display: none; }
+.theme-filter + .pub-table { border-top: 1px solid var(--border); }
+.theme-filter + .pub-table .pub-row:first-child { border-top: none; }

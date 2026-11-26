@@ -1,5 +1,6 @@
 # All publications, newest first. Add new ones at the top.
 # selected: true puts a paper on the home page as well; every paper appears on the full list at /publications/.
+# themes: one or two theme ids from _data/themes.yml (quantum, super-intelligence, traffic-flow, mobility). Leave it out if none fits.
 # Optional fields: note (extra text after the venue), award (shown in red with a trophy).
 
 - year: 2026
@@ -7,6 +8,7 @@
   authors: Kim, Y., Zhong, X., Shi, L., Kontar, W., Chen, S., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
   url: https://doi.org/10.1016/j.trc.2026.106045
+  themes: [super-intelligence]
   selected: true
 
 - year: 2026
@@ -14,6 +16,7 @@
   authors: Elayan, M., Armantalab, O., Kontar, W.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2608.25907
+  themes: [quantum]
   selected: true
 
 - year: 2026
@@ -28,6 +31,7 @@
   venue: 'Transportation Research Part B: Methodological'
   award: Nathan Gartner Award, TRB 2025
   url: https://doi.org/10.1016/j.trb.2026.103521
+  themes: [traffic-flow]
   selected: true
 
 - year: 2026
@@ -35,6 +39,7 @@
   authors: Elayan, M., Kontar, W.
   venue: IEEE Intelligent Vehicles Symposium (IV 2026)
   url: https://doi.org/10.1109/IV66570.2026.11624067
+  themes: [super-intelligence]
   selected: true
 
 - year: 2026
@@ -42,6 +47,7 @@
   authors: Elayan, M., Kontar, W.
   venue: 'Transportation Research Part C: Emerging Technologies'
   url: https://doi.org/10.1016/j.trc.2026.105782
+  themes: [super-intelligence]
   selected: true
 
 - year: 2026
@@ -49,6 +55,7 @@
   authors: Kontar, W., Kim, Y., Zhong, X., Ahn, S.
   venue: 'Transportation Research Part B: Methodological - ISTTT26 Special Issue'
   url: https://doi.org/10.1016/j.trb.2026.103467
+  themes: [traffic-flow, super-intelligence]
   selected: true
 
 - year: 2026
@@ -57,6 +64,7 @@
   venue: arXiv preprint
   award: Best Paper Award shortlist, IEEE ITSC 2026 · 2nd place, BTR 2026
   url: https://arxiv.org/abs/2603.22729
+  themes: [quantum]
   selected: true
 
 - year: 2026
@@ -64,12 +72,15 @@
   authors: Kontar, W., Armantalab, O., Ahn, S., Hicks, A.
   venue: Resources, Conservation and Recycling
   url: https://doi.org/10.1016/j.resconrec.2026.108870
+  themes: [mobility]
+  selected: true
 
 - year: 2026
   title: A Quantum-Inspired Representation of Dynamic Travel Behavior
   authors: Armantalab, O., Elayan, M., Zhao, L., Huynh, N.N., Kontar, W.
   venue: SSRN preprint
   url: https://doi.org/10.2139/ssrn.7533331
+  themes: [quantum, mobility]
   selected: true
 
 - year: 2025
@@ -77,6 +88,7 @@
   authors: Elayan, M., Kontar, W.
   venue: IEEE International Conference on Intelligent Transportation Systems (ITSC 2025)
   url: https://doi.org/10.1109/ITSC60802.2025.11423532
+  themes: [super-intelligence]
   selected: true
 
 - year: 2025
@@ -84,6 +96,7 @@
   authors: Shi, L., Kim, Y., Zhong, X., Kontar, W., Liu, Q., Ahn, S.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2511.05886
+  themes: [super-intelligence]
 
 - year: 2025
   title: Instructor perspectives on an embedded coding course in the civil engineering curriculum
@@ -96,18 +109,22 @@
   authors: Armantalab, O., Hawkins, J., Kontar, W.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2510.00469
+  themes: [mobility]
+  selected: true
 
 - year: 2025
   title: 'Redefining sustainable commuting: emerging trends and pandemic-induced changes at the University of Wisconsin-Madison'
   authors: Stanton, A.P., Kontar, W., Ramey-Lariviere, J.Y.F., Hicks, A.
   venue: Integrated Environmental Assessment and Management
   url: https://doi.org/10.1093/inteam/vjaf075
+  themes: [mobility]
 
 - year: 2024
   title: 'Human-automated vehicle interactions: Voluntary driver intervention in car-following'
   authors: Zhong, X., Zhou, Y., Kamaraj, A.V., Zhou, Z., Kontar, W., Negrut, D., Lee, J.D., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
   url: https://doi.org/10.1016/j.trc.2024.104969
+  themes: [super-intelligence]
   selected: true
 
 - year: 2024
@@ -116,6 +133,7 @@
   venue: Transportation Research Record
   award: D. Grant Mickle Award, TRB 2025
   url: https://doi.org/10.1177/03611981241298583
+  themes: [super-intelligence]
   selected: true
 
 - year: 2024
@@ -123,6 +141,7 @@
   authors: Zhou, Y., Li, S., Kontar, W., Pu, F., Srivastava, A., Ahn, S.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2411.16937
+  themes: [traffic-flow]
 
 - year: 2024
   title: Use, reuse, and waste management of single-use products associated with the COVID-19 pandemic in the United States
@@ -141,12 +160,14 @@
   authors: Bulson, E.E., Kontar, W., Ahn, S., Hicks, A.
   venue: Nature npj Sustainable Mobility and Transport
   url: https://doi.org/10.1038/s44333-024-00003-7
+  themes: [mobility]
 
 - year: 2024
   title: A Strategic Approach to Handle Uncertainties in Autonomous Vehicle's Car-following Behavior
   authors: Kontar, W., Ahn, S.
   venue: 'Transportation Research Part C: Emerging Technologies'
   url: https://doi.org/10.1016/j.trc.2024.104499
+  themes: [super-intelligence]
   selected: true
 
 - year: 2022
@@ -154,6 +175,7 @@
   authors: Kontar, R., Shi, N., Yue, X., Chung, S., Byon, E., Chowdhury, M., … Kontar, W., et al.
   venue: IEEE Access
   url: https://doi.org/10.1109/ACCESS.2021.3127448
+  themes: [super-intelligence]
   selected: true
 
 - year: 2022
@@ -161,24 +183,28 @@
   authors: Kontar, W., Ahn, S., Hicks, A.
   venue: 'Environmental Research: Infrastructure and Sustainability'
   url: https://doi.org/10.1088/2634-4505/ac9a68
+  themes: [mobility]
 
 - year: 2022
   title: 'Electric bicycles sharing: opportunities and environmental impacts'
   authors: Kontar, W., Ahn, S., Hicks, A.
   venue: 'Environmental Research: Infrastructure and Sustainability'
   url: https://doi.org/10.1088/2634-4505/ac7c8b
+  themes: [mobility]
 
 - year: 2021
   title: A Prioritized Trajectory Planning Algorithm for Connected and Automated Vehicle Mandatory Lane Changes
   authors: Li, N., Fan, A.Z., Fischer, R., Kontar, W., Ran, B.
   venue: IEEE International Conference on Intelligent Transportation Systems (ITSC 2021)
   url: https://doi.org/10.1109/ITSC48978.2021.9564913
+  themes: [super-intelligence]
 
 - year: 2021
   title: Predicting Vehicles' Longitudinal Trajectories and Lane Changes on Highway On-Ramps
   authors: Li, N., Fischer, R., Kontar, W., Ahn, S.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2108.10397
+  themes: [super-intelligence]
 
 - year: 2021
   title: 'On multi-class automated vehicles: car-following behavior and its implications for traffic dynamics'
@@ -186,6 +212,7 @@
   venue: 'Transportation Research Part C: Emerging Technologies'
   note: Presented at ISTTT24
   url: https://doi.org/10.1016/j.trc.2021.103166
+  themes: [traffic-flow]
   selected: true
 
 - year: 2021
@@ -194,12 +221,15 @@
   venue: Environmental Research Letters
   note: Top 5% by attention score
   url: https://doi.org/10.1088/1748-9326/abf6f4
+  themes: [mobility]
+  selected: true
 
 - year: 2021
   title: "Real-time Monitoring of Autonomous Vehicle's Time Gap Variations: A Bayesian Framework"
   authors: Kontar, W., Ahn, S.
   venue: arXiv preprint
   url: https://arxiv.org/abs/2102.00375
+  themes: [super-intelligence]
 
 - year: 2020
   title: Personal respiratory protection and resiliency in a pandemic, the evolving disposable versus reusable debate and its effect on waste generation

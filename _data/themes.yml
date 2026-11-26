@@ -1,0 +1,14 @@
+# Research themes, in order of importance. Publications refer to these by id (see _data/publications.yml).
+# Each theme's colour is set in assets/css/themes.css.
+
+- id: quantum
+  name: Quantum Methods
+
+- id: super-intelligence
+  name: Super Intelligence
+
+- id: traffic-flow
+  name: Traffic Flow Theory
+
+- id: mobility
+  name: Mobility Systems
