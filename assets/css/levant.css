@@ -1,0 +1,126 @@
+/* Levantine palette and type: limestone, basalt, terracotta, Damascus blue, olive, brass.
+   Loaded after the other stylesheets; it only changes colours, fonts and small ornaments. */
+
+:root {
+  --white:  #fdfaf3;   /* plaster */
+  --off:    #f4ecdc;   /* limestone */
+  --subtle: #ebe0c9;   /* sandstone */
+  --border: #dccfb4;   /* mortar line */
+  --ink:    #2b2620;   /* basalt */
+  --mid:    #5c5345;
+  --light:  #8d8270;
+  --accent: #9b3d2b;   /* terracotta roof tile */
+  --brass:  #9a6f1f;
+  --radius: 2px;
+  --ui: 'DM Sans', system-ui, sans-serif;
+  --display: 'El Messiri', 'DM Serif Display', Georgia, serif;
+  --lattice: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23b9a57c' stroke-width='1'%3E%3Crect x='16' y='16' width='24' height='24'/%3E%3Crect x='16' y='16' width='24' height='24' transform='rotate(45 28 28)'/%3E%3Cpath d='M0 28h11M45 28h11M28 0v11M28 45v11'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ----- TYPE ----- */
+body { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.02rem; }
+.hero-h1, .section-title, .pi-name, .news-title, .cta-text h2, .theme-name,
+.group-title, .project-title, .hero-pi-name, .pi-photo, .member-avatar {
+  font-family: var(--display); font-weight: 600; letter-spacing: 0;
+}
+.hero-h1 { font-size: clamp(2.6rem, 5vw, 4.1rem); line-height: 1.1; }
+.section-title { font-size: clamp(1.9rem, 3.1vw, 2.55rem); }
+.theme-name { font-size: 1.7rem; }
+.group-title { font-size: 1.65rem; }
+.project-title { font-size: 1.5rem; }
+.cta-text h2 { font-size: 1.95rem; }
+.hero-pi-name { font-size: 1.2rem; }
+.pi-name { font-size: 1.85rem; }
+
+/* Small labels: letter-spaced capitals in the sans face instead of a typewriter face. */
+nav, .btn, .label, .profile-link, .see-all, .pub-year, .pub-venue, .pub-tag, .talk-month, .talk-badge,
+.talk-location, .pi-role, .pi-link, .member-role, .member-link, .news-type, .news-date-label,
+.footer-col h4, .footer-col ul, .footer-bottom, .section-note, .theme-number, .topic-chip, .theme-heading,
+.theme-papers span, .theme-tag, .hero-pi-label, .hero-pi-role, .record-when, .record-badge,
+.news-filter button, .project-meta, .record-link, .theme-more, .theme-pill {
+  font-family: var(--ui);
+}
+.label, .theme-heading, .project-meta, .record-when, .pub-venue, .talk-month, .talk-location,
+.pi-role, .member-role, .hero-pi-label { font-weight: 500; letter-spacing: 0.14em; }
+.label { font-size: 0.7rem; gap: 0.6rem; }
+/* A small lozenge, as in carved stone ornament, instead of a dash. */
+.label::before { width: 7px; height: 7px; transform: rotate(45deg); }
+
+/* ----- ABLAQ: alternating dark and light stone, as a thin course above the page and the footer ----- */
+body::before, footer::before {
+  content: ''; display: block; height: 6px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 34px, #e3d3ae 34px 68px);
+}
+footer { padding-top: 0; }
+footer > .container { padding-top: 3rem; }
+
+/* ----- SURFACES ----- */
+nav { background: var(--white); }
+.hero { background: var(--white) var(--lattice); background-size: 56px 56px; position: relative; }
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, var(--white) 0, var(--white) 46%, rgba(253,250,243,0.82) 100%);
+}
+.hero > .container { position: relative; }
+.themes-bar { background: var(--off); }
+.theme-visual, .theme-visual img { background: #ffffff; }
+.hero-logo-wrap img { mix-blend-mode: multiply; }
+
+.btn-primary { background: var(--ink); color: var(--white); }
+.btn-primary:hover { background: var(--accent); }
+.btn-ghost { border-color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--white); }
+.profile-link, .topic-chip, .news-filter button { border-radius: 2px; }
+.profile-link:hover { background: var(--off); }
+.pub-row:hover, .talk-item:hover { background: var(--white); }
+
+/* CTA band: basalt with a star lattice */
+.cta-strip { background: var(--ink) var(--lattice); background-size: 56px 56px; position: relative; }
+.cta-strip::before { content: ''; position: absolute; inset: 0; background: rgba(43,38,32,0.9); }
+.cta-strip > .container { position: relative; }
+.cta-text h2 { color: var(--white); }
+.cta-text p { color: rgba(253,250,243,0.6); }
+.btn-white { background: var(--off); color: var(--ink); }
+.btn-white:hover { background: #e3d3ae; }
+.btn-outline-white { color: var(--white); border-color: rgba(253,250,243,0.35); }
+
+/* ----- THEME COLOURS ----- */
+.theme-quantum            { --tag-bg: #e3ebee; --tag-ink: #2f5673; --tag-line: #a9bfcb; }  /* Damascus tile blue */
+.theme-super-intelligence { --tag-bg: #f3dfd6; --tag-ink: #9b3d2b; --tag-line: #d7a496; }  /* terracotta */
+.theme-traffic-flow       { --tag-bg: #f3e8cc; --tag-ink: #8f6618; --tag-line: #d6bd84; }  /* brass */
+.theme-mobility           { --tag-bg: #e7ead3; --tag-ink: #56672f; --tag-line: #b7c193; }  /* olive */
+.theme-sustainability     { --tag-bg: #deeae3; --tag-ink: #2f6154; --tag-line: #a2c1b5; }  /* cedar */
+.theme-education          { --tag-bg: #f1dfe1; --tag-ink: #7b3345; --tag-line: #cfa3ab; }  /* pomegranate */
+.theme-all                { --tag-bg: #2b2620; --tag-ink: #fdfaf3; --tag-line: #2b2620; }
+
+/* ----- LABELS AND BADGES ----- */
+.talk-badge.upcoming { background: #f3dfd6; color: #9b3d2b; border-color: #d7a496; }
+.talk-badge.keynote, .record-badge.award, .news-type.award { background: #f3e8cc; color: #8f6618; border-color: #d6bd84; }
+.talk-badge.invited-talk, .record-badge.talk, .news-type.pub { background: #e3ebee; color: #2f5673; border-color: #a9bfcb; }
+.talk-badge.workshop { background: #f1dfe1; color: #7b3345; border-color: #cfa3ab; }
+.talk-badge.conference { background: #e3ebee; color: #2f5673; border-color: #a9bfcb; }
+.record-badge.funding, .news-type.grant { background: #e7ead3; color: #56672f; border-color: #b7c193; }
+.talk-item.upcoming::before { box-shadow: 0 0 0 4px rgba(155,61,43,0.14); animation: none; }
+.talks-timeline::before { background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 60%, transparent 100%); }
+.news-filter button.active { background: var(--ink); color: var(--white); }
+
+/* ----- THEME DRAWINGS: the colours written inside the drawing files are swapped for the palette here ----- */
+.theme-visual svg [stroke="#9adbc5"], .theme-visual svg [stroke="#8fbfae"] { stroke: #c9b58a; }
+.theme-visual svg [fill="#9adbc5"], .theme-visual svg [fill="#8fbfae"] { fill: #ead9b0; }
+.theme-visual svg [stroke="#c1392b"] { stroke: #9b3d2b; }
+.theme-visual svg [fill="#c1392b"] { fill: #9b3d2b; }
+.theme-visual svg [fill="#ef9a9a"] { fill: #d7a496; }
+.theme-visual svg [stroke="#93a7d6"], .theme-visual svg [stroke="#5b6f9e"] { stroke: #2f5673; }
+.theme-visual svg [fill="#93a7d6"], .theme-visual svg [fill="#5b6f9e"] { fill: #2f5673; }
+.theme-visual svg [stroke="#555555"] { stroke: #2b2620; }
+.theme-visual svg [fill="#555555"] { fill: #2b2620; }
+.theme-visual svg [stroke="#b9b8b0"] { stroke: #c9b58a; }
+.theme-visual svg [fill="#b9b8b0"] { fill: #c9b58a; }
+.theme-visual svg [fill="#e4e3dc"] { fill: #f4ecdc; }
+.theme-visual svg [stroke="#e4e3dc"] { stroke: #ebe0c9; }
+.theme-visual svg [stroke="#6a1b9a"], .theme-visual svg [stroke="#1a3a5c"] { stroke: #2f5673; }
+.theme-visual svg [fill="#6a1b9a"], .theme-visual svg [fill="#1a3a5c"] { fill: #2f5673; }
+.theme-visual svg [stroke="#7a8fa8"] { stroke: #b9ab8e; }
+.theme-visual svg [fill="#7a8fa8"] { fill: #b9ab8e; }
+.theme-visual svg [stroke="#b07010"] { stroke: #8f6618; }
+.theme-visual svg [fill="#b07010"] { fill: #8f6618; }
