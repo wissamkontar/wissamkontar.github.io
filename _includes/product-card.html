@@ -13,7 +13,8 @@
   {% elsif product.course %}<p class="product-source"><span>Course</span>{{ product.course | escape }}</p>{% endif %}
   <div class="product-foot">
     {% if theme %}<span class="theme-tag theme-{{ product.theme }}">{{ theme.name }}</span>{% endif %}
-    {% if product.language %}<span class="product-lang">{{ product.language }}</span>{% endif %}
+    {% comment %} The language is shown, except "Jupyter Notebook", which is a file format and not a language. {% endcomment %}
+    {% if product.language and product.language != "Jupyter Notebook" %}<span class="product-lang">{{ product.language }}</span>{% endif %}
     <span class="product-go">View on GitHub →</span>
   </div>
 </a>

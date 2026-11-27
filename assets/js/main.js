@@ -66,7 +66,7 @@ if (productGrid) {
         card.rel = 'noopener noreferrer';
         card.dataset.repo = repo.name;
         const foot = el('div', 'product-foot');
-        if (repo.language) foot.append(el('span', 'product-lang', repo.language));
+        if (repo.language && repo.language !== 'Jupyter Notebook') foot.append(el('span', 'product-lang', repo.language));
         foot.append(el('span', 'product-go', 'View on GitHub →'));
         card.append(
           el('div', 'product-kind', 'New repository'),
