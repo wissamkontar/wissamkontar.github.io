@@ -3,8 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ site.description }}">
-<title>{% if page.title %}{{ page.title | escape }} · TALI{% else %}{{ site.title }}{% endif %}</title>
+{% capture page_title %}{% if page.title %}{{ page.title | escape }} · TALI{% else %}{{ site.title }}{% endif %}{% endcapture %}
+{% assign summary = site.description | strip_newlines | escape %}
+<meta name="description" content="{{ summary }}">
+<title>{{ page_title }}</title>
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<!-- Browser-tab icon, and the card shown when a link to the site is shared (LinkedIn, WhatsApp, Slack, X). -->
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TALI · Wissam Kontar">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ summary }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Transportation and Autonomy Laboratory for Intelligence, led by Wissam Kontar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ summary }}">
+<meta name="twitter:image" content="{{ site.url }}/images/social-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,6 +34,8 @@
 <link rel="stylesheet" href="/assets/css/levant.css">
 <script id="themesData" type="application/json">{{ site.data.themes | jsonify }}</script>
 <script src="/assets/js/main.js" defer></script>
+{% comment %} Visitor counter: only added when a GoatCounter site code is set in _config.yml. {% endcomment %}
+{% if site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>{% endif %}
 </head>
 <body>
 
