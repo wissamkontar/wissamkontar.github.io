@@ -1,0 +1,57 @@
+# Research products: the public code repositories shown on the Research Products page, in the order shown.
+# repo: the repository's exact name on GitHub (the link is built from it).
+# summary: one plain sentence on what it does.
+# Then ONE of: paper (the paper's title), project, or course.
+# theme: an id from themes.yml.   language: as GitHub shows it.
+# featured: true puts it on the home page (keep it to three).
+# hidden: true keeps a repository off the page entirely.
+# A new public repository on the GitHub account appears on the page by itself, with the description
+# written on GitHub; add it here to give it a proper summary, paper and theme.
+
+- repo: Behavioral-Heterogeneity-as-Quantum-Inspired-Representation
+  summary: Describes each driver as a quantum-style state, so the differences between drivers are kept instead of averaged away.
+  paper: Behavioral Heterogeneity as Quantum-Inspired Representation
+  theme: quantum
+  language: Jupyter Notebook
+  featured: true
+
+- repo: Behavioral-Heterogeneity-Decomposition
+  summary: Splits driving behavior into what all drivers share and what makes each one different, and reproduces the results of the paper.
+  paper: "Capturing behavioral heterogeneity for traffic flow: A scalable and personalized decomposition approach"
+  theme: traffic-flow
+  language: Jupyter Notebook
+  featured: true
+
+- repo: Learning-the-Pareto-Space-of-Multi-Objective-Autonomous-Driving
+  summary: Learns, directly from driving data, the trade-offs an autonomous vehicle faces between its competing goals.
+  paper: "Learning the Pareto space of multi-objective autonomous driving: A modular, data-driven approach"
+  theme: super-intelligence
+  language: Jupyter Notebook
+  featured: true
+
+- repo: A-Quantum-Inspired-Representation-of-Dynamic-Travel-Behavior-
+  summary: Uses a quantum-inspired representation to follow how people's travel behavior changes over time.
+  paper: A Quantum-Inspired Representation of Dynamic Travel Behavior
+  theme: quantum
+  language: Python
+
+- repo: Consensus-AV-Analysis
+  summary: Examines how automated vehicles balance safety, interaction and performance, and where their behavior can reach consensus with the traffic around them.
+  paper: "Consensus-aware AV behavior: Trade-offs between safety, interaction, and performance in mixed urban traffic"
+  theme: super-intelligence
+  language: Jupyter Notebook
+
+- repo: Mobility-Behavior-Evolution-During-an-Emergency
+  summary: Follows how people's movement patterns change over the course of a long emergency.
+  paper: "Mobility behavior evolution during extended emergencies: returners, explorers, and the 15-minute city"
+  theme: mobility
+  language: Python
+
+- repo: UNL-CIVE-202-Civil-Engineering-Analysis-II
+  summary: Notebooks and materials for CIVE 202, Civil Engineering Analysis II, at the University of Nebraska-Lincoln.
+  course: CIVE 202 · Civil Engineering Analysis II
+  theme: education
+  language: Jupyter Notebook
+
+- repo: wissamkontar.github.io
+  hidden: true

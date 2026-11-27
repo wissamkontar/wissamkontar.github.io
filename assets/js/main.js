@@ -49,6 +49,37 @@ if (feed) {
   show(buttons.some((button) => button.dataset.cat === asked) ? asked : '');
 }
 
+/* Research Products page: ask GitHub for the account's public repositories and add a card for any
+   that is not listed in _data/products.yml yet, so a new repository shows up without editing the site. */
+const productGrid = $('productGrid');
+if (productGrid) {
+  const listed = new Set([...productGrid.querySelectorAll('[data-repo]')].map((card) => card.dataset.repo));
+  productGrid.dataset.hidden.split(' ').filter(Boolean).forEach((name) => listed.add(name));
+  const user = productGrid.dataset.user;
+  fetch('https://api.github.com/users/' + user + '/repos?per_page=100&sort=created')
+    .then((response) => (response.ok ? response.json() : []))
+    .then((repos) => {
+      repos.filter((repo) => !repo.fork && !repo.archived && !repo.private && !listed.has(repo.name)).forEach((repo) => {
+        const card = el('a', 'product-card');
+        card.href = repo.html_url;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.dataset.repo = repo.name;
+        const foot = el('div', 'product-foot');
+        if (repo.language) foot.append(el('span', 'product-lang', repo.language));
+        foot.append(el('span', 'product-go', 'View on GitHub →'));
+        card.append(
+          el('div', 'product-kind', 'New repository'),
+          el('h3', 'product-name', repo.name.replace(/[-_]+/g, ' ').trim()),
+          el('p', 'product-summary', repo.description || 'Recently added. A description is on its way.'),
+          foot,
+        );
+        productGrid.append(card);
+      });
+    })
+    .catch(() => {});
+}
+
 /* Publication lists: filter buttons, one per research theme (themes come from _data/themes.yml).
    A link such as /publications/?theme=quantum opens the list with that theme already chosen. */
 const themes = JSON.parse($('themesData').textContent);

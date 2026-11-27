@@ -22,13 +22,15 @@
   <div class="nav-inner">
     <a href="/" class="nav-brand">
       <div class="nav-dot"></div>
-      <span class="nav-name">{{ site.short_title }}</span>
+      {% assign brand = site.short_title | split: " · " %}
+      <span class="nav-name">{{ brand[0] }}<span class="nav-name-long"> · {{ brand[1] }}</span></span>
     </a>
     <input type="checkbox" id="navCheck" class="nav-check" aria-label="Show the menu">
     <label for="navCheck" class="nav-toggle">Menu</label>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/projects/">Research Projects</a></li>
+      <li><a href="/products/">Research Products</a></li>
       <li><a href="/publications/">Publications</a></li>
       <li><a href="/funding-awards/">Funding &amp; Awards</a></li>
       <li><a href="/team/">Team</a></li>
@@ -73,6 +75,7 @@
         <h4>Lab</h4>
         <ul>
           <li><a href="/projects/">Research Projects</a></li>
+          <li><a href="/products/">Research Products</a></li>
           <li><a href="/publications/">Publications</a></li>
           <li><a href="/funding-awards/">Funding &amp; Awards</a></li>
           <li><a href="/team/">Team</a></li>

@@ -12,8 +12,12 @@
 /* The Menu button is only used on phones. It is a label for a hidden checkbox, so it works without a script. */
 .nav-check { position: absolute; opacity: 0; pointer-events: none; }
 .nav-toggle { display: none; }
+/* Beside the links only "TALI" is shown, so all the tabs fit on one row. Phones show the full lab name. */
+@media (min-width: 701px) {
+  .nav-name-long { display: none; }
+}
 /* Narrow windows and tablets: the links move to a second row under the lab name. */
-@media (max-width: 1240px) {
+@media (max-width: 1000px) {
   nav { height: auto; }
   .nav-inner { flex-wrap: wrap; gap: 0.6rem 1rem; padding-top: 0.8rem; padding-bottom: 0.7rem; }
   .nav-brand { flex: 1 1 100%; }
@@ -207,6 +211,53 @@
 .project-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.25rem; margin-top: 1.25rem; }
 .project-foot .record-link { margin-top: 0; }
 a.project-theme { background: var(--tag-bg); color: var(--tag-ink); border-color: var(--tag-line); }
+
+/* ----- RESEARCH PRODUCTS: repository cards ----- */
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.product-card {
+  display: flex; flex-direction: column;
+  padding: 1.5rem 1.6rem 1.3rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--tag-ink, var(--accent));
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.product-card:hover { box-shadow: 0 6px 22px rgba(43, 38, 32, 0.09); transform: translateY(-2px); }
+.product-kind {
+  display: flex; align-items: center; gap: 0.45rem;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--tag-ink, var(--accent));
+}
+.product-kind svg { width: 14px; height: 14px; flex-shrink: 0; }
+.product-name {
+  font-family: var(--display, 'DM Serif Display', Georgia, serif);
+  font-size: 1.3rem; font-weight: 600; line-height: 1.25;
+  color: var(--ink);
+  margin: 0.7rem 0 0.6rem;
+  overflow-wrap: anywhere;
+}
+.product-summary { font-size: 0.96rem; line-height: 1.6; color: var(--mid); font-weight: 300; margin-bottom: 0.9rem; }
+.product-source { font-size: 0.84rem; line-height: 1.5; color: var(--ink); font-style: italic; }
+.product-source span {
+  display: block; font-style: normal;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 0.2rem;
+}
+.product-foot {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 0.9rem;
+  margin-top: auto; padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+.product-summary + .product-foot, .product-source + .product-foot { margin-top: auto; }
+.product-card > :nth-last-child(2) { margin-bottom: 1.1rem; }
+.product-lang { font-family: 'DM Sans', system-ui, sans-serif; font-size: 0.74rem; color: var(--light); }
+.product-go { margin-left: auto; font-family: 'DM Sans', system-ui, sans-serif; font-size: 0.76rem; font-weight: 600; color: var(--accent); }
+@media (max-width: 900px) { .product-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .product-grid { grid-template-columns: 1fr; } }
 
 /* ----- PHONES AND SMALL TABLETS ----- */
 @media (max-width: 900px) {

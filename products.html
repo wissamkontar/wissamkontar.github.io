@@ -1,0 +1,27 @@
+---
+layout: default
+title: Research Products
+permalink: /products/
+---
+<main>
+
+<!-- Research products (content: _data/products.yml).
+     The script in main.js also asks GitHub for the account's public repositories and adds any that are not listed yet. -->
+{% assign github_user = site.links.github | split: "/" | last %}
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Open Source</div>
+      <div class="section-header-row">
+        <h1 class="section-title">Research Products</h1>
+        <a href="{{ site.links.github }}" class="see-all" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      </div>
+      <p class="page-lead">The code and software behind our work, released so that others can check it, reuse it and build on it.</p>
+    </div>
+    <div class="product-grid" id="productGrid" data-user="{{ github_user }}" data-hidden="{% for product in site.data.products %}{% if product.hidden %}{{ product.repo }} {% endif %}{% endfor %}">
+      {% for product in site.data.products %}{% unless product.hidden %}{% include product-card.html product=product %}{% endunless %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+</main>

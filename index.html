@@ -47,6 +47,26 @@ layout: default
 
 <div class="divider"></div>
 
+<!-- Research products: the three marked featured in _data/products.yml -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="label">Open Source</div>
+      <div class="section-header-row">
+        <h2 class="section-title">Research Products</h2>
+        <a href="/products/" class="see-all">All Research Products</a>
+      </div>
+      <p class="section-intro">The code and software behind our work, released so that others can check it, reuse it and build on it.</p>
+    </div>
+    <div class="product-grid fade-in">
+      {% assign featured = site.data.products | where: "featured", true %}
+      {% for product in featured limit: 3 %}{% include product-card.html product=product %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- Selected publications: entries marked selected in _data/publications.yml, from the last three years only.
      Older selected papers stay on the full list. Change the 3 below to show more or fewer years.
      Within each year, papers led by a lab student come first: those whose first author is a team member
