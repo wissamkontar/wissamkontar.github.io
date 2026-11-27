@@ -1,6 +1,6 @@
 # TALI lab website
 
-Live at https://wissamkontar.github.io. GitHub Pages rebuilds the site automatically a minute or two after every change.
+Live at https://wissamkontar.com. 
 
 ## Pages
 
