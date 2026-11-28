@@ -1,12 +1,14 @@
-# Research projects, in the order shown on the Research Projects page. Add new ones at the top.
+# Funded research projects, in the order shown on the Funded Research Projects page. Add new ones at the top.
 # id: a short name with no spaces, used in links.
 # themes: ids from themes.yml.
-# A project with a sponsor and an awarded date (YEAR-MONTH) is also listed under Funding and in News.
+# A project with a sponsor and an awarded date (YEAR-MONTH) is also listed in News.
+# logo: the sponsor's logo, a file in images/. It is shown on the right of the card once the file is uploaded.
 # Optional fields: period, role, team, links (each with label and url).
 
 - id: quantum-tools
   title: Quantum-Inspired Tools for Smarter Transportation Systems
   sponsor: University of Nebraska-Lincoln
+  logo: logo-unl.png
   awarded: 2026-08
   period: Aug 2026 to Jul 2027
   themes: [quantum]
@@ -17,6 +19,7 @@
 - id: pharmaceutical-deserts
   title: "Pharmaceutical Deserts in Rural Nebraska: Building the Foundational Evidence for Autonomous Health Logistics"
   sponsor: University of Nebraska-Lincoln
+  logo: logo-unl.png
   awarded: 2026-06
   period: Jun 2026 to May 2027
   themes: [mobility]
@@ -27,6 +30,7 @@
 - id: risk-index
   title: Safety and Mobility Risk Index for Region VII Transportation Networks
   sponsor: U.S. DOT Mid-America Transportation Center (MATC)
+  logo: logo-matc.png
   awarded: 2025-12
   themes: [mobility]
   summary: >-
@@ -36,6 +40,7 @@
 - id: consensus-agents
   title: Consensus-Seeking Autonomous Agents in Complex Cyber-Physical Transportation Systems
   sponsor: NSF National Artificial Intelligence Research Resource (NAIRR)
+  logo: logo-nsf.png
   awarded: 2025-09
   themes: [super-intelligence]
   summary: >-

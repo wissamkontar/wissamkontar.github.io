@@ -5,7 +5,18 @@ permalink: /projects/
 ---
 <main>
 
-<!-- Funded research projects (content: _data/projects.yml). This page is also the lab's funding list. -->
+<!-- Funded research projects (content: _data/projects.yml). This page is also the lab's funding list.
+     A project's "logo" (a file in images/) is shown on the right of its card once that file has been uploaded. -->
+<style>
+  .project-card.has-logo { display: grid; grid-template-columns: minmax(0, 1fr) 170px; column-gap: 2.5rem; align-items: center; }
+  .project-logo { display: flex; align-items: center; justify-content: center; }
+  .project-logo img { width: 100%; max-height: 120px; object-fit: contain; mix-blend-mode: multiply; }
+  @media (max-width: 700px) {
+    .project-card.has-logo { grid-template-columns: 1fr; row-gap: 1.25rem; }
+    .project-logo { justify-content: flex-start; }
+    .project-logo img { width: auto; max-width: 150px; max-height: 70px; }
+  }
+</style>
 <section class="section" id="projects">
   <div class="container">
     <div class="section-header">
@@ -19,22 +30,31 @@ permalink: /projects/
 
     {% for project in site.data.projects %}
     {% assign first_theme = project.themes | first %}
-    <article class="project-card theme-{{ first_theme }} fade-in" id="{{ project.id }}">
-      <div class="project-meta">
-        {% if project.sponsor %}<span class="project-sponsor">{{ project.sponsor | escape }}</span>{% endif %}
-        {% if project.period %}<span>{{ project.period | escape }}</span>
-        {% elsif project.awarded %}{% assign day = project.awarded | append: "-01" %}<span>Awarded {{ day | date: "%B %Y" }}</span>{% endif %}
-        {% if project.role %}<span>{{ project.role | escape }}</span>{% endif %}
+    {% assign logo = nil %}
+    {% if project.logo %}
+      {% capture logo_path %}/images/{{ project.logo }}{% endcapture %}
+      {% assign found = site.static_files | where: "path", logo_path %}
+      {% if found.size > 0 %}{% assign logo = project.logo %}{% endif %}
+    {% endif %}
+    <article class="project-card theme-{{ first_theme }}{% if logo %} has-logo{% endif %} fade-in" id="{{ project.id }}">
+      <div>
+        <div class="project-meta">
+          {% if project.sponsor %}<span class="project-sponsor">{{ project.sponsor | escape }}</span>{% endif %}
+          {% if project.period %}<span>{{ project.period | escape }}</span>
+          {% elsif project.awarded %}{% assign day = project.awarded | append: "-01" %}<span>Awarded {{ day | date: "%B %Y" }}</span>{% endif %}
+          {% if project.role %}<span>{{ project.role | escape }}</span>{% endif %}
+        </div>
+        <h2 class="project-title">{{ project.title | escape }}</h2>
+        {% if project.summary %}<p class="project-summary">{{ project.summary | escape }}</p>{% endif %}
+        {% if project.team %}<p class="project-team"><strong>Team:</strong> {{ project.team | escape }}</p>{% endif %}
+        <div class="project-foot">
+          {% for id in project.themes %}{% assign theme = site.data.themes | where: "id", id | first %}
+          <a class="theme-tag theme-{{ id }} project-theme" href="/#theme-{{ id }}">{{ theme.name }}</a>
+          {% endfor %}
+          {% for link in project.links %}<a class="record-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} →</a>{% endfor %}
+        </div>
       </div>
-      <h2 class="project-title">{{ project.title | escape }}</h2>
-      {% if project.summary %}<p class="project-summary">{{ project.summary | escape }}</p>{% endif %}
-      {% if project.team %}<p class="project-team"><strong>Team:</strong> {{ project.team | escape }}</p>{% endif %}
-      <div class="project-foot">
-        {% for id in project.themes %}{% assign theme = site.data.themes | where: "id", id | first %}
-        <a class="theme-tag theme-{{ id }} project-theme" href="/#theme-{{ id }}">{{ theme.name }}</a>
-        {% endfor %}
-        {% for link in project.links %}<a class="record-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} →</a>{% endfor %}
-      </div>
+      {% if logo %}<div class="project-logo"><img src="/images/{{ logo }}" alt="{{ project.sponsor | escape }} logo" loading="lazy"></div>{% endif %}
     </article>
     {% endfor %}
   </div>
