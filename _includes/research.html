@@ -1,6 +1,8 @@
 {% comment %}
   Research section of the home page: one panel per theme.
   All text comes from _data/themes.yml; the papers come from _data/publications.yml.
+  Each panel shows the first two lessons and the first two selected papers of its theme.
+  (The "topics" in themes.yml are not shown.)
 {% endcomment %}
 <section class="section" id="research">
   <div class="container">
@@ -9,7 +11,6 @@
       <div class="section-header-row">
         <h2 class="section-title">What We Work On</h2>
       </div>
-      <p class="research-lead">We study how intelligent agents behave, learn, and interact, and what that means for the complex systems they form. Our work is organized into four themes.</p>
     </div>
 
     <div class="theme-list">
@@ -36,21 +37,18 @@
           <h3 class="theme-name">{{ theme.name }}</h3>
           <p class="theme-question">{{ theme.question | escape }}</p>
           <p class="theme-summary">{{ theme.summary | escape }}</p>
-          <div class="theme-topics">
-            {% for topic in theme.topics %}<span class="topic-chip">{{ topic }}</span>{% endfor %}
-          </div>
           <div class="theme-cols">
             <div>
               <div class="theme-heading">What we have learned</div>
               <ul class="theme-findings">
-                {% for lesson in theme.lessons %}<li>{{ lesson | escape }}</li>{% endfor %}
+                {% for lesson in theme.lessons limit: 2 %}<li>{{ lesson | escape }}</li>{% endfor %}
               </ul>
             </div>
             <div>
               <div class="theme-heading">Selected papers</div>
               <ul class="theme-papers">
                 {% assign shown = 0 %}
-                {% for pub in site.data.publications %}{% if pub.selected and pub.themes contains theme.id and shown < 3 %}{% assign shown = shown | plus: 1 %}
+                {% for pub in site.data.publications %}{% if pub.selected and pub.themes contains theme.id and shown < 2 %}{% assign shown = shown | plus: 1 %}
                 <li><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title | escape }}</a><span>{{ pub.venue | escape }} · {{ pub.year }}</span></li>
                 {% endif %}{% endfor %}
               </ul>
