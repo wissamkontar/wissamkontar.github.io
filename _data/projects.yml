@@ -4,6 +4,26 @@
 # A project with a sponsor and an awarded date (YEAR-MONTH) is also listed under Funding and in News.
 # Optional fields: period, role, team, links (each with label and url).
 
+- id: quantum-tools
+  title: Quantum-Inspired Tools for Smarter Transportation Systems
+  sponsor: University of Nebraska-Lincoln
+  awarded: 2026-08
+  period: Aug 2026 to Jul 2027
+  themes: [quantum]
+  summary: >-
+    Testing whether our quantum-inspired way of describing behavior, first shown for drivers,
+    works across transportation problems, from daily commuting choices to whole networks.
+
+- id: pharmaceutical-deserts
+  title: "Pharmaceutical Deserts in Rural Nebraska: Building the Foundational Evidence for Autonomous Health Logistics"
+  sponsor: University of Nebraska-Lincoln
+  awarded: 2026-06
+  period: Jun 2026 to May 2027
+  themes: [mobility]
+  summary: >-
+    Building the evidence needed to design autonomous delivery of medicines in rural Nebraska,
+    where about 70% of counties are pharmacy deserts. With the UNMC College of Pharmacy.
+
 - id: risk-index
   title: Safety and Mobility Risk Index for Region VII Transportation Networks
   sponsor: U.S. DOT Mid-America Transportation Center (MATC)
