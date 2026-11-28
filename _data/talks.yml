@@ -4,6 +4,12 @@
 # type: Conference, Invited Talk, Keynote, or Workshop
 
 - date: 2026-07
+  type: Invited Talk
+  title: 'Quantum-Inspired Representation of Heterogeneity: Driving Behavior, Travel Behavior, and Autonomous Agent Design'
+  event: Seoul National University
+  location: Seoul, South Korea
+
+- date: 2026-07
   type: Conference
   title: 'Capturing Behavioral Heterogeneity for Traffic Flow: A Scalable and Personalized Decomposition Approach'
   event: International Symposium on Transportation and Traffic Theory (ISTTT26) - Lectern
