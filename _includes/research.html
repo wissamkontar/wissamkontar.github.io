@@ -37,6 +37,7 @@
           <h3 class="theme-name">{{ theme.name }}</h3>
           <p class="theme-question">{{ theme.question | escape }}</p>
           <p class="theme-summary">{{ theme.summary | escape }}</p>
+          <p style="margin-top: 0.9rem"><a class="theme-more" href="/publications/?theme={{ theme.id }}">All papers in this theme →</a></p>
           <div class="theme-cols">
             <div>
               <div class="theme-heading">What we have learned</div>
@@ -52,7 +53,6 @@
                 <li><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title | escape }}</a><span>{{ pub.venue | escape }} · {{ pub.year }}</span></li>
                 {% endif %}{% endfor %}
               </ul>
-              <a class="theme-more" href="/publications/?theme={{ theme.id }}">All papers in this theme →</a>
             </div>
           </div>
         </div>
