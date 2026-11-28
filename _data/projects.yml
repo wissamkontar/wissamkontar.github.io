@@ -8,7 +8,7 @@
 - id: quantum-tools
   title: Quantum-Inspired Tools for Smarter Transportation Systems
   sponsor: University of Nebraska-Lincoln
-  logo: logo-unl.png
+  logo: logo-unl.svg
   awarded: 2026-08
   period: Aug 2026 to Jul 2027
   themes: [quantum]
@@ -19,7 +19,7 @@
 - id: pharmaceutical-deserts
   title: "Pharmaceutical Deserts in Rural Nebraska: Building the Foundational Evidence for Autonomous Health Logistics"
   sponsor: University of Nebraska-Lincoln
-  logo: logo-unl.png
+  logo: logo-unl.svg
   awarded: 2026-06
   period: Jun 2026 to May 2027
   themes: [mobility]
