@@ -1,0 +1,37 @@
+---
+layout: default
+title: Recognitions
+permalink: /recognitions/
+---
+<main>
+
+<!-- Awards and recognition (content: _data/awards.yml). Funding is shown on the Funded Research Projects page. -->
+<section class="section" id="recognitions">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Honors</div>
+      <div class="section-header-row">
+        <h1 class="section-title">Recognitions</h1>
+        <a href="/projects/" class="see-all">Funded Research Projects</a>
+      </div>
+      <p class="page-lead">The awards and recognition our work has received.</p>
+    </div>
+
+    <div class="record-list">
+      {% for award in site.data.awards %}
+      {% assign when = award.date | append: "" %}
+      {% if when.size > 4 %}{% assign day = when | append: "-01" %}{% assign when = day | date: "%b %Y" %}{% endif %}
+      <article class="record">
+        <div class="record-when">{{ when }}</div>
+        <div>
+          <span class="record-badge award">{{ award.kind }}</span>
+          <h3 class="record-title">{{ award.title | escape }}</h3>
+          {% if award.text %}<p class="record-text">{{ award.text | escape }}</p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+</main>
