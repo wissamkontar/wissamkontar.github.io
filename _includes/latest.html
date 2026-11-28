@@ -21,7 +21,8 @@
       <p class="section-intro">Where we will be presenting next, and the latest funding, awards and news from the lab.</p>
     </div>
     <div class="talks-timeline" id="talksTimeline">
-      {% for talk in site.data.talks %}
+      {% comment %} A talk marked "given: true" has already happened, so it is not listed here as upcoming. {% endcomment %}
+      {% for talk in site.data.talks %}{% unless talk.given %}
       <div class="talk-item upcoming" data-date="{{ talk.date }}">
         <div class="talk-inner">
           <div class="talk-date-col">
@@ -38,7 +39,7 @@
           </div>
         </div>
       </div>
-      {% endfor %}
+      {% endunless %}{% endfor %}
 
       {% for key in keys limit: 6 %}
         {% assign parts = key | split: "|" %}

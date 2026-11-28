@@ -1,7 +1,15 @@
 # Talks, newest first. Add new ones at the top.
 # date is YEAR-MONTH. Talks in this month or later show on the home page as upcoming;
 # once the month has passed they move to the News page automatically.
-# type: Conference, Invited Talk, Keynote, or Workshop
+# given: true marks a talk in the current month that has already happened, so it goes straight to News.
+# type: Conference, Invited Talk, Public Talk, Keynote, or Workshop
+
+- date: 2026-11
+  given: true
+  type: Public Talk
+  title: We Never Took the Bus
+  event: Faculty Slam, University of Nebraska-Lincoln
+  location: Lincoln, NE, USA
 
 - date: 2026-09
   type: Conference

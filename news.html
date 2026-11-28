@@ -51,6 +51,9 @@ permalink: /news/
         {% assign month = "" %}
         {% if stamp.size > 4 %}{% assign day = stamp | append: "-01" %}{% assign month = day | date: "%B" %}{% endif %}
         {% assign link = nil %}
+        {% comment %} A talk that may still be upcoming carries its date, so the script can hide it until its month has passed.
+                      A talk marked "given: true" has already happened and is always shown. {% endcomment %}
+        {% assign pending = nil %}
         {% case kind %}
           {% when "funding" %}
             {% assign item = site.data.projects[position] %}
@@ -68,13 +71,14 @@ permalink: /news/
             {% assign badge = item.type %}
             {% assign headline = item.title %}
             {% capture text %}{{ item.event }} · {{ item.location }}{% endcapture %}
+            {% unless item.given %}{% assign pending = stamp %}{% endunless %}
           {% else %}
             {% assign item = site.data.news[position] %}
             {% assign badge = item.label %}
             {% assign headline = item.title %}
             {% assign text = item.text %}
         {% endcase %}
-        <article class="record" data-cat="{{ kind }}"{% if kind == "talk" %} data-talk-date="{{ stamp }}"{% endif %}>
+        <article class="record" data-cat="{{ kind }}"{% if pending %} data-talk-date="{{ pending }}"{% endif %}>
           <div class="record-when">{{ month }}</div>
           <div>
             <span class="record-badge {{ kind }}">{{ badge | escape }}</span>
