@@ -2,7 +2,7 @@
 # date: "YEAR-MONTH", or just "YEAR" when the month is not known. Keep the quotes.
 # kind: Award or Recognition
 
-- date: "2026"
+- date: "2026-09"
   kind: Award
   title: Shortlisted for the Best Paper Award at IEEE ITSC 2026
   text: '"Behavioral Heterogeneity as Quantum-Inspired Representation" was shortlisted for the Best Paper Award.'

@@ -3,6 +3,12 @@
 # once the month has passed they move to the News page automatically.
 # type: Conference, Invited Talk, Keynote, or Workshop
 
+- date: 2026-09
+  type: Conference
+  title: Behavioral Heterogeneity as Quantum-Inspired Representation
+  event: IEEE International Conference on Intelligent Transportation Systems (ITSC 2026)
+  location: Naples, Italy
+
 - date: 2026-07
   type: Invited Talk
   title: 'Quantum-Inspired Representation of Heterogeneity: Driving Behavior, Travel Behavior, and Autonomous Agent Design'
