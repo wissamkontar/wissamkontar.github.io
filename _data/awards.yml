@@ -2,6 +2,11 @@
 # date: "YEAR-MONTH", or just "YEAR" when the month is not known. Keep the quotes.
 # kind: Award or Recognition
 
+- date: "2026"
+  kind: Award
+  title: 2026 Joyce R. Jeffries New Faculty Scholar Award
+  text: Awarded to Wissam Kontar by the Office of Research and Innovation at the University of Nebraska-Lincoln.
+
 - date: "2026-09"
   kind: Award
   title: Shortlisted for the Best Paper Award at IEEE ITSC 2026
