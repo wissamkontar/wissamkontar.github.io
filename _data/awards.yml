@@ -2,10 +2,10 @@
 # date: "YEAR-MONTH", or just "YEAR" when the month is not known. Keep the quotes.
 # kind: Award or Recognition
 
-- date: "2026"
+- date: "2026-09"
   kind: Recognition
   title: Selected for the 2026-2027 Research Development Fellows Program (RDFP)
-  text: Wissam Kontar was selected to take part in the 2026-2027 cohort of the Research Development Fellows Program.
+  text: Wissam Kontar was selected for the 2026-2027 cohort of the Research Development Fellows Program, run by the Office of Research and Innovation at the University of Nebraska-Lincoln.
 
 - date: "2026"
   kind: Award
