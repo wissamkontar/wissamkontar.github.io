@@ -1,7 +1,16 @@
-{% comment %} One lab member card. Used by the Team page for current members and alumni. {% endcomment %}
+{% comment %}
+  One lab member card. Used by the Team page for current members and alumni.
+  The photo is shown only if its file is in images/; until then the card keeps the placeholder.
+{% endcomment %}
 {% assign m = include.member %}
-<div class="member-card{% unless m.photo %} centered{% endunless %}">
-  <div class="member-avatar">{% if m.photo %}<img src="/images/{{ m.photo }}" alt="{{ m.name }} - {{ m.role }}" loading="lazy">{% else %}+{% endif %}</div>
+{% assign photo = nil %}
+{% if m.photo %}
+  {% capture photo_path %}/images/{{ m.photo }}{% endcapture %}
+  {% assign found = site.static_files | where: "path", photo_path %}
+  {% if found.size > 0 %}{% assign photo = m.photo %}{% endif %}
+{% endif %}
+<div class="member-card{% unless photo %} centered{% endunless %}">
+  <div class="member-avatar">{% if photo %}<img src="/images/{{ photo }}" alt="{{ m.name }} - {{ m.role }}" loading="lazy">{% else %}+{% endif %}</div>
   <div class="member-name">{{ m.name }}</div>
   <div class="member-role">{{ m.role }}</div>
   <div class="member-focus">{{ m.detail }}</div>

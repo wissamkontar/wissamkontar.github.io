@@ -37,9 +37,11 @@
 - name: Grace Gabrys
   role: REU Student
   detail: Physics · Carnegie Mellon University
+  photo: grace.jpg
   alumni: true
 
 - name: Aureliane Tchamdja
   role: REU Student
   detail: Computer Science · UMBC
+  photo: aureliane.jpg
   alumni: true
